@@ -1,0 +1,23 @@
+{
+  "use_fast_ordinary": true,
+  "tests": [
+    {
+      "id": "test1",
+      "identical": true,
+      "regular": "24",
+      "masked": "24"
+    },
+    {
+      "id": "test11",
+      "identical": true,
+      "regular": "Frank Sinatra recorded \"I Can't Help Falling in Love with You.\"",
+      "masked": "Frank Sinatra recorded \"I Can't Help Falling in Love with You.\""
+    },
+    {
+      "id": "test16",
+      "identical": true,
+      "regular": "Big Man",
+      "masked": "Big Man"
+    }
+  ]
+}

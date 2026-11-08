@@ -1,0 +1,35 @@
+{
+  "engine": "contriever",
+  "ids": [
+    "test1",
+    "test11",
+    "test16",
+    "test19",
+    "test20",
+    "test21",
+    "test31",
+    "test47",
+    "test50",
+    "test53",
+    "test57",
+    "test58",
+    "test60",
+    "test62",
+    "test64",
+    "test70",
+    "test75",
+    "test77",
+    "test79",
+    "test82"
+  ],
+  "coef": [
+    0.5716750339229156,
+    2.7378793932680985
+  ],
+  "intercept": 2.198139168840291,
+  "avidity_threshold": 0.07327683598709386,
+  "cosine_threshold": 0.665714567899704,
+  "nli_gate": 0.9749067667722702,
+  "geometry_gate": 1.5993295617551075,
+  "calibration_contexts_exclude_captured": true
+}

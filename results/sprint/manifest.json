@@ -1,0 +1,318 @@
+{
+ "frozen_at_unix": 1794109846.793335,
+ "frozen_at": "2026-11-08 11:50:46 +0800",
+ "note": "Frozen before any sprint model call on the incidents below.",
+ "arms": {
+  "A0_untreated": {
+   "payload": "none",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A1_ids": {
+   "payload": "ids",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A2_sample": {
+   "payload": "sample",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A3_signature": {
+   "payload": "signature",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A4_sham": {
+   "payload": "signature",
+   "signature_source": "sham",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A5_sig_attention": {
+   "payload": "signature",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "on",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A6_gated": {
+   "payload": "signature",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "on",
+   "gate": "on",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A7_no_refill": {
+   "payload": "signature",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "on",
+   "gate": "off",
+   "refill": "off",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A8_warn": {
+   "payload": "signature",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "on",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "warn",
+   "prompt_suffix": "none"
+  },
+  "A9_forged": {
+   "payload": "signature",
+   "signature_source": "forged",
+   "hypothesis_form": "question_claim",
+   "attention_input": "on",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "A10_bare_claim": {
+   "payload": "signature",
+   "signature_source": "real",
+   "hypothesis_form": "claim_only",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none"
+  },
+  "B1_self_check": {
+   "payload": "none",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "self_check"
+  }
+ },
+ "tests": {
+  "T1": [
+   "A3_signature",
+   "A1_ids",
+   "payload",
+   "Sharing the claim signature protects receivers more than sharing record IDs",
+   "attacked_endorsed",
+   "primary"
+  ],
+  "T1b": [
+   "A2_sample",
+   "A1_ids",
+   "payload",
+   "Sharing the raw record protects receivers more than sharing record IDs",
+   "attacked_endorsed",
+   "secondary"
+  ],
+  "T2": [
+   "A3_signature",
+   "A4_sham",
+   "signature_source",
+   "Protection comes from the signature's content, not from sharing anything",
+   "attacked_endorsed",
+   "secondary"
+  ],
+  "T3": [
+   "A5_sig_attention",
+   "A3_signature",
+   "attention_input",
+   "The attention signal adds protection beyond the signature",
+   "attacked_endorsed",
+   "secondary"
+  ],
+  "T4": [
+   "A6_gated",
+   "A5_sig_attention",
+   "gate",
+   "The gate restores clean accuracy, at a stated protection cost",
+   "clean_correct",
+   "secondary"
+  ],
+  "T5": [
+   "A5_sig_attention",
+   "A7_no_refill",
+   "refill",
+   "Refilling with next-ranked evidence restores accuracy beyond deleting alone",
+   "attacked_correct",
+   "secondary"
+  ],
+  "T6": [
+   "A5_sig_attention",
+   "A8_warn",
+   "neutralise",
+   "Removing poison protects more than warning the reader about the claim",
+   "attacked_endorsed",
+   "secondary"
+  ],
+  "T7": [
+   "A9_forged",
+   "A5_sig_attention",
+   "signature_source",
+   "A forged signature (true answer as claim) deletes good evidence and costs accuracy",
+   "clean_correct",
+   "secondary"
+  ],
+  "T8": [
+   "A3_signature",
+   "A10_bare_claim",
+   "hypothesis_form",
+   "The signature needs the question, not just the claim",
+   "attacked_endorsed",
+   "secondary"
+  ]
+ },
+ "one_factor_diffs": {
+  "T1": {
+   "arm": "A3_signature",
+   "reference": "A1_ids",
+   "factor": "payload",
+   "A3_signature": "signature",
+   "A1_ids": "ids"
+  },
+  "T1b": {
+   "arm": "A2_sample",
+   "reference": "A1_ids",
+   "factor": "payload",
+   "A2_sample": "sample",
+   "A1_ids": "ids"
+  },
+  "T2": {
+   "arm": "A3_signature",
+   "reference": "A4_sham",
+   "factor": "signature_source",
+   "A3_signature": "real",
+   "A4_sham": "sham"
+  },
+  "T3": {
+   "arm": "A5_sig_attention",
+   "reference": "A3_signature",
+   "factor": "attention_input",
+   "A5_sig_attention": "on",
+   "A3_signature": "off"
+  },
+  "T4": {
+   "arm": "A6_gated",
+   "reference": "A5_sig_attention",
+   "factor": "gate",
+   "A6_gated": "on",
+   "A5_sig_attention": "off"
+  },
+  "T5": {
+   "arm": "A5_sig_attention",
+   "reference": "A7_no_refill",
+   "factor": "refill",
+   "A5_sig_attention": "on",
+   "A7_no_refill": "off"
+  },
+  "T6": {
+   "arm": "A5_sig_attention",
+   "reference": "A8_warn",
+   "factor": "neutralise",
+   "A5_sig_attention": "delete",
+   "A8_warn": "warn"
+  },
+  "T7": {
+   "arm": "A9_forged",
+   "reference": "A5_sig_attention",
+   "factor": "signature_source",
+   "A9_forged": "forged",
+   "A5_sig_attention": "real"
+  },
+  "T8": {
+   "arm": "A3_signature",
+   "reference": "A10_bare_claim",
+   "factor": "hypothesis_form",
+   "A3_signature": "question_claim",
+   "A10_bare_claim": "claim_only"
+  }
+ },
+ "detector": {
+  "coef_entail": 0.9382,
+  "coef_attn": 2.3472,
+  "intercept": 4.974,
+  "threshold": 0.09886,
+  "gate": 0.975,
+  "slot_offsets": [
+   0.596,
+   -0.097,
+   -0.214,
+   -0.337,
+   0.235,
+   0.135,
+   -0.432,
+   -0.323,
+   -0.187,
+   0.624
+  ],
+  "layer": 21,
+  "tail": 8,
+  "nli_model": "cross-encoder/nli-deberta-v3-base",
+  "cosine_threshold": 0.665714567899704,
+  "entail_only_threshold": 0.002167
+ },
+ "k_blocks": 5,
+ "n_incidents": 200,
+ "hashes": {
+  "docs/WEEKEND_SWARM_PROTOCOL.md": "6d2c0c057dff34c6ea07ea7f65fd055cda0b634536e901de6fd0ce1c38ba1686",
+  "docs/WEEKEND_SWARM_PROTOCOL_AMENDMENT_1.md": "69560e22625b39224f0e262035a94cf307e92f99f055e389011d67e8845cd0a3",
+  "docs/V2_DETECTOR_FROZEN.md": "7ebbaafff8ddb5e9951628e776992e985b7e74a4a0c21fa4d4ec7c5bdea25056",
+  "experiments/sprint/design.py": "deda14210105ea573dbe4437603d0cf29371591bdc3c4f04d1697b2887c0297d",
+  "experiments/sprint/run.py": "661ce881cf7d5b42f95f0cf7c676e01f119663125a925bdcf683f92bc7439785",
+  "experiments/sprint/score.py": "4d35cdd99b68bb02a3113c7e9a3a73361a188207052b9f71ea9f40fdce6a3bcc",
+  "experiments/sprint/freeze.py": "23fad5b71dc7e242c4bbd4ec7dc086886654ff82c2bf8a349b57b7a7f9c3eae7",
+  "results/v2_calibration.json": "fdb2f92cd245a7f444d8a199f1fad6b80ceb79eabad0c220bcd27531632e7c78",
+  "results/e27_position_debias.json": "9049a8e065a6e2ac0b1bb89cab75f91bbf7e3522aa1dac5909cd5fb8a4564816",
+  "results/incident_calibration_contriever.json": "d5ed6dd81de5228777b4f43d950b5486cdce312d8618ae7a800c5da643983bd1",
+  "results/incident_contriever_fidelity.json": "220d0da5ef46228c5068307f1cdd87259da8696c9b5eb9cc764391fe1f40a8c1",
+  "results/sprint_entail_only_calibration.json": "bf6bd538befca675929c5e6db6490023dcb9aa4528a22006cd88cfc601847396",
+  "src/antivenom/continuation.py": "84e86d8566d899ddd3e062639369db76ce31558355c77055738e2c378bd9d54e",
+  "src/antivenom/antibody.py": "57b964f7e7ec4571ded143f4bce45e1fbd6a993466056fea78bdfcfd5780afa1",
+  "src/antivenom/masked.py": "fff2cabed1c4ebbd3d64e01b972b940ffbbde01e838d2be7207a0f1eecf414a1",
+  "src/antivenom/qa.py": "59082b2e4bd5274585fa512eabfb6f57927a61d2dfaaea5754a6fd7f0660000f",
+  "src/antivenom/retriever.py": "a81b2a153e25e442eec32ef468a9db06ef531944654e9159a91426789921ad6f",
+  "src/antivenom/poisonedrag.py": "94b2ef464419a628a606a94ae5a8f83072991111f59364651c955049bd0089bc",
+  "src/antivenom/llm.py": "8f0c232f15d64b53e49e247cc990bf8a5d5fb2335d728d640aaa38cd35c9da49",
+  "data/external/poisonedrag/hotpotqa.json": "5119d6f9fd53cb0ecb3f33de939bd940d77cbaf80284b7ccd3d256f63a430537",
+  "data/external/poisonedrag/hotpotqa-contriever.json": "7f1713731dfd58ac933311f92fc6b9fd0fb7c71c5ccd1293329b58fc811f77e5",
+  "data/external/poisonedrag/msmarco.json": "d6bf508ebb0e31e09095995061bd483678e2ae8634f6ba5de1611e4adf9b1987",
+  "data/external/poisonedrag/msmarco-contriever.json": "6af85dd8d65eff4a57f11670bbac6e545c0bd232b279c823413c92ca216cc710",
+  "results/sprint/incidents.json": "89999927a957798ea379dd502cd91a34c6a94716bb262c9caad93aa5e1d754a0"
+ }
+}

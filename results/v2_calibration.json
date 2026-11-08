@@ -1,0 +1,11 @@
+{
+ "coef": [
+  0.938222427893504,
+  2.34717657953218
+ ],
+ "intercept": 4.973986363537205,
+ "threshold": 0.0988553700591134,
+ "cal_recall": 1.0,
+ "cal_clean_removed": 0.05,
+ "yesno_targets_in_cal": 1
+}

@@ -1,0 +1,4 @@
+{
+ "entail_only_threshold": 0.0021669999999999992,
+ "source": "NQ 1-20 calibration, e11a entail_qa, clean 95th percentile (5% clean removal), computed 2026-11-08 before any sprint outcome"
+}
