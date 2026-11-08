@@ -1,0 +1,7 @@
+{
+ "alpha": 2.0,
+ "p_flip": 0.11920292202211755,
+ "tau": 254.95,
+ "embedding": "facebook/contriever (project Contriever wrapper)",
+ "source": "NQ 1-20 calibration, captured poison[0] vs clean top-10, 5% clean-removal quantile; computed 2026-11-08 before any sprint outcome was viewed"
+}

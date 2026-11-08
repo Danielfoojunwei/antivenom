@@ -20,7 +20,8 @@ from design import ARMS, DATASETS, K_BLOCKS, SPRINT_SEED, TESTS, V2, check_one_f
 from antivenom.poisonedrag import load  # noqa: E402
 
 OUT = Path("results/sprint")
-FROZEN = ["docs/WEEKEND_SWARM_PROTOCOL.md", "docs/WEEKEND_SWARM_PROTOCOL_AMENDMENT_1.md", "docs/V2_DETECTOR_FROZEN.md",
+FROZEN = ["docs/WEEKEND_SWARM_PROTOCOL.md", "docs/WEEKEND_SWARM_PROTOCOL_AMENDMENT_1.md", "docs/WEEKEND_SWARM_PROTOCOL_AMENDMENT_2.md",
+          "docs/SPRINT_PLAN_FINAL.md", "results/sprint_fingerprint_calibration.json", "docs/V2_DETECTOR_FROZEN.md",
           "experiments/sprint/design.py", "experiments/sprint/run.py", "experiments/sprint/score.py", "experiments/sprint/freeze.py",
           "results/v2_calibration.json", "results/e27_position_debias.json", "results/incident_calibration_contriever.json",
           "results/incident_contriever_fidelity.json", "results/sprint_entail_only_calibration.json", "src/antivenom/continuation.py", "src/antivenom/antibody.py",
@@ -33,8 +34,27 @@ def h(p):
 
 
 def main():
-    if (OUT / "raw.jsonl").exists():
-        raise SystemExit("sprint outcomes already exist; the freeze cannot be changed")
+    amend = (OUT / "raw.jsonl").exists()
+    if amend:
+        # Version 2 freeze after a documented stop: keep v1, keep the identical incidents and seeds, add arms only.
+        if not (OUT / "STOPPED.md").exists():
+            raise SystemExit("sprint outcomes exist without a documented stop; refusing to refreeze")
+        v1p = OUT / "manifest_v1.json"
+        if not v1p.exists():
+            (OUT / "manifest.json").rename(v1p)
+        v1 = json.load(open(v1p))
+        assert h(OUT / "incidents.json") == v1["hashes"]["results/sprint/incidents.json"], "incident list changed since v1"
+        man = {"version": 2, "frozen_at_unix": time.time(), "frozen_at": time.strftime("%Y-%m-%d %H:%M:%S %z"),
+               "note": "v2 freeze per docs/SPRINT_PLAN_FINAL.md: same 200 incidents and seeds as v1; adds benchmark arms "
+                       "B2 (Stealth Lens AV filter) and B3 (BinaryShield-style fingerprint). Original 12 arms' decisions are "
+                       "unchanged (verified on 36,000 synthetic cases). 3 incidents completed under v1 are resumed, not rerun; "
+                       "their outcomes were not viewed.",
+               "v1_manifest_sha256": h(v1p), "arms": ARMS, "tests": {k: list(v) for k, v in TESTS.items()},
+               "one_factor_diffs": check_one_factor(), "detector": V2, "k_blocks": K_BLOCKS, "n_incidents": 200,
+               "hashes": {p: h(p) for p in FROZEN + [str(OUT / "incidents.json")]}}
+        json.dump(man, open(OUT / "manifest.json", "w"), indent=1)
+        print("v2 frozen; manifest sha256", h(OUT / "manifest.json"))
+        return
     diffs = check_one_factor()
     target_ids = {d: [t.id for t in load(d)[0]] for d in DATASETS}
     nq = [t.id for t in load("nq")[0]]

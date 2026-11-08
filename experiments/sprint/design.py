@@ -20,10 +20,14 @@ V2 = {"coef_entail": 0.9382, "coef_attn": 2.3472, "intercept": 4.9740, "threshol
       "slot_offsets": [0.596, -0.097, -0.214, -0.337, 0.235, 0.135, -0.432, -0.323, -0.187, 0.624],
       "layer": 21, "tail": 8, "nli_model": "cross-encoder/nli-deberta-v3-base",
       "cosine_threshold": 0.665714567899704,
-      "entail_only_threshold": 0.002167}   # results/sprint_entail_only_calibration.json (5% clean removal, NQ 1-20)   # NQ 1-20 calibration (results/incident_calibration_contriever.json)
+      "entail_only_threshold": 0.002167,
+      # B3 BinaryShield-style fingerprint (results/sprint_fingerprint_calibration.json)
+      "fp_alpha": 2.0, "fp_tau": 254.95,
+      # B2 Stealth Lens AV filter (authors' code defaults: delta, alpha = all tokens, max 1 removal)
+      "av_delta": 26.20711906167185, "av_max_removed": 1}   # results/sprint_entail_only_calibration.json (5% clean removal, NQ 1-20)   # NQ 1-20 calibration (results/incident_calibration_contriever.json)
 
 BASE = {"payload": "none", "signature_source": "real", "hypothesis_form": "question_claim",
-        "attention_input": "off", "gate": "off", "refill": "on", "neutralise": "delete", "prompt_suffix": "none"}
+        "attention_input": "off", "gate": "off", "refill": "on", "neutralise": "delete", "prompt_suffix": "none", "local_filter": "none"}
 
 
 def arm(**kw):
@@ -45,6 +49,8 @@ ARMS = {
     "A9_forged":        arm(payload="signature", attention_input="on", signature_source="forged"),
     "A10_bare_claim":   arm(payload="signature", hypothesis_form="claim_only"),
     "B1_self_check":    arm(prompt_suffix="self_check"),          # benchmark only, not in any test
+    "B2_stealth_av":    arm(local_filter="stealth_av", refill="off"),   # benchmark: Stealth Lens AV filter (no sharing)
+    "B3_fingerprint":   arm(payload="fingerprint"),               # benchmark: BinaryShield-style shared fingerprint
 }
 
 # test id -> (arm, reference, the one factor, assumption, primary endpoint, family)

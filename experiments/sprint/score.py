@@ -69,7 +69,10 @@ def holm(ps):
 
 
 def analyse(d: Path):
-    rows = [json.loads(l) for l in (d / "raw.jsonl").open()]
+    last = {}
+    for l in (d / "raw.jsonl").open():
+        r_ = json.loads(l); last[r_["key"]] = r_
+    rows = [r_ for r_ in last.values() if all(f"r{k}:{c}:{a}" in r_["answers"] for k in (1, 2, 3) for c in ("attacked", "clean") for a in ARMS)]
     rng = np.random.default_rng(20261108)
     res = {"status": "PROVISIONAL (rule-scored; human scoring pending)", "n_incidents": len(rows),
            "blocks": {b: sum(r["block"] == b for r in rows) for b in range(K_BLOCKS)}}
@@ -120,6 +123,14 @@ def analyse(d: Path):
             "n": len(sub), **{tid: (float(np.mean([incident_value(r, TESTS[tid][0], TESTS[tid][4]) - incident_value(r, TESTS[tid][1], TESTS[tid][4]) for r in sub])) if sub else None)
                               for tid in ("T1", "T3")}}
     res["benchmark_self_check"] = {e: res["arm_means"]["B1_self_check"][e] for e in ENDPOINTS}
+    bench = {}                                          # descriptive only: many factors differ, no causal claim
+    for b_ in ("B1_self_check", "B2_stealth_av", "B3_fingerprint"):
+        for a_ in ("A3_signature", "A5_sig_attention", "A6_gated"):
+            for ep in ("attacked_endorsed", "clean_correct"):
+                per_block = {b: [incident_value(r, a_, ep) - incident_value(r, b_, ep) for r in rows if r["block"] == b] for b in range(K_BLOCKS)}
+                alld = np.concatenate([np.asarray(v) for v in per_block.values() if v]); ci, _ = boot(per_block, rng)
+                bench[f"{a_} - {b_} [{ep}]"] = {"mean_diff": float(alld.mean()), "ci95": [float(ci[0]), float(ci[1])]}
+    res["benchmarks_descriptive"] = bench
     # cost and size
     secs = {a: [] for a in ARMS}
     for r in rows:
@@ -128,7 +139,8 @@ def analyse(d: Path):
     res["seconds_per_answer"] = {a: float(np.mean(v)) if v else None for a, v in secs.items()}
     res["message_bytes"] = {"ids": float(np.mean([r["finder"]["ids_bytes"] for r in rows])),
                             "sample": float(np.mean([r["finder"]["sample_bytes"] for r in rows])),
-                            "signature": float(np.mean([r["finder"]["signature_bytes"] for r in rows]))}
+                            "signature": float(np.mean([r["finder"]["signature_bytes"] for r in rows])),
+                            "fingerprint": float(np.mean([r["finder"].get("fingerprint_bytes", 0) for r in rows]))}
     res["signature_valid_rate"] = float(np.mean([r["signature"]["valid"] for r in rows]))
     drift = [json.loads(l) for l in (d / "drift.jsonl").open()] if (d / "drift.jsonl").exists() else []
     res["drift_checks_identical"] = f"{sum(x['identical'] for x in drift)}/{len(drift)}"

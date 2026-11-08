@@ -1,7 +1,9 @@
 {
- "frozen_at_unix": 1794109846.793335,
- "frozen_at": "2026-11-08 11:50:46 +0800",
- "note": "Frozen before any sprint model call on the incidents below.",
+ "version": 2,
+ "frozen_at_unix": 1794112946.024436,
+ "frozen_at": "2026-11-08 12:42:26 +0800",
+ "note": "v2 freeze per docs/SPRINT_PLAN_FINAL.md: same 200 incidents and seeds as v1; adds benchmark arms B2 (Stealth Lens AV filter) and B3 (BinaryShield-style fingerprint). Original 12 arms' decisions are unchanged (verified on 36,000 synthetic cases). 3 incidents completed under v1 are resumed, not rerun; their outcomes were not viewed.",
+ "v1_manifest_sha256": "5432de8001200eb1cd7a665e40bcc805e1ebd0d7f829df857c4802212aed2438",
  "arms": {
   "A0_untreated": {
    "payload": "none",
@@ -11,7 +13,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A1_ids": {
    "payload": "ids",
@@ -21,7 +24,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A2_sample": {
    "payload": "sample",
@@ -31,7 +35,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A3_signature": {
    "payload": "signature",
@@ -41,7 +46,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A4_sham": {
    "payload": "signature",
@@ -51,7 +57,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A5_sig_attention": {
    "payload": "signature",
@@ -61,7 +68,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A6_gated": {
    "payload": "signature",
@@ -71,7 +79,8 @@
    "gate": "on",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A7_no_refill": {
    "payload": "signature",
@@ -81,7 +90,8 @@
    "gate": "off",
    "refill": "off",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A8_warn": {
    "payload": "signature",
@@ -91,7 +101,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "warn",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A9_forged": {
    "payload": "signature",
@@ -101,7 +112,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "A10_bare_claim": {
    "payload": "signature",
@@ -111,7 +123,8 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "none"
+   "prompt_suffix": "none",
+   "local_filter": "none"
   },
   "B1_self_check": {
    "payload": "none",
@@ -121,7 +134,30 @@
    "gate": "off",
    "refill": "on",
    "neutralise": "delete",
-   "prompt_suffix": "self_check"
+   "prompt_suffix": "self_check",
+   "local_filter": "none"
+  },
+  "B2_stealth_av": {
+   "payload": "none",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "off",
+   "neutralise": "delete",
+   "prompt_suffix": "none",
+   "local_filter": "stealth_av"
+  },
+  "B3_fingerprint": {
+   "payload": "fingerprint",
+   "signature_source": "real",
+   "hypothesis_form": "question_claim",
+   "attention_input": "off",
+   "gate": "off",
+   "refill": "on",
+   "neutralise": "delete",
+   "prompt_suffix": "none",
+   "local_filter": "none"
   }
  },
  "tests": {
@@ -285,18 +321,25 @@
   "tail": 8,
   "nli_model": "cross-encoder/nli-deberta-v3-base",
   "cosine_threshold": 0.665714567899704,
-  "entail_only_threshold": 0.002167
+  "entail_only_threshold": 0.002167,
+  "fp_alpha": 2.0,
+  "fp_tau": 254.95,
+  "av_delta": 26.20711906167185,
+  "av_max_removed": 1
  },
  "k_blocks": 5,
  "n_incidents": 200,
  "hashes": {
   "docs/WEEKEND_SWARM_PROTOCOL.md": "6d2c0c057dff34c6ea07ea7f65fd055cda0b634536e901de6fd0ce1c38ba1686",
   "docs/WEEKEND_SWARM_PROTOCOL_AMENDMENT_1.md": "69560e22625b39224f0e262035a94cf307e92f99f055e389011d67e8845cd0a3",
+  "docs/WEEKEND_SWARM_PROTOCOL_AMENDMENT_2.md": "e13a70db506ed90a91a6a608f8688270b20d01de9828f0bd6e62149477ab58c3",
+  "docs/SPRINT_PLAN_FINAL.md": "45bfd1542971ee1d0fea66cd337ade67acd43e7f22a71c612b529845dd25ed1f",
+  "results/sprint_fingerprint_calibration.json": "2f95e73150572ca2f52ef5491d8f738282ad39efa5debe779948e77b9466e208",
   "docs/V2_DETECTOR_FROZEN.md": "7ebbaafff8ddb5e9951628e776992e985b7e74a4a0c21fa4d4ec7c5bdea25056",
-  "experiments/sprint/design.py": "deda14210105ea573dbe4437603d0cf29371591bdc3c4f04d1697b2887c0297d",
-  "experiments/sprint/run.py": "661ce881cf7d5b42f95f0cf7c676e01f119663125a925bdcf683f92bc7439785",
-  "experiments/sprint/score.py": "4d35cdd99b68bb02a3113c7e9a3a73361a188207052b9f71ea9f40fdce6a3bcc",
-  "experiments/sprint/freeze.py": "23fad5b71dc7e242c4bbd4ec7dc086886654ff82c2bf8a349b57b7a7f9c3eae7",
+  "experiments/sprint/design.py": "e975b8eee089b7bdbf35405f43e3bae07a9ab074ba4a426463500f1adb034213",
+  "experiments/sprint/run.py": "0205a6f15c74fe9535cc15768295e5c9e46b21f21b5500a44b971d71f1880246",
+  "experiments/sprint/score.py": "bdde25ae1d95fafe72979f107dc61337a53ba24a7eb485f37c4e44b1997c90bf",
+  "experiments/sprint/freeze.py": "949cf7111bb082159a895ddfbcae7e16363a5a82996ed789f7428640d618728e",
   "results/v2_calibration.json": "fdb2f92cd245a7f444d8a199f1fad6b80ceb79eabad0c220bcd27531632e7c78",
   "results/e27_position_debias.json": "9049a8e065a6e2ac0b1bb89cab75f91bbf7e3522aa1dac5909cd5fb8a4564816",
   "results/incident_calibration_contriever.json": "d5ed6dd81de5228777b4f43d950b5486cdce312d8618ae7a800c5da643983bd1",

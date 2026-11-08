@@ -115,6 +115,64 @@ class Lab:
     def entail(self, texts, h):
         return self.nli.predict([(p, h) for p in texts], apply_softmax=True)[:, 1].astype(float)
 
+    def fp_bits(self, texts):
+        return (np.asarray(self.ret.encode(texts)) > 0).astype(np.uint8)
+
+    def npas(self, question, texts):
+        """Stealth Lens NPAS, following the released code: greedy response; queries = generated tokens
+        (stop at first newline after the first token, skip punctuation tokens, exclude the last token);
+        attention averaged over ALL layers and heads, summed over queries; punctuation input tokens zeroed;
+        passage score = sum over its tokens (alpha = all); normalised to percent."""
+        import string
+        from antivenom.masked import attention_rows
+        from antivenom.qa import wrap_prompt
+        ids, spans = self.reader.prompt(question, texts)
+        resp = self.reader.llm.generate([{"role": "user", "content": wrap_prompt(question, texts)}], temp=0.0, max_tokens=48).strip()
+        rids = self.reader.hf.encode(resp, add_special_tokens=False) if hasattr(self.reader.hf, "encode") else []
+        if hasattr(rids, "ids"):
+            rids = rids.ids
+        punct = set(string.punctuation)
+        rows = []
+        for i, tok in enumerate(rids[:-1]):
+            s_tok = self.reader.hf.decode([tok])
+            if i != 0 and "\n" in s_tok:
+                break
+            if s_tok.strip() in punct or s_tok.strip() == "":
+                continue
+            rows.append(len(ids) + i)
+        if not rows:
+            return [100.0 / len(texts)] * len(texts)
+        full = list(ids) + list(rids)
+        n_layers = len(self.reader.llm.model.model.layers)
+        att = attention_rows(self.reader.llm.model, full, rows, list(range(n_layers)))
+        A = np.mean([att[l].mean(axis=0) for l in att], axis=0)[:, :len(ids)].sum(axis=0)
+        for j, tok in enumerate(ids):
+            if self.reader.hf.decode([tok]).strip() in punct:
+                A[j] = 0.0
+        sc = np.array([A[a:b].sum() for a, b in spans])
+        return (sc / sc.sum() * 100).tolist() if sc.sum() > 0 else [100.0 / len(texts)] * len(texts)
+
+    def stealth_av(self, question, texts):
+        """AV filter exactly as filter_by_attention_score: ascending NPAS sort twice (recomputed),
+        then remove the max-NPAS passage if population variance > delta; at most one removal;
+        return the ORIGINAL list when nothing is removed."""
+        contents = list(texts)
+        s1 = self.npas(question, contents)
+        srt = [c for c, _ in sorted(zip(contents, s1), key=lambda x: x[1])]
+        s2 = self.npas(question, srt)
+        srt = [c for c, _ in sorted(zip(srt, s2), key=lambda x: x[1])]
+        removed = 0
+        out = contents
+        while removed < V2["av_max_removed"]:
+            s3 = self.npas(question, srt)
+            var = float(np.var(s3))
+            if var <= V2["av_delta"]:
+                break
+            srt.pop(int(np.argmax(s3)))
+            out = srt
+            removed += 1
+        return out, {"removed": removed, "variance": var}
+
     def cosine(self, texts, sample):
         v = self.ret.encode(texts); s = self.ret.encode([sample])[0]
         v = v / np.linalg.norm(v, axis=1, keepdims=True); s = s / np.linalg.norm(s)
@@ -128,6 +186,8 @@ def decide(cfg, sig, blocklist, top, z, signals):
         return [], suffix
     if cfg["payload"] == "ids":
         return [i for i, p in enumerate(top) if p["doc_id"] in blocklist], suffix
+    if cfg["payload"] == "fingerprint":
+        return [i for i, h in enumerate(signals["hamming"]) if h <= V2["fp_tau"]], suffix
     if cfg["payload"] == "sample":
         return [i for i, c in enumerate(signals["cosine"]) if c >= V2["cosine_threshold"]], suffix
     key = f'e_{cfg["signature_source"]}' if cfg["hypothesis_form"] == "question_claim" else "e_bare"
@@ -151,7 +211,14 @@ def final_context(pool, flags, refill):
 
 def run(rows, blocks, out_dir: Path, lab: Lab, sham_sigs_from=None):
     ckdir = out_dir / "checkpoints"; raw = out_dir / "raw.jsonl"; status = out_dir / "status.json"
-    done = {json.loads(l)["key"] for l in raw.open()} if raw.exists() else set()
+    done = set()
+    if raw.exists():                                  # done = last row for the key has every arm (programmatic check only)
+        for l in raw.open():
+            rr_ = json.loads(l)
+            if all(f"r{k}:{c}:{a}" in rr_["answers"] for k in (1, 2, 3) for c in ("attacked", "clean") for a in ARMS):
+                done.add(rr_["key"])
+            else:
+                done.discard(rr_["key"])
     by_key = {f'{r["dataset"]}:{r["id"]}': r for r in rows}
     for b in sorted({r["block"] for r in rows}):
         members = [r for r in rows if r["block"] == b]
@@ -187,6 +254,15 @@ def run(rows, blocks, out_dir: Path, lab: Lab, sham_sigs_from=None):
                 cb = lab.reader.answer(t, [])
                 st["closed_book"] = {**cb, "seconds": time.perf_counter() - t0}
                 save(ck, st)
+            if "fingerprint" not in st["finder"]:
+                fpb = lab.fp_bits([t.poison[r["caught_copy"]]])[0]
+                rng_fp = np.random.default_rng(int(sha("fp:" + key), 16) % 2**32)
+                flip = rng_fp.random(fpb.shape) < 1 / (1 + math.exp(V2["fp_alpha"]))
+                fp = np.where(flip, 1 - fpb, fpb).astype(np.uint8)
+                st["finder"]["fingerprint"] = np.packbits(fp).tobytes().hex()
+                st["finder"]["fingerprint_bytes"] = len(json.dumps(st["finder"]["fingerprint"]).encode())
+                save(ck, st)
+            fpbits = np.unpackbits(np.frombuffer(bytes.fromhex(st["finder"]["fingerprint"]), dtype=np.uint8))
             blocklist = set(st["finder"]["blocklist"])
             # Phase 2: receiver contexts and signals, computed once and shared by all arms
             st.setdefault("receivers", {})
@@ -206,6 +282,11 @@ def run(rows, blocks, out_dir: Path, lab: Lab, sham_sigs_from=None):
                                             "attention_seconds": time.perf_counter() - t0,
                                             "labels": [p["label"] for p in top]}
                     save(ck, st)
+            for rid, rec in st["receivers"].items():
+                if "hamming" not in rec["signals"]:
+                    tb = lab.fp_bits([p["text"] for p in rec["pool"][:10]])
+                    rec["signals"]["hamming"] = [int((row_ != fpbits[:len(row_)]).sum()) for row_ in tb]
+                    save(ck, st)
             # Phase 3: answers, every arm, in a seeded random order; identical prompts reuse the deterministic answer
             tasks = [(rid, a) for rid in sorted(st["receivers"]) for a in ARMS]
             random.Random(f'{blocks[b]["order_seed"]}:{key}').shuffle(tasks)
@@ -215,8 +296,17 @@ def run(rows, blocks, out_dir: Path, lab: Lab, sham_sigs_from=None):
                     continue
                 rec = st["receivers"][rid]; cfg = ARMS[a]
                 pool = rec["pool"]; top = pool[:10]
-                flags, suffix = decide(cfg, sig, blocklist, top, rec["z"], rec["signals"])
-                final = final_context(pool, flags, cfg["refill"])
+                if cfg["local_filter"] == "stealth_av":
+                    if "stealth" not in rec:
+                        texts10 = [p["text"] for p in top]
+                        kept_texts, info = lab.stealth_av(t.question, texts10)
+                        rec["stealth"] = {"kept_idx": [texts10.index(x) for x in kept_texts], **info}
+                        save(ck, st)
+                    final = [top[i] for i in rec["stealth"]["kept_idx"]]
+                    flags, suffix = [i for i in range(len(top)) if i not in rec["stealth"]["kept_idx"]], ""
+                else:
+                    flags, suffix = decide(cfg, sig, blocklist, top, rec["z"], rec["signals"])
+                    final = final_context(pool, flags, cfg["refill"])
                 q = t.question + suffix
                 ck_key = sha(q + "\x1f" + "\x1f".join(p["text"] for p in final))
                 t0 = time.perf_counter()
