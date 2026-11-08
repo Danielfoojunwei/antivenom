@@ -24,7 +24,12 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))
-from design import ARMS, K_BLOCKS, TESTS  # noqa: E402
+from design import ARMS, K_BLOCKS, TESTS as _TESTS  # noqa: E402
+
+# Amendment 2 (analysis-only, pre-registered before any outcome was viewed)
+TESTS = dict(_TESTS)
+TESTS["T9"] = ("A3_signature", "A2_sample", "payload", "Sharing a question-scoped claim protects receivers more than sharing the raw caught record (cosine matcher)", "attacked_endorsed", "secondary")
+MARGIN = 0.05
 
 B = 2000
 ENDPOINTS = {"attacked_endorsed": ("attacked", "endorsed"), "attacked_correct": ("attacked", "correct"),
@@ -77,7 +82,7 @@ def analyse(d: Path):
     tests, p_boot = {}, {}
     for tid, (arm, ref, factor, claim, endpoint, family) in TESTS.items():
         out = {"arm": arm, "reference": ref, "factor": factor, "claim": claim, "family": family, "endpoints": {}}
-        eps = [endpoint] + (["attacked_endorsed"] if tid == "T4" else [])
+        eps = [endpoint] + (["attacked_endorsed"] if tid == "T4" else []) + (["clean_correct"] if tid in ("T1", "T9") else [])
         for ep in eps:
             per_block = {b: [incident_value(r, arm, ep) - incident_value(r, ref, ep) for r in rows if r["block"] == b] for b in range(K_BLOCKS)}
             alld = np.concatenate([np.asarray(v) for v in per_block.values() if v])
@@ -95,6 +100,18 @@ def analyse(d: Path):
         tests[tid]["holm_p"] = p_boot[tid] if TESTS[tid][5] == "primary" else sec[tid]
         e = tests[tid]["endpoints"][TESTS[tid][4]]
         tests[tid]["supported"] = bool(tests[tid]["holm_p"] < 0.05 and not (e["ci95"][0] <= 0 <= e["ci95"][1]))
+    for tid, t in tests.items():                       # Amendment 2 wording gates
+        for ep, e in t["endpoints"].items():
+            lo, hi = e["ci95"]
+            e["similar_within_margin"] = bool(-MARGIN <= lo and hi <= MARGIN)
+            if ep == "clean_correct":
+                e["no_harm_lower_bound_ok"] = bool(lo > -MARGIN)
+    nh = {}
+    for a in ARMS:                                      # clean-accuracy difference vs untreated, for no-harm wording
+        per_block = {b: [incident_value(r, a, "clean_correct") - incident_value(r, "A0_untreated", "clean_correct") for r in rows if r["block"] == b] for b in range(K_BLOCKS)}
+        alld = np.concatenate([np.asarray(v) for v in per_block.values() if v]); ci, _ = boot(per_block, rng)
+        nh[a] = {"mean_diff": float(alld.mean()), "ci95": [float(ci[0]), float(ci[1])], "no_harm_ok": bool(ci[0] > -MARGIN)}
+    res["clean_accuracy_vs_untreated"] = nh
     res["tests"] = tests
     # closed-book stratification (reader-only covariate)
     for flag in (True, False):
