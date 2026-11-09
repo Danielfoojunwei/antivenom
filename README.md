@@ -1,3 +1,14 @@
+# AntiVenom: Question-Scoped False Claims as Portable Antibodies Against Swarm Memory Poisoning
+
+Apart Research Swarm Alignment Hackathon, 6–8 November 2026 · Track 4: Multi-Agent Oversight and Control · Daniel Foo (NTU Singapore)
+
+- **Report:** [paper/report/antivenom_report.pdf](paper/report/antivenom_report.pdf) · **Slides:** [paper/deck/ANTIVENOM_5slide.pdf](paper/deck/ANTIVENOM_5slide.pdf)
+- **Sprint work (judged), 6–8 Nov:** frozen protocol [docs/SPRINT_PLAN_FINAL.md](docs/SPRINT_PLAN_FINAL.md), Phase 2 swarm experiment code [experiments/sprint/](experiments/sprint/), results [results/sprint/](results/sprint/) (`analysis.json`, `raw.jsonl`, human and LLM-judge validation), figures, report and deck.
+- **Preexisting work (before 6 Nov):** the AntiVenom detector and its calibration (`src/antivenom/`), the packaged tool (`tool/`), development runs, and Phase 1, the pre-registered single-receiver comparison with CoordGuard and TrustRAG (`results/e29_*`, `e31_*`, `e26_*`, `e35_*`). Everything below this header documents that earlier work.
+- **Reproduce Phase 2:** `bash experiments/sprint/go.sh` (Apple-silicon Mac, local MLX models; see report Appendix E), then `python experiments/sprint/score.py` and `python experiments/sprint/figures.py`.
+
+---
+
 # ANTIVENOM
 
 Research code for a captured-claim and attention-based defence against

@@ -80,7 +80,7 @@ def ph(s, x, y, w, h, text, size=12):
 
 # ---------- 1. Title ----------
 s = p.slides.add_slide(TITLE)
-s.placeholders[100].text = "AntiVenom: One Captured Poison, a Protected Swarm"
+s.placeholders[100].text = "AntiVenom: Question-Scoped False Claims as Portable Antibodies Against Swarm Memory Poisoning"
 s.placeholders[101].text = "A new defence: one confirmed poison becomes a portable antibody that protects the whole swarm"
 tb(s, .6, 3.05, 12.1, .7, "Daniel Foo · Nanyang Technological University (NTU), Singapore\nApart Research Swarm Alignment Hackathon, 6–8 November 2026 · Track 4: Multi-Agent Oversight and Control", 14, False, WHITE)
 for i, (a, b) in enumerate([("60% → 8%", "receivers fooled: untreated → shared claim (Phase 2: 200 incidents, all 5 blocks, clean accuracy within 5 points)"),
