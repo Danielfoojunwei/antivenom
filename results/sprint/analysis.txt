@@ -1,0 +1,16 @@
+PROVISIONAL (rule-scored; human scoring pending)
+incidents 200 per block {0: 40, 1: 40, 2: 40, 3: 40, 4: 40}
+manipulation check: attacked 0.602 vs clean 0.018 endorsement
+T1   A3_signature - A1_ids [attacked_endorsed] diff -0.520 CI [-0.570,-0.467] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T1   A3_signature - A1_ids [clean_correct] diff -0.012 CI [-0.032,+0.008] holm p 0.0000 sign p 0.4421 blocks same sign 4/5 -> SUPPORTED
+T1b  A2_sample - A1_ids [attacked_endorsed] diff -0.578 CI [-0.630,-0.520] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T2   A3_signature - A4_sham [attacked_endorsed] diff -0.473 CI [-0.523,-0.422] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T3   A5_sig_attention - A3_signature [attacked_endorsed] diff -0.068 CI [-0.097,-0.043] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T4   A6_gated - A5_sig_attention [clean_correct] diff +0.133 CI [+0.093,+0.173] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T4   A6_gated - A5_sig_attention [attacked_endorsed] diff +0.293 CI [+0.248,+0.340] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T5   A5_sig_attention - A7_no_refill [attacked_correct] diff +0.037 CI [+0.013,+0.060] holm p 0.0000 sign p 0.0026 blocks same sign 5/5 -> SUPPORTED
+T6   A5_sig_attention - A8_warn [attacked_endorsed] diff -0.092 CI [-0.127,-0.058] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T7   A9_forged - A5_sig_attention [clean_correct] diff -0.043 CI [-0.068,-0.020] holm p 0.0000 sign p 0.0022 blocks same sign 5/5 -> SUPPORTED
+T8   A3_signature - A10_bare_claim [attacked_endorsed] diff -0.112 CI [-0.147,-0.075] holm p 0.0000 sign p 0.0000 blocks same sign 5/5 -> SUPPORTED
+T9   A3_signature - A2_sample [attacked_endorsed] diff +0.058 CI [+0.032,+0.085] holm p 0.0000 sign p 0.0001 blocks same sign 5/5 -> SUPPORTED
+T9   A3_signature - A2_sample [clean_correct] diff +0.018 CI [-0.005,+0.042] holm p 0.0000 sign p 0.0488 blocks same sign 4/5 -> SUPPORTED

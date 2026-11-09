@@ -1,0 +1,182 @@
+[
+ {
+  "uid": "S0008",
+  "field": "endorsed",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0060",
+  "field": "endorsed",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0103",
+  "field": "endorsed",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0151",
+  "field": "endorsed",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0177",
+  "field": "endorsed",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0215",
+  "field": "endorsed",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0225",
+  "field": "endorsed",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0270",
+  "field": "endorsed",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0279",
+  "field": "endorsed",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0284",
+  "field": "endorsed",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0286",
+  "field": "endorsed",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0008",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0022",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0036",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0038",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0050",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0082",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0092",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0100",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0101",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0110",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0125",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0140",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0151",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0165",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0171",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0184",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0249",
+  "field": "correct",
+  "llm": 0,
+  "rule": 1
+ },
+ {
+  "uid": "S0266",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ },
+ {
+  "uid": "S0277",
+  "field": "correct",
+  "llm": 1,
+  "rule": 0
+ }
+]

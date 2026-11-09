@@ -1,0 +1,737 @@
+{
+ "status": "PROVISIONAL (rule-scored; human scoring pending)",
+ "n_incidents": 200,
+ "blocks": {
+  "0": 40,
+  "1": 40,
+  "2": 40,
+  "3": 40,
+  "4": 40
+ },
+ "manipulation_check": {
+  "attacked_endorsed": 0.6016666666666667,
+  "clean_endorsed": 0.018333333333333333,
+  "difference": 0.5833333333333333,
+  "sign_p": 4.3790577010150533e-47
+ },
+ "arm_means": {
+  "A0_untreated": {
+   "attacked_endorsed": 0.6016666666666667,
+   "attacked_correct": 0.32666666666666666,
+   "clean_correct": 0.43,
+   "clean_endorsed": 0.018333333333333333
+  },
+  "A1_ids": {
+   "attacked_endorsed": 0.6016666666666667,
+   "attacked_correct": 0.32666666666666666,
+   "clean_correct": 0.43,
+   "clean_endorsed": 0.018333333333333333
+  },
+  "A2_sample": {
+   "attacked_endorsed": 0.02333333333333333,
+   "attacked_correct": 0.40333333333333327,
+   "clean_correct": 0.4,
+   "clean_endorsed": 0.021666666666666664
+  },
+  "A3_signature": {
+   "attacked_endorsed": 0.08166666666666667,
+   "attacked_correct": 0.415,
+   "clean_correct": 0.4183333333333333,
+   "clean_endorsed": 0.019999999999999997
+  },
+  "A4_sham": {
+   "attacked_endorsed": 0.555,
+   "attacked_correct": 0.32166666666666666,
+   "clean_correct": 0.4033333333333334,
+   "clean_endorsed": 0.02333333333333333
+  },
+  "A5_sig_attention": {
+   "attacked_endorsed": 0.013333333333333332,
+   "attacked_correct": 0.365,
+   "clean_correct": 0.29666666666666663,
+   "clean_endorsed": 0.015
+  },
+  "A6_gated": {
+   "attacked_endorsed": 0.30666666666666664,
+   "attacked_correct": 0.3633333333333333,
+   "clean_correct": 0.43,
+   "clean_endorsed": 0.018333333333333333
+  },
+  "A7_no_refill": {
+   "attacked_endorsed": 0.011666666666666665,
+   "attacked_correct": 0.3283333333333333,
+   "clean_correct": 0.24833333333333332,
+   "clean_endorsed": 0.008333333333333333
+  },
+  "A8_warn": {
+   "attacked_endorsed": 0.105,
+   "attacked_correct": 0.34666666666666673,
+   "clean_correct": 0.4283333333333333,
+   "clean_endorsed": 0.025
+  },
+  "A9_forged": {
+   "attacked_endorsed": 0.025,
+   "attacked_correct": 0.28,
+   "clean_correct": 0.25333333333333335,
+   "clean_endorsed": 0.028333333333333332
+  },
+  "A10_bare_claim": {
+   "attacked_endorsed": 0.19333333333333333,
+   "attacked_correct": 0.3833333333333333,
+   "clean_correct": 0.39833333333333326,
+   "clean_endorsed": 0.013333333333333332
+  },
+  "B1_self_check": {
+   "attacked_endorsed": 0.59,
+   "attacked_correct": 0.31666666666666665,
+   "clean_correct": 0.4316666666666667,
+   "clean_endorsed": 0.02333333333333333
+  },
+  "B2_stealth_av": {
+   "attacked_endorsed": 0.09333333333333332,
+   "attacked_correct": 0.395,
+   "clean_correct": 0.3,
+   "clean_endorsed": 0.015
+  },
+  "B3_fingerprint": {
+   "attacked_endorsed": 0.02333333333333333,
+   "attacked_correct": 0.405,
+   "clean_correct": 0.4066666666666666,
+   "clean_endorsed": 0.021666666666666664
+  }
+ },
+ "clean_accuracy_vs_untreated": {
+  "A0_untreated": {
+   "mean_diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "no_harm_ok": true
+  },
+  "A1_ids": {
+   "mean_diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "no_harm_ok": true
+  },
+  "A2_sample": {
+   "mean_diff": -0.03,
+   "ci95": [
+    -0.04833333333333333,
+    -0.011666666666666669
+   ],
+   "no_harm_ok": true
+  },
+  "A3_signature": {
+   "mean_diff": -0.011666666666666669,
+   "ci95": [
+    -0.03333333333333333,
+    0.008333333333333333
+   ],
+   "no_harm_ok": true
+  },
+  "A4_sham": {
+   "mean_diff": -0.02666666666666666,
+   "ci95": [
+    -0.04833333333333333,
+    -0.006666666666666666
+   ],
+   "no_harm_ok": true
+  },
+  "A5_sig_attention": {
+   "mean_diff": -0.13333333333333333,
+   "ci95": [
+    -0.175,
+    -0.09166666666666666
+   ],
+   "no_harm_ok": false
+  },
+  "A6_gated": {
+   "mean_diff": -2.7755575615628914e-19,
+   "ci95": [
+    -0.008333333333333333,
+    0.01
+   ],
+   "no_harm_ok": true
+  },
+  "A7_no_refill": {
+   "mean_diff": -0.18166666666666667,
+   "ci95": [
+    -0.22333333333333336,
+    -0.1383333333333333
+   ],
+   "no_harm_ok": false
+  },
+  "A8_warn": {
+   "mean_diff": -0.0016666666666666646,
+   "ci95": [
+    -0.03666666666666667,
+    0.035
+   ],
+   "no_harm_ok": true
+  },
+  "A9_forged": {
+   "mean_diff": -0.17666666666666664,
+   "ci95": [
+    -0.21833333333333332,
+    -0.13166666666666668
+   ],
+   "no_harm_ok": false
+  },
+  "A10_bare_claim": {
+   "mean_diff": -0.03166666666666667,
+   "ci95": [
+    -0.055,
+    -0.008333333333333337
+   ],
+   "no_harm_ok": false
+  },
+  "B1_self_check": {
+   "mean_diff": 0.0016666666666666672,
+   "ci95": [
+    -0.01666666666666667,
+    0.021666666666666664
+   ],
+   "no_harm_ok": true
+  },
+  "B2_stealth_av": {
+   "mean_diff": -0.13,
+   "ci95": [
+    -0.165,
+    -0.095
+   ],
+   "no_harm_ok": false
+  },
+  "B3_fingerprint": {
+   "mean_diff": -0.023333333333333334,
+   "ci95": [
+    -0.04166666666666667,
+    -0.006666666666666667
+   ],
+   "no_harm_ok": true
+  }
+ },
+ "tests": {
+  "T1": {
+   "arm": "A3_signature",
+   "reference": "A1_ids",
+   "factor": "payload",
+   "claim": "Sharing the claim signature protects receivers more than sharing record IDs",
+   "family": "primary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": -0.52,
+     "ci95": [
+      -0.57,
+      -0.4666666666666666
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 2.802596928649634e-45,
+     "per_block": {
+      "0": -0.4583333333333333,
+      "1": -0.475,
+      "2": -0.55,
+      "3": -0.5166666666666666,
+      "4": -0.6
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    },
+    "clean_correct": {
+     "mean_diff": -0.011666666666666669,
+     "ci95": [
+      -0.03170833333333333,
+      0.008333333333333335
+     ],
+     "bootstrap_p": 0.278,
+     "sign_test_p": 0.44206833839416504,
+     "per_block": {
+      "0": -0.016666666666666663,
+      "1": 0.008333333333333331,
+      "2": -0.008333333333333331,
+      "3": -0.03333333333333334,
+      "4": -0.008333333333333333
+     },
+     "blocks_same_sign": 4,
+     "similar_within_margin": true,
+     "no_harm_lower_bound_ok": true
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T1b": {
+   "arm": "A2_sample",
+   "reference": "A1_ids",
+   "factor": "payload",
+   "claim": "Sharing the raw record protects receivers more than sharing record IDs",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": -0.5783333333333333,
+     "ci95": [
+      -0.6300000000000001,
+      -0.52
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 1.0453686543863135e-42,
+     "per_block": {
+      "0": -0.5416666666666667,
+      "1": -0.525,
+      "2": -0.6,
+      "3": -0.5666666666666667,
+      "4": -0.6583333333333334
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T2": {
+   "arm": "A3_signature",
+   "reference": "A4_sham",
+   "factor": "signature_source",
+   "claim": "Protection comes from the signature's content, not from sharing anything",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": -0.4733333333333334,
+     "ci95": [
+      -0.523375,
+      -0.4216666666666667
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 7.174648137343064e-43,
+     "per_block": {
+      "0": -0.3833333333333333,
+      "1": -0.4166666666666667,
+      "2": -0.5083333333333334,
+      "3": -0.4833333333333333,
+      "4": -0.575
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T3": {
+   "arm": "A5_sig_attention",
+   "reference": "A3_signature",
+   "factor": "attention_input",
+   "claim": "The attention signal adds protection beyond the signature",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": -0.06833333333333333,
+     "ci95": [
+      -0.09666666666666666,
+      -0.04333333333333333
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 2.4633482098579407e-07,
+     "per_block": {
+      "0": -0.10833333333333332,
+      "1": -0.06666666666666667,
+      "2": -0.06666666666666667,
+      "3": -0.05,
+      "4": -0.049999999999999996
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T4": {
+   "arm": "A6_gated",
+   "reference": "A5_sig_attention",
+   "factor": "gate",
+   "claim": "The gate restores clean accuracy, at a stated protection cost",
+   "family": "secondary",
+   "endpoints": {
+    "clean_correct": {
+     "mean_diff": 0.13333333333333333,
+     "ci95": [
+      0.09329166666666666,
+      0.1733333333333333
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 9.941513465364027e-11,
+     "per_block": {
+      "0": 0.058333333333333334,
+      "1": 0.14166666666666666,
+      "2": 0.16666666666666666,
+      "3": 0.16666666666666666,
+      "4": 0.13333333333333333
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false,
+     "no_harm_lower_bound_ok": true
+    },
+    "attacked_endorsed": {
+     "mean_diff": 0.2933333333333333,
+     "ci95": [
+      0.24833333333333332,
+      0.34004166666666646
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 1.9721522630525295e-31,
+     "per_block": {
+      "0": 0.3666666666666666,
+      "1": 0.2833333333333333,
+      "2": 0.2833333333333333,
+      "3": 0.27499999999999997,
+      "4": 0.2583333333333333
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T5": {
+   "arm": "A5_sig_attention",
+   "reference": "A7_no_refill",
+   "factor": "refill",
+   "claim": "Refilling with next-ranked evidence restores accuracy beyond deleting alone",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_correct": {
+     "mean_diff": 0.03666666666666667,
+     "ci95": [
+      0.013333333333333334,
+      0.06
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 0.0025632079923525453,
+     "per_block": {
+      "0": 0.05,
+      "1": 0.075,
+      "2": 0.008333333333333331,
+      "3": 0.00833333333333333,
+      "4": 0.04166666666666667
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T6": {
+   "arm": "A5_sig_attention",
+   "reference": "A8_warn",
+   "factor": "neutralise",
+   "claim": "Removing poison protects more than warning the reader about the claim",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": -0.09166666666666666,
+     "ci95": [
+      -0.12666666666666665,
+      -0.05833333333333332
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 2.4995097192004323e-07,
+     "per_block": {
+      "0": -0.10833333333333335,
+      "1": -0.1,
+      "2": -0.14166666666666666,
+      "3": -0.05833333333333333,
+      "4": -0.05
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T7": {
+   "arm": "A9_forged",
+   "reference": "A5_sig_attention",
+   "factor": "signature_source",
+   "claim": "A forged signature (true answer as claim) deletes good evidence and costs accuracy",
+   "family": "secondary",
+   "endpoints": {
+    "clean_correct": {
+     "mean_diff": -0.04333333333333334,
+     "ci95": [
+      -0.06833333333333334,
+      -0.02
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 0.0022214337732293643,
+     "per_block": {
+      "0": -0.075,
+      "1": -0.008333333333333335,
+      "2": -0.058333333333333334,
+      "3": -0.025,
+      "4": -0.05
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false,
+     "no_harm_lower_bound_ok": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T8": {
+   "arm": "A3_signature",
+   "reference": "A10_bare_claim",
+   "factor": "hypothesis_form",
+   "claim": "The signature needs the question, not just the claim",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": -0.11166666666666668,
+     "ci95": [
+      -0.14666666666666667,
+      -0.07495833333333356
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 4.042104433067337e-09,
+     "per_block": {
+      "0": -0.15,
+      "1": -0.05,
+      "2": -0.11666666666666665,
+      "3": -0.10833333333333332,
+      "4": -0.13333333333333333
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  },
+  "T9": {
+   "arm": "A3_signature",
+   "reference": "A2_sample",
+   "factor": "payload",
+   "claim": "Sharing a question-scoped claim protects receivers more than sharing the raw caught record (cosine matcher)",
+   "family": "secondary",
+   "endpoints": {
+    "attacked_endorsed": {
+     "mean_diff": 0.05833333333333334,
+     "ci95": [
+      0.03166666666666666,
+      0.085
+     ],
+     "bootstrap_p": 0.0,
+     "sign_test_p": 6.960169412195683e-05,
+     "per_block": {
+      "0": 0.08333333333333333,
+      "1": 0.049999999999999996,
+      "2": 0.05,
+      "3": 0.049999999999999996,
+      "4": 0.058333333333333334
+     },
+     "blocks_same_sign": 5,
+     "similar_within_margin": false
+    },
+    "clean_correct": {
+     "mean_diff": 0.018333333333333333,
+     "ci95": [
+      -0.005,
+      0.04166666666666666
+     ],
+     "bootstrap_p": 0.13,
+     "sign_test_p": 0.048766765904474596,
+     "per_block": {
+      "0": -0.008333333333333333,
+      "1": 0.041666666666666664,
+      "2": 0.03333333333333333,
+      "3": 0.008333333333333337,
+      "4": 0.01666666666666667
+     },
+     "blocks_same_sign": 4,
+     "similar_within_margin": true,
+     "no_harm_lower_bound_ok": true
+    }
+   },
+   "holm_p": 0.0,
+   "supported": true
+  }
+ },
+ "closed_book_strata": {
+  "knows": {
+   "n": 75,
+   "T1": -0.39111111111111113,
+   "T3": -0.07555555555555554
+  },
+  "does_not_know": {
+   "n": 125,
+   "T1": -0.5973333333333334,
+   "T3": -0.06399999999999999
+  }
+ },
+ "benchmark_self_check": {
+  "attacked_endorsed": 0.59,
+  "attacked_correct": 0.31666666666666665,
+  "clean_correct": 0.4316666666666667,
+  "clean_endorsed": 0.02333333333333333
+ },
+ "benchmarks_descriptive": {
+  "A3_signature - B1_self_check [attacked_endorsed]": {
+   "mean_diff": -0.5083333333333333,
+   "ci95": [
+    -0.565,
+    -0.4516250000000001
+   ]
+  },
+  "A3_signature - B1_self_check [clean_correct]": {
+   "mean_diff": -0.01333333333333333,
+   "ci95": [
+    -0.03666666666666667,
+    0.011666666666666665
+   ]
+  },
+  "A5_sig_attention - B1_self_check [attacked_endorsed]": {
+   "mean_diff": -0.5766666666666667,
+   "ci95": [
+    -0.6316666666666666,
+    -0.5216666666666666
+   ]
+  },
+  "A5_sig_attention - B1_self_check [clean_correct]": {
+   "mean_diff": -0.135,
+   "ci95": [
+    -0.17666666666666664,
+    -0.09333333333333332
+   ]
+  },
+  "A6_gated - B1_self_check [attacked_endorsed]": {
+   "mean_diff": -0.2833333333333333,
+   "ci95": [
+    -0.335,
+    -0.23
+   ]
+  },
+  "A6_gated - B1_self_check [clean_correct]": {
+   "mean_diff": -0.0016666666666666674,
+   "ci95": [
+    -0.02333333333333333,
+    0.018333333333333333
+   ]
+  },
+  "A3_signature - B2_stealth_av [attacked_endorsed]": {
+   "mean_diff": -0.011666666666666665,
+   "ci95": [
+    -0.04833333333333333,
+    0.026666666666666665
+   ]
+  },
+  "A3_signature - B2_stealth_av [clean_correct]": {
+   "mean_diff": 0.11833333333333332,
+   "ci95": [
+    0.085,
+    0.15333333333333332
+   ]
+  },
+  "A5_sig_attention - B2_stealth_av [attacked_endorsed]": {
+   "mean_diff": -0.07999999999999999,
+   "ci95": [
+    -0.10670833333333334,
+    -0.05333333333333332
+   ]
+  },
+  "A5_sig_attention - B2_stealth_av [clean_correct]": {
+   "mean_diff": -0.003333333333333335,
+   "ci95": [
+    -0.03666666666666666,
+    0.028333333333333335
+   ]
+  },
+  "A6_gated - B2_stealth_av [attacked_endorsed]": {
+   "mean_diff": 0.21333333333333335,
+   "ci95": [
+    0.16166666666666665,
+    0.26333333333333336
+   ]
+  },
+  "A6_gated - B2_stealth_av [clean_correct]": {
+   "mean_diff": 0.13,
+   "ci95": [
+    0.09833333333333333,
+    0.16333333333333336
+   ]
+  },
+  "A3_signature - B3_fingerprint [attacked_endorsed]": {
+   "mean_diff": 0.05833333333333333,
+   "ci95": [
+    0.03166666666666666,
+    0.08666666666666666
+   ]
+  },
+  "A3_signature - B3_fingerprint [clean_correct]": {
+   "mean_diff": 0.011666666666666665,
+   "ci95": [
+    -0.01333333333333333,
+    0.035
+   ]
+  },
+  "A5_sig_attention - B3_fingerprint [attacked_endorsed]": {
+   "mean_diff": -0.009999999999999998,
+   "ci95": [
+    -0.023333333333333334,
+    0.005
+   ]
+  },
+  "A5_sig_attention - B3_fingerprint [clean_correct]": {
+   "mean_diff": -0.10999999999999999,
+   "ci95": [
+    -0.15166666666666664,
+    -0.06833333333333334
+   ]
+  },
+  "A6_gated - B3_fingerprint [attacked_endorsed]": {
+   "mean_diff": 0.2833333333333333,
+   "ci95": [
+    0.235,
+    0.33004166666666646
+   ]
+  },
+  "A6_gated - B3_fingerprint [clean_correct]": {
+   "mean_diff": 0.02333333333333333,
+   "ci95": [
+    0.005,
+    0.04166666666666666
+   ]
+  }
+ },
+ "seconds_per_answer": {
+  "A0_untreated": 0.9884455688172117,
+  "A1_ids": 1.1629481816488745,
+  "A2_sample": 0.8587374220162747,
+  "A3_signature": 1.1896933080596015,
+  "A4_sham": 2.3200891107437203,
+  "A5_sig_attention": 2.677047645767355,
+  "A6_gated": 0.8470356093619679,
+  "A7_no_refill": 3.4872816936751283,
+  "A8_warn": 4.311403131419501,
+  "A9_forged": 3.2705411177681043,
+  "A10_bare_claim": 1.6957367419703708,
+  "B1_self_check": 4.470702447033739,
+  "B2_stealth_av": 3.3898263682624385,
+  "B3_fingerprint": 0.8823559480009134
+ },
+ "message_bytes": {
+  "ids": 48.655,
+  "sample": 261.965,
+  "signature": 257.485,
+  "fingerprint": 194.0
+ },
+ "signature_valid_rate": 1.0,
+ "drift_checks_identical": "5/5"
+}

@@ -1,0 +1,16 @@
+{
+ "labeller": "LLM judge (Claude), blinded to arm and rule scores; convention: 'correct' counts a stated gold answer even after a hedge",
+ "n": 300,
+ "endorsed": {
+  "agreement": 0.963,
+  "kappa": 0.836,
+  "llm1_rule0": 6,
+  "llm0_rule1": 5
+ },
+ "correct": {
+  "agreement": 0.937,
+  "kappa": 0.867,
+  "llm1_rule0": 12,
+  "llm0_rule1": 7
+ }
+}
