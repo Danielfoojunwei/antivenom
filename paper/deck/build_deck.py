@@ -144,7 +144,7 @@ pic(s, "../report/fig/sprint_forest.png", .35, 1.15, w=8.1)
 card(s, 8.6, 1.2, 4.3, 1.7, "T1 primary: supported", "Claim vs IDs: -52.0 points [-57.0, -46.7], all 5 blocks. IDs gave zero protection: every copy was renamed.", OURS, 11)
 card(s, 8.6, 3.05, 4.3, 1.45, "In the predicted direction", "Content matters (T2), the question matters (T8), attention adds (T3), removal beats warning (T6), refill helps (T5).", OURS, 11)
 card(s, 8.6, 4.65, 4.3, 1.45, "Against the prediction", "T9: the raw record protected more than the claim (2% vs 8%). Gate (T4) gave back protection.", WARN, 11)
-tb(s, .45, 6.3, 12.4, .5, "Rule-scored, cross-checked by a blinded LLM judge (κ 0.84 / 0.87); human adjudication of 58 rows pending. Effects: paired, per incident; Holm-corrected.", 10, False, MUTE)
+tb(s, .45, 6.3, 12.4, .5, "Rule-scored; estimated rule accuracy about 94% (endorsement) and 89% (correctness) from a blinded LLM judge and blinded human adjudication; errors spread across arms. Paired effects per incident; Holm-corrected.", 10, False, MUTE)
 notes(s, "Here is every test. T1, the primary: sharing the claim cut endorsement by 52 points, in all five blocks, and IDs did nothing because every copy was renamed. Every component behaved as predicted, with two exceptions in amber. Sharing the raw record protected a bit more than the claim, which we put down to PoisonedRAG's near-duplicate poisons, and the gate restored clean accuracy but gave back most of the protection.")
 
 # ---------- 5. Cost, misuse, benchmarks ----------

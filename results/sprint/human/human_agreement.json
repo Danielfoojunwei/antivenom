@@ -1,0 +1,48 @@
+{
+ "n": 58,
+ "n_llm_rule_disagreement_rows": 28,
+ "endorsed": {
+  "human_vs_rule": [
+   0.367,
+   0.741
+  ],
+  "human_vs_llm": [
+   0.751,
+   0.897
+  ],
+  "rule_vs_llm": [
+   0.516,
+   0.81
+  ],
+  "rule_false_positive_vs_human": 6,
+  "rule_false_negative_vs_human": 9,
+  "on_disagreements": {
+   "n": 11,
+   "human_sided_with_rule": 1,
+   "human_sided_with_llm": 10
+  },
+  "on_30_random_agreements_human_agrees": "29/30"
+ },
+ "correct": {
+  "human_vs_rule": [
+   0.327,
+   0.672
+  ],
+  "human_vs_llm": [
+   0.72,
+   0.862
+  ],
+  "rule_vs_llm": [
+   0.289,
+   0.672
+  ],
+  "rule_false_positive_vs_human": 5,
+  "rule_false_negative_vs_human": 14,
+  "on_disagreements": {
+   "n": 19,
+   "human_sided_with_rule": 4,
+   "human_sided_with_llm": 15
+  },
+  "on_30_random_agreements_human_agrees": "28/30"
+ }
+}
