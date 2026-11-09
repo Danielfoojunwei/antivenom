@@ -92,68 +92,96 @@ for i, (a, b) in enumerate([("60% → 8%", "receivers fooled: untreated → shar
 tb(s, .6, 6.75, 12.1, .4, "One pre-registered evaluation in two phases: Phase 1 completed before the sprint weekend, Phase 2 during it (report, Appendix A.2).", 11, False, RGBColor(0xd1, 0xd5, 0xdb))
 notes(s, "When one agent confirms a poisoned record, what should it tell the others? AntiVenom passes a question-scoped false claim. We evaluated it in two pre-registered phases. One receiver alone matches CoordGuard's blocking and is faster. In the swarm, the claim cut fooled receivers from 60% to 8% and matched the Stealth Lens filter's protection with 11.8 points more clean accuracy. We also report where it loses: the raw record blocks slightly more on these near-duplicate poisons.")
 
-# ---------- 2. The idea ----------
-s = p.slides.add_slide(CONTENT); title(s, "The idea: share what the poison claims, not where it is")
-tb(s, .45, 1.2, 6.2, .4, "Same planted claim, three different record IDs", 14, True, INK)
-for i, rid in enumerate(["#1702", "#4419", "#8830"]):
-    y = 1.75 + i * .78
-    box(s, .45, y, 1.6, .6, "Receiver " + "BCD"[i], RGBColor(0x37, 0x41, 0x51), size=12)
-    box(s, 2.2, y, 2.3, .6, "record " + rid + "\n“…main industry is fishing”", WARN, size=11)
-    box(s, 4.65, y, .95, .6, "caught" if i == 0 else "missed", RGBColor(0x16, 0xa3, 0x4a) if i == 0 else RGBColor(0x9c, 0xa3, 0xaf), size=11)
-    box(s, 5.7, y, .95, .6, "checked", OURS, size=11)
-tb(s, 4.55, 1.38, 1.2, .4, "Share ID", 11, True, MUTE, PP_ALIGN.CENTER)
-tb(s, 5.6, 1.38, 1.2, .4, "Share claim", 11, True, OURS, PP_ALIGN.CENTER)
-rows = [("Defence", "Protects other agents?", "Measured"),
-        ("Shared record IDs", "only if names match", "60% fooled"),
-        ("Raw record / fingerprint", "yes; sends the record", "2% fooled, −2 to −3 clean"),
-        ("Stealth Lens", "no; local filter", "9% fooled, −13 clean"),
-        ("CoordGuard (Phase 1)", "no; local filter", "5% fooled, 25 s/question"),
-        ("TrustRAG (Phase 1)", "no; local filter", "12% fooled, 36 s/question"),
-        ("AntiVenom claim", "yes; 257-byte claim", "8% fooled, −1.2 clean")]
-t = s.shapes.add_table(len(rows), 3, Emu(int(6.95 * IN)), Emu(int(1.2 * IN)), Emu(int(5.95 * IN)), Emu(int(3.2 * IN))).table
-for c, w in enumerate((2.45, 2.0, 1.5)): t.columns[c].width = Emu(int(w * IN))
-for r, row in enumerate(rows):
-    for c, v in enumerate(row):
-        cell = t.cell(r, c); cell.text = v; para = cell.text_frame.paragraphs[0]; para.runs[0].font.size = Pt(10.5)
-        para.runs[0].font.bold = r in (0, len(rows) - 1)
-        cell.fill.solid(); cell.fill.fore_color.rgb = OURS if r == len(rows) - 1 else (RGBColor(0x37, 0x41, 0x51) if r == 0 else CARD)
-        para.runs[0].font.color.rgb = WHITE if r in (0, len(rows) - 1) else INK
-card(s, .45, 4.75, 12.45, 1.4, "Inspired by antivenom", "Antivenom is raised from a small captured sample, recognises the toxin rather than the snake, circulates everywhere, and is given only on signs of envenoming. AntiVenom mirrors each step: one confirmed record, a claim not an ID, broadcast, and a gate on evidence of the claim. A design hypothesis, tested below, not a guarantee.", OURS, 11)
-notes(s, "If the finder shares the record's ID, receivers whose copies are named differently are not protected. Sharing what the record claims lets each receiver look for that claim. The idea sits next to close prior work: BinaryShield shares fingerprints, A-MemGuard reuses lessons, Stealth Lens filters by attention. We ran the closest of these: Stealth Lens, a BinaryShield-style fingerprint and an A-MemGuard-style warning in the swarm, and CoordGuard and TrustRAG with one receiver.")
+# ---------- 2. Problem and reframe ----------
+def table(s, rows, x, y, w, h, widths, size=10.5, hl_last=False):
+    t = s.shapes.add_table(len(rows), len(rows[0]), Emu(int(x * IN)), Emu(int(y * IN)), Emu(int(w * IN)), Emu(int(h * IN))).table
+    for c, ww in enumerate(widths): t.columns[c].width = Emu(int(ww * IN))
+    for r, row in enumerate(rows):
+        for c, v in enumerate(row):
+            cell = t.cell(r, c); cell.text = v; para = cell.text_frame.paragraphs[0]; para.runs[0].font.size = Pt(size)
+            last = hl_last and r == len(rows) - 1
+            para.runs[0].font.bold = r == 0 or last
+            cell.fill.solid(); cell.fill.fore_color.rgb = OURS if last else (RGBColor(0x37, 0x41, 0x51) if r == 0 else CARD)
+            para.runs[0].font.color.rgb = WHITE if (r == 0 or last) else INK
+    return t
 
-# ---------- 3. Experiment ----------
-s = p.slides.add_slide(CONTENT); title(s, "The evaluation: two phases, one factor per test")
-stages = [("S0 Setup", "attack works?", "C0/C1"), ("S1 What to share", "claim vs IDs · record vs IDs · claim vs record", "T1 · T1b · T9"),
-          ("S2 Content", "real vs sham · with vs without question", "T2 · T8"), ("S3 Detection", "attention adds?", "T3"),
-          ("S4 Neutralise", "delete vs warn · refill", "T6 · T5"), ("S5 Normal use", "gate on vs off", "T4"), ("S6 Misuse", "forged claim", "T7")]
-for i, (h, q, tst) in enumerate(stages):
-    x = .45 + i * 1.79
-    box(s, x, 1.25, 1.65, 1.55, h + "\n" + q, OURS if i in (1, 2, 3) else RGBColor(0x37, 0x41, 0x51), size=11)
-    tb(s, x, 2.85, 1.65, .4, tst, 12, True, OURS, PP_ALIGN.CENTER)
-    if i < 6: arrow(s, x + 1.65, 2.02, x + 1.79, 2.02)
-for i, (h, b) in enumerate([("Controls", "Same incidents, poisons, receivers and contexts for every arm. Thresholds frozen on calibration (5% clean removal each). Arm order shuffled; drift checked."),
-                            ("Replication", "Phase 2: 200 incidents (HotpotQA + MS MARCO), 3 receivers each, in 5 blocks of 40 with their own seeds. Results per block and pooled; Holm-corrected."),
-                            ("Pre-registered", "Protocol, incidents and code hashed and committed before any answer existed. A code check enforces one factor per test. Claims ledger with nulls fixed.")]):
-    card(s, .45 + i * 4.18, 3.5, 4.0, 1.9, h, b, OURS, 11)
-box(s, .45, 5.65, 12.45, .5, "Phase 1: one receiver vs CoordGuard and TrustRAG (100 fresh questions)  ·  Phase 2 benchmarks: self-check · Stealth Lens · BinaryShield-style fingerprint", RGBColor(0x37, 0x41, 0x51), size=13)
-notes(s, "Last sprint's feedback was that we changed too many things at once. So this time every test changes exactly one setting, enforced in code, and every claim maps to one test. Seven stages of an incident, eleven tests, five replicate blocks, all frozen before any result existed. Three external benchmarks show where AntiVenom sits, but never support a causal claim.")
+s = p.slides.add_slide(CONTENT); title(s, "Swarm poisoning needs a different question")
+tb(s, .45, 1.15, 6.2, .4, "One planted claim, stored under three different IDs", 14, True, INK)
+for i, rid in enumerate(["#1702", "#4419", "#8830"]):
+    y = 1.65 + i * .7
+    box(s, .45, y, 1.5, .55, "Agent " + "ABC"[i], RGBColor(0x37, 0x41, 0x51), size=12)
+    box(s, 2.05, y, 2.4, .55, "record " + rid + "\n“…main industry is fishing”", WARN, size=11)
+    box(s, 4.55, y, 1.0, .55, "caught" if i == 0 else "missed", RGBColor(0x16, 0xa3, 0x4a) if i == 0 else RGBColor(0x9c, 0xa3, 0xaf), size=11)
+    box(s, 5.65, y, 1.0, .55, "caught", OURS, size=11)
+tb(s, 4.5, 1.35, 1.1, .3, "share ID", 10, True, MUTE, PP_ALIGN.CENTER); tb(s, 5.6, 1.35, 1.1, .3, "share claim", 10, True, OURS, PP_ALIGN.CENTER)
+table(s, [("Prior focus", "AntiVenom's reframe", "What it revealed"),
+          ("How a passage looks (clusters, attention)", "What the poison claims", "Stealth Lens protection, +11.8 pts clean"),
+          ("Each agent defends itself; share IDs or trust", "A detection is a transferable antibody", "8% fooled vs 60% with shared IDs"),
+          ("Filter every query", "The claim can be the trigger", "Gate restores clean accuracy, gives back protection")],
+      6.95, 1.2, 5.95, 2.2, (2.0, 1.9, 2.05), 10.5)
+tb(s, .45, 3.95, 12.4, .35, "Inspired by antivenom: each step of the treatment becomes a step of the defence", 13, True, INK)
+steps = [("Capture a sample", "Catch one record"), ("Recognise the toxin, not the snake", "Distil the claim, not the ID"),
+         ("Circulate everywhere", "Broadcast 257 bytes"), ("Treat on symptoms", "Act when the claim appears")]
+for k, (a, b) in enumerate(steps):
+    x = .45 + k * 3.15
+    box(s, x, 4.4, 2.9, .65, "🐍 " + a, RGBColor(0xb4, 0x53, 0x09), size=12)
+    box(s, x, 5.3, 2.9, .65, "🤖 " + b, OURS, size=12)
+    arrow(s, x + 1.45, 5.05, x + 1.45, 5.3)
+notes(s, "In a swarm a planted record reaches every agent, often renamed. Sharing an ID protects only agents whose copy has the same name. Prior defences ask how a passage looks or whether its source is trusted, and each agent decides alone. AntiVenom asks what the poison is trying to make agents believe: every working copy must carry that claim. The design mirrors antivenom: capture a sample, recognise the toxin rather than the snake, circulate, and treat only on symptoms.")
+
+# ---------- 3. How it works, how we tested it ----------
+s = p.slides.add_slide(CONTENT); title(s, "How AntiVenom works, and how we tested it")
+pipe = [("Finder catches\none record", RGBColor(0x37, 0x41, 0x51)), ("Distil (Q, C)\n257-byte claim", OURS), ("Claim check\nNLI entailment ≥ 0.00217", OURS),
+        ("+ attention\nfused score ≥ 0.0989", OURS), ("Delete + refill\nnext-ranked evidence", OURS), ("Gate (optional)\nact if max e ≥ 0.975", RGBColor(0xb4, 0x53, 0x09))]
+for k, (t_, c_) in enumerate(pipe):
+    x = .45 + k * 2.1
+    box(s, x, 1.25, 1.9, 1.05, t_, c_, size=12)
+    if k < 5: arrow(s, x + 1.9, 1.78, x + 2.1, 1.78)
+tb(s, .45, 2.4, 12.4, .4, "Every receiver uses only the shared claim and its own reader; thresholds fixed on calibration at 5% clean removal; the reader is never fine-tuned.", 11, False, MUTE)
+tl = [("📚 Calibration", "NQ 1–20 · all thresholds frozen"), ("🧪 Phase 1 · one receiver", "100 fresh questions vs CoordGuard and TrustRAG"),
+      ("🐝 Phase 2 · swarm", "200 incidents × 3 receivers, 14 set-ups, 5 blocks; each test changes one factor")]
+for k, (a, b) in enumerate(tl):
+    x = .45 + k * 4.18
+    card(s, x, 3.0, 3.95, 1.25, a, b, OURS, 12)
+    if k < 2: arrow(s, x + 3.95, 3.62, x + 4.18, 3.62)
+for k, (a, b) in enumerate([("Controls", "Same incidents, poisons and contexts for every set-up; sham and forged claims; random deletion; arm order shuffled; 5/5 drift checks identical."),
+                            ("Pre-registered", "Protocol, incidents and code hashed before outcomes; a code check refuses any test that changes two settings."),
+                            ("Scoring checked", "Rules vs blinded LLM judge (300 answers) and blinded human (58): about 94% and 89% rule accuracy.")]):
+    card(s, .45 + k * 4.18, 4.5, 3.95, 1.65, a, b, MUTE, 11)
+notes(s, "The finder turns one caught record into a question and a false claim. Each receiver checks its passages for that claim with an NLI model, optionally adds its reader's attention, deletes what matches and refills from the next-ranked evidence. We tested it in two pre-registered phases with one shared calibration: one receiver against published defences, then the swarm, one factor per test in five replicate blocks.")
 
 # ---------- 4. Results ----------
-s = p.slides.add_slide(CONTENT); title(s, "Results: what each part contributes")
-pic(s, "../report/fig/sprint_forest.png", .35, 1.15, w=8.1)
-card(s, 8.6, 1.2, 4.3, 1.7, "Primary: the claim beats IDs", "−52.0 points [−57.0, −46.7], all 5 blocks. IDs gave zero protection because every copy was renamed.", OURS, 11)
-card(s, 8.6, 3.05, 4.3, 1.45, "Every part matters", "The claim's content (vs a sham), its question, attention, deleting rather than warning, and refilling each added protection.", OURS, 11)
-card(s, 8.6, 4.65, 4.3, 1.45, "Against the prediction", "On near-duplicate poisons the raw record protected more (2% vs 8%). The gate gave back protection.", WARN, 11)
-tb(s, .45, 6.3, 12.4, .5, "Rule-scored; estimated rule accuracy about 94% (endorsement) and 89% (correctness) from a blinded LLM judge and blinded human adjudication; errors spread across arms. Paired effects per incident; Holm-corrected.", 10, False, MUTE)
-notes(s, "Here is every test. T1, the primary: sharing the claim cut endorsement by 52 points, in all five blocks, and IDs did nothing because every copy was renamed. Every component behaved as predicted, with two exceptions in amber. Sharing the raw record protected a bit more than the claim, which we put down to PoisonedRAG's near-duplicate poisons, and the gate restored clean accuracy but gave back most of the protection.")
+s = p.slides.add_slide(CONTENT); title(s, "Results: published-defence protection, and every part matters")
+tb(s, .45, 1.1, 5.6, .35, "Phase 1 · one receiver vs published defences", 13, True, INK)
+pic(s, "../report/fig/parity.png", .45, 1.5, w=5.6)
+card(s, .45, 3.85, 5.6, 2.3, "Matches CoordGuard, faster", "7% vs 5% fooled (no defence 76%); random deletion 64%, so the gain is detection. 18 s vs 25 s per question. With one poison: 3% vs 72% clean passages lost; without the prefix shortcut at matched recall: 9% vs 52%.", OURS, 11)
+tb(s, 6.3, 1.1, 6.6, .35, "Phase 2 · the swarm, one factor per test (all 5 blocks)", 13, True, INK)
+table(s, [("Question", "Result", "What it means"),
+          ("Claim vs shared IDs?", "−52.0 pts", "60% → 8% fooled; IDs miss renamed copies"),
+          ("Real vs sham claim?", "−47.3 pts", "Protection comes from the claim's content"),
+          ("Claim with vs without question?", "−11.2 pts", "The question scopes the claim"),
+          ("Add the reader's attention?", "−6.8 pts", "1% fooled, but −13 pts clean"),
+          ("Delete vs warn?", "−9.2 pts", "Remove poison, don't argue with it"),
+          ("Refill vs delete only?", "+3.7 pts acc.", "Refill turns removals into right answers"),
+          ("Claim vs raw record?", "+5.8 pts", "Record blocks more on near-copies")],
+      6.3, 1.5, 6.6, 4.3, (2.35, 1.25, 3.0), 10.5)
+tb(s, 6.3, 5.95, 6.6, .4, "Differences in endorsement unless noted; 95% CIs exclude zero; Holm-corrected p < 0.001.", 10, False, MUTE)
+notes(s, "Phase 1: one receiver alone blocks as well as CoordGuard and TrustRAG, faster, and loses far fewer clean passages when the benchmark's shortcuts are removed. Phase 2: in the swarm, the claim cut fooled receivers from 60% to 8%; its content and its question matter; attention adds protection at a clean cost; deleting beats warning; refilling helps. Against our prediction, the raw record blocks slightly more on these near-duplicate poisons.")
 
-# ---------- 5. Cost, misuse, benchmarks ----------
-s = p.slides.add_slide(CONTENT); title(s, "Versus published defences, and what it costs")
-pic(s, "../report/fig/sprint_tradeoff.png", .4, 1.15, h=3.75)
-card(s, 7.05, 1.2, 5.85, 1.15, "Gate (T4)", "Clean accuracy back to untreated, but endorsement rose from 1% to 31%: as calibrated it fires too rarely.", WARN, 11)
-card(s, 7.05, 2.45, 5.85, 1.15, "Forged claim (T7)", "A true answer sent as 'false' cost 18 points of clean accuracy: authenticate shared claims.", WARN, 11)
-card(s, 7.05, 3.7, 5.85, 1.2, "Versus published defences", "Matches Stealth Lens protection with +11.8 pts clean. One receiver: 7% vs CoordGuard 5%, 18 s vs 25 s; 3% vs 72% clean passages lost with one poison.", CG, 11)
-card(s, .45, 5.0, 12.45, 1.15, "Limits", "Previously used questions; near-duplicate poisons; non-adaptive attacker; one reader (Qwen2.5-7B); serial homogeneous agents; capture assumed; claim checks cannot catch true-but-misapplied evidence (Lazy Grounding).", MUTE, 11)
-notes(s, "What does it cost? Attention buys protection at a clean cost. The gate restores clean accuracy but lets about a third of attacks through as calibrated. A forged claim removes good evidence, so shared claims must be authenticated. Among benchmarks, the claim matches Stealth Lens protection with better clean accuracy, and a BinaryShield-style fingerprint matches the raw record. The lesson: share content, not identifiers; and on diverse, adaptive poisons the claim may earn more than here.")
+# ---------- 5. Scorecard, costs, conclusion ----------
+s = p.slides.add_slide(CONTENT); title(s, "Where AntiVenom stands, what it costs, what it means")
+table(s, [("Defence", "Protects others?", "Fooled", "Clean vs untreated"),
+          ("Shared record IDs", "only if names match", "60.2%", "0.0"),
+          ("Raw record + cosine", "yes; sends record", "2.3%", "−3.0"),
+          ("BinaryShield-style fingerprint", "yes", "2.3%", "−2.3"),
+          ("Stealth Lens", "no", "9.3%", "−13.0"),
+          ("Self-check prompt", "no", "59.0%", "+0.2"),
+          ("AntiVenom claim + attention", "yes; 257-byte claim", "1.3%", "−13.3"),
+          ("AntiVenom claim", "yes; 257-byte claim", "8.2%", "−1.2")],
+      .45, 1.15, 7.0, 3.4, (2.6, 1.85, 1.0, 1.55), 10.5, hl_last=True)
+pic(s, "../report/fig/sprint_tradeoff.png", 7.7, 1.1, h=3.45)
+card(s, .45, 4.75, 6.1, 1.45, "Costs, reported", "Raw record blocks more on near-duplicate poisons. The gate as calibrated lets 31% of attacks through. A forged claim costs 17.7 pts clean: authenticate claims.", WARN, 11)
+card(s, 6.8, 4.75, 6.1, 1.45, "Conclusion", "Share what the poison claims, not where it is stored. One 257-byte claim protects a swarm at almost no clean cost; next: diverse, adaptive poisons.", OURS, 11)
+notes(s, "The scorecard puts every defence on the same two axes from the swarm phase. Identifiers protect nobody. Content-based messages protect; among them, the claim keeps clean accuracy closest to untreated, and it matches the Stealth Lens filter's protection with 11.8 points more clean accuracy. We report the costs: the record blocks more on near-copies, the gate gives back protection, and forged claims cause harm, so claims must be authenticated.")
 
 p.save("ANTIVENOM_5slide.pptx"); print("saved")
