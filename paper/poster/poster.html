@@ -1,0 +1,128 @@
+<!doctype html><html><head><meta charset="utf-8"><title>AntiVenom poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f172a;--mute:#64748b;--teal:#0f766e;--teal2:#14b8a6;--mint:#ccfbf1;--red:#dc2626;--amber:#d97706;--purple:#7c3aed;--card:#ffffff;--bg:#f0fdfa}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1800px;height:1080px;background:linear-gradient(135deg,#ecfeff 0%,#f0fdfa 45%,#fefce8 100%);font-family:Inter,Arial,sans-serif;color:var(--ink);padding:38px 46px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:22px}
+h1{font-size:46px;font-weight:800;letter-spacing:-.5px;line-height:1.05}
+h1 .av{color:var(--teal)}
+.sub{font-size:21px;color:#334155;margin-top:8px;max-width:1150px}
+.tag{text-align:right;font-size:15px;color:var(--mute);line-height:1.5}
+.tag b{display:inline-block;background:var(--teal);color:#fff;padding:5px 12px;border-radius:20px;font-size:14px;margin-bottom:6px}
+.grid{display:grid;grid-template-columns:1.12fr 1fr;gap:24px}
+.card{background:var(--card);border-radius:22px;padding:22px 24px;box-shadow:0 6px 0 rgba(15,118,110,.12),0 10px 30px rgba(15,23,42,.06);border:1.5px solid #d1fae5}
+.card h2{font-size:22px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.num{background:var(--teal);color:#fff;width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:16px}
+/* architecture */
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.lane{border-radius:16px;padding:14px;font-size:15px}
+.lane.bad{background:#fef2f2;border:1.5px solid #fecaca}.lane.good{background:#ecfdf5;border:1.5px solid #a7f3d0}
+.lane h3{font-size:16px;margin-bottom:8px}
+.agents{display:flex;gap:8px;margin:6px 0}
+.ag{flex:1;border-radius:12px;padding:8px 6px;text-align:center;font-size:13px;font-weight:600;color:#fff}
+.ag small{display:block;font-weight:400;opacity:.9;font-size:11.5px}
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:0;align-items:stretch;margin-top:4px}
+.st{background:linear-gradient(180deg,#0f766e,#115e59);color:#fff;border-radius:14px;padding:12px 10px;text-align:center;font-size:13px;line-height:1.3;position:relative;margin-right:18px}
+.st:not(:last-child)::after{content:"➜";position:absolute;right:-17px;top:50%;transform:translateY(-50%);color:#94a3b8;font-size:16px}
+.st:last-child{margin-right:0}
+.st .ic{font-size:26px;display:block;margin-bottom:4px}
+.st b{display:block;font-size:14px;margin-bottom:2px}
+.st.gate{background:linear-gradient(180deg,#d97706,#b45309)}
+.msg{margin-top:12px;display:flex;gap:10px;align-items:center;font-size:14px;background:#f8fafc;border:1.5px dashed #94a3b8;border-radius:12px;padding:9px 12px}
+.msg code{font-family:Menlo,monospace;font-size:13px;color:var(--teal);background:#ecfdf5;padding:2px 6px;border-radius:6px}
+/* comparison bars */
+.cmp{display:grid;grid-template-columns:150px 1fr 1fr;gap:6px 14px;align-items:center;font-size:14px}
+.cmp .h{font-size:13px;color:var(--mute);font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.bar{height:22px;border-radius:6px;display:flex;align-items:center;padding-left:6px;color:#fff;font-weight:700;font-size:12.5px;white-space:nowrap}
+.trk{background:#f1f5f9;border-radius:6px;display:flex;align-items:center;gap:8px}.val{font-weight:800;font-size:14px;white-space:nowrap}.bar{min-width:4px}
+.nm{font-weight:600}.nm.ours{color:var(--teal);font-weight:800}
+.verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.v{border-radius:16px;padding:14px;text-align:center}
+.v .big{font-size:30px;font-weight:800;line-height:1.05}
+.v .lab{font-size:13.5px;margin-top:5px;color:#334155}
+.v.par{background:#eff6ff;border:1.5px solid #bfdbfe}.v.par .big{color:#1d4ed8}
+.v.win{background:#ecfdf5;border:1.5px solid #a7f3d0}.v.win .big{color:var(--teal)}
+.v.lose{background:#fff7ed;border:1.5px solid #fed7aa}.v.lose .big{color:var(--amber)}
+/* only antivenom */
+.only{display:grid;grid-template-columns:1.25fr repeat(5,.6fr);font-size:13.5px;border-radius:14px;overflow:hidden;border:1.5px solid #e2e8f0}
+.only div{padding:8px 8px;border-bottom:1px solid #eef2f7;text-align:center;display:flex;align-items:center;justify-content:center}
+.only .rh{justify-content:flex-start;text-align:left;font-weight:600}
+.only .ch{background:#334155;color:#fff;font-weight:700;font-size:12px;line-height:1.2}
+.only .ch.ours{background:var(--teal)}
+.only .ours{background:#f0fdfa}
+.y{color:var(--teal);font-weight:800;font-size:26px;line-height:1}.n{color:#cbd5e1;font-size:24px;line-height:1}.p{color:var(--amber);font-weight:800;font-size:26px;line-height:1}
+.foot{margin-top:16px;display:flex;justify-content:space-between;font-size:13.5px;color:var(--mute)}
+.stats{display:flex;gap:14px;margin-top:14px}
+.s{flex:1;background:linear-gradient(135deg,#0f766e,#0d9488);color:#fff;border-radius:16px;padding:12px 14px}
+.s .b{font-size:30px;font-weight:800}.s .t{font-size:13px;opacity:.95;margin-top:2px}
+</style></head><body>
+<div class="top">
+ <div><h1><span class="av">AntiVenom:</span> Question-Scoped False Claims as<br>Portable Antibodies Against Swarm Memory Poisoning</h1>
+ <div class="sub">One agent catches a poisoned record. Instead of sharing <i>where</i> it is stored, it shares <b>what it claims</b>, and every agent in the swarm can find and remove the poison in its own memory.</div></div>
+ <div class="tag"><b>Track 4 · Multi-Agent Oversight and Control</b><br>Apart Swarm Alignment Hackathon 2026<br>Daniel Foo · NTU Singapore</div>
+</div>
+<div class="grid">
+ <div>
+  <div class="card">
+   <h2><span class="num">1</span> How it works</h2>
+   <div class="lanes">
+    <div class="lane bad"><h3>❌ Share the record ID</h3>
+     <div class="agents"><div class="ag" style="background:#16a34a">Agent A<small>#1702 caught</small></div><div class="ag" style="background:#dc2626">Agent B<small>#4419 missed</small></div><div class="ag" style="background:#dc2626">Agent C<small>#8830 missed</small></div></div>
+     Copies are renamed, so the warning misses them: <b>60% of agents fooled</b>.</div>
+    <div class="lane good"><h3>✅ Share the claim (AntiVenom)</h3>
+     <div class="agents"><div class="ag" style="background:#0f766e">Agent A<small>caught</small></div><div class="ag" style="background:#0f766e">Agent B<small>caught</small></div><div class="ag" style="background:#0f766e">Agent C<small>caught</small></div></div>
+     Every copy asserts the same claim: <b>8% of agents fooled</b>.</div>
+   </div>
+   <div class="pipe">
+    <div class="st"><span class="ic">🕵️</span><b>Catch</b>one agent confirms one poisoned record</div>
+    <div class="st"><span class="ic">🧾</span><b>Distil</b>question + false claim, 257 bytes</div>
+    <div class="st"><span class="ic">📡</span><b>Broadcast</b>to every agent in the swarm</div>
+    <div class="st"><span class="ic">🔎</span><b>Check</b>NLI entailment (+ reader attention)</div>
+    <div class="st"><span class="ic">✂️</span><b>Remove + refill</b>with next-ranked evidence</div>
+   </div>
+   <div class="msg">📨 What travels: <code>{"question": "main industry of the Canadian Shield?", "claim": "fishing"}</code> &nbsp;not the record, not an ID</div>
+  </div>
+  <div class="card" style="margin-top:22px">
+   <h2><span class="num">3</span> What only AntiVenom combines</h2>
+   <div class="only">
+    <div class="ch rh">Capability</div><div class="ch ours">AntiVenom</div><div class="ch">Shared IDs</div><div class="ch">Raw record / fingerprint</div><div class="ch">Stealth Lens</div><div class="ch">CoordGuard / TrustRAG</div>
+    <div class="rh">Protects other agents after one detection</div><div class="ours"><span class="y">●</span></div><div><span class="p">◐</span></div><div><span class="y">●</span></div><div><span class="n">○</span></div><div><span class="n">○</span></div>
+    <div class="rh">Catches renamed copies</div><div class="ours"><span class="y">●</span></div><div><span class="n">○</span></div><div><span class="p">◐</span></div><div><span class="y">●</span></div><div><span class="n">–</span></div>
+    <div class="rh">Does not send the full raw record</div><div class="ours"><span class="y">●</span></div><div><span class="y">●</span></div><div><span class="n">○</span></div><div><span class="y">●</span></div><div><span class="n">–</span></div>
+    <div class="rh">Clean accuracy within 5 pts of untreated</div><div class="ours"><span class="y">●</span></div><div><span class="y">●</span></div><div><span class="y">●</span></div><div><span class="n">○</span></div><div><span class="n">–</span></div>
+    <div class="rh">No fine-tuning of the reader</div><div class="ours"><span class="y">●</span></div><div><span class="y">●</span></div><div><span class="y">●</span></div><div><span class="y">●</span></div><div><span class="y">●</span></div>
+   </div>
+  </div>
+ </div>
+ <div>
+  <div class="card">
+   <h2><span class="num">2</span> Against each comparator</h2>
+   <div class="cmp">
+    <div class="h">Swarm (200 incidents)</div><div class="h">Agents fooled ↓</div><div class="h">Clean accuracy vs untreated ↑</div>
+    <div class="nm">Shared IDs</div><div class="trk"><div class="bar" style="width:86%;background:#94a3b8"></div><span class="val" style="color:#94a3b8">60.2%</span></div><div class="trk"><div class="bar" style="width:6%;background:#94a3b8"></div><span class="val" style="color:#94a3b8">0.0</span></div>
+    <div class="nm">Self-check prompt</div><div class="trk"><div class="bar" style="width:84%;background:#94a3b8"></div><span class="val" style="color:#94a3b8">59.0%</span></div><div class="trk"><div class="bar" style="width:7%;background:#94a3b8"></div><span class="val" style="color:#94a3b8">+0.2</span></div>
+    <div class="nm">Stealth Lens</div><div class="trk"><div class="bar" style="width:14%;background:#7c3aed"></div><span class="val" style="color:#7c3aed">9.3%</span></div><div class="trk"><div class="bar" style="width:92%;background:#dc2626"></div><span class="val" style="color:#dc2626">−13.0 pts</span></div>
+    <div class="nm">Raw record</div><div class="trk"><div class="bar" style="width:5%;background:#d97706"></div><span class="val" style="color:#d97706">2.3%</span></div><div class="trk"><div class="bar" style="width:24%;background:#d97706"></div><span class="val" style="color:#d97706">−3.0</span></div>
+    <div class="nm">Fingerprint</div><div class="trk"><div class="bar" style="width:5%;background:#d97706"></div><span class="val" style="color:#d97706">2.3%</span></div><div class="trk"><div class="bar" style="width:19%;background:#d97706"></div><span class="val" style="color:#d97706">−2.3</span></div>
+    <div class="nm ours">AntiVenom claim</div><div class="trk"><div class="bar" style="width:12%;background:#0f766e"></div><span class="val" style="color:#0f766e">8.2%</span></div><div class="trk"><div class="bar" style="width:10%;background:#0f766e"></div><span class="val" style="color:#0f766e">−1.2</span></div>
+    <div class="h" style="margin-top:10px">One agent (100 Qs)</div><div class="h" style="margin-top:10px">Agents fooled ↓</div><div class="h" style="margin-top:10px">Seconds per question ↓</div>
+    <div class="nm">TrustRAG</div><div class="trk"><div class="bar" style="width:17%;background:#d97706"></div><span class="val" style="color:#d97706">12%</span></div><div class="trk"><div class="bar" style="width:96%;background:#d97706"></div><span class="val" style="color:#d97706">36 s</span></div>
+    <div class="nm">CoordGuard</div><div class="trk"><div class="bar" style="width:8%;background:#7c3aed"></div><span class="val" style="color:#7c3aed">5%</span></div><div class="trk"><div class="bar" style="width:66%;background:#7c3aed"></div><span class="val" style="color:#7c3aed">25 s</span></div>
+    <div class="nm ours">AntiVenom</div><div class="trk"><div class="bar" style="width:10%;background:#0f766e"></div><span class="val" style="color:#0f766e">7%</span></div><div class="trk"><div class="bar" style="width:49%;background:#0f766e"></div><span class="val" style="color:#0f766e">18 s</span></div>
+   </div>
+   <div class="verdict">
+    <div class="v par"><div class="big">On par</div><div class="lab">blocking vs CoordGuard, TrustRAG, Stealth Lens (differences not significant)</div></div>
+    <div class="v win"><div class="big">Cheaper</div><div class="lab">+11.8 pts clean vs Stealth Lens; 18 s vs 25–36 s; 3% vs 72% clean lost with one poison</div></div>
+    <div class="v lose"><div class="big">Honest gap</div><div class="lab">raw record blocks more on near-copy poisons (2% vs 8%)</div></div>
+   </div>
+  </div>
+  <div class="stats">
+   <div class="s"><div class="b">60% → 8%</div><div class="t">agents fooled, untreated → shared claim; all 5 blocks</div></div>
+   <div class="s"><div class="b">+11.8 pts</div><div class="t">clean accuracy vs Stealth Lens at matched protection</div></div>
+   <div class="s"><div class="b">257 B</div><div class="t">one message protects the whole swarm</div></div>
+  </div>
+  <div class="foot"><span>Pre-registered · one factor per test · 5 replicate blocks · blinded LLM + human scoring checks</span><span>github.com/Danielfoojunwei/antivenom</span></div>
+ </div>
+</div>
+</body></html>
