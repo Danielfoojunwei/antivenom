@@ -1,0 +1,38 @@
+Incident data preflight passed; no model outcomes generated
+Incident queue frozen; waiting for E36-E38 success before loading any model
+Incident data preflight passed; no model outcomes generated
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_incident_optimized.py", line 37, in <module>
+    runpy.run_path("experiments/run_incident_suite.py", run_name="__main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "experiments/run_incident_suite.py", line 38, in <module>
+    manifest = freeze("results/incident_queue_manifest.json", code + ["docs/INCIDENT_RESPONSE_PROTOCOL.md", "docs/MEMFORM_DIAGNOSTIC_PROTOCOL.md", "uv.lock",
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/src/antivenom/continuation.py", line 45, in freeze
+    assert json.loads(Path(path).read_text()) == payload, f"frozen inputs changed: {path}"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: frozen inputs changed: results/incident_queue_manifest.json
+Incident data preflight passed; no model outcomes generated
+Incident queue frozen; waiting for E36-E38 success before loading any model
+E36-E38 failed; no dependent experiment started
+Incident data preflight passed; no model outcomes generated
+Incident queue frozen; waiting for E36-E38 success before loading any model
+running weights_before pid 83456
+running calibrate_contriever pid 83465
+running base pid 86764
+running power pid 23606
+running prefixfree pid 23608
+running recurrence pid 38263
+running calibrate_e5 pid 84348
+Incident data preflight passed; no model outcomes generated
+Incident queue frozen; waiting for E36-E38 success before loading any model
+running weights_before pid 1828
+running calibrate_contriever pid 1832
+running base pid 1853
+running power pid 1866
+running prefixfree pid 1869
+running recurrence pid 1875
+running calibrate_e5 pid 1905
+running e5 pid 2150

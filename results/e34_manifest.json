@@ -1,0 +1,20 @@
+{
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "max_tokens": 48,
+  "split": "NQ development 21-100",
+  "hashes": {
+    "experiments/e34_fixed_slots.py": "e578e30618540e18e4b73cd1c71cf3764fc70a832f239c2a3f66af51e2808385",
+    "docs/CONTINUATION_PROTOCOL.md": "bf9d87f49e98b58a62bd828bda6211f18a5523be84a8068079cab8079e03b174",
+    "src/antivenom/qa.py": "59082b2e4bd5274585fa512eabfb6f57927a61d2dfaaea5754a6fd7f0660000f",
+    "src/antivenom/masked.py": "fff2cabed1c4ebbd3d64e01b972b940ffbbde01e838d2be7207a0f1eecf414a1",
+    "src/antivenom/llm.py": "8f0c232f15d64b53e49e247cc990bf8a5d5fb2335d728d640aaa38cd35c9da49",
+    "src/antivenom/retriever.py": "a81b2a153e25e442eec32ef468a9db06ef531944654e9159a91426789921ad6f",
+    "src/antivenom/poisonedrag.py": "94b2ef464419a628a606a94ae5a8f83072991111f59364651c955049bd0089bc",
+    "results/e11a_flag_scores_nq_k10.jsonl": "cdb7004566f631b56016659fe674427416ac14bf0025ee3d7ae8082f02be1968",
+    "results/e11c_attention_scores_nq_k10.jsonl": "b801124022594696b2a96e0432d595f9d92493796e0ac43ec31ec04736842dac",
+    "results/e32_backfill_placebo_nq_k10.jsonl": "433ece50d64130a16cf2fd9eaa87b94cf68fe040b5d1ea00ac3ac869a2e2dd22",
+    "data/external/poisonedrag/nq.json": "44df711454a9bada08e72e9e4a003a2cc845c43707ac93a3493e5168ec415cf2",
+    "data/external/poisonedrag/nq-contriever.json": "a5e9d9ca8e65b61e2fa34428e154a55c2e97c2064c97af09bf87822a61995fa5",
+    "data/external/poisonedrag/nq_target_corpus.json": "fd2e82184e99113e9300d3229b9c82c50035125c90bb9924d59dae4c7d47bc7b"
+  }
+}

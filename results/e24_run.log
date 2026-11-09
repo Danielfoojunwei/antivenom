@@ -1,0 +1,146 @@
+frozen avidity coefficients [0.926 2.507]
+W1027 22:27:05.735000 2177 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 79062.85it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 11081.50it/s]
+hotpotqa 5adbf0a255429947ff17385a
+hotpotqa 5a8cb288554299585d9e3726
+hotpotqa 5ab56e32554299637185c594
+hotpotqa 5ab29c24554299449642c932
+hotpotqa 5a8133725542995ce29dcbdb
+hotpotqa 5ae6050f55429929b0807a5e
+hotpotqa 5ae2070a5542994d89d5b313
+hotpotqa 5ae22b8d554299234fd0440f
+hotpotqa 5a722b8655429971e9dc9329
+hotpotqa 5adf37a95542995ec70e8f97
+hotpotqa 5abd259d55429924427fcf1a
+hotpotqa 5ae4a3265542995ad6573de5
+hotpotqa 5ae0361155429925eb1afc2c
+hotpotqa 5abc0a5d5542993f40c73c64
+hotpotqa 5a7cc50e554299452d57ba3e
+hotpotqa 5abf63f15542997ec76fd3ea
+hotpotqa 5a80721b554299485f5985ef
+hotpotqa 5ab51dae5542991779162d82
+hotpotqa 5a7a0e1e5542990783324e1a
+hotpotqa 5a8e068b5542995085b37384
+hotpotqa 5a77724455429972597f153e
+hotpotqa 5a7320565542991f9a20c61d
+hotpotqa 5a7be2595542997c3ec972ac
+hotpotqa 5a8f4c8d554299458435d5a3
+hotpotqa 5a80840f554299485f59863b
+hotpotqa 5ae7ba7a5542993210983f12
+hotpotqa 5aba7cfe554299232ef4a2fd
+hotpotqa 5ae5aba0554299546bf82f17
+hotpotqa 5ae7e1fc55429952e35ea9cc
+hotpotqa 5ae37c765542992f92d822d4
+hotpotqa 5ae33c4d5542992f92d82262
+hotpotqa 5a77cb335542997042120b3a
+hotpotqa 5a78bd9b554299078472774a
+hotpotqa 5a7625e8554299109176e66a
+hotpotqa 5ae2dd2055429928c423950d
+hotpotqa 5abdf12255429976d4830a2f
+hotpotqa 5aba5d2e55429901930fa799
+hotpotqa 5a7759fc5542993569682d60
+hotpotqa 5aba749055429901930fa7d8
+hotpotqa 5ae53b545542990ba0bbb23c
+hotpotqa 5ae224da554299234fd043ee
+hotpotqa 5ae2b770554299495565db0f
+hotpotqa 5a80b3a9554299485f5986cc
+hotpotqa 5adccd795542990d50227d2c
+hotpotqa 5a84c4135542994c784dda31
+hotpotqa 5abc8d75554299700f9d7900
+hotpotqa 5a83880e554299123d8c214e
+hotpotqa 5a879adb5542996e4f30887f
+hotpotqa 5add11935542994734353827
+hotpotqa 5a8c5569554299240d9c2126
+{
+ "dataset": "hotpotqa",
+ "n_targets": 50,
+ "context_mismatch": 0,
+ "coordguard": {
+  "recall": 1.0,
+  "clean_removed": 0.196
+ },
+ "ours_OR_v1": {
+  "recall": 0.908,
+  "clean_removed": 0.072
+ },
+ "ours_avidity_at_CG_clean_rate": {
+  "recall": 0.976,
+  "clean_removed": 0.196
+ },
+ "ours_avidity_at_CG_recall": {
+  "recall": 1.0,
+  "clean_removed": 0.996
+ }
+}
+msmarco 1163399
+msmarco 192017
+msmarco 1164044
+msmarco 708956
+msmarco 276042
+msmarco 602483
+msmarco 608977
+msmarco 578308
+msmarco 13876
+msmarco 603030
+msmarco 400596
+msmarco 495447
+msmarco 518180
+msmarco 608955
+msmarco 1163605
+msmarco 422717
+msmarco 663986
+msmarco 1164096
+msmarco 1164420
+msmarco 75056
+msmarco 77753
+msmarco 664611
+msmarco 1164150
+msmarco 464601
+msmarco 145522
+msmarco 1164098
+msmarco 429677
+msmarco 1164072
+msmarco 613542
+msmarco 1164223
+msmarco 403613
+msmarco 603231
+msmarco 578643
+msmarco 604961
+msmarco 614007
+msmarco 577564
+msmarco 412652
+msmarco 614188
+msmarco 1163719
+msmarco 604839
+msmarco 414754
+msmarco 300369
+msmarco 605134
+msmarco 577825
+msmarco 1163769
+msmarco 1163770
+msmarco 1163698
+msmarco 1163949
+msmarco 410490
+msmarco 1163825
+{
+ "dataset": "msmarco",
+ "n_targets": 50,
+ "context_mismatch": 0,
+ "coordguard": {
+  "recall": 0.963265306122449,
+  "clean_removed": 0.21568627450980393
+ },
+ "ours_OR_v1": {
+  "recall": 0.9306122448979591,
+  "clean_removed": 0.11764705882352941
+ },
+ "ours_avidity_at_CG_clean_rate": {
+  "recall": 0.9836734693877551,
+  "clean_removed": 0.21568627450980393
+ },
+ "ours_avidity_at_CG_recall": {
+  "recall": 0.963265306122449,
+  "clean_removed": 0.1411764705882353
+ }
+}

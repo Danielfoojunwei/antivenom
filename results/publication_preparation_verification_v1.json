@@ -1,0 +1,83 @@
+{
+  "checked_utc": "2026-11-03T21:29:25.758741+00:00",
+  "completed_human_rows": {
+    "extraction": {
+      "a": 0,
+      "b": 0
+    },
+    "memory": {
+      "a": 0,
+      "b": 0
+    },
+    "outcome": {
+      "a": 0,
+      "b": 0
+    },
+    "policy": {
+      "a": 0,
+      "b": 0
+    }
+  },
+  "confirmation_execution_status": "blocked",
+  "cross_review_corrections": [
+    "Separate human-review V2 preserves adjudication; frozen V1 archived, no real labels lost",
+    "Preexecution source-lineage gate corrected; previous readiness archived, no scientific source or outcomes changed"
+  ],
+  "e37_first70_preserved": true,
+  "executable_freeze_written": false,
+  "external_upload_or_submission": false,
+  "fresh_certified_families": 0,
+  "human_validation_passed": false,
+  "manuscript_pdf": {
+    "pages": 11,
+    "text_extraction_checks": "Required result/status tokens present; no replacement block glyphs or out-of-page text",
+    "visual_review": "All pages inspected; final table grouping and inline math corrected; pages1-4 unchanged from reviewed prior rendering"
+  },
+  "native_memmorph_cases": 0,
+  "new_model_calls": 0,
+  "new_prepared_file_hashes": {
+    "analysis/prepare_publication_release.py": "61128140a89ffc9c87808565b7f58254530ca5bddd565e73307228ed83e4bf6a",
+    "analysis/prepare_publication_review_v2.py": "fa3c39549a9e1b0f1cb74d3d941c0bed38c42ad247f6fe30d944cf9a55468f3d",
+    "analysis/publication_power.py": "287eeafd54dc1cd386873d73c6c94b6e992a545860542b2d7f14adc776ceeb88",
+    "data/validation/publication_v2/review_manifest.json": "64168469a5deae609b6f35dd8a9b66f7816247867eb8daad5b3c5ffc195c3337",
+    "data/validation/publication_v2/review_status.json": "a94b7e89648cc617fb95128325c4365fe7dd18552de651decf3f50f04dab7a48",
+    "docs/PUBLICATION_CONFIRMATION_PROTOCOL_V1.md": "3d8e904ed3678aad44e699d43386035fc801b809a78f7eaf5290e6746dd4fe0d",
+    "docs/PUBLICATION_HUMAN_REVIEW_V2.md": "d4f5a2a6cad2eba4e5594195ebd9ee0861fe3791fea0c4f1bd79711129ee8c7f",
+    "docs/PUBLICATION_READINESS.md": "f8b6fa697704c3a051ec4652a88debc39ac312c5aa3798a607d194d9b7689026",
+    "experiments/prepare_publication_confirmation.py": "334e94672854317ffa5358af3363ca5c7ccf309d240109d196ac65fd3e3df77b",
+    "output/pdf/antivenom_manuscript_draft.pdf": "e53cbbd46d459ef51ec1dd23ec82f5661a3015311f84c95b50fdf3062aeddc63",
+    "paper/generate_tables.py": "6110c273a6f66f55c274c21b43f7ca5f5fc343160dbe316113dd93f22c247f5e",
+    "paper/manuscript.md": "3eb4f6c7577c4746b9f2fc6f6ba235765f48bf4a8748b0ca246d7505018e854d",
+    "paper/references.bib": "7118477becd5c827273459abe630ee6cfce05322ada8b8f1458322344057a20d",
+    "paper/render_manuscript.py": "4d7c9185ccc3d3330dfecfeb054fe5fd62cef449a5602727aa52b5449e555797",
+    "results/publication_confirmation_readiness_v1.json": "ad43e36144735edcc8de0d7fe4f6262d81063c491fc1f26cfd9872769c0a67a2",
+    "results/publication_power_v1.json": "65189d8322a1a90d9cf07bd7f1d2dce4e0640503dcd5540f8ab9945dc841fa52",
+    "src/antivenom/publication_study.py": "6e3743543169a998fe8b93e8689e3cc1c2ee2ed13839ada9def628d4666a13cf",
+    "tests/test_publication_power.py": "bb27bf04ae91d324c9c374daafc29aa953b6b64bedb03dc2587cd303215f1eb4",
+    "tests/test_publication_release.py": "8cb6a9c01bdcb1bc620aa955784db92f29990e73ae85b5ac9a4daa6bfabe43e8",
+    "tests/test_publication_review_v2.py": "e211e0e06ef737e4c66eb1e8ece800cabf53165b129e555d476eb5ca30bf41a8",
+    "tests/test_publication_study.py": "6af6bd228e01dd7f2e57025e15db3babd81d77d7467f9d3fb08361b8071c162b"
+  },
+  "original_scientific_manifests_verified": 30,
+  "pending_external_inputs": [
+    "Fresh independently reviewed incident cohort and execution bindings",
+    "Two independent human reviewers, attestations and human adjudication",
+    "Author/affiliation/venue/license/public release decisions"
+  ],
+  "schema": "antivenom.publication-preparation-verification.v1",
+  "scope": "New paper/software preparation; no new empirical confirmation or publication",
+  "software_tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py'",
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "release_collection_change_rechecked": {
+      "passed": true,
+      "tests_run": 5
+    },
+    "skipped": 0,
+    "tests_run": 198
+  },
+  "unique_original_input_files_verified": 597,
+  "v1_preparation_unchanged": true
+}

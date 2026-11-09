@@ -1,0 +1,14 @@
+results/rescored/e15_cross_dataset_hotpotqa_k10.jsonl  [CONFIRMATORY]  n=50
+  arm                       endorsed [95% CI]       correct [95% CI]        
+  clean                     0.02 [0.00, 0.06]       0.48 [0.34, 0.62]       
+  attack                    0.86 [0.76, 0.94]       0.12 [0.04, 0.22]       
+  block_OR                  0.22 [0.12, 0.34]       0.38 [0.24, 0.52]       
+  delete_OR_backfill        0.34 [0.22, 0.48]       0.32 [0.20, 0.46]       
+  McNemar attack vs block_OR endorsed: p=1.9e-08
+  McNemar attack vs block_OR correct: p=0.00098
+  McNemar attack vs delete_OR_backfill endorsed: p=2.6e-06
+  McNemar attack vs delete_OR_backfill correct: p=0.021
+  McNemar block_OR vs delete_OR_backfill endorsed: p=0.07
+  McNemar block_OR vs delete_OR_backfill correct: p=0.38
+  McNemar clean vs delete_OR_backfill endorsed: p=3.1e-05
+  McNemar clean vs delete_OR_backfill correct: p=0.021

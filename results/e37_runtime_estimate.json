@@ -1,0 +1,16 @@
+{
+  "observed_utc": "2026-10-29T13:18:17.226206+00:00",
+  "complete": 21,
+  "remaining": 59,
+  "recent5_wall_seconds_per_target": [
+    320.96358346939087,
+    420.1294777393341,
+    557.1637358665466,
+    440.5487310886383,
+    466.1191658973694
+  ],
+  "recent10_mean_seconds": 516.115570807457,
+  "remaining_hours_at_recent5_mean": 7.227253163867527,
+  "remaining_hours_at_recent10_mean": 8.458560743788878,
+  "caveat": "Wall-clock rates include any host sleeps or load changes; future runtime is not guaranteed. No incomplete composite performance used for claims."
+}

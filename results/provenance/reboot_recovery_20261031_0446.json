@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-10-31T04:46:29.794042+00:00",
+  "reason": "Mac reboot: uptime about 3 minutes; previous supervisors and children absent, shared locks free",
+  "old_incident_status": {
+    "queue_pid": 75351,
+    "status": "running",
+    "phase": "calibrate_e5",
+    "completed_phases": [
+      "weights_before",
+      "calibrate_contriever",
+      "base",
+      "power",
+      "prefixfree",
+      "recurrence"
+    ],
+    "protocol": "docs/INCIDENT_RESPONSE_PROTOCOL.md",
+    "updated_utc": "2026-10-31T02:59:44.052753+00:00",
+    "child_pid": 84348,
+    "runtime_launcher": "experiments/run_resilient_queue.py",
+    "runtime_manifest": "results/performance_runtime_manifest.json",
+    "runtime_validation": "results/performance_validation.json",
+    "runtime_arguments": [
+      "incident"
+    ],
+    "extraction_amendment": "docs/EXTRACTION_RESILIENCE_AMENDMENT.md",
+    "extraction_runtime_manifest": "results/extraction_resilience_manifest.json"
+  },
+  "old_swarm_status": {
+    "queue_pid": 24377,
+    "status": "waiting_for_incident_queue",
+    "child_pid": null,
+    "runtime_launcher": "experiments/run_swarm_track4.py",
+    "runtime_arguments": [],
+    "protocol": "docs/SWARM_TRACK4_PROTOCOL.md",
+    "completed_phases": [],
+    "idle_sleep_inhibitor_pid": 24381,
+    "updated_utc": "2026-10-30T07:38:08.055534+00:00"
+  },
+  "original_runtime_launcher_preserved": true,
+  "integrity": "results/heartbeat_integrity_check.json",
+  "e5_calibration_rows": 19,
+  "new_incident_queue_pid": 1824,
+  "new_incident_caffeinate_pid": 1825,
+  "new_swarm_queue_pid": 1843,
+  "verified_utc": "2026-10-31T04:47:37.027175+00:00",
+  "recovered_phase": "calibrate_e5",
+  "new_incident_child_pid": 1905,
+  "swarm_supervisor": 1843,
+  "swarm_caffeinate_pid": 1846,
+  "locks": {
+    "remaining_queue": "held",
+    "incident_queue": "held",
+    "swarm_track4": "held"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_incident_suite.py": "c7830b620d4b926ed9cf2c243839a2c7e42ea7c7e518e813846f6955edf21f48",
+    "analysis/continuation_stats.py": "5b6ce5d740b4b93ec0142606c544257ce88cd7f6c4e6f9140226db4ab9c0819f",
+    "analysis/incident_memform_summary.py": "7d5624c14c3e4c424e67c8f8018cf591a47180a2652a05fa6e3a9eade7a1bce0",
+    "analysis/incident_power.py": "4b9a2ff92718610e302898f92ef105ad34c9d882110fb7b1ead773b7533c7096",
+    "analysis/incident_summary.py": "f9f0d6d57f7a92c5cd4343c6bff860c61e1edaea64d1fa1e346d7f56baca7298",
+    "analysis/incident_weights.py": "3b6a23132ac3b70a28273499f5be5400fa6e72eefc3b9b767bf5cb34e7cb41fa",
+    "data/external/memform/LICENSE": "1d0dde41ece0f9620937f1a81a67e295ace0eae180c009d862006e8f3b288458",
+    "data/external/memform/accepted_mcq.jsonl": "fc9e76b051c21c378281ed4dcbb648f76820a2eaf086683b0c1d24db7fcaaee5",
+    "data/external/memform/reference/memform/eval/core.py": "586ed27553ce8d89620dc55d7273703f394755e16a75d8364bc88fc074804683",
+    "docs/INCIDENT_RESPONSE_PROTOCOL.md": "e24c7f94e3862f0fff6c582649a3b32fd7a696a475ea34a67362acb1f350ee0d",
+    "docs/MEMFORM_DIAGNOSTIC_PROTOCOL.md": "e9daf337431da6a661856545309ada6943e63652c1add567a96ac2711426cdf9",
+    "experiments/incident_memform.py": "55ef248c375c5c431629265f895214c7373f0330d62f82660e8cde3b298f9f4d",
+    "experiments/incident_suite.py": "9001157b83c83f3ecf1fc47a103781bb677110ff7e2b09a8a75577eeae0a02bc",
+    "experiments/incident_swarm.py": "a14789bf0fbd2f5268037ba2c700292cd80571b08f3e895633b8d4d9c8d8ced2",
+    "src/antivenom/incident.py": "e98149f3a6a625eb5f8612a4f2914d906f94f80a692d270bed89100f54135840",
+    "src/antivenom/memform_port.py": "89970b970029aa6b4c21e6c0a7e5c8f9bed250117b2125535dcf180fc36978bd",
+    "tests/incident_integrity.py": "99526c8f7eb90c14a2e22e562e6635b76460bb17f618dfdc36d1d01949170b1b",
+    "tests/incident_preflight.py": "7556524b54d1d038315bc696a9b332ca92c320c9d570b1e2d80e022ded5216cc",
+    "uv.lock": "9a14ed5a38260ad3fe04435b5a7fff800d18f696896c5fdf21ddd940e847165f"
+  },
+  "settings": {
+    "jobs": [
+      [
+        "weights_before",
+        "analysis/incident_weights.py",
+        [
+          "before"
+        ]
+      ],
+      [
+        "calibrate_contriever",
+        "experiments/incident_suite.py",
+        [
+          "calibrate"
+        ]
+      ],
+      [
+        "base",
+        "experiments/incident_suite.py",
+        [
+          "base"
+        ]
+      ],
+      [
+        "power",
+        "analysis/incident_power.py",
+        []
+      ],
+      [
+        "prefixfree",
+        "experiments/incident_suite.py",
+        [
+          "prefixfree"
+        ]
+      ],
+      [
+        "recurrence",
+        "experiments/incident_suite.py",
+        [
+          "recurrence"
+        ]
+      ],
+      [
+        "calibrate_e5",
+        "experiments/incident_suite.py",
+        [
+          "calibrate",
+          "--engine",
+          "e5"
+        ]
+      ],
+      [
+        "e5",
+        "experiments/incident_suite.py",
+        [
+          "e5"
+        ]
+      ],
+      [
+        "swarm",
+        "experiments/incident_swarm.py",
+        []
+      ],
+      [
+        "memform_diagnostic",
+        "experiments/incident_memform.py",
+        []
+      ],
+      [
+        "memform_analysis",
+        "analysis/incident_memform_summary.py",
+        []
+      ],
+      [
+        "weights_after",
+        "analysis/incident_weights.py",
+        [
+          "after"
+        ]
+      ],
+      [
+        "analysis",
+        "analysis/incident_summary.py",
+        []
+      ],
+      [
+        "integrity",
+        "tests/incident_integrity.py",
+        []
+      ]
+    ],
+    "NI_margin": 0.05,
+    "independent_human_review": "deferred; does not block"
+  }
+}

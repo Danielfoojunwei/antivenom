@@ -1,0 +1,74 @@
+{
+  "estimated_utc": "2026-11-03T02:08:13.100487+00:00",
+  "active_phase": "memform_diagnostic",
+  "complete_cases": 101,
+  "planned_cases": 212,
+  "current_phase_planning_hours": [
+    3,
+    4
+  ],
+  "swarm_start_planning_hours_from_now": [
+    0,
+    0
+  ],
+  "swarm_comparison_planning_hours_from_now": [
+    0,
+    0
+  ],
+  "all_remaining_including_untreated_clean_reference_planning_hours": [
+    4,
+    8
+  ],
+  "phase_planning_hours": {
+    "memform_remaining": [
+      3,
+      4
+    ],
+    "untreated_clean_reference_and_final_checks": [
+      1,
+      4
+    ]
+  },
+  "measured_recurrence_recent20_checkpoint_minutes": {
+    "median": 1.6449314177036285,
+    "mean": 10.029592224756877,
+    "max": 163.36034861008326
+  },
+  "base_method_quantile_extrapolation": {
+    "0.25": {
+      "swarm_hours": 15.72148363592682,
+      "e5_hours": 5.491089530934308,
+      "clean_reference_hours": 0.5921686597333368
+    },
+    "0.5": {
+      "swarm_hours": 21.345890235552602,
+      "e5_hours": 7.499464084333481,
+      "clean_reference_hours": 0.8486902222008211
+    },
+    "0.75": {
+      "swarm_hours": 29.97797192271149,
+      "e5_hours": 10.25727284535646,
+      "clean_reference_hours": 1.122285545800211
+    }
+  },
+  "swarm_actual_result_arms": 5920,
+  "clean_reference_actual_calls": 480,
+  "method": "Remaining 111 MemForm families estimated from recent 1.3\u20131.8 minute checkpoint intervals, with allowance for varying cases; E45 480 actual untreated calls plus loading/weight/integrity/statistical checks remain extrapolated.",
+  "assumptions": [
+    "current Mac remains awake",
+    "one GPU experiment, original allocator default",
+    "no recipe, model, precision, batching or sample-size changes"
+  ],
+  "limitations": [
+    "Recent E5 cases vary substantially; early runtime includes priority interruptions and wall-clock gaps",
+    "Swarm receiver contexts and MemForm native consolidation timings remain unmeasured",
+    "Any further priority pause or host sleep extends calendar completion",
+    "E45 waits for MemForm and full original integrity; raw swarm comparisons arrive before full untreated-clean assessment"
+  ],
+  "confirmed_latest_sleep": "2026-11-02 01:26\u201305:40 Singapore, battery 1%; now charging on AC",
+  "external_pause_status": "Active intentional pulse-first pilot priority pause since 2026-11-03T00:36:41.439877Z; unknown remaining duration",
+  "forecast_interpretation_after_pause": "Add unknown current priority pause to 4\u20138 active hours after MemForm resumes. Same queue/worker identities preserved; automatic watcher live.",
+  "saved_result_arms": 2332,
+  "planned_result_arms": 5920,
+  "remaining_memform_families": 111
+}

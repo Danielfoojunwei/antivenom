@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "coverage": {
+    "base": 80,
+    "prefixfree": 80,
+    "recurrence": 160,
+    "e5": 80
+  },
+  "swarm_targets": 80,
+  "receiver_contexts": 480,
+  "reader_weights_unchanged": true,
+  "automated_scoring_only": true
+}

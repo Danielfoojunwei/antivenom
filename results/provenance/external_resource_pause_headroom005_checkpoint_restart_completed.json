@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-11-01T04:57:16.791782+00:00",
+  "status": "checkpoint_restart_complete",
+  "authorization_basis": "External restarter applies existing verified human checkpoint-restart approval; no fresh approval inferred solely from local flag",
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "user_message_id": "01a190ab-b6ac-7662-a5f1-939bbe433359",
+    "human_answer": "Restart from checkpoints (Recommended)"
+  },
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/qwen35_headroom_native005_resources.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/qwen35_headroom_native005_resources_guard_t3ev7fk_/config.json",
+  "guard_watcher_pid": 87685,
+  "priority_run_pid": 87388,
+  "priority_run_identity": {
+    "pid": 87388,
+    "start": "Sun Nov 1 08:02:33 2026",
+    "command": "/Users/danielfoojunwei/Desktop/liquid probe/work/neuron_explorer_review/.venv-qwen35/bin/python -u /Users/danielfoojunwei/Desktop/liquid probe/work/qwen35_personality_discovery_v2/trait_search_session.py --run --session-dir /Users/danielfoojunwei/Desktop/liquid probe/work/qwen35_personality_discovery_v2/discovery_sessions/headroom_native_005 --model-path /Users/danielfoojunwei/Desktop/liquid probe/work/neuron_explorer_review/models/qwen35_4b_mlx4bit_0e7ffd5 --start-gate /tmp/qwen35_headroom_native005.gate.json"
+  },
+  "targets": [
+    {
+      "pid": 36550,
+      "start": "Sat Oct 31 21:07:27 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py e5",
+      "role": "worker",
+      "queue_pid": 52292,
+      "name": "Antivenom successor model worker",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 52292,
+      "start": "Sat Oct 31 15:39:54 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom experiment queue",
+      "pause_status": "paused"
+    }
+  ],
+  "restart_journal": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/headroom005_antivenom_restart_state.json",
+  "restart_watcher_pid": 19419,
+  "supervision_recovery_pid": 24259,
+  "supervision_recovery_status": "results/external_supervision_recovery.json",
+  "e5_calibration_cases": 20,
+  "e5_complete_cases": 41,
+  "e5_saved_result_arms": 921,
+  "integrity": "22 frozen manifests, six E5 checkpoint hashes and E37 original-first70 prefix match",
+  "resume_condition": "External approved restarter launches status-authorized incident queue after personality process exits; local helper restores inhibitors and frozen supplemental supervisor",
+  "action": "Existing external restarter and operational helper completed normally; recovered identities/inhibitors/supplement verified, no duplicate launch",
+  "restarted_at_utc": "2026-11-01T04:55:16.740568+00:00",
+  "new_incident_queue_pid": 54055,
+  "new_incident_child_pid": 54166,
+  "new_incident_inhibitor_pid": 54081,
+  "new_swarm_supervisor_pid": 54083,
+  "new_swarm_inhibitor_pid": 54084,
+  "paused_at_utc": "2026-11-01T00:04:34.303999+00:00"
+}

@@ -1,0 +1,74 @@
+{
+  "queue": {
+    "queue_pid": 75348,
+    "status": "automated_runs_complete_external_validation_pending",
+    "completed_phases": [
+      "prepare",
+      "llama",
+      "mistral",
+      "composite",
+      "gate_cache",
+      "analysis",
+      "integrity",
+      "human_status"
+    ],
+    "protocol": "docs/REMAINING_RUNS_PROTOCOL.md",
+    "phase": "human_status",
+    "child_pid": null,
+    "updated_utc": "2026-10-29T20:19:48.837769+00:00",
+    "runtime_launcher": "experiments/run_resilient_queue.py",
+    "runtime_arguments": [
+      "remaining"
+    ],
+    "extraction_amendment": "docs/EXTRACTION_RESILIENCE_AMENDMENT.md",
+    "extraction_runtime_manifest": "results/extraction_resilience_manifest.json"
+  },
+  "process_alive": {
+    "queue_pid": false,
+    "child_pid": false
+  },
+  "counts": {
+    "Meta-Llama-3-8B-Instruct-4bit": {
+      "calibration": 20,
+      "hotpotqa": {
+        "complete_targets": 50,
+        "target_total": 50,
+        "checkpointed_targets": 50,
+        "saved_answer_arms": 650
+      },
+      "msmarco": {
+        "complete_targets": 50,
+        "target_total": 50,
+        "checkpointed_targets": 50,
+        "saved_answer_arms": 650
+      }
+    },
+    "Mistral-7B-Instruct-v0.3-4bit": {
+      "calibration": 20,
+      "hotpotqa": {
+        "complete_targets": 50,
+        "target_total": 50,
+        "checkpointed_targets": 50,
+        "saved_answer_arms": 650
+      },
+      "msmarco": {
+        "complete_targets": 50,
+        "target_total": 50,
+        "checkpointed_targets": 50,
+        "saved_answer_arms": 650
+      }
+    },
+    "composite_complete_targets": 80,
+    "gate_cache_complete_targets": 100
+  },
+  "human_validation": {
+    "status": "pending_independent_human_labels",
+    "rows_per_reviewer": 302,
+    "completed_rows": {
+      "a": 0,
+      "b": 0
+    },
+    "accepted": false,
+    "metrics": {}
+  }
+}

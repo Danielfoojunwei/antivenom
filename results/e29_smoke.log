@@ -1,0 +1,12 @@
+W1028 08:01:34.486000 14630 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 6864.43it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 35856.45it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 6627.25it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26136.42it/s]
+5a8d5fc6554299585d9e37c6 {'attack': 1, 'v1_delete_backfill': 0, 'v2_delete_backfill': 0, 'coordguard_af_refill': 0, 'trustrag': 0}
+/Users/danielfoojunwei/.local/share/uv/python/cpython-3.12.15-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

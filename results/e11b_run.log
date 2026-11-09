@@ -1,0 +1,101 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2155.10it/s]
+W1027 09:48:12.869000 27432 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 58019.36it/s]
+test1 5 5 0 1 0
+test11 5 5 0 1 0
+test16 5 5 0 1 0
+test19 5 5 0 1 1
+test20 4 4 0 1 1
+test21 2 2 0 1 1
+test31 5 5 0 1 0
+test47 4 4 0 0 0
+test50 5 5 0 1 0
+test53 5 5 0 1 0
+test57 5 5 0 1 0
+test58 5 5 0 1 0
+test60 5 5 0 1 0
+test62 5 5 0 1 0
+test64 4 4 0 1 1
+test70 5 5 0 1 0
+test75 5 5 0 1 0
+test77 5 5 0 1 0
+test79 5 5 0 1 0
+test82 5 5 0 1 0
+test87 5 5 0 1 0
+test88 5 5 0 1 0
+test90 5 5 0 1 0
+test94 5 5 0 1 0
+test106 5 5 0 1 0
+test107 5 5 0 1 0
+test110 4 4 0 1 0
+test113 5 5 0 0 0
+test120 7 5 2 1 0
+test127 7 5 2 1 0
+test130 1 1 0 1 1
+test138 5 4 1 1 1
+test145 6 5 1 0 0
+test152 5 5 0 1 0
+test156 2 2 0 1 1
+test157 4 4 0 1 0
+test159 5 5 0 1 0
+test161 6 5 1 1 0
+test164 5 5 0 1 1
+test165 5 5 0 1 0
+test166 6 5 1 1 0
+test177 5 5 0 1 0
+test185 5 5 0 1 0
+test188 5 5 0 1 0
+test191 5 5 0 1 0
+test192 1 1 0 1 1
+test208 5 5 0 0 0
+test213 6 5 1 1 1
+test216 4 4 0 1 1
+test226 5 5 0 1 0
+test228 5 5 0 0 0
+test229 5 5 0 1 0
+test231 5 5 0 1 0
+test243 3 3 0 1 0
+test254 2 2 0 1 1
+test256 5 5 0 1 0
+test273 5 5 0 1 0
+test282 4 3 1 1 1
+test291 3 3 0 0 0
+test294 5 5 0 1 0
+test308 5 5 0 1 0
+test311 5 5 0 1 0
+test312 5 5 0 1 0
+test315 5 5 0 1 0
+test317 4 4 0 1 0
+test318 1 1 0 1 1
+test327 4 4 0 1 0
+test332 5 5 0 1 0
+test337 4 4 0 1 0
+test347 5 5 0 1 0
+test348 1 1 0 1 1
+test363 4 4 0 1 1
+test369 5 5 0 1 0
+test371 5 5 0 1 0
+test375 6 5 1 1 0
+test379 5 5 0 1 0
+test383 4 4 0 0 0
+test387 5 5 0 1 0
+test395 5 5 0 1 0
+test397 5 5 0 1 1
+test400 5 5 0 1 0
+test404 6 4 2 1 1
+test407 4 4 0 1 0
+test408 5 5 0 0 0
+test410 5 5 0 1 0
+test412 1 1 0 1 1
+test413 5 5 0 1 0
+test417 5 5 0 1 0
+test418 5 5 0 1 0
+test419 6 5 1 1 0
+test423 5 5 0 1 1
+test424 5 5 0 1 0
+test426 5 5 0 1 0
+test430 5 5 0 1 0
+test442 4 4 0 1 0
+/Users/danielfoojunwei/.local/share/uv/python/cpython-3.12.15-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

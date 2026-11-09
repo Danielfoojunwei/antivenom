@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-31T05:50:32.819504+00:00",
+  "status": "resumed",
+  "authorization_basis": "Other chat applies the previously verified human temporary-pause approval to successor Antivenom worker and queue; no new human approval inferred solely from guard flag. Preserve intentional suspension while verifying priority-run completion.",
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "thread_title": "Assess Qwen Bit Changes in Swarms",
+    "human_answer": "Pause the other model workers (Recommended)",
+    "scope": "Temporary pause of Antivenom and Qwen v5.2; automatic resumption when peer-review run finishes"
+  },
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_collection_001.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_collection_001_guard_onys0ze5/config.json",
+  "guard_watcher_pid": 9588,
+  "priority_run_pid": 9483,
+  "priority_run_identity": {
+    "pid": 9483,
+    "start": "Sat Oct 31 13:05:01 2026",
+    "command": "../qwen_experiment/.venv/bin/python factorial_probe.py --run-id factorial_collection_001 --max-tokens 256 --start-gate /tmp/personality_factorial_collection_001.ready"
+  },
+  "targets": [
+    {
+      "pid": 2150,
+      "start": "Sat Oct 31 12:48:33 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py e5",
+      "role": "worker",
+      "queue_pid": 1824,
+      "name": "Antivenom successor model worker",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 1824,
+      "start": "Sat Oct 31 12:46:29 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom experiment queue",
+      "pause_status": "paused"
+    }
+  ],
+  "paused_at_utc": "2026-10-31T05:05:17.103735+00:00",
+  "e5_calibration_cases": 20,
+  "e5_complete_cases": 1,
+  "e5_saved_result_arms": 33,
+  "resume_condition": "Live standalone watcher resumes exact stopped worker and supervisor once priority run exits",
+  "action": "Watcher automatically resumed exact existing worker and queue; live worker verified running, no restart or duplicate",
+  "resumed_at_utc": "2026-10-31T05:49:55.035978+00:00"
+}

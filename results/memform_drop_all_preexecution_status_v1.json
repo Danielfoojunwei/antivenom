@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-11-03T15:36:02.663327+00:00",
+  "status": "prepared_not_started_other_local_model_worker_active",
+  "scope": "new exact-drop-all control on already-used local MemForm families; not native MemMorph",
+  "plan": "results/memform_drop_all_plan_v1.json",
+  "plan_file_sha256": "02c79c8a6f56af7733c25930fa5ea3f388490545b41a0f117640d4536ef2d182",
+  "planned_independent_families": 212,
+  "planned_uncached_answer_calls": 424,
+  "new_answer_calls": 0,
+  "model_initialized": false,
+  "execution_command_invoked": false,
+  "other_model_worker": {
+    "pid": 39334,
+    "state": "R",
+    "started_local": "2026-11-03 23:08:27 +08:00",
+    "runner": "qwen_epistemic_weight_repair_v2/runs/final_001/frozen/final_evaluate.py"
+  },
+  "inspection": "read-only ps; no signal, restart or cross-chat message",
+  "sleep_inhibitor_started": false,
+  "shared_model_lock_acquired": false,
+  "estimate": "Approximately30active inference minutes plussetup/weightchecks andfuturepauses; notcalendarpromise",
+  "native_cases_run": 0,
+  "human_review_passed": false,
+  "software_verification": "results/memmorph_extensions_verification_v1.json"
+}

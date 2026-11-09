@@ -1,0 +1,2 @@
+W1103 15:53:25.346000 90365 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+MemForm diagnostic validated: 212 held-out families; causal-eligible tasks: 170

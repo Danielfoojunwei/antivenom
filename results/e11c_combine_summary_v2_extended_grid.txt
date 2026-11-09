@@ -1,0 +1,19 @@
+attention signal chosen on targets 1-20: layer=21 norm=per_token z>=-0.25  (cal P=0.937 R=0.925 FPR=0.050)
+
+HELD-OUT targets 21-100 (n=80)
+  entailment  precision=0.952 recall=0.871 clean-FPR=0.0347  FP=14 FN=41
+  attention   precision=0.941 recall=0.950 clean-FPR=0.0471  FP=19 FN=16
+  OR          precision=0.908 recall=0.994 clean-FPR=0.0794  FP=32 FN=2
+  AND         precision=0.996 recall=0.826 clean-FPR=0.0025  FP=1 FN=55
+saved results/e11c_combined_flags.json
+
+attention sensitivity (chosen layer/norm), calibration vs held-out:
+  z>=-1.00  cal P=0.476 R=1.000 FPR=0.880 | held-out P=0.468 R=1.000 FPR=0.893
+  z>=-0.75  cal P=0.640 R=1.000 FPR=0.450 | held-out P=0.699 R=0.997 FPR=0.337
+  z>=-0.50  cal P=0.833 R=1.000 FPR=0.160 | held-out P=0.889 R=0.987 FPR=0.097
+  z>=-0.25  cal P=0.937 R=0.925 FPR=0.050 | held-out P=0.941 R=0.950 FPR=0.047
+  z>=+0.00  cal P=0.969 R=0.775 FPR=0.020 | held-out P=0.956 R=0.814 FPR=0.030
+  z>=+0.25  cal P=0.980 R=0.600 FPR=0.010 | held-out P=0.963 R=0.650 FPR=0.020
+  z>=+0.50  cal P=1.000 R=0.412 FPR=0.000 | held-out P=0.982 R=0.524 FPR=0.007
+  z>=+0.75  cal P=1.000 R=0.338 FPR=0.000 | held-out P=0.978 R=0.420 FPR=0.007
+  z>=+1.00  cal P=1.000 R=0.275 FPR=0.000 | held-out P=0.982 R=0.341 FPR=0.005

@@ -1,0 +1,117 @@
+{
+  "estimated_utc": "2026-10-29T10:23:37.592463+00:00",
+  "scope": "All currently queued tests; not human review or an unimplemented future fresh confirmation",
+  "measured_mistral_complete_targets": 40,
+  "measured_mistral_ms_seconds_mean": 99.1175,
+  "measured_mistral_ms_seconds_recent10_mean": 44.17,
+  "mistral_hours_at_recent10_rate": 0.12269444444444445,
+  "historical_qwen_two_answer_target_seconds_mean": 20.24625,
+  "historical_qwen_two_answer_target_seconds_last40_mean": 11.58,
+  "phases": {
+    "remaining_mistral": {
+      "remaining_targets": 10,
+      "generation_calls_upper": 170,
+      "planning_hours": [
+        0.09815555555555558,
+        0.9422499999999999
+      ]
+    },
+    "composite_and_gate": {
+      "generation_calls_upper": 1206,
+      "planning_hours": [
+        3.0,
+        8.0
+      ]
+    },
+    "incident_calibrations": {
+      "generation_calls_upper": 36,
+      "planning_hours": [
+        0.3,
+        1.0
+      ]
+    },
+    "ablation_and_mistaken_capture": {
+      "generation_calls_upper": 2400,
+      "planning_hours": [
+        4.0,
+        8.0
+      ]
+    },
+    "prefixfree_ablation": {
+      "generation_calls_upper": 1840,
+      "planning_hours": [
+        3.0,
+        6.0
+      ]
+    },
+    "recurrence": {
+      "generation_calls_upper": 2880,
+      "planning_hours": [
+        4.0,
+        9.0
+      ]
+    },
+    "e5_retriever_transfer": {
+      "generation_calls_upper": 2080,
+      "planning_hours": [
+        4.0,
+        10.0
+      ]
+    },
+    "swarm": {
+      "generation_calls_upper": 5920,
+      "planning_hours": [
+        8.0,
+        18.0
+      ]
+    },
+    "memform": {
+      "generation_calls_upper": 6380,
+      "planning_hours": [
+        10.0,
+        24.0
+      ]
+    },
+    "final_analysis_integrity": {
+      "generation_calls_upper": 0,
+      "planning_hours": [
+        0.2,
+        1.0
+      ]
+    }
+  },
+  "generation_calls_upper": 22912,
+  "planning_hours_sum": [
+    36.59815555555556,
+    85.94225
+  ],
+  "method": "Call counts from frozen loop cardinalities, including TrustRAG's three generative stages, signature extraction and MemForm memory compilation. Per-phase time bands are engineering planning ranges, not confidence intervals or measured future phase durations.",
+  "limitations": [
+    "Upper counts include calls skipped for empty filtered MemForm histories and do not credit every partially saved current-target arm",
+    "Native MemForm 256-token memory compilation has not yet been timed on this host",
+    "CPU detector/retriever time, attention extraction, prompt lengths, host load and paging add substantial variability",
+    "Update estimates after the first complete incident and external-memory cases; avoid a precise finish-time promise"
+  ],
+  "performance_assessment": {
+    "host": "Apple M5, 16 GiB RAM",
+    "observed_allocated_swap_gib_approx": 7.3,
+    "paging_caveat": "A five-second observation showed 56 swapins and zero swapouts. Allocated swap alone does not establish current sustained thrashing or its causal runtime contribution.",
+    "already_enabled": [
+      "Per-arm checkpoint resume",
+      "Calibration-verified ordinary greedy decoder",
+      "One Torch CPU thread",
+      "Cached captured-sample embeddings",
+      "One model experiment at a time"
+    ],
+    "candidate_speedups_requiring_validation": [
+      "More RAM and independent target shards on another compatible host",
+      "Exact prompt/feature caching with separate uncached timing measurements",
+      "Batch generation only after calibration fidelity and memory checks"
+    ],
+    "not_changed": [
+      "No frozen inference/analysis code or recipes changed",
+      "No extra model worker launched",
+      "No libraries, precision, token limits, models, sample sizes or statistical thresholds changed"
+    ]
+  }
+}

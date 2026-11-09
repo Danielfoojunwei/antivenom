@@ -1,0 +1,12 @@
+
+=== phase human_status started 2026-10-29T20:19:48.724176+00:00 ===
+{
+  "status": "pending_independent_human_labels",
+  "rows_per_reviewer": 302,
+  "completed_rows": {
+    "a": 0,
+    "b": 0
+  },
+  "accepted": false,
+  "metrics": {}
+}

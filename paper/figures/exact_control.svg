@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+<rect width="1000" height="430" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#1d2938} .small{font-size:14px} .label{font-size:16px} .title{font-size:19px;font-weight:700}</style>
+<text x="78" y="34" class="title">Clean-task accuracy</text>
+<text x="78" y="56" class="small">Higher is better</text>
+<line x1="78" y1="315.0" x2="443" y2="315.0" stroke="#e0e5eb"/>
+<text x="68" y="320.0" text-anchor="end" class="small">0%</text>
+<line x1="78" y1="267.0" x2="443" y2="267.0" stroke="#e0e5eb"/>
+<text x="68" y="272.0" text-anchor="end" class="small">20%</text>
+<line x1="78" y1="219.0" x2="443" y2="219.0" stroke="#e0e5eb"/>
+<text x="68" y="224.0" text-anchor="end" class="small">40%</text>
+<line x1="78" y1="171.0" x2="443" y2="171.0" stroke="#e0e5eb"/>
+<text x="68" y="176.0" text-anchor="end" class="small">60%</text>
+<line x1="78" y1="123.0" x2="443" y2="123.0" stroke="#e0e5eb"/>
+<text x="68" y="128.0" text-anchor="end" class="small">80%</text>
+<line x1="78" y1="75.0" x2="443" y2="75.0" stroke="#e0e5eb"/>
+<text x="68" y="80.0" text-anchor="end" class="small">100%</text>
+<rect x="102" y="86.3208" width="75" height="228.6792" fill="#237e87"/>
+<text x="139.5" y="76.3208" text-anchor="middle" class="label">95.28%</text>
+<text x="139.5" y="342" text-anchor="middle" class="small">Entailment</text>
+<rect x="219" y="90.8491" width="75" height="224.1509" fill="#6b61ab"/>
+<text x="256.5" y="80.8491" text-anchor="middle" class="label">93.40%</text>
+<text x="256.5" y="342" text-anchor="middle" class="small">OR</text>
+<rect x="336" y="115.7547" width="75" height="199.2453" fill="#9aa2ad"/>
+<text x="373.5" y="105.7547" text-anchor="middle" class="label">83.02%</text>
+<text x="373.5" y="342" text-anchor="middle" class="small">Empty history</text>
+<text x="568" y="34" class="title">Poisoned-action endorsement</text>
+<text x="568" y="56" class="small">Lower is better</text>
+<line x1="568" y1="315.0" x2="933" y2="315.0" stroke="#e0e5eb"/>
+<text x="558" y="320.0" text-anchor="end" class="small">0%</text>
+<line x1="568" y1="267.0" x2="933" y2="267.0" stroke="#e0e5eb"/>
+<text x="558" y="272.0" text-anchor="end" class="small">20%</text>
+<line x1="568" y1="219.0" x2="933" y2="219.0" stroke="#e0e5eb"/>
+<text x="558" y="224.0" text-anchor="end" class="small">40%</text>
+<line x1="568" y1="171.0" x2="933" y2="171.0" stroke="#e0e5eb"/>
+<text x="558" y="176.0" text-anchor="end" class="small">60%</text>
+<line x1="568" y1="123.0" x2="933" y2="123.0" stroke="#e0e5eb"/>
+<text x="558" y="128.0" text-anchor="end" class="small">80%</text>
+<line x1="568" y1="75.0" x2="933" y2="75.0" stroke="#e0e5eb"/>
+<text x="558" y="80.0" text-anchor="end" class="small">100%</text>
+<rect x="592" y="293.4906" width="75" height="21.5094" fill="#237e87"/>
+<text x="629.5" y="283.4906" text-anchor="middle" class="label">8.96%</text>
+<text x="629.5" y="342" text-anchor="middle" class="small">Entailment</text>
+<rect x="709" y="295.7547" width="75" height="19.2453" fill="#6b61ab"/>
+<text x="746.5" y="285.7547" text-anchor="middle" class="label">8.02%</text>
+<text x="746.5" y="342" text-anchor="middle" class="small">OR</text>
+<rect x="826" y="295.7547" width="75" height="19.2453" fill="#9aa2ad"/>
+<text x="863.5" y="285.7547" text-anchor="middle" class="label">8.02%</text>
+<text x="863.5" y="342" text-anchor="middle" class="small">Empty history</text>
+<text x="78" y="383" class="small">212 already-used local MemForm families per condition. All targets and parse failures retained.</text>
+<text x="78" y="406" class="small">Paired uncertainty and Holm8 tests: Table 2. Equal observed poisoned OR/control rates do not establish equivalence.</text>
+</svg>

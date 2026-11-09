@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-11-03T21:15:16.940397+00:00",
+  "scope": "retrospective local human review package v2; no human labels completed",
+  "tests_passed": 13,
+  "frozen_source_and_input_hashes_verified": true,
+  "counts_per_reviewer": {
+    "extraction": 212,
+    "memory": 1484,
+    "outcome": 733,
+    "policy": 212
+  },
+  "total_rows_per_reviewer": 2641,
+  "all_human_fields_initially_blank": true,
+  "human_validation_passed": false,
+  "v1_archive_preserved_and_bound": true,
+  "v1_file_count_bound": 17,
+  "bug_fix": "Preserve signed adjudication and unsigned notes under exact row/reviewer/mapping bindings, reject changed bindings, atomic writes.",
+  "regression_checks": [
+    "signed judgment and reason persist across reassessment and preparation",
+    "unsigned work-in-progress persists",
+    "mutated mapping rejected",
+    "changed adjudication or reviewer binding rejected without overwriting work",
+    "invalid labels/timestamps and duplicate entries rejected"
+  ],
+  "manifest_sha256": "64168469a5deae609b6f35dd8a9b66f7816247867eb8daad5b3c5ffc195c3337"
+}

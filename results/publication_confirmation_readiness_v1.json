@@ -1,0 +1,42 @@
+{
+  "errors": [],
+  "executable_freeze_written": false,
+  "missing": [
+    "cohort: /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/data/external/publication_confirmation/cohort.json",
+    "provenance_review: /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/data/external/publication_confirmation/provenance_review.json"
+  ],
+  "model_calls": 0,
+  "native_authorship_authenticated_by_software": false,
+  "native_empirical_validation": false,
+  "preexecution_review_corrections": [
+    {
+      "confirmation_protocol_and_power_v1_changed": false,
+      "correction": "Apply historical, cross-campaign capture and shared-source exclusions to raw_sha256 as well as stored text/hash. A rewritten record cannot erase its captured-source lineage.",
+      "original_scientific_inputs_changed": false,
+      "preserved_previous_readiness": "results/provenance/publication_readiness_v1_pre_review.json",
+      "previous_readiness_sha256": "9e9df97f13ebffda9bdee33fa3e8a6345d7f3c4fa452dd909b996a555f362428",
+      "regression_tests": [
+        "test_rewritten_memory_raw_source_cannot_reuse_historical_capture",
+        "test_rewritten_memory_raw_source_cannot_leak_other_campaign_capture"
+      ],
+      "timing": "preexecution software review; no executable freeze or fresh model outcomes existed"
+    }
+  ],
+  "prepared_software_is_not_empirical_confirmation": true,
+  "prepared_software_only": {
+    "analysis/publication_power.py": "287eeafd54dc1cd386873d73c6c94b6e992a545860542b2d7f14adc776ceeb88",
+    "docs/PUBLICATION_CONFIRMATION_PROTOCOL_V1.md": "3d8e904ed3678aad44e699d43386035fc801b809a78f7eaf5290e6746dd4fe0d",
+    "experiments/prepare_publication_confirmation.py": "334e94672854317ffa5358af3363ca5c7ccf309d240109d196ac65fd3e3df77b",
+    "results/publication_power_v1.json": "65189d8322a1a90d9cf07bd7f1d2dce4e0640503dcd5540f8ab9945dc841fa52",
+    "src/antivenom/memmorph_eval.py": "2666efaae82ec41a7d932c720950c58ef5f42a1e2eedcdacabf9fa4882fc25dc",
+    "src/antivenom/memmorph_matched_sources.py": "088b4e3ee8763629b8ce3233e23f1d6c36fab615c7d2a1c81dd01fc07c336200",
+    "src/antivenom/publication_study.py": "6e3743543169a998fe8b93e8689e3cc1c2ee2ed13839ada9def628d4666a13cf",
+    "src/antivenom/tool_policy_signature.py": "4c4b8385449758a0e1293ee9d2bae31b21266e3d4f1188b0691f0432b9934ee3",
+    "tests/test_publication_power.py": "bb27bf04ae91d324c9c374daafc29aa953b6b64bedb03dc2587cd303215f1eb4",
+    "tests/test_publication_study.py": "6af6bd228e01dd7f2e57025e15db3babd81d77d7467f9d3fb08361b8071c162b",
+    "uv.lock": "9a14ed5a38260ad3fe04435b5a7fff800d18f696896c5fdf21ddd940e847165f"
+  },
+  "schema": "antivenom.publication.confirmation.v1",
+  "status": "blocked",
+  "verified_input_files": {}
+}

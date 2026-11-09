@@ -1,0 +1,14 @@
+{
+  "scope": "Preparation software only; no native scientific execution freeze or efficacy result",
+  "inputs": {
+    "docs/MEMMORPH_ALIGNMENT_PROTOCOL.md": "4390187322707e61941c1865c9a88810acd46dd13f5fbd2f9b1b79de0591f374",
+    "experiments/memmorph_alignment_plan.json": "555b1000473f54506a24c52de262f3e6a10da8d1d11fbc0596222e43ffb9f0d9",
+    "experiments/prepare_memmorph.py": "7754da8bc09c042688adaf4d0d6e9cbba4a9a19bb1ae79537ba08de84da8a1fa",
+    "analysis/memmorph_score.py": "dc4f6f2288ea619e605920a7b08668b7536218e7d05504c920dc163897415fbc",
+    "src/antivenom/memmorph_eval.py": "2666efaae82ec41a7d932c720950c58ef5f42a1e2eedcdacabf9fa4882fc25dc",
+    "src/antivenom/tool_policy_signature.py": "4c4b8385449758a0e1293ee9d2bae31b21266e3d4f1188b0691f0432b9934ee3",
+    "tests/test_memmorph_eval.py": "ceb0cf6ccf484acaac1210f675af8c18a436f9754d83b5362517706596be91be",
+    "tests/test_tool_policy_signature.py": "5d55914a8acf541e993328e8b395e1fe8a0c88f6ac59a1b6f4d34930512264ef",
+    "tests/test_memmorph_readiness.py": "3c48d72ace2ca632a4bc382c3ccfe07b6385718377cd7637f0abad492a409f03"
+  }
+}

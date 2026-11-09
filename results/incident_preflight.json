@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "calibration_targets": 20,
+  "development_targets": 80,
+  "recurrence_questions": 160,
+  "minimum_agent_clean_records": 14,
+  "captured_text_differs_from_every_evaluated_poison": true,
+  "reader_experiments_run": false,
+  "human_review_deferred_by_user": true,
+  "fresh_NI_margin_absolute": 0.05
+}

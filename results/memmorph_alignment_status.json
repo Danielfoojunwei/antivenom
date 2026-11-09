@@ -1,0 +1,20 @@
+{
+  "status": "blocked_native_artifacts_missing",
+  "native_empirical_validation": false,
+  "model_calls": 0,
+  "native_harness_executed": false,
+  "missing": [
+    "native_bundle.json",
+    "native_harness_manifest.json",
+    "reference_baseline.json",
+    "provenance_review.json"
+  ],
+  "errors": [],
+  "verified_files": {},
+  "provenance_note": "Review declarations need independent human verification; flags alone do not authenticate an author release.",
+  "checked_utc": "2026-11-03T13:39:15.011716+00:00",
+  "native_directory": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/data/external/memmorph",
+  "plan": "experiments/memmorph_alignment_plan.json",
+  "software_manifest": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/results/memmorph_alignment_software_manifest.json",
+  "empirical_result": "No native MemMorph result; no cure or clean-utility claim"
+}

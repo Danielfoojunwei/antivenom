@@ -1,0 +1,87 @@
+{
+  "agreement_on_jointly_completed_fields": {
+    "extraction": {
+      "human_claim_faithful": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      },
+      "human_conditions_preserved": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      },
+      "human_invented_content": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      },
+      "human_question_faithful": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      }
+    },
+    "memory": {
+      "human_policy_consistent": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      },
+      "human_task_relevant": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      },
+      "human_useful_for_reference_decision": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      }
+    },
+    "outcome": {
+      "human_committed_label": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      }
+    },
+    "policy": {
+      "human_reference_action": {
+        "agreement": null,
+        "cohen_kappa": null,
+        "n": 0
+      }
+    }
+  },
+  "completed_rows": {
+    "extraction": {
+      "a": 0,
+      "b": 0
+    },
+    "memory": {
+      "a": 0,
+      "b": 0
+    },
+    "outcome": {
+      "a": 0,
+      "b": 0
+    },
+    "policy": {
+      "a": 0,
+      "b": 0
+    }
+  },
+  "counts_per_reviewer": {
+    "extraction": 212,
+    "memory": 1484,
+    "outcome": 733,
+    "policy": 212
+  },
+  "disagreement_fields": 0,
+  "human_attestations_complete": false,
+  "human_validation_passed": false,
+  "note": "Software cannot certify reviewer identity/independence. Complete labels require adjudication and a signed human validation report; no automatic pass or outcome exclusions.",
+  "schema": "antivenom.publication_human_review_status.v1",
+  "status": "pending_independent_human_labels"
+}

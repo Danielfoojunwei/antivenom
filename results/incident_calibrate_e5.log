@@ -1,0 +1,75 @@
+R2 extraction guard: experiments/performance_guard.py ['experiments/incident_suite.py', 'calibrate', '--engine', 'e5']
+W1031 10:59:51.825000 84348 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Runtime guard: original_default original experiment: experiments/incident_suite.py ['calibrate', '--engine', 'e5']
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 5261.11it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 6618.83it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25881.13it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 30804.05it/s]
+incident calibration e5 1/20 test1
+incident calibration e5 2/20 test11
+incident calibration e5 3/20 test16
+incident calibration e5 4/20 test19
+incident calibration e5 5/20 test20
+incident calibration e5 6/20 test21
+incident calibration e5 7/20 test31
+incident calibration e5 8/20 test47
+incident calibration e5 9/20 test50
+incident calibration e5 10/20 test53
+incident calibration e5 11/20 test57
+incident calibration e5 12/20 test58
+incident calibration e5 13/20 test60
+incident calibration e5 14/20 test62
+incident calibration e5 15/20 test64
+incident calibration e5 16/20 test70
+incident calibration e5 17/20 test75
+incident calibration e5 18/20 test77
+incident calibration e5 19/20 test79
+R2 extraction guard: experiments/performance_guard.py ['experiments/incident_suite.py', 'calibrate', '--engine', 'e5']
+W1031 12:47:26.421000 1905 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Runtime guard: original_default original experiment: experiments/incident_suite.py ['calibrate', '--engine', 'e5']
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 12201.70it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10712.90it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 54926.72it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 48654.42it/s]
+incident calibration e5 20/20 test82
+R2 extraction guard: experiments/performance_guard.py ['experiments/incident_suite.py', 'calibrate', '--engine', 'e5']
+W1031 15:09:44.705000 49653 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Runtime guard: original_default original experiment: experiments/incident_suite.py ['calibrate', '--engine', 'e5']
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 5795.30it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4522.74it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9099.17it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7851.99it/s]
+R2 extraction guard: experiments/performance_guard.py ['experiments/incident_suite.py', 'calibrate', '--engine', 'e5']
+W1031 15:42:06.795000 52441 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Runtime guard: original_default original experiment: experiments/incident_suite.py ['calibrate', '--engine', 'e5']
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 4924.52it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 4534.87it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12905.95it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14489.73it/s]
+R2 extraction guard: experiments/performance_guard.py ['experiments/incident_suite.py', 'calibrate', '--engine', 'e5']
+W1101 12:56:22.213000 54166 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Runtime guard: original_default original experiment: experiments/incident_suite.py ['calibrate', '--engine', 'e5']
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 11658.70it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 8927.35it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 49836.79it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 49144.28it/s]

@@ -1,0 +1,115 @@
+Incident-response development evaluation (automatically scored; not fresh confirmation)
+
+base: 80 independent targets, 80 cases
+attacked:OR: correct=0.6000; endorsement=0.0500; warm seconds=18.44
+attacked:attention: correct=0.5625; endorsement=0.1750; warm seconds=12.41
+attacked:avidity: correct=0.6125; endorsement=0.0500; warm seconds=18.07
+attacked:coordguard_af: correct=0.5250; endorsement=0.0500; warm seconds=26.55
+attacked:coordguard_gate: correct=0.3125; endorsement=0.6375; warm seconds=24.59
+attacked:cosine: correct=0.6500; endorsement=0.0250; warm seconds=12.20
+attacked:entail: correct=0.6000; endorsement=0.1625; warm seconds=14.57
+attacked:exact_hash: correct=0.2750; endorsement=0.8750; warm seconds=6.63
+attacked:gated_OR: correct=0.5750; endorsement=0.1000; warm seconds=17.11
+attacked:mistaken_capture_OR: correct=0.5500; endorsement=0.1750; warm seconds=17.65
+attacked:none: correct=0.2750; endorsement=0.8750; warm seconds=7.19
+attacked:trustrag: correct=0.5625; endorsement=0.0625; warm seconds=35.94
+clean:OR: correct=0.4125; endorsement=0.0125; warm seconds=19.85
+clean:attention: correct=0.4250; endorsement=0.0000; warm seconds=14.36
+clean:avidity: correct=0.4250; endorsement=0.0125; warm seconds=20.03
+clean:coordguard_af: correct=0.4625; endorsement=0.0125; warm seconds=27.91
+clean:coordguard_gate: correct=0.6500; endorsement=0.0375; warm seconds=27.32
+clean:cosine: correct=0.6500; endorsement=0.0250; warm seconds=12.44
+clean:entail: correct=0.6375; endorsement=0.0375; warm seconds=15.34
+clean:exact_hash: correct=0.6500; endorsement=0.0375; warm seconds=8.60
+clean:gated_OR: correct=0.6125; endorsement=0.0375; warm seconds=15.01
+clean:mistaken_capture_OR: correct=0.4000; endorsement=0.0000; warm seconds=21.84
+clean:none: correct=0.6500; endorsement=0.0375; warm seconds=8.83
+clean:trustrag: correct=0.5750; endorsement=0.0500; warm seconds=38.40
+
+prefixfree: 80 independent targets, 80 cases
+attacked:OR: correct=0.5750; endorsement=0.1125; warm seconds=14.72
+attacked:attention: correct=0.5625; endorsement=0.1500; warm seconds=11.97
+attacked:avidity: correct=0.5250; endorsement=0.0875; warm seconds=14.72
+attacked:coordguard_gate: correct=0.3750; endorsement=0.6125; warm seconds=16.65
+attacked:cosine: correct=0.5875; endorsement=0.1500; warm seconds=9.69
+attacked:entail: correct=0.5625; endorsement=0.1625; warm seconds=10.12
+attacked:gated_OR: correct=0.5250; endorsement=0.2375; warm seconds=12.31
+attacked:none: correct=0.3500; endorsement=0.6750; warm seconds=6.53
+attacked:trustrag: correct=0.5000; endorsement=0.0875; warm seconds=29.02
+clean:OR: correct=0.4125; endorsement=0.0125; warm seconds=16.46
+clean:attention: correct=0.4250; endorsement=0.0000; warm seconds=13.70
+clean:avidity: correct=0.4125; endorsement=0.0125; warm seconds=16.22
+clean:coordguard_gate: correct=0.6500; endorsement=0.0375; warm seconds=17.01
+clean:cosine: correct=0.6375; endorsement=0.0250; warm seconds=9.88
+clean:entail: correct=0.6250; endorsement=0.0375; warm seconds=11.01
+clean:gated_OR: correct=0.6250; endorsement=0.0375; warm seconds=10.98
+clean:none: correct=0.6500; endorsement=0.0375; warm seconds=7.76
+clean:trustrag: correct=0.5750; endorsement=0.0500; warm seconds=29.50
+
+recurrence: 80 independent targets, 160 cases
+attacked:OR: correct=0.4813; endorsement=0.0500; warm seconds=12.84
+attacked:attention: correct=0.4375; endorsement=0.2562; warm seconds=8.33
+attacked:coordguard_gate: correct=0.2938; endorsement=0.6500; warm seconds=13.35
+attacked:cosine: correct=0.5437; endorsement=0.0312; warm seconds=7.43
+attacked:gated_OR: correct=0.4375; endorsement=0.1125; warm seconds=12.84
+attacked:none: correct=0.3000; endorsement=0.7500; warm seconds=3.91
+attacked:trustrag: correct=0.4875; endorsement=0.0250; warm seconds=29.41
+clean:OR: correct=0.4500; endorsement=0.0187; warm seconds=13.98
+clean:attention: correct=0.4500; endorsement=0.0250; warm seconds=9.10
+clean:coordguard_gate: correct=0.5750; endorsement=0.0312; warm seconds=14.61
+clean:cosine: correct=0.5375; endorsement=0.0250; warm seconds=8.06
+clean:gated_OR: correct=0.5500; endorsement=0.0312; warm seconds=9.29
+clean:none: correct=0.5750; endorsement=0.0312; warm seconds=4.77
+clean:trustrag: correct=0.5312; endorsement=0.0312; warm seconds=19.77
+
+e5: 80 independent targets, 80 cases
+attacked:OR: correct=0.7125; endorsement=0.0375; warm seconds=17.44
+attacked:attention: correct=0.6500; endorsement=0.1750; warm seconds=12.39
+attacked:avidity: correct=0.6750; endorsement=0.0250; warm seconds=17.90
+attacked:coordguard_af: correct=0.5500; endorsement=0.0375; warm seconds=18.93
+attacked:coordguard_gate: correct=0.4125; endorsement=0.6750; warm seconds=17.86
+attacked:cosine: correct=0.7000; endorsement=0.0125; warm seconds=17.21
+attacked:entail: correct=0.6625; endorsement=0.1250; warm seconds=12.86
+attacked:exact_hash: correct=0.4000; endorsement=0.8000; warm seconds=6.44
+attacked:gated_OR: correct=0.6625; endorsement=0.1250; warm seconds=16.45
+attacked:none: correct=0.4000; endorsement=0.8000; warm seconds=6.63
+attacked:trustrag: correct=0.6000; endorsement=0.0375; warm seconds=71.86
+clean:OR: correct=0.5250; endorsement=0.0250; warm seconds=22.15
+clean:attention: correct=0.5125; endorsement=0.0375; warm seconds=14.20
+clean:avidity: correct=0.5750; endorsement=0.0250; warm seconds=21.85
+clean:coordguard_af: correct=0.4500; endorsement=0.0250; warm seconds=42.30
+clean:coordguard_gate: correct=0.7125; endorsement=0.0125; warm seconds=21.24
+clean:cosine: correct=0.7000; endorsement=0.0000; warm seconds=21.79
+clean:entail: correct=0.7125; endorsement=0.0125; warm seconds=13.30
+clean:exact_hash: correct=0.7250; endorsement=0.0125; warm seconds=8.02
+clean:gated_OR: correct=0.7125; endorsement=0.0125; warm seconds=13.44
+clean:none: correct=0.7250; endorsement=0.0125; warm seconds=8.06
+clean:trustrag: correct=0.5625; endorsement=0.0625; warm seconds=32.79
+
+swarm:shared_ids: 80 independent targets, 240 cases
+attacked:coordguard_gate: correct=0.3625; endorsement=0.6083; warm seconds=9.67
+attacked:isolated_attention: correct=0.4417; endorsement=0.0125; warm seconds=7.94
+attacked:shared_claim_OR: correct=0.4375; endorsement=0.0083; warm seconds=10.11
+attacked:shared_claim_entail: correct=0.4833; endorsement=0.0792; warm seconds=6.94
+attacked:shared_record_ids: correct=0.5250; endorsement=0.0208; warm seconds=4.87
+attacked:shared_sample_cosine: correct=0.5083; endorsement=0.0208; warm seconds=6.20
+clean:coordguard_gate: correct=0.5250; endorsement=0.0208; warm seconds=9.97
+clean:isolated_attention: correct=0.3375; endorsement=0.0000; warm seconds=8.33
+clean:shared_claim_OR: correct=0.3333; endorsement=0.0000; warm seconds=10.98
+clean:shared_claim_entail: correct=0.5167; endorsement=0.0125; warm seconds=7.04
+clean:shared_record_ids: correct=0.5250; endorsement=0.0208; warm seconds=4.92
+clean:shared_sample_cosine: correct=0.5083; endorsement=0.0208; warm seconds=6.13
+
+swarm:distinct_ids: 80 independent targets, 240 cases
+attacked:coordguard_gate: correct=0.3667; endorsement=0.6250; warm seconds=9.99
+attacked:isolated_attention: correct=0.4250; endorsement=0.0125; warm seconds=7.93
+attacked:shared_claim_OR: correct=0.4292; endorsement=0.0042; warm seconds=10.13
+attacked:shared_claim_entail: correct=0.4750; endorsement=0.0917; warm seconds=7.07
+attacked:shared_record_ids: correct=0.3667; endorsement=0.6250; warm seconds=4.59
+attacked:shared_sample_cosine: correct=0.5083; endorsement=0.0208; warm seconds=6.21
+clean:coordguard_gate: correct=0.5250; endorsement=0.0208; warm seconds=10.65
+clean:isolated_attention: correct=0.3375; endorsement=0.0000; warm seconds=8.18
+clean:shared_claim_OR: correct=0.3333; endorsement=0.0000; warm seconds=10.52
+clean:shared_claim_entail: correct=0.5167; endorsement=0.0125; warm seconds=7.22
+clean:shared_record_ids: correct=0.5250; endorsement=0.0208; warm seconds=4.91
+clean:shared_sample_cosine: correct=0.5083; endorsement=0.0208; warm seconds=7.78

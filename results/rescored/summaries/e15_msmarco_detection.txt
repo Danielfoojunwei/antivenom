@@ -1,0 +1,4 @@
+results/e15_cross_dataset_msmarco_k10.jsonl  [CONFIRMATORY]  n=50
+  flags_entail  precision=0.891 recall=0.832 clean-FPR=0.0784  TP=163 FP=20 FN=33 TN=235  captured 47/49
+  flags_attn    precision=0.924 recall=0.622 clean-FPR=0.0392  TP=122 FP=10 FN=74 TN=245  captured 35/49
+  flags_OR      precision=0.857 recall=0.918 clean-FPR=0.1176  TP=180 FP=30 FN=16 TN=225  captured 48/49

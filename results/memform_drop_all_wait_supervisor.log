@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_memform_drop_all_wait.py", line 444, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_memform_drop_all_wait.py", line 440, in main
+    supervise(config)
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_memform_drop_all_wait.py", line 417, in supervise
+    time.sleep(config["poll_seconds"])
+KeyboardInterrupt

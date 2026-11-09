@@ -1,0 +1,37 @@
+{
+  "observed_utc": "2026-10-29T19:13:26.648670+00:00",
+  "prior_states": {
+    "remaining": {
+      "queue_pid": 29536,
+      "status": "failed",
+      "completed_phases": [
+        "prepare",
+        "llama",
+        "mistral"
+      ],
+      "protocol": "docs/REMAINING_RUNS_PROTOCOL.md",
+      "phase": "composite",
+      "child_pid": 35639,
+      "updated_utc": "2026-10-29T18:57:14.650117+00:00",
+      "returncode": 1
+    },
+    "incident": {
+      "queue_pid": 36006,
+      "status": "blocked_by_prior_queue_failure",
+      "phase": "wait_E36_E38",
+      "completed_phases": [],
+      "protocol": "docs/INCIDENT_RESPONSE_PROTOCOL.md",
+      "updated_utc": "2026-10-29T18:57:17.287166+00:00",
+      "prior_phase": "composite",
+      "runtime_launcher": "experiments/run_incident_optimized.py",
+      "runtime_manifest": "results/performance_runtime_manifest.json",
+      "runtime_validation": "results/performance_validation.json"
+    }
+  },
+  "preserved_completed_composite_targets": 70,
+  "failed_target": "test423",
+  "failed_capture_index": 2,
+  "original_scientific_manifests_match": true,
+  "amendment": "docs/EXTRACTION_RESILIENCE_AMENDMENT.md",
+  "policy": "Invalid capture, no text repair or tuned retry"
+}

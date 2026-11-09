@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-11-03T04:27:47.215224+00:00",
+  "status": "paused",
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/qwen_epistemic_weight_repair_v1/runs/pilot_002/resource_state.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/qwen_epistemic_weight_repair_v1/runs/pilot_002/resource_state_guard_5phlnp02/config.json",
+  "guard_watcher_pid": 97074,
+  "priority_run_pid": 97034,
+  "priority_run_identity": {
+    "pid": 97034,
+    "start": "Tue Nov 3 10:16:16 2026",
+    "command": "/Users/danielfoojunwei/Desktop/liquid probe/work/neuron_explorer_review/.venv-qwen35/bin/python -B /Users/danielfoojunwei/Desktop/liquid probe/work/qwen_epistemic_weight_repair_v1/runs/pilot_002/frozen/coordinator.py /Users/danielfoojunwei/Desktop/liquid probe/work/qwen_epistemic_weight_repair_v1/runs/pilot_002"
+  },
+  "targets": [
+    {
+      "pid": 54055,
+      "start": "Sun Nov 1 12:55:16 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom incident queue",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 32972,
+      "start": "Tue Nov 3 04:50:12 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_memform.py",
+      "role": "worker",
+      "queue_pid": 54055,
+      "name": "Antivenom guarded worker",
+      "pause_status": "paused"
+    }
+  ],
+  "paused_at_utc": "2026-11-03T02:16:20.134041+00:00",
+  "authorization_basis": "Observed matching live guard applies existing temporary-pause scope; no fresh human approval inferred from local flag. No resumption/restart or cross-chat message sent. Preserve existing watcher ownership.",
+  "previous_completed_guard": "results/provenance/external_resource_pause_pulse_first_pilot001_completed.json",
+  "memform_complete_families": 101,
+  "memform_saved_result_arms": 1414,
+  "resume_condition": "Matching live watcher resumes exact stopped identities after priority coordinator exits",
+  "action": "No intervention; do not duplicate jobs or bypass shared lock"
+}

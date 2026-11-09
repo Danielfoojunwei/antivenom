@@ -1,0 +1,30 @@
+[project]
+name = "antivenom"
+version = "0.1.0"
+description = "ANTIVENOM: defending RAG readers against knowledge poisoning (research code)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "en-core-web-sm",
+    "mlx-lm>=0.32.2",
+    "nltk>=3.10.4",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "pyarrow>=26.0.0",
+    "pydantic>=2.14.1",
+    "rouge-score>=0.1.2",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "sentence-transformers>=6.2.0",
+    "spacy>=3.8.18",
+    "torch>=2.14.1",
+    "tqdm>=4.70.1",
+    "transformers>=5.20.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }

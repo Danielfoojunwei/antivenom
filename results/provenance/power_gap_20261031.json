@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-30T23:18:37.495327+00:00",
+  "source": "pmset -g log",
+  "events_local_Singapore": [
+    {
+      "time": "2026-10-31 04:35:32 +0800",
+      "event": "Entering Sleep",
+      "reason": "Low Power Sleep",
+      "power": "battery",
+      "charge_percent": 1,
+      "reported_sleep_seconds": 9534
+    },
+    {
+      "time": "2026-10-31 07:14:26 +0800",
+      "event": "Wake from Hibernate",
+      "reason": "AC attach/user activity",
+      "power": "AC",
+      "charge_percent": 1
+    }
+  ],
+  "interpretation": "A confirmed low-battery sleep explains approximately 159 minutes of the latest long checkpoint gap; original processes survived and progress resumed. Idle inhibitors do not prevent low-battery sleep."
+}

@@ -1,0 +1,10 @@
+{
+  "preflight_passed": true,
+  "canonical_contexts": 120,
+  "llama_calibration_targets": 20,
+  "decoder_fidelity_matches": 3,
+  "first_completed_tier2_targets_checked": 3,
+  "answer_arms_per_target": 13,
+  "manifest_checks_passed": true,
+  "does_not_assert_full_run_completion": true
+}

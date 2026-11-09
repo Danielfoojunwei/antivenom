@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-10-30T07:39:14.131424+00:00",
+  "passed": true,
+  "no_model_calls": true,
+  "fixtures": [
+    "zero-variance finite uncertainty",
+    "zero-observed-harm exact upper bound",
+    "benefit/damage direction",
+    "incident clustering",
+    "context mismatch rejection"
+  ],
+  "frozen_inputs_checked": {
+    "remaining_queue_manifest_v2.json": 13,
+    "incident_queue_manifest.json": 19,
+    "performance_runtime_manifest.json": 5,
+    "extraction_resilience_manifest.json": 8,
+    "performance_validation_manifest.json": 17,
+    "performance_choice_frozen.json": 2,
+    "swarm_track4_manifest.json": 25
+  },
+  "waiting_supervisor": 24377,
+  "swarm_receiver_outcomes": 0,
+  "human_review": "deferred, not passed"
+}

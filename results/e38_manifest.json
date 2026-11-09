@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/e38_gate_cache.py": "f23eb3d19ee748ca6d8c554d0e3b40472bdb540ab87b3ff93f238cacc44f82f9",
+    "data/cache/e36_contexts_hotpotqa.jsonl": "57afb54d05f9df608781ad4a42e09feea396400c53a62af8d84534130e24f5d8",
+    "data/cache/e36_contexts_msmarco.jsonl": "f180c0766b6953521bb019972922942a4c81c5c275c32004653a41d0e885b4be",
+    "docs/REMAINING_RUNS_PROTOCOL.md": "f6c530a2e4b34ad3ca50d567281c1d76e86b6fa7416d2ea13dc2bbc342f39ea6",
+    "results/e29_tier2_hotpotqa_k10.jsonl": "c571338c065839ba2d9e88b10806cb49fc840512538889debbd4e8f74f3e127d",
+    "results/e29_tier2_msmarco_k10.jsonl": "41cd393565d257f85621ac77619f49033c6dbfe0f31e45f32281e30a6b5a2f07",
+    "results/e30_attack_gate.json": "f59fb8787c4dd178b7bee46f68932a55a7672f334eb650964087774bdd0d2fee",
+    "src/antivenom/continuation.py": "84e86d8566d899ddd3e062639369db76ce31558355c77055738e2c378bd9d54e"
+  },
+  "settings": {
+    "scope": "exploratory E30 replay"
+  }
+}

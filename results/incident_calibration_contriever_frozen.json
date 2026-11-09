@@ -1,0 +1,31 @@
+{
+  "inputs": {
+    "results/incident_calibration_contriever.json": "d5ed6dd81de5228777b4f43d950b5486cdce312d8618ae7a800c5da643983bd1",
+    "results/incident_calibration_contriever_rows.jsonl": "9cbc3ab109934dc08500c2c707cb51686864ed51b62867520e1bc5b7b2d14107",
+    "results/incident_contriever_fidelity.json": "220d0da5ef46228c5068307f1cdd87259da8696c9b5eb9cc764391fe1f40a8c1"
+  },
+  "settings": {
+    "ids": [
+      "test1",
+      "test11",
+      "test16",
+      "test19",
+      "test20",
+      "test21",
+      "test31",
+      "test47",
+      "test50",
+      "test53",
+      "test57",
+      "test58",
+      "test60",
+      "test62",
+      "test64",
+      "test70",
+      "test75",
+      "test77",
+      "test79",
+      "test82"
+    ]
+  }
+}

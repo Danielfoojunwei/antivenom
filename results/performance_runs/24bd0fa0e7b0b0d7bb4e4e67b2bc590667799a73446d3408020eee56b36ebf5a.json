@@ -1,0 +1,12 @@
+{
+  "script": "experiments/incident_suite.py",
+  "arguments": [
+    "recurrence"
+  ],
+  "configuration": "original_default",
+  "cache_limit_bytes": 16320875724,
+  "scientific_source_unchanged": true,
+  "status": "complete",
+  "wall_seconds": 10.664417915999366,
+  "peak_memory_bytes": 4287507464
+}

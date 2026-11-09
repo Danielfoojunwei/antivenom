@@ -1,0 +1,174 @@
+{
+  "operation": "Replace only our waiting v1 supervisor with separately frozen v2 operational guard",
+  "utc": "2026-11-03T19:52:32.148369+00:00",
+  "supervisor": {
+    "pid": 80323,
+    "ppid": 1,
+    "state": "Ss",
+    "rss_kib": 24352,
+    "cpu_time": "0:00.27",
+    "start": "Wed Nov 4 03:49:29 2026",
+    "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_memform_drop_all_wait.py --supervise"
+  },
+  "status_before": {
+    "schema": "antivenom.memform-drop-all.wait-status.v1",
+    "supervisor_pid": 80323,
+    "runtime_launcher": "experiments/run_memform_drop_all_wait.py",
+    "runtime_arguments": [
+      "--supervise"
+    ],
+    "runtime_manifest": "results/memform_drop_all_wait_runtime_manifest_v1.json",
+    "configuration": "results/memform_drop_all_wait_config_v1.json",
+    "plan": "results/memform_drop_all_plan_v1.json",
+    "status": "waiting_for_clear_host",
+    "phase": "waiting",
+    "child_pid": null,
+    "clear_observations": 0,
+    "completed_calls": 0,
+    "updated_utc": "2026-11-03T19:52:30.303833+00:00",
+    "inhibitor_pid": 80324,
+    "observed_blockers": [
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 73003,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 16,
+          "cpu_time": "0:01.08",
+          "start": "Sun Nov 1 18:00:14 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/TGOnDeviceInferenceProviderService.appex/Contents/MacOS/TGOnDeviceInferenceProviderService -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUudGdvbmRldmljZWluZmVyZW5jZXByb3ZpZGVyc2VydmljZSJ9"
+        }
+      },
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 86259,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 1568,
+          "cpu_time": "0:04.95",
+          "start": "Sun Nov 1 07:24:59 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/TGOnDeviceInferenceProviderService.appex/Contents/MacOS/TGOnDeviceInferenceProviderService -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUudGdvbmRldmljZWluZmVyZW5jZXByb3ZpZGVyc2VydmljZSJ9"
+        }
+      },
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 86414,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 1232,
+          "cpu_time": "0:00.92",
+          "start": "Sun Nov 1 07:30:58 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/GenerativeExperiencesSafetyInferenceProvider.appex/Contents/MacOS/GenerativeExperiencesSafetyInferenceProvider -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUuR2VuZXJhdGl2ZUZ1bmN0aW9ucy5HZW5lcmF0aXZlRXhwZXJpZW5jZXNTYWZldHlJbmZlcmVuY2VQcm92aWRlciJ9"
+        }
+      }
+    ],
+    "exempted": [
+      {
+        "pid": 15599,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 15600,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 65701,
+        "classification": "stdlib_resource_tracker"
+      },
+      {
+        "pid": 65702,
+        "classification": "dormant_cpu_spawn"
+      },
+      {
+        "pid": 65703,
+        "classification": "dormant_cpu_spawn"
+      }
+    ]
+  },
+  "scientific_plan_unchanged": true,
+  "model_initialized": false,
+  "completed_calls": 0,
+  "reason": "Exact dormant Apple platform providers matched the broad inference command heuristic; no other experiment is signalled.",
+  "status_after": {
+    "schema": "antivenom.memform-drop-all.wait-status.v1",
+    "supervisor_pid": 80323,
+    "runtime_launcher": "experiments/run_memform_drop_all_wait.py",
+    "runtime_arguments": [
+      "--supervise"
+    ],
+    "runtime_manifest": "results/memform_drop_all_wait_runtime_manifest_v1.json",
+    "configuration": "results/memform_drop_all_wait_config_v1.json",
+    "plan": "results/memform_drop_all_plan_v1.json",
+    "status": "failed",
+    "phase": "waiting",
+    "child_pid": null,
+    "clear_observations": 0,
+    "completed_calls": 0,
+    "updated_utc": "2026-11-03T19:52:32.148982+00:00",
+    "inhibitor_pid": 80324,
+    "observed_blockers": [
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 73003,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 16,
+          "cpu_time": "0:01.08",
+          "start": "Sun Nov 1 18:00:14 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/TGOnDeviceInferenceProviderService.appex/Contents/MacOS/TGOnDeviceInferenceProviderService -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUudGdvbmRldmljZWluZmVyZW5jZXByb3ZpZGVyc2VydmljZSJ9"
+        }
+      },
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 86259,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 1568,
+          "cpu_time": "0:04.95",
+          "start": "Sun Nov 1 07:24:59 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/TGOnDeviceInferenceProviderService.appex/Contents/MacOS/TGOnDeviceInferenceProviderService -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUudGdvbmRldmljZWluZmVyZW5jZXByb3ZpZGVyc2VydmljZSJ9"
+        }
+      },
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 86414,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 1232,
+          "cpu_time": "0:00.92",
+          "start": "Sun Nov 1 07:30:58 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/GenerativeExperiencesSafetyInferenceProvider.appex/Contents/MacOS/GenerativeExperiencesSafetyInferenceProvider -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUuR2VuZXJhdGl2ZUZ1bmN0aW9ucy5HZW5lcmF0aXZlRXhwZXJpZW5jZXNTYWZldHlJbmZlcmVuY2VQcm92aWRlciJ9"
+        }
+      }
+    ],
+    "exempted": [
+      {
+        "pid": 15599,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 15600,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 65701,
+        "classification": "stdlib_resource_tracker"
+      },
+      {
+        "pid": 65702,
+        "classification": "dormant_cpu_spawn"
+      },
+      {
+        "pid": 65703,
+        "classification": "dormant_cpu_spawn"
+      }
+    ],
+    "error": "KeyboardInterrupt()"
+  }
+}

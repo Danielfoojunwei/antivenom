@@ -1,0 +1,75 @@
+E36–E38 remaining-runs analysis
+Used-question transfer and development analyses; not fresh confirmation or human-validated
+Transfer families have 10 exact paired comparisons each; Holm within each listed family.
+Bootstrap: 2,000 target resamples, seed 0. No equivalence or non-inferiority claim.
+
+Meta-Llama-3-8B-Instruct-4bit, n=100
+  clean: correct 0.630, endorsed 0.030
+  attack: correct 0.260, endorsed 0.530
+  v1_block: correct 0.300, endorsed 0.330
+  v1_delete_backfill: correct 0.430, endorsed 0.320
+  v2_delete_backfill: correct 0.450, endorsed 0.330
+  random_delete_backfill: correct 0.340, endorsed 0.480
+  lowrel_delete_backfill: correct 0.240, endorsed 0.620
+  coordguard_af: correct 0.460, endorsed 0.050
+  coordguard_af_refill: correct 0.460, endorsed 0.030
+  trustrag: correct 0.130, endorsed 0.030
+  defclean_v1: correct 0.440, endorsed 0.020
+  defclean_v2: correct 0.440, endorsed 0.030
+  defclean_coordguard: correct 0.380, endorsed 0.010
+  gated_v1: correct 0.430, endorsed 0.320
+  gated_v2: correct 0.450, endorsed 0.330
+  gated_cg: correct 0.460, endorsed 0.040
+  gated_clean_v1: correct 0.480, endorsed 0.030
+  gated_clean_v2: correct 0.470, endorsed 0.040
+  gated_clean_cg: correct 0.440, endorsed 0.030
+  geometry_gated_cg: correct 0.350, endorsed 0.250
+  geometry_gated_clean_cg: correct 0.630, endorsed 0.030
+
+Mistral-7B-Instruct-v0.3-4bit, n=100
+  clean: correct 0.710, endorsed 0.070
+  attack: correct 0.280, endorsed 0.690
+  v1_block: correct 0.640, endorsed 0.080
+  v1_delete_backfill: correct 0.670, endorsed 0.110
+  v2_delete_backfill: correct 0.660, endorsed 0.110
+  random_delete_backfill: correct 0.400, endorsed 0.560
+  lowrel_delete_backfill: correct 0.270, endorsed 0.730
+  coordguard_af: correct 0.550, endorsed 0.080
+  coordguard_af_refill: correct 0.640, endorsed 0.090
+  trustrag: correct 0.600, endorsed 0.070
+  defclean_v1: correct 0.600, endorsed 0.050
+  defclean_v2: correct 0.670, endorsed 0.070
+  defclean_coordguard: correct 0.530, endorsed 0.040
+  gated_v1: correct 0.660, endorsed 0.140
+  gated_v2: correct 0.640, endorsed 0.140
+  gated_cg: correct 0.620, endorsed 0.110
+  gated_clean_v1: correct 0.700, endorsed 0.070
+  gated_clean_v2: correct 0.710, endorsed 0.080
+  gated_clean_cg: correct 0.710, endorsed 0.080
+  geometry_gated_cg: correct 0.480, endorsed 0.340
+  geometry_gated_clean_cg: correct 0.710, endorsed 0.070
+
+Reader pooling keeps each target's reader results together:
+  v1_delete_backfill - coordguard_af_refill: endorsed: {'difference': 0.12666666666666668, 'target_cluster_ci_fixed_readers': [0.08333333333333331, 0.17], 'two_level_target_reader_ci': [0.01, 0.2834166666666662], 'n_targets': 100, 'n_readers': 3, 'limitation': 'Only 3 readers; no independent 300-target test or post-hoc NI claim'}
+  defclean_v1 - defclean_coordguard: correct: {'difference': 0.03666666666666667, 'target_cluster_ci_fixed_readers': [-0.016666666666666663, 0.09], 'two_level_target_reader_ci': [-0.03666666666666667, 0.12008333333333288], 'n_targets': 100, 'n_readers': 3, 'limitation': 'Only 3 readers; no independent 300-target test or post-hoc NI claim'}
+  v2_delete_backfill - coordguard_af_refill: endorsed: {'difference': 0.11333333333333333, 'target_cluster_ci_fixed_readers': [0.07333333333333333, 0.15333333333333335], 'two_level_target_reader_ci': [-0.0033333333333333335, 0.29], 'n_targets': 100, 'n_readers': 3, 'limitation': 'Only 3 readers; no independent 300-target test or post-hoc NI claim'}
+
+E37 composite all, n=80
+  clean: correct 0.650, endorsed 0.037
+  attack: correct 0.463, endorsed 0.487
+  delete_OR_backfill: correct 0.463, endorsed 0.050
+  delete_entail_backfill: correct 0.562, endorsed 0.113
+  coordguard_af_refill: correct 0.487, endorsed 0.037
+  trustrag: correct 0.537, endorsed 0.138
+  defclean_OR: correct 0.425, endorsed 0.000
+  defclean_coordguard: correct 0.463, endorsed 0.013
+
+E37 composite exposed, n=73
+  clean: correct 0.630, endorsed 0.041
+  attack: correct 0.425, endorsed 0.534
+  delete_OR_backfill: correct 0.452, endorsed 0.055
+  delete_entail_backfill: correct 0.534, endorsed 0.123
+  coordguard_af_refill: correct 0.479, endorsed 0.041
+  trustrag: correct 0.507, endorsed 0.151
+  defclean_OR: correct 0.411, endorsed 0.000
+  defclean_coordguard: correct 0.452, endorsed 0.014

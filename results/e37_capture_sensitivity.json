@@ -1,0 +1,693 @@
+{
+  "scope": "R2 secondary syntactic nonblank-capture sensitivity; no case removed from main report",
+  "all_planned_targets": 80,
+  "capture_attempts": 400,
+  "invalid_or_blank_captures": [
+    {
+      "id": "test423",
+      "capture_index": 2,
+      "selected": true
+    }
+  ],
+  "selected_nonblank_targets": 79,
+  "selected_blank_target_ids": [
+    "test423"
+  ],
+  "recorded_E37_malformed_output_events": 1,
+  "original_first70_unchanged": true,
+  "limitations": [
+    "R2 was a post-start amendment after a strict-parser failure at target 71",
+    "Nonblank fields do not establish semantic extraction validity",
+    "The conditional subset is secondary; operational main report includes every failed capture",
+    "Used development questions; not fresh confirmation, equivalence or human-validated scoring"
+  ],
+  "scopes": {
+    "all80": {
+      "n_targets": 80,
+      "arms": {
+        "clean": {
+          "correct": {
+            "rate": 0.65,
+            "ci": [
+              0.55,
+              0.75
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0375,
+            "ci": [
+              0.0,
+              0.075
+            ]
+          }
+        },
+        "attack": {
+          "correct": {
+            "rate": 0.4625,
+            "ci": [
+              0.35,
+              0.575
+            ]
+          },
+          "endorsed": {
+            "rate": 0.4875,
+            "ci": [
+              0.375,
+              0.6
+            ]
+          }
+        },
+        "delete_OR_backfill": {
+          "correct": {
+            "rate": 0.4625,
+            "ci": [
+              0.35,
+              0.575
+            ]
+          },
+          "endorsed": {
+            "rate": 0.05,
+            "ci": [
+              0.0125,
+              0.1
+            ]
+          }
+        },
+        "delete_entail_backfill": {
+          "correct": {
+            "rate": 0.5625,
+            "ci": [
+              0.45,
+              0.675
+            ]
+          },
+          "endorsed": {
+            "rate": 0.1125,
+            "ci": [
+              0.05,
+              0.1875
+            ]
+          }
+        },
+        "coordguard_af_refill": {
+          "correct": {
+            "rate": 0.4875,
+            "ci": [
+              0.375,
+              0.6
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0375,
+            "ci": [
+              0.0,
+              0.0875
+            ]
+          }
+        },
+        "trustrag": {
+          "correct": {
+            "rate": 0.5375,
+            "ci": [
+              0.425,
+              0.65
+            ]
+          },
+          "endorsed": {
+            "rate": 0.1375,
+            "ci": [
+              0.075,
+              0.2125
+            ]
+          }
+        },
+        "defclean_OR": {
+          "correct": {
+            "rate": 0.425,
+            "ci": [
+              0.325,
+              0.5375
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "defclean_coordguard": {
+          "correct": {
+            "rate": 0.4625,
+            "ci": [
+              0.35,
+              0.575
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0125,
+            "ci": [
+              0.0,
+              0.0375
+            ]
+          }
+        }
+      },
+      "comparison_family": {
+        "delete_OR_backfill - coordguard_af_refill: correct": {
+          "difference": -0.025,
+          "ci": [
+            -0.125,
+            0.0875
+          ],
+          "discordant": [
+            9,
+            11
+          ],
+          "p": 0.8238029479980469,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - coordguard_af_refill: endorsed": {
+          "difference": 0.0125,
+          "ci": [
+            -0.05,
+            0.075
+          ],
+          "discordant": [
+            4,
+            3
+          ],
+          "p": 1.0,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - trustrag: correct": {
+          "difference": -0.075,
+          "ci": [
+            -0.2,
+            0.0625
+          ],
+          "discordant": [
+            12,
+            18
+          ],
+          "p": 0.36159460805356514,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - trustrag: endorsed": {
+          "difference": -0.0875,
+          "ci": [
+            -0.175,
+            0.0
+          ],
+          "discordant": [
+            3,
+            10
+          ],
+          "p": 0.09228515625,
+          "holm_p": 0.5537109375
+        },
+        "delete_OR_backfill - delete_entail_backfill: correct": {
+          "difference": -0.1,
+          "ci": [
+            -0.2125,
+            0.012812499999998296
+          ],
+          "discordant": [
+            7,
+            15
+          ],
+          "p": 0.13380050659179688,
+          "holm_p": 0.6690025329589844
+        },
+        "delete_OR_backfill - delete_entail_backfill: endorsed": {
+          "difference": -0.0625,
+          "ci": [
+            -0.1375,
+            0.0125
+          ],
+          "discordant": [
+            2,
+            7
+          ],
+          "p": 0.1796875,
+          "holm_p": 0.71875
+        }
+      }
+    },
+    "nonblank_selected": {
+      "n_targets": 79,
+      "arms": {
+        "clean": {
+          "correct": {
+            "rate": 0.6455696202531646,
+            "ci": [
+              0.5316455696202531,
+              0.7468354430379747
+            ]
+          },
+          "endorsed": {
+            "rate": 0.02531645569620253,
+            "ci": [
+              0.0,
+              0.06329113924050633
+            ]
+          }
+        },
+        "attack": {
+          "correct": {
+            "rate": 0.45569620253164556,
+            "ci": [
+              0.35443037974683544,
+              0.569620253164557
+            ]
+          },
+          "endorsed": {
+            "rate": 0.4810126582278481,
+            "ci": [
+              0.3670886075949367,
+              0.5949367088607594
+            ]
+          }
+        },
+        "delete_OR_backfill": {
+          "correct": {
+            "rate": 0.45569620253164556,
+            "ci": [
+              0.34177215189873417,
+              0.569620253164557
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0379746835443038,
+            "ci": [
+              0.0,
+              0.08860759493670886
+            ]
+          }
+        },
+        "delete_entail_backfill": {
+          "correct": {
+            "rate": 0.5569620253164557,
+            "ci": [
+              0.4430379746835443,
+              0.6708860759493671
+            ]
+          },
+          "endorsed": {
+            "rate": 0.10126582278481013,
+            "ci": [
+              0.0379746835443038,
+              0.16455696202531644
+            ]
+          }
+        },
+        "coordguard_af_refill": {
+          "correct": {
+            "rate": 0.4936708860759494,
+            "ci": [
+              0.379746835443038,
+              0.6075949367088608
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0379746835443038,
+            "ci": [
+              0.0,
+              0.08860759493670886
+            ]
+          }
+        },
+        "trustrag": {
+          "correct": {
+            "rate": 0.5316455696202531,
+            "ci": [
+              0.4177215189873418,
+              0.6329113924050633
+            ]
+          },
+          "endorsed": {
+            "rate": 0.13924050632911392,
+            "ci": [
+              0.0759493670886076,
+              0.21518987341772153
+            ]
+          }
+        },
+        "defclean_OR": {
+          "correct": {
+            "rate": 0.4177215189873418,
+            "ci": [
+              0.3037974683544304,
+              0.5193037974683526
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "defclean_coordguard": {
+          "correct": {
+            "rate": 0.45569620253164556,
+            "ci": [
+              0.34177215189873417,
+              0.569620253164557
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "comparison_family": {
+        "delete_OR_backfill - coordguard_af_refill: correct": {
+          "difference": -0.0379746835443038,
+          "ci": [
+            -0.13924050632911392,
+            0.0759493670886076
+          ],
+          "discordant": [
+            8,
+            11
+          ],
+          "p": 0.6476058959960938,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - coordguard_af_refill: endorsed": {
+          "difference": 0.0,
+          "ci": [
+            -0.06329113924050633,
+            0.06329113924050633
+          ],
+          "discordant": [
+            3,
+            3
+          ],
+          "p": 1.0,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - trustrag: correct": {
+          "difference": -0.0759493670886076,
+          "ci": [
+            -0.21518987341772153,
+            0.06329113924050633
+          ],
+          "discordant": [
+            12,
+            18
+          ],
+          "p": 0.36159460805356514,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - trustrag: endorsed": {
+          "difference": -0.10126582278481013,
+          "ci": [
+            -0.189873417721519,
+            -0.02531645569620253
+          ],
+          "discordant": [
+            2,
+            10
+          ],
+          "p": 0.03857421875,
+          "holm_p": 0.2314453125
+        },
+        "delete_OR_backfill - delete_entail_backfill: correct": {
+          "difference": -0.10126582278481013,
+          "ci": [
+            -0.21518987341772153,
+            0.02531645569620253
+          ],
+          "discordant": [
+            7,
+            15
+          ],
+          "p": 0.13380050659179688,
+          "holm_p": 0.6690025329589844
+        },
+        "delete_OR_backfill - delete_entail_backfill: endorsed": {
+          "difference": -0.06329113924050633,
+          "ci": [
+            -0.13924050632911392,
+            0.00031645569620080473
+          ],
+          "discordant": [
+            2,
+            7
+          ],
+          "p": 0.1796875,
+          "holm_p": 0.71875
+        }
+      }
+    },
+    "exposed_nonblank_selected": {
+      "n_targets": 72,
+      "arms": {
+        "clean": {
+          "correct": {
+            "rate": 0.625,
+            "ci": [
+              0.5138888888888888,
+              0.7361111111111112
+            ]
+          },
+          "endorsed": {
+            "rate": 0.027777777777777776,
+            "ci": [
+              0.0,
+              0.06944444444444445
+            ]
+          }
+        },
+        "attack": {
+          "correct": {
+            "rate": 0.4166666666666667,
+            "ci": [
+              0.3055555555555556,
+              0.5416666666666666
+            ]
+          },
+          "endorsed": {
+            "rate": 0.5277777777777778,
+            "ci": [
+              0.4027777777777778,
+              0.6527777777777778
+            ]
+          }
+        },
+        "delete_OR_backfill": {
+          "correct": {
+            "rate": 0.4444444444444444,
+            "ci": [
+              0.3333333333333333,
+              0.5555555555555556
+            ]
+          },
+          "endorsed": {
+            "rate": 0.041666666666666664,
+            "ci": [
+              0.0,
+              0.08368055555555366
+            ]
+          }
+        },
+        "delete_entail_backfill": {
+          "correct": {
+            "rate": 0.5277777777777778,
+            "ci": [
+              0.4166666666666667,
+              0.6388888888888888
+            ]
+          },
+          "endorsed": {
+            "rate": 0.1111111111111111,
+            "ci": [
+              0.041666666666666664,
+              0.18055555555555555
+            ]
+          }
+        },
+        "coordguard_af_refill": {
+          "correct": {
+            "rate": 0.4861111111111111,
+            "ci": [
+              0.375,
+              0.5972222222222222
+            ]
+          },
+          "endorsed": {
+            "rate": 0.041666666666666664,
+            "ci": [
+              0.0,
+              0.09722222222222222
+            ]
+          }
+        },
+        "trustrag": {
+          "correct": {
+            "rate": 0.5,
+            "ci": [
+              0.3888888888888889,
+              0.625
+            ]
+          },
+          "endorsed": {
+            "rate": 0.1527777777777778,
+            "ci": [
+              0.06944444444444445,
+              0.2361111111111111
+            ]
+          }
+        },
+        "defclean_OR": {
+          "correct": {
+            "rate": 0.4027777777777778,
+            "ci": [
+              0.2916666666666667,
+              0.5138888888888888
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "defclean_coordguard": {
+          "correct": {
+            "rate": 0.4444444444444444,
+            "ci": [
+              0.3333333333333333,
+              0.5555555555555556
+            ]
+          },
+          "endorsed": {
+            "rate": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "comparison_family": {
+        "delete_OR_backfill - coordguard_af_refill: correct": {
+          "difference": -0.041666666666666664,
+          "ci": [
+            -0.16666666666666666,
+            0.08333333333333333
+          ],
+          "discordant": [
+            8,
+            11
+          ],
+          "p": 0.6476058959960938,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - coordguard_af_refill: endorsed": {
+          "difference": 0.0,
+          "ci": [
+            -0.06944444444444445,
+            0.06944444444444445
+          ],
+          "discordant": [
+            3,
+            3
+          ],
+          "p": 1.0,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - trustrag: correct": {
+          "difference": -0.05555555555555555,
+          "ci": [
+            -0.20833333333333334,
+            0.08333333333333333
+          ],
+          "discordant": [
+            12,
+            16
+          ],
+          "p": 0.5715881884098053,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - trustrag: endorsed": {
+          "difference": -0.1111111111111111,
+          "ci": [
+            -0.20833333333333334,
+            -0.013888888888888888
+          ],
+          "discordant": [
+            2,
+            10
+          ],
+          "p": 0.03857421875,
+          "holm_p": 0.2314453125
+        },
+        "delete_OR_backfill - delete_entail_backfill: correct": {
+          "difference": -0.08333333333333333,
+          "ci": [
+            -0.20833333333333334,
+            0.027777777777777776
+          ],
+          "discordant": [
+            7,
+            13
+          ],
+          "p": 0.26317596435546875,
+          "holm_p": 1.0
+        },
+        "delete_OR_backfill - delete_entail_backfill: endorsed": {
+          "difference": -0.06944444444444445,
+          "ci": [
+            -0.1527777777777778,
+            0.013888888888888888
+          ],
+          "discordant": [
+            2,
+            7
+          ],
+          "p": 0.1796875,
+          "holm_p": 0.8984375
+        }
+      }
+    }
+  },
+  "exploratory_mitigation_control_family": {
+    "delete_OR_backfill - attack: correct": {
+      "difference": 0.0,
+      "ci": [
+        -0.125,
+        0.1375
+      ],
+      "discordant": [
+        14,
+        14
+      ],
+      "p": 1.0,
+      "holm_p": 1.0
+    },
+    "delete_OR_backfill - attack: endorsed": {
+      "difference": -0.4375,
+      "ci": [
+        -0.55,
+        -0.325
+      ],
+      "discordant": [
+        0,
+        35
+      ],
+      "p": 5.820766091346741e-11,
+      "holm_p": 1.1641532182693481e-10
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"model": "mlx-community/Meta-Llama-3-8B-Instruct-4bit", "layer": "18", "zmin": 0.25, "cal_f1": 0.8029197080291971, "cal_fpr": 0.02, "n_layers": 32}

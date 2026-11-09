@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_remaining.py": "2249081135766281c31398e3f4bb6a0b71b3f32589ba472f034b3ba994e70b6e",
+    "analysis/human_validation_gate.py": "66a2d12677f765efd6299bbb49c7a61a77079432fa9a73580df50b2d3463df17",
+    "analysis/remaining_summary.py": "071f517f4e2e10fd2e6547a281820402a22ef03f58ada7271964cad5394a6aba",
+    "docs/REMAINING_RUNS_PROTOCOL.md": "f6c530a2e4b34ad3ca50d567281c1d76e86b6fa7416d2ea13dc2bbc342f39ea6",
+    "experiments/e36_other_readers.py": "5113e560f97ca25c0ab8fa2c1f07f116f667db11116938bdeeecb75d1915e40a",
+    "experiments/e36_prepare.py": "aa0cd2b51beecfc9972320e2069f87c03993e5c96297a7410d09721eed918808",
+    "experiments/e37_composite.py": "24b000881b41978fbdada156dc6054f353f6157d1004df85966dae9faba25e6a",
+    "experiments/e38_gate_cache.py": "f23eb3d19ee748ca6d8c554d0e3b40472bdb540ab87b3ff93f238cacc44f82f9",
+    "results/e22_Meta-Llama-3-8B-Instruct-4bit_calibration.json": "e54254643998dd3e241976fd3a3dc83fc0ca53b872baf1d1b6bb610ca36076fb",
+    "results/e22_Mistral-7B-Instruct-v0.3-4bit_calibration.json": "8319b4e8647b486dcbc071ebefb37b6848abb201faaa6d6af67c36eb1af5f704",
+    "src/antivenom/continuation.py": "84e86d8566d899ddd3e062639369db76ce31558355c77055738e2c378bd9d54e",
+    "tests/remaining_integrity.py": "88b67997a1b39662ac4b0d93132d0223fed76688949c85fbed41141440699edc",
+    "uv.lock": "9a14ed5a38260ad3fe04435b5a7fff800d18f696896c5fdf21ddd940e847165f"
+  },
+  "settings": {
+    "jobs": [
+      [
+        "prepare",
+        "experiments/e36_prepare.py",
+        []
+      ],
+      [
+        "llama",
+        "experiments/e36_other_readers.py",
+        [
+          "mlx-community/Meta-Llama-3-8B-Instruct-4bit"
+        ]
+      ],
+      [
+        "mistral",
+        "experiments/e36_other_readers.py",
+        [
+          "mlx-community/Mistral-7B-Instruct-v0.3-4bit"
+        ]
+      ],
+      [
+        "composite",
+        "experiments/e37_composite.py",
+        []
+      ],
+      [
+        "gate_cache",
+        "experiments/e38_gate_cache.py",
+        []
+      ],
+      [
+        "analysis",
+        "analysis/remaining_summary.py",
+        []
+      ],
+      [
+        "integrity",
+        "tests/remaining_integrity.py",
+        []
+      ],
+      [
+        "human_status",
+        "analysis/human_validation_gate.py",
+        []
+      ]
+    ]
+  }
+}

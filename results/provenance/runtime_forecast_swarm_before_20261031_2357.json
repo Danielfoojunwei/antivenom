@@ -1,0 +1,92 @@
+{
+  "estimated_utc": "2026-10-31T20:14:48.954283+00:00",
+  "active_phase": "e5",
+  "complete_cases": 29,
+  "planned_cases": 80,
+  "current_phase_planning_hours": [
+    3,
+    7
+  ],
+  "swarm_start_planning_hours_from_now": [
+    3,
+    7
+  ],
+  "swarm_comparison_planning_hours_from_now": [
+    21,
+    39
+  ],
+  "all_remaining_including_untreated_clean_reference_planning_hours": [
+    33,
+    67
+  ],
+  "phase_planning_hours": {
+    "e5_transfer_remaining": [
+      3,
+      7
+    ],
+    "swarm": [
+      18,
+      32
+    ],
+    "memform": [
+      10,
+      24
+    ],
+    "integrity_and_clean_supplement": [
+      1.5,
+      4
+    ]
+  },
+  "measured_recurrence_recent20_checkpoint_minutes": {
+    "median": 1.6449314177036285,
+    "mean": 10.029592224756877,
+    "max": 163.36034861008326
+  },
+  "base_method_quantile_extrapolation": {
+    "0.25": {
+      "swarm_hours": 15.72148363592682,
+      "e5_hours": 5.491089530934308,
+      "clean_reference_hours": 0.5921686597333368
+    },
+    "0.5": {
+      "swarm_hours": 21.345890235552602,
+      "e5_hours": 7.499464084333481,
+      "clean_reference_hours": 0.8486902222008211
+    },
+    "0.75": {
+      "swarm_hours": 29.97797192271149,
+      "e5_hours": 10.25727284535646,
+      "clean_reference_hours": 1.122285545800211
+    }
+  },
+  "swarm_actual_result_arms": 5920,
+  "clean_reference_actual_calls": 480,
+  "method": "E5 remaining planning band widened around recent actual method-pipeline runtime; later frozen swarm loop counts still extrapolated from earlier base per-method timing quantiles. These are engineering bands, not confidence intervals or promised calendar deadlines.",
+  "assumptions": [
+    "current Mac remains awake",
+    "one GPU experiment, original allocator default",
+    "no recipe, model, precision, batching or sample-size changes"
+  ],
+  "limitations": [
+    "Recent E5 cases vary substantially; early runtime includes priority interruptions and wall-clock gaps",
+    "Swarm receiver contexts and MemForm native consolidation timings remain unmeasured",
+    "Any further priority pause or host sleep extends calendar completion",
+    "E45 waits for MemForm and full original integrity; raw swarm comparisons arrive before full untreated-clean assessment"
+  ],
+  "confirmed_latest_sleep": "2026-10-31 04:35\u201307:14 Singapore, low battery; woke on AC",
+  "external_pause_status": "Ended automatically at 2026-10-31T21:41:35.534517+00:00",
+  "forecast_interpretation_after_pause": "Processing resumed; saved planning bands are active-processing estimates and not current calendar deadlines.",
+  "saved_result_arms": 638,
+  "planned_result_arms": 1760,
+  "e5_measured_runtime": {
+    "completed_cases": 25,
+    "recent_case_count": 5,
+    "recent_pipeline_seconds_mean": 266.9585925334039,
+    "recent_pipeline_seconds_median": 264.47700754298785,
+    "recent_pipeline_seconds_min": 139.12073041601252,
+    "recent_pipeline_seconds_max": 453.76699979100886,
+    "remaining_cases": 55,
+    "median_pipeline_projection_hours": 4.040620948573426,
+    "note": "Actual per-arm pipeline timings; sparse recent window and interruptions limit forecasting. Setup/retrieval, sleep and future priority delays require additional allowance."
+  }
+}

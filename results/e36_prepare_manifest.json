@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "data/external/poisonedrag/hotpotqa-contriever.json": "7f1713731dfd58ac933311f92fc6b9fd0fb7c71c5ccd1293329b58fc811f77e5",
+    "data/external/poisonedrag/hotpotqa.json": "5119d6f9fd53cb0ecb3f33de939bd940d77cbaf80284b7ccd3d256f63a430537",
+    "data/external/poisonedrag/hotpotqa_target_corpus.json": "5f1ec345b4a5fd09144037bae2deb6c509b37019f603f5f4c8bdea892dcbe39e",
+    "data/external/poisonedrag/msmarco-contriever.json": "6af85dd8d65eff4a57f11670bbac6e545c0bd232b279c823413c92ca216cc710",
+    "data/external/poisonedrag/msmarco.json": "d6bf508ebb0e31e09095995061bd483678e2ae8634f6ba5de1611e4adf9b1987",
+    "data/external/poisonedrag/msmarco_target_corpus.json": "8a2b238fb5e9cc3ae648857c7387976ff5ef26e71a7ab890112d45476ca1bcb4",
+    "data/external/poisonedrag/nq-contriever.json": "a5e9d9ca8e65b61e2fa34428e154a55c2e97c2064c97af09bf87822a61995fa5",
+    "data/external/poisonedrag/nq.json": "44df711454a9bada08e72e9e4a003a2cc845c43707ac93a3493e5168ec415cf2",
+    "data/external/poisonedrag/nq_target_corpus.json": "fd2e82184e99113e9300d3229b9c82c50035125c90bb9924d59dae4c7d47bc7b",
+    "docs/REMAINING_RUNS_PROTOCOL.md": "f6c530a2e4b34ad3ca50d567281c1d76e86b6fa7416d2ea13dc2bbc342f39ea6",
+    "experiments/e36_prepare.py": "aa0cd2b51beecfc9972320e2069f87c03993e5c96297a7410d09721eed918808",
+    "results/e11a_flag_scores_nq_k10.jsonl": "cdb7004566f631b56016659fe674427416ac14bf0025ee3d7ae8082f02be1968",
+    "results/e29_tier2_hotpotqa_k10.jsonl": "c571338c065839ba2d9e88b10806cb49fc840512538889debbd4e8f74f3e127d",
+    "results/e29_tier2_msmarco_k10.jsonl": "41cd393565d257f85621ac77619f49033c6dbfe0f31e45f32281e30a6b5a2f07",
+    "src/antivenom/baselines/coordguard.py": "3d52ae36f5a205f4176c27b21b66da3df4dc2ef0c09cc561b853381b8a7d3fc4",
+    "src/antivenom/continuation.py": "84e86d8566d899ddd3e062639369db76ce31558355c77055738e2c378bd9d54e",
+    "src/antivenom/poisonedrag.py": "94b2ef464419a628a606a94ae5a8f83072991111f59364651c955049bd0089bc",
+    "src/antivenom/retriever.py": "a81b2a153e25e442eec32ef468a9db06ef531944654e9159a91426789921ad6f"
+  },
+  "settings": {
+    "nq_cal": 20,
+    "hotpotqa_tier2": 50,
+    "msmarco_tier2": 50,
+    "geometry_quantile": 0.9
+  }
+}

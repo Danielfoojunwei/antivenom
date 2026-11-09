@@ -1,0 +1,93 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 3317.70it/s]
+W1027 06:47:18.473000 17396 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27067.05it/s]
+test19 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (1, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (1, 1), 'block_random_clean_-10000': (1, 0)}
+test20 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test21 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test31 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test47 5 {'clean': (0, 1), 'attack': (0, 1), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test50 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test53 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test57 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test58 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test60 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test62 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test64 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test70 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test75 5 {'clean': (1, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test77 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test79 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test82 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test87 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test88 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test90 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test94 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test106 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test107 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test110 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test113 5 {'clean': (0, 1), 'attack': (0, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test120 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test127 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test130 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test138 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test145 5 {'clean': (0, 1), 'attack': (0, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test152 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test156 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test157 4 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 1), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 1)}
+test159 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test161 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test164 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (1, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (1, 0), 'block_random_clean_-10000': (1, 0)}
+test165 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test166 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test177 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test185 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test188 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test191 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test192 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test208 5 {'clean': (0, 1), 'attack': (0, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test213 5 {'clean': (1, 0), 'attack': (1, 0), 'block_poison_-5': (1, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (1, 0), 'block_random_clean_-10000': (1, 0)}
+test216 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test226 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test228 5 {'clean': (0, 0), 'attack': (0, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test229 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test231 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test243 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test254 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test256 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test273 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test282 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test291 5 {'clean': (0, 1), 'attack': (0, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (0, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (0, 0)}
+test294 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test308 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test311 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test312 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test315 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test317 4 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test318 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (0, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (0, 0)}
+test327 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 1), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 1)}
+test332 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test337 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test347 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test348 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test363 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test369 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test371 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test375 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test379 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test383 4 {'clean': (0, 1), 'attack': (0, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (0, 1), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (0, 1)}
+test387 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test395 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 1), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 1)}
+test397 5 {'clean': (1, 1), 'attack': (1, 0), 'block_poison_-5': (1, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (1, 1), 'block_random_clean_-10000': (1, 0)}
+test400 5 {'clean': (0, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test404 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test407 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test408 5 {'clean': (0, 0), 'attack': (0, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (0, 1), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (0, 1)}
+test410 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (0, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (0, 0)}
+test412 5 {'clean': (1, 1), 'attack': (1, 1), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test413 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 1), 'block_random_clean_-10000': (1, 0)}
+test417 5 {'clean': (0, 1), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test418 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (0, 0), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (0, 0), 'block_random_clean_-10000': (1, 0)}
+test419 5 {'clean': (0, 0), 'attack': (1, 0), 'block_poison_-5': (1, 1), 'block_random_clean_-5': (1, 0), 'block_poison_-10000': (1, 1), 'block_random_clean_-10000': (1, 0)}
+/Users/danielfoojunwei/.local/share/uv/python/cpython-3.12.15-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

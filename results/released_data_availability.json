@@ -1,0 +1,218 @@
+{
+  "RAGuard-AI/RAGuard": {
+    "source": "https://api.github.com/repos/RAGuard-AI/RAGuard/git/trees/main?recursive=1",
+    "commit": "f5c7e474266a8cd5b6e10e675011f67741ab6c1d",
+    "truncated": false,
+    "data_candidates": [
+      {
+        "path": "datasets/clean/nq_toy.jsonl",
+        "size": 9690
+      },
+      {
+        "path": "datasets/clean/sports_toy.jsonl",
+        "size": 1330
+      },
+      {
+        "path": "datasets/clean/toy_passages.jsonl",
+        "size": 127
+      },
+      {
+        "path": "datasets/nq_clean.jsonl",
+        "size": 93840
+      },
+      {
+        "path": "results/auprc_precision_results.csv",
+        "size": 130
+      },
+      {
+        "path": "results/baseline_clean.csv",
+        "size": 369
+      },
+      {
+        "path": "results/beir_05_combined.json",
+        "size": 361
+      },
+      {
+        "path": "results/beir_10_combined.json",
+        "size": 362
+      },
+      {
+        "path": "results/beir_baseline_poisoned.csv",
+        "size": 167
+      },
+      {
+        "path": "results/beir_on_nq_poisoned_only_ep4.csv",
+        "size": 285
+      },
+      {
+        "path": "results/beir_only_poisoned_v2.csv",
+        "size": 265
+      },
+      {
+        "path": "results/beir_poisoned_only.csv",
+        "size": 282
+      },
+      {
+        "path": "results/beir_poisoned_v2.csv",
+        "size": 263
+      },
+      {
+        "path": "results/beir_trained_on_nq_poisoned_ep4.csv",
+        "size": 285
+      },
+      {
+        "path": "results/beir_trained_poisoned.csv",
+        "size": 283
+      },
+      {
+        "path": "results/bert_eval.json",
+        "size": 333
+      },
+      {
+        "path": "results/clean_trip_eval.csv",
+        "size": 343
+      },
+      {
+        "path": "results/final/patch_classifier_eval.csv",
+        "size": 108
+      },
+      {
+        "path": "results/llm_eval_results.jsonl",
+        "size": 4952
+      },
+      {
+        "path": "results/logreg_eval.json",
+        "size": 656
+      },
+      {
+        "path": "results/nq_05_combined.json",
+        "size": 335
+      },
+      {
+        "path": "results/nq_10_combined.json",
+        "size": 333
+      },
+      {
+        "path": "results/nq_20_combined.json",
+        "size": 324
+      },
+      {
+        "path": "results/nq_30_combined.json",
+        "size": 332
+      },
+      {
+        "path": "results/nq_baseline_poisoned.csv",
+        "size": 99
+      },
+      {
+        "path": "results/nq_only_poisoned_v2.csv",
+        "size": 269
+      },
+      {
+        "path": "results/nq_poisoned_only_ep4.csv",
+        "size": 184
+      },
+      {
+        "path": "results/nq_poisoned_v2.csv",
+        "size": 231
+      },
+      {
+        "path": "results/nq_trained_poisoned.csv",
+        "size": 146
+      },
+      {
+        "path": "results/nq_trained_poisoned_ep4.csv",
+        "size": 160
+      },
+      {
+        "path": "results/poisoned_bm25.csv",
+        "size": 232
+      },
+      {
+        "path": "results/poisoned_dense.csv",
+        "size": 232
+      },
+      {
+        "path": "results/summary_all_final.csv",
+        "size": 2277
+      },
+      {
+        "path": "results/trained_clean.csv",
+        "size": 340
+      },
+      {
+        "path": "results/zkip_results.csv",
+        "size": 203
+      }
+    ]
+  },
+  "sleeepeer/PoisonedRAG": {
+    "source": "https://api.github.com/repos/sleeepeer/PoisonedRAG/git/trees/main?recursive=1",
+    "commit": "f660d72174f06b13fae5163ce656e7b235db858f",
+    "truncated": false,
+    "data_candidates": [
+      {
+        "path": "model_configs/gpt3.5_config.json",
+        "size": 327
+      },
+      {
+        "path": "model_configs/gpt4_config.json",
+        "size": 319
+      },
+      {
+        "path": "model_configs/llama13b_config.json",
+        "size": 377
+      },
+      {
+        "path": "model_configs/llama7b_config.json",
+        "size": 376
+      },
+      {
+        "path": "model_configs/palm2_config.json",
+        "size": 331
+      },
+      {
+        "path": "model_configs/vicuna13b_config.json",
+        "size": 501
+      },
+      {
+        "path": "model_configs/vicuna33b_config.json",
+        "size": 501
+      },
+      {
+        "path": "model_configs/vicuna7b_config.json",
+        "size": 500
+      },
+      {
+        "path": "results/adv_targeted_results/hotpotqa.json",
+        "size": 120383
+      },
+      {
+        "path": "results/adv_targeted_results/msmarco.json",
+        "size": 110188
+      },
+      {
+        "path": "results/adv_targeted_results/nq.json",
+        "size": 123089
+      },
+      {
+        "path": "results/beir_results/hotpotqa-contriever.json",
+        "size": 23464946
+      },
+      {
+        "path": "results/beir_results/msmarco-contriever.json",
+        "size": 2561983
+      },
+      {
+        "path": "results/beir_results/nq-contriever.json",
+        "size": 11464323
+      }
+    ]
+  },
+  "lcy5201314/CPA-RAG": {
+    "source": "https://api.github.com/repos/lcy5201314/CPA-RAG/git/trees/main?recursive=1",
+    "commit": "e8a4df3f0d3999e2ec0fb45d5e309306c7c99fab",
+    "truncated": false,
+    "data_candidates": []
+  }
+}

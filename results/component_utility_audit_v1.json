@@ -1,0 +1,649 @@
+{
+  "classification": "posthoc descriptive completed-record audit; not fresh confirmation",
+  "contexts_validated": 1384,
+  "fresh_confirmation": false,
+  "limitations": [
+    "Posthoc descriptive audit of completed outputs; no new significance test or causal mediation claim.",
+    "Receivers are nested within incidents; reused layouts are separate scopes, not independent new samples.",
+    "Flags identify intervention differences; removed tokens/experiences are not human-certified semantic necessities.",
+    "No-memory=None is a saved actual prompt arm, different from native empty-history fallback text. It is not an exact always-drop-history comparator.",
+    "All targets remain in the operational result; nonblank sensitivity uses identical subsets across comparators and does not certify semantics.",
+    "No native MemMorph result, no human validation, and no threshold recommendation follow from this audit."
+  ],
+  "manifest": "results/component_utility_audit_v1_manifest.json",
+  "manifest_sha256": "691d3fb97ac2930a542a301d9bd62c0de4363edd17e06f31de5e32292df9a674",
+  "model_calls": 0,
+  "original_records_modified": false,
+  "schema": "antivenom.component_utility_audit.v1",
+  "scopes": {
+    "memform": {
+      "clean": {
+        "all_target": {
+          "OR_adds_flags_to_empty_entail_contexts": 0,
+          "OR_minus_actual_no_memory_prompt": {
+            "correct": 0.10849056603773588,
+            "endorsed": -0.01886792452830189
+          },
+          "OR_minus_entail": {
+            "correct": -0.018867924528301883,
+            "endorsed": 0.014150943396226412
+          },
+          "OR_native_empty_history_fallback_contexts": 64,
+          "OR_removed_all_contexts": 64,
+          "actual_task_observations_per_method": 212,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 212,
+          "contexts_correct_under_entail_wrong_under_OR": 5,
+          "contexts_with_OR_only_removals": 105,
+          "contexts_with_repeated_input_hashes": 0,
+          "contexts_wrong_under_entail_correct_under_OR": 1,
+          "correctness_changes_without_context_change": 0,
+          "entail_native_empty_history_fallback_contexts": 48,
+          "entail_removed_all_contexts": 48,
+          "extra_removed_passages": 128,
+          "independent_units": 212,
+          "independent_units_with_any_correctness_gain_vs_entail": 1,
+          "independent_units_with_any_correctness_loss_vs_entail": 5,
+          "mean_removal_fraction": {
+            "OR": 0.7016509433962265,
+            "OR_only": 0.1509433962264151,
+            "entail": 0.5507075471698113
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.9339622641509434,
+              "endorsed": 0.04245283018867924
+            },
+            "actual_no_memory_prompt": {
+              "correct": 0.8254716981132075,
+              "endorsed": 0.06132075471698113
+            },
+            "entail": {
+              "correct": 0.9528301886792453,
+              "endorsed": 0.02830188679245283
+            },
+            "untreated_same_condition": {
+              "correct": 0.9669811320754716,
+              "endorsed": 0.018867924528301886
+            }
+          },
+          "same_predictions": 206,
+          "same_resulting_contexts": 107,
+          "total_initial_passages": 848,
+          "unit": "family or incident, never receiver/task as independent incident"
+        },
+        "identical_nonblank_subset": true,
+        "paired_nonblank": {
+          "OR_adds_flags_to_empty_entail_contexts": 0,
+          "OR_minus_actual_no_memory_prompt": {
+            "correct": 0.10849056603773588,
+            "endorsed": -0.01886792452830189
+          },
+          "OR_minus_entail": {
+            "correct": -0.018867924528301883,
+            "endorsed": 0.014150943396226412
+          },
+          "OR_native_empty_history_fallback_contexts": 64,
+          "OR_removed_all_contexts": 64,
+          "actual_task_observations_per_method": 212,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 212,
+          "contexts_correct_under_entail_wrong_under_OR": 5,
+          "contexts_with_OR_only_removals": 105,
+          "contexts_with_repeated_input_hashes": 0,
+          "contexts_wrong_under_entail_correct_under_OR": 1,
+          "correctness_changes_without_context_change": 0,
+          "entail_native_empty_history_fallback_contexts": 48,
+          "entail_removed_all_contexts": 48,
+          "extra_removed_passages": 128,
+          "independent_units": 212,
+          "independent_units_with_any_correctness_gain_vs_entail": 1,
+          "independent_units_with_any_correctness_loss_vs_entail": 5,
+          "mean_removal_fraction": {
+            "OR": 0.7016509433962265,
+            "OR_only": 0.1509433962264151,
+            "entail": 0.5507075471698113
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.9339622641509434,
+              "endorsed": 0.04245283018867924
+            },
+            "actual_no_memory_prompt": {
+              "correct": 0.8254716981132075,
+              "endorsed": 0.06132075471698113
+            },
+            "entail": {
+              "correct": 0.9528301886792453,
+              "endorsed": 0.02830188679245283
+            },
+            "untreated_same_condition": {
+              "correct": 0.9669811320754716,
+              "endorsed": 0.018867924528301886
+            }
+          },
+          "same_predictions": 206,
+          "same_resulting_contexts": 107,
+          "total_initial_passages": 848,
+          "unit": "family or incident, never receiver/task as independent incident"
+        }
+      },
+      "poisoned": {
+        "all_target": {
+          "OR_adds_flags_to_empty_entail_contexts": 0,
+          "OR_minus_actual_no_memory_prompt": {
+            "correct": 0.004716981132075526,
+            "endorsed": 0.018867924528301883
+          },
+          "OR_minus_entail": {
+            "correct": 0.009433962264150941,
+            "endorsed": -0.009433962264150941
+          },
+          "OR_native_empty_history_fallback_contexts": 212,
+          "OR_removed_all_contexts": 212,
+          "actual_task_observations_per_method": 212,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 212,
+          "contexts_correct_under_entail_wrong_under_OR": 0,
+          "contexts_with_OR_only_removals": 5,
+          "contexts_with_repeated_input_hashes": 0,
+          "contexts_wrong_under_entail_correct_under_OR": 2,
+          "correctness_changes_without_context_change": 0,
+          "entail_native_empty_history_fallback_contexts": 207,
+          "entail_removed_all_contexts": 207,
+          "extra_removed_passages": 5,
+          "independent_units": 212,
+          "independent_units_with_any_correctness_gain_vs_entail": 2,
+          "independent_units_with_any_correctness_loss_vs_entail": 0,
+          "mean_removal_fraction": {
+            "OR": 1.0,
+            "OR_only": 0.00589622641509434,
+            "entail": 0.9941037735849056
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.8301886792452831,
+              "endorsed": 0.08018867924528301
+            },
+            "actual_no_memory_prompt": {
+              "correct": 0.8254716981132075,
+              "endorsed": 0.06132075471698113
+            },
+            "entail": {
+              "correct": 0.8207547169811321,
+              "endorsed": 0.08962264150943396
+            },
+            "untreated_same_condition": {
+              "correct": 0.41037735849056606,
+              "endorsed": 0.5424528301886793
+            }
+          },
+          "same_predictions": 210,
+          "same_resulting_contexts": 207,
+          "total_initial_passages": 848,
+          "unit": "family or incident, never receiver/task as independent incident"
+        },
+        "identical_nonblank_subset": true,
+        "paired_nonblank": {
+          "OR_adds_flags_to_empty_entail_contexts": 0,
+          "OR_minus_actual_no_memory_prompt": {
+            "correct": 0.004716981132075526,
+            "endorsed": 0.018867924528301883
+          },
+          "OR_minus_entail": {
+            "correct": 0.009433962264150941,
+            "endorsed": -0.009433962264150941
+          },
+          "OR_native_empty_history_fallback_contexts": 212,
+          "OR_removed_all_contexts": 212,
+          "actual_task_observations_per_method": 212,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 212,
+          "contexts_correct_under_entail_wrong_under_OR": 0,
+          "contexts_with_OR_only_removals": 5,
+          "contexts_with_repeated_input_hashes": 0,
+          "contexts_wrong_under_entail_correct_under_OR": 2,
+          "correctness_changes_without_context_change": 0,
+          "entail_native_empty_history_fallback_contexts": 207,
+          "entail_removed_all_contexts": 207,
+          "extra_removed_passages": 5,
+          "independent_units": 212,
+          "independent_units_with_any_correctness_gain_vs_entail": 2,
+          "independent_units_with_any_correctness_loss_vs_entail": 0,
+          "mean_removal_fraction": {
+            "OR": 1.0,
+            "OR_only": 0.00589622641509434,
+            "entail": 0.9941037735849056
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.8301886792452831,
+              "endorsed": 0.08018867924528301
+            },
+            "actual_no_memory_prompt": {
+              "correct": 0.8254716981132075,
+              "endorsed": 0.06132075471698113
+            },
+            "entail": {
+              "correct": 0.8207547169811321,
+              "endorsed": 0.08962264150943396
+            },
+            "untreated_same_condition": {
+              "correct": 0.41037735849056606,
+              "endorsed": 0.5424528301886793
+            }
+          },
+          "same_predictions": 210,
+          "same_resulting_contexts": 207,
+          "total_initial_passages": 848,
+          "unit": "family or incident, never receiver/task as independent incident"
+        }
+      }
+    },
+    "swarm_distinct_ids": {
+      "attacked": {
+        "all_target": {
+          "OR_adds_flags_to_empty_entail_contexts": 25,
+          "OR_minus_entail": {
+            "correct": -0.04583333333333334,
+            "endorsed": -0.0875
+          },
+          "OR_only_passage_labels": {
+            "clean": 135,
+            "poison": 29
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 25,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 20,
+          "contexts_with_OR_only_removals": 119,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 14,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 164,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 10,
+          "independent_units_with_any_correctness_loss_vs_entail": 19,
+          "mean_removal_fraction": {
+            "OR": 0.17541666666666667,
+            "OR_only": 0.06833333333333333,
+            "entail": 0.10708333333333334
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.42916666666666664,
+              "endorsed": 0.004166666666666667
+            },
+            "entail": {
+              "correct": 0.475,
+              "endorsed": 0.09166666666666666
+            },
+            "shared_record_ids_attacked_comparator_not_untreated": {
+              "correct": 0.36666666666666664,
+              "endorsed": 0.625
+            }
+          },
+          "same_predictions": 152,
+          "same_resulting_contexts": 121,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        },
+        "identical_nonblank_subset": true,
+        "paired_nonblank": {
+          "OR_adds_flags_to_empty_entail_contexts": 25,
+          "OR_minus_entail": {
+            "correct": -0.04583333333333334,
+            "endorsed": -0.0875
+          },
+          "OR_only_passage_labels": {
+            "clean": 135,
+            "poison": 29
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 25,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 20,
+          "contexts_with_OR_only_removals": 119,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 14,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 164,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 10,
+          "independent_units_with_any_correctness_loss_vs_entail": 19,
+          "mean_removal_fraction": {
+            "OR": 0.17541666666666667,
+            "OR_only": 0.06833333333333333,
+            "entail": 0.10708333333333334
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.42916666666666664,
+              "endorsed": 0.004166666666666667
+            },
+            "entail": {
+              "correct": 0.475,
+              "endorsed": 0.09166666666666666
+            },
+            "shared_record_ids_attacked_comparator_not_untreated": {
+              "correct": 0.36666666666666664,
+              "endorsed": 0.625
+            }
+          },
+          "same_predictions": 152,
+          "same_resulting_contexts": 121,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        }
+      },
+      "clean": {
+        "all_target": {
+          "OR_adds_flags_to_empty_entail_contexts": 199,
+          "OR_minus_entail": {
+            "correct": -0.1833333333333333,
+            "endorsed": -0.012499999999999999
+          },
+          "OR_only_passage_labels": {
+            "clean": 718
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 57,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 48,
+          "contexts_with_OR_only_removals": 238,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 13,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 718,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 12,
+          "independent_units_with_any_correctness_loss_vs_entail": 40,
+          "mean_removal_fraction": {
+            "OR": 0.31958333333333333,
+            "OR_only": 0.2991666666666667,
+            "entail": 0.020416666666666666
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.3333333333333333,
+              "endorsed": 0.0
+            },
+            "actual_untreated_clean_reference": {
+              "correct": 0.525,
+              "endorsed": 0.020833333333333332
+            },
+            "entail": {
+              "correct": 0.5166666666666666,
+              "endorsed": 0.012499999999999999
+            }
+          },
+          "same_predictions": 55,
+          "same_resulting_contexts": 2,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        },
+        "identical_nonblank_subset": true,
+        "paired_nonblank": {
+          "OR_adds_flags_to_empty_entail_contexts": 199,
+          "OR_minus_entail": {
+            "correct": -0.1833333333333333,
+            "endorsed": -0.012499999999999999
+          },
+          "OR_only_passage_labels": {
+            "clean": 718
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 57,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 48,
+          "contexts_with_OR_only_removals": 238,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 13,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 718,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 12,
+          "independent_units_with_any_correctness_loss_vs_entail": 40,
+          "mean_removal_fraction": {
+            "OR": 0.31958333333333333,
+            "OR_only": 0.2991666666666667,
+            "entail": 0.020416666666666666
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.3333333333333333,
+              "endorsed": 0.0
+            },
+            "actual_untreated_clean_reference": {
+              "correct": 0.525,
+              "endorsed": 0.020833333333333332
+            },
+            "entail": {
+              "correct": 0.5166666666666666,
+              "endorsed": 0.012499999999999999
+            }
+          },
+          "same_predictions": 55,
+          "same_resulting_contexts": 2,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        }
+      }
+    },
+    "swarm_shared_ids": {
+      "attacked": {
+        "all_target": {
+          "OR_adds_flags_to_empty_entail_contexts": 31,
+          "OR_minus_entail": {
+            "correct": -0.04583333333333334,
+            "endorsed": -0.07083333333333333
+          },
+          "OR_only_passage_labels": {
+            "clean": 137,
+            "poison": 36
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 21,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 19,
+          "contexts_with_OR_only_removals": 120,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 10,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 173,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 6,
+          "independent_units_with_any_correctness_loss_vs_entail": 16,
+          "mean_removal_fraction": {
+            "OR": 0.17625,
+            "OR_only": 0.07208333333333333,
+            "entail": 0.10416666666666667
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.4375,
+              "endorsed": 0.008333333333333333
+            },
+            "entail": {
+              "correct": 0.48333333333333334,
+              "endorsed": 0.07916666666666666
+            },
+            "shared_record_ids_attacked_comparator_not_untreated": {
+              "correct": 0.525,
+              "endorsed": 0.020833333333333332
+            }
+          },
+          "same_predictions": 151,
+          "same_resulting_contexts": 120,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        },
+        "identical_nonblank_subset": true,
+        "paired_nonblank": {
+          "OR_adds_flags_to_empty_entail_contexts": 31,
+          "OR_minus_entail": {
+            "correct": -0.04583333333333334,
+            "endorsed": -0.07083333333333333
+          },
+          "OR_only_passage_labels": {
+            "clean": 137,
+            "poison": 36
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 21,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 19,
+          "contexts_with_OR_only_removals": 120,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 10,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 173,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 6,
+          "independent_units_with_any_correctness_loss_vs_entail": 16,
+          "mean_removal_fraction": {
+            "OR": 0.17625,
+            "OR_only": 0.07208333333333333,
+            "entail": 0.10416666666666667
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.4375,
+              "endorsed": 0.008333333333333333
+            },
+            "entail": {
+              "correct": 0.48333333333333334,
+              "endorsed": 0.07916666666666666
+            },
+            "shared_record_ids_attacked_comparator_not_untreated": {
+              "correct": 0.525,
+              "endorsed": 0.020833333333333332
+            }
+          },
+          "same_predictions": 151,
+          "same_resulting_contexts": 120,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        }
+      },
+      "clean": {
+        "all_target": {
+          "OR_adds_flags_to_empty_entail_contexts": 199,
+          "OR_minus_entail": {
+            "correct": -0.1833333333333333,
+            "endorsed": -0.012499999999999999
+          },
+          "OR_only_passage_labels": {
+            "clean": 718
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 57,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 48,
+          "contexts_with_OR_only_removals": 238,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 13,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 718,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 12,
+          "independent_units_with_any_correctness_loss_vs_entail": 40,
+          "mean_removal_fraction": {
+            "OR": 0.31958333333333333,
+            "OR_only": 0.2991666666666667,
+            "entail": 0.020416666666666666
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.3333333333333333,
+              "endorsed": 0.0
+            },
+            "actual_untreated_clean_reference": {
+              "correct": 0.525,
+              "endorsed": 0.020833333333333332
+            },
+            "entail": {
+              "correct": 0.5166666666666666,
+              "endorsed": 0.012499999999999999
+            }
+          },
+          "same_predictions": 55,
+          "same_resulting_contexts": 2,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        },
+        "identical_nonblank_subset": true,
+        "paired_nonblank": {
+          "OR_adds_flags_to_empty_entail_contexts": 199,
+          "OR_minus_entail": {
+            "correct": -0.1833333333333333,
+            "endorsed": -0.012499999999999999
+          },
+          "OR_only_passage_labels": {
+            "clean": 718
+          },
+          "OR_removed_all_contexts": 0,
+          "actual_task_observations_per_method": 240,
+          "all_vectors_and_contexts_validated": true,
+          "context_observations": 240,
+          "contexts_correct_under_entail_wrong_under_OR": 57,
+          "contexts_losing_all_gold_token_proxy_relative_entail": 48,
+          "contexts_with_OR_only_removals": 238,
+          "contexts_with_repeated_input_hashes": 1,
+          "contexts_wrong_under_entail_correct_under_OR": 13,
+          "correctness_changes_without_context_change": 0,
+          "entail_removed_all_contexts": 0,
+          "extra_removed_passages": 718,
+          "independent_units": 80,
+          "independent_units_with_any_correctness_gain_vs_entail": 12,
+          "independent_units_with_any_correctness_loss_vs_entail": 40,
+          "mean_removal_fraction": {
+            "OR": 0.31958333333333333,
+            "OR_only": 0.2991666666666667,
+            "entail": 0.020416666666666666
+          },
+          "rates": {
+            "OR": {
+              "correct": 0.3333333333333333,
+              "endorsed": 0.0
+            },
+            "actual_untreated_clean_reference": {
+              "correct": 0.525,
+              "endorsed": 0.020833333333333332
+            },
+            "entail": {
+              "correct": 0.5166666666666666,
+              "endorsed": 0.012499999999999999
+            }
+          },
+          "same_predictions": 55,
+          "same_resulting_contexts": 2,
+          "total_initial_passages": 2400,
+          "unit": "family or incident, never receiver/task as independent incident"
+        }
+      }
+    }
+  },
+  "thresholds_changed": false
+}

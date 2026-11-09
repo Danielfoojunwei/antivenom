@@ -1,0 +1,14 @@
+results/rescored/e16_titration_nq_k10.jsonl  [DEVELOPMENT]  n=75
+  arm                       endorsed [95% CI]       correct [95% CI]        
+  titrated                  0.13 [0.07, 0.21]       0.43 [0.32, 0.53]       
+  attack                    0.89 [0.83, 0.96]       0.25 [0.16, 0.35]       
+  block_OR                  0.08 [0.03, 0.15]       0.43 [0.32, 0.53]       
+  delete_OR                 0.08 [0.03, 0.15]       0.45 [0.35, 0.57]       
+  delete_OR_backfill        0.11 [0.04, 0.19]       0.60 [0.49, 0.71]       
+  clean                     0.04 [0.00, 0.09]       0.65 [0.55, 0.76]       
+  McNemar block_OR vs titrated endorsed: p=0.12
+  McNemar block_OR vs titrated correct: p=1
+  McNemar attack vs titrated endorsed: p=1.4e-17
+  McNemar attack vs titrated correct: p=0.0072
+  McNemar titrated vs delete_OR_backfill endorsed: p=0.69
+  McNemar titrated vs delete_OR_backfill correct: p=0.00024

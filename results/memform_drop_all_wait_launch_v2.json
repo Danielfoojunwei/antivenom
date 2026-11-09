@@ -1,0 +1,62 @@
+{
+  "supervisor_pid": 80876,
+  "launcher": "experiments/run_memform_drop_all_wait_v2.py",
+  "arguments": [
+    "--supervise"
+  ],
+  "runtime_manifest": "results/memform_drop_all_wait_runtime_manifest_v2.json",
+  "runtime_manifest_sha256": "cdebc2d129eda33d927ec96a8ab7ed0e0d591dcef109bfe2af44010a9633bd51",
+  "prelaunch_guard": {
+    "clear": false,
+    "blockers": [
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 80860,
+          "ppid": 1059,
+          "state": "Rs",
+          "rss_kib": 88528,
+          "cpu_time": "0:02.60",
+          "start": "Wed Nov 4 03:58:32 2026",
+          "command": "work/qwen_experiment_v8_4_joint_forecast/.venv/bin/python -B work/liquid_decision_memory_research/alignment_by_forgetting_proposal_2026_11_04/verify_preservation.py --before"
+        }
+      }
+    ],
+    "exempted": [
+      {
+        "pid": 15599,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 15600,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 65701,
+        "classification": "stdlib_resource_tracker"
+      },
+      {
+        "pid": 65702,
+        "classification": "dormant_cpu_spawn"
+      },
+      {
+        "pid": 65703,
+        "classification": "dormant_cpu_spawn"
+      },
+      {
+        "pid": 73003,
+        "classification": "dormant_system_inference_service"
+      },
+      {
+        "pid": 86259,
+        "classification": "dormant_system_inference_service"
+      },
+      {
+        "pid": 86414,
+        "classification": "dormant_system_inference_service"
+      }
+    ]
+  },
+  "user_authorization": "Current user request to run424-call control after competing experiment finishes without interference",
+  "created_utc": "2026-11-03T19:58:36.340000+00:00"
+}

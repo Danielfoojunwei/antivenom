@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    "data/external/poisonedrag/nq-contriever.json": "a5e9d9ca8e65b61e2fa34428e154a55c2e97c2064c97af09bf87822a61995fa5",
+    "data/external/poisonedrag/nq.json": "44df711454a9bada08e72e9e4a003a2cc845c43707ac93a3493e5168ec415cf2",
+    "data/external/poisonedrag/nq_target_corpus.json": "fd2e82184e99113e9300d3229b9c82c50035125c90bb9924d59dae4c7d47bc7b",
+    "docs/PERFORMANCE_RUNTIME_AMENDMENT.md": "614ea140b5d4e761ca4acc1e06c31f06a56ed95baa9cc93c54d54a2cb7337e08",
+    "experiments/performance_guard.py": "67c15037282606b231e5cc0f26caa9796eba37cea73e5828b23a9e89459c8726",
+    "experiments/performance_validation.py": "748daef4ac42a5a262ac52020dbbe815259a3f4dbc62362d57df08262e712b2e",
+    "experiments/run_incident_optimized.py": "c2bca126e83ba73e71d50c5add8372080ff72e75801ec4e2389227942127e0a0",
+    "results/e11a_flag_scores_nq_k10.jsonl": "cdb7004566f631b56016659fe674427416ac14bf0025ee3d7ae8082f02be1968",
+    "results/incident_queue_manifest.json": "ccd213612e6d816e18b82f8760f0edc06fad4c1183cf58d11385394e9e5e6bc7",
+    "results/incident_weights_before.json": "1e954daad0508ff82d1b9f67a7a94771af158cdf95611f24e573a39971394899",
+    "src/antivenom/antibody.py": "57b964f7e7ec4571ded143f4bce45e1fbd6a993466056fea78bdfcfd5780afa1",
+    "src/antivenom/continuation.py": "84e86d8566d899ddd3e062639369db76ce31558355c77055738e2c378bd9d54e",
+    "src/antivenom/incident.py": "e98149f3a6a625eb5f8612a4f2914d906f94f80a692d270bed89100f54135840",
+    "src/antivenom/llm.py": "8f0c232f15d64b53e49e247cc990bf8a5d5fb2335d728d640aaa38cd35c9da49",
+    "src/antivenom/masked.py": "fff2cabed1c4ebbd3d64e01b972b940ffbbde01e838d2be7207a0f1eecf414a1",
+    "src/antivenom/qa.py": "59082b2e4bd5274585fa512eabfb6f57927a61d2dfaaea5754a6fd7f0660000f",
+    "src/antivenom/retriever.py": "a81b2a153e25e442eec32ef468a9db06ef531944654e9159a91426789921ad6f"
+  },
+  "settings": {
+    "cap_bytes": 268435456,
+    "rounds": 2,
+    "seed": 17,
+    "versions": {
+      "mlx": "0.32.4",
+      "mlx-lm": "0.32.2",
+      "torch": "2.14.1",
+      "transformers": "5.20.2"
+    }
+  }
+}

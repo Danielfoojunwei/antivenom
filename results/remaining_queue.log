@@ -1,0 +1,19 @@
+preflight passed; starting serial queue
+running prepare pid 25393 log results/remaining_prepare.log
+running llama pid 25403 log results/remaining_llama.log
+preflight passed; starting serial queue
+running prepare pid 29538 log results/remaining_prepare.log
+running llama pid 29540 log results/remaining_llama.log
+running mistral pid 31339 log results/remaining_mistral.log
+running composite pid 35639 log results/remaining_composite.log
+phase composite failed (1); inspect results/remaining_composite.log. Resume after resolving it.
+preflight passed; starting serial queue
+running prepare pid 75350 log results/remaining_prepare.log
+running llama pid 75379 log results/remaining_llama.log
+running mistral pid 75417 log results/remaining_mistral.log
+running composite pid 75453 log results/remaining_composite.log
+running gate_cache pid 82380 log results/remaining_gate_cache.log
+running analysis pid 83430 log results/remaining_analysis.log
+running integrity pid 83438 log results/remaining_integrity.log
+running human_status pid 83447 log results/remaining_human_status.log
+automated_runs_complete_external_validation_pending

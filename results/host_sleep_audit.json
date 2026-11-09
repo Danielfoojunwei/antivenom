@@ -1,0 +1,56 @@
+{
+  "observed_utc": "2026-10-29T12:22:07.049239+00:00",
+  "timezone": "Asia/Singapore",
+  "source": "pmset -g log (bounded recent Sleep/Wake events)",
+  "events": [
+    {
+      "local_time": "2026-10-29 19:41:47 +0800",
+      "event": "Clamshell Sleep",
+      "reported_seconds": 430
+    },
+    {
+      "local_time": "2026-10-29 19:52:48 +0800",
+      "event": "Clamshell Sleep",
+      "reported_seconds": 25
+    },
+    {
+      "local_time": "2026-10-29 19:53:58 +0800",
+      "event": "Maintenance Sleep",
+      "reported_seconds": 303
+    },
+    {
+      "local_time": "2026-10-29 19:59:47 +0800",
+      "event": "Maintenance Sleep",
+      "reported_seconds": 1108
+    },
+    {
+      "local_time": "2026-10-29 20:18:15 +0800",
+      "event": "Wake due to lid/user activity"
+    }
+  ],
+  "queue_state": "Composite process alive, newly saving target 13 singleton scores after wake",
+  "sleep_inhibitor": "Existing idle-sleep assertion is active; it did not prevent clamshell sleep",
+  "interpretation": "Repeated host sleeps interrupt wall-clock completion progress. Existing 2\u20134 day planning estimate assumes continuous awake execution; this is not evidence of an algorithmic failure. No model settings changed.",
+  "user_action": "Keep current Mac connected to power and awake with lid open",
+  "latency_limitation": "Record host power-state interruptions when interpreting later runtime results; do not assume allocated swap or sleep alone establishes a method latency advantage.",
+  "subsequent_sleep_events": [
+    {
+      "sleep_local": "2026-11-02T01:26:16+08:00",
+      "wake_local": "2026-11-02T05:40:16+08:00",
+      "duration_seconds": 15240,
+      "reason": "Low Power Sleep, battery 1%",
+      "source": "pmset -g log",
+      "current_power": "AC, charging at 39%",
+      "effect": "Swarm wall-clock paused; same root/child live with fresh saved arms after wake"
+    },
+    {
+      "sleep_local": "2026-11-02T08:53:41+08:00",
+      "wake_local": "2026-11-02T23:08:29+08:00",
+      "reason": "Clamshell Sleep on battery; brief full wake 10:35:34\u201310:35:57, then closed-lid sleep and maintenance dark wakes",
+      "source": "pmset -g log",
+      "effect": "Same swarm queue/worker remained preserved and made fresh progress after lid wake",
+      "current_power": "AC reported, battery 33% discharging"
+    }
+  ],
+  "checked_utc": "2026-11-02T15:10:01.732680+00:00"
+}

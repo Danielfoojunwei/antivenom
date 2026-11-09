@@ -1,0 +1,42 @@
+{
+  "scope": "Completed base scope: 80 paired incidents; descriptive local operations audit",
+  "inputs": {
+    "results/incident_base_contriever.jsonl": "bad54fc69c3f4df7fa15a5726cd8c4c4a3875fe602b7bdaa621a4268be536403"
+  },
+  "method_order": "Deterministic per-case shuffled recipes in original incident_suite.py",
+  "timing_unit": "seconds, filtering plus answering; capture/setup/loading separate",
+  "paired_OR_minus_comparator": {
+    "none": {
+      "mean": 11.245481319276223,
+      "ci95": [
+        9.35964109402773,
+        13.243130479261712
+      ],
+      "independent_targets": 80
+    },
+    "cosine": {
+      "mean": 6.2368231848007785,
+      "ci95": [
+        4.948405208504482,
+        7.632876356937294
+      ],
+      "independent_targets": 80
+    },
+    "coordguard_gate": {
+      "mean": -6.152028430249447,
+      "ci95": [
+        -7.870386866157774,
+        -4.329770726961471
+      ],
+      "independent_targets": 80
+    },
+    "trustrag": {
+      "mean": -17.500798993836177,
+      "ci95": [
+        -20.776120228104435,
+        -14.544184691308592
+      ],
+      "independent_targets": 80
+    }
+  }
+}

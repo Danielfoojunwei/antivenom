@@ -1,0 +1,12 @@
+{
+  "script": "experiments/incident_suite.py",
+  "arguments": [
+    "e5"
+  ],
+  "configuration": "original_default",
+  "cache_limit_bytes": 16320875724,
+  "scientific_source_unchanged": true,
+  "status": "complete",
+  "wall_seconds": 23939.374872875,
+  "peak_memory_bytes": 5182155992
+}

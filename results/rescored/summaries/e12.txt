@@ -1,0 +1,24 @@
+results/rescored/e12_combined_and_deletion_nq_k10.jsonl  [DEVELOPMENT]  n=75
+  arm                       endorsed [95% CI]       correct [95% CI]        
+  clean                     0.04 [0.00, 0.09]       0.65 [0.55, 0.76]       
+  attack                    0.89 [0.83, 0.96]       0.25 [0.16, 0.35]       
+  oracle                    0.05 [0.01, 0.11]       0.53 [0.43, 0.64]       
+  block_entail              0.19 [0.11, 0.28]       0.44 [0.33, 0.55]       
+  block_OR                  0.08 [0.03, 0.15]       0.43 [0.31, 0.53]       
+  block_AND                 0.47 [0.35, 0.59]       0.37 [0.27, 0.48]       
+  delete_OR                 0.08 [0.03, 0.15]       0.45 [0.33, 0.56]       
+  delete_OR_backfill        0.11 [0.04, 0.19]       0.60 [0.49, 0.71]       
+  delete_entail             0.19 [0.11, 0.28]       0.47 [0.35, 0.57]       
+  delete_entail_backfill    0.17 [0.09, 0.27]       0.59 [0.48, 0.69]       
+  McNemar attack vs block_OR endorsed: p=8.7e-19
+  McNemar attack vs block_OR correct: p=0.0044
+  McNemar block_OR vs delete_OR endorsed: p=1
+  McNemar block_OR vs delete_OR correct: p=0.69
+  McNemar block_OR vs delete_OR_backfill endorsed: p=0.69
+  McNemar block_OR vs delete_OR_backfill correct: p=0.00098
+  McNemar delete_OR vs delete_OR_backfill endorsed: p=0.62
+  McNemar delete_OR vs delete_OR_backfill correct: p=0.0034
+  McNemar block_entail vs delete_entail_backfill endorsed: p=1
+  McNemar block_entail vs delete_entail_backfill correct: p=0.0034
+  McNemar oracle vs delete_OR_backfill endorsed: p=0.29
+  McNemar oracle vs delete_OR_backfill correct: p=0.36

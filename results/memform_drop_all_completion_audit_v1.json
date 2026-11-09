@@ -1,0 +1,44 @@
+{
+  "schema": "antivenom.memform-drop-all-completion-audit.v1",
+  "checked_utc": "2026-11-03T20:34:49.289219+00:00",
+  "all424_complete": true,
+  "all_bound_checkpoints_parser_scoring_replayed": true,
+  "summary_recomputed_matches": true,
+  "original_scientific_manifests_verified": 30,
+  "unique_original_input_files_verified": 597,
+  "v1_preparation_unchanged": true,
+  "e37_first70_preserved": true,
+  "reader_weight_bodies_reverified": true,
+  "summary_file_sha256": "3f2aebc75256401dd2ed8cb3ee3f8d6298f729c5fb2cabd4feb49b7903c07912",
+  "output_file_sha256": "9184ae5a9de76ffa99c87a95a32c2ba2c886afa45ffcde67068dfeb4408f2ab9",
+  "analysis_manifest_sha256": "779fc9b5ee04af01fcddbc9d6cab7914248891f634f8eebab2fec7c9f618b8dc",
+  "timing": {
+    "answer_seconds_total": 1366.4254910792515,
+    "answer_seconds_mean": 3.222701629903895,
+    "answer_seconds_median": 2.9446818539872766,
+    "per_condition": {
+      "clean": {
+        "calls": 212,
+        "answer_seconds": 681.8987549100711
+      },
+      "poisoned": {
+        "calls": 212,
+        "answer_seconds": 684.5267361691804
+      }
+    },
+    "model_child_invocations": 5,
+    "resource_yields": 4,
+    "last_invocation_load_seconds": 4.847564666997641,
+    "all_reload_setup_seconds_available": false,
+    "first_model_child_start_utc": "2026-11-03T19:59:36.794731+00:00",
+    "analysis_complete_utc": "2026-11-03T20:29:13.308489+00:00",
+    "elapsed_first_child_to_analysis_seconds": 1776.513758,
+    "note": "Answer timers include runtime boundary inspections; total reload/setup cost not fully retained. Collection was later than original methods; no controlled speed comparison."
+  },
+  "limits": [
+    "already-used local MemForm families; not fresh confirmation or native MemMorph",
+    "Human scoring/extraction review remains deferred",
+    "Paired95 intervals unadjusted; Holm8 tests and simultaneous bounds separately labelled",
+    "No equivalence or noninferiority claim; zero observed differences do not prove no harm"
+  ]
+}

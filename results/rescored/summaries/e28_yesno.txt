@@ -1,0 +1,12 @@
+hotpotqa yes/no-form n=99 entail_qa    AUC 0.744 recall@.01 0.386 FPR@.01 0.127
+hotpotqa yes/no-form n=99 entail_claim AUC 0.857 recall@.01 0.386 FPR@.01 0.000
+hotpotqa yes/no-form n=99 entail_dc    AUC 0.893 recall@.01 0.523 FPR@.01 0.036
+msmarco yes/no-form n=99 entail_qa    AUC 0.886 recall@.01 0.829 FPR@.01 0.155
+msmarco yes/no-form n=99 entail_claim AUC 0.867 recall@.01 0.659 FPR@.01 0.086
+msmarco yes/no-form n=99 entail_dc    AUC 0.862 recall@.01 0.683 FPR@.01 0.103
+hotpotqa v1                     recall at CG clean rate 0.970 (CG 1.000) | clean removed at CG recall 0.996 (CG 0.196)
+hotpotqa dc on yes/no           recall at CG clean rate 0.985 (CG 1.000) | clean removed at CG recall 0.820 (CG 0.196)
+hotpotqa max(qa,dc) on yes/no   recall at CG clean rate 0.980 (CG 1.000) | clean removed at CG recall 0.868 (CG 0.196)
+msmarco  v1                     recall at CG clean rate 0.980 (CG 0.963) | clean removed at CG recall 0.149 (CG 0.216)
+msmarco  dc on yes/no           recall at CG clean rate 0.990 (CG 0.963) | clean removed at CG recall 0.122 (CG 0.216)
+msmarco  max(qa,dc) on yes/no   recall at CG clean rate 0.985 (CG 0.963) | clean removed at CG recall 0.157 (CG 0.216)

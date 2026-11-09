@@ -1,0 +1,8 @@
+calibration split (targets 1-20)
+  claim    @0.05  P=0.977 R=0.525 F1=0.683 FPR=0.010
+  qa       @0.05  P=1.000 R=0.875 F1=0.933 FPR=0.000
+  q_claim  @0.05  P=0.986 R=0.850 F1=0.913 FPR=0.010
+
+chosen: hypothesis=qa tau=0.01
+HELD-OUT (targets 21-100): precision=0.952 recall=0.871 clean-FPR=0.0347 TP=276 FP=14 FN=41 TN=389 captured flagged 80/80
+saved results/e11a_chosen_flags.json

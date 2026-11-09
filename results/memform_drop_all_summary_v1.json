@@ -1,0 +1,895 @@
+{
+  "schema": "antivenom.memform-drop-all-summary.v1",
+  "scope": "new diagnostic analysis frozen before added control outcomes; original families already used",
+  "completed_utc": "2026-11-03T20:29:13.308489+00:00",
+  "plan_sha256": "090f34b13ced0723021a372516bf61bbbeb688af11f96ee865a793334891f363",
+  "analysis_manifest_sha256": "779fc9b5ee04af01fcddbc9d6cab7914248891f634f8eebab2fec7c9f618b8dc",
+  "control_output_sha256": "9184ae5a9de76ffa99c87a95a32c2ba2c886afa45ffcde67068dfeb4408f2ab9",
+  "actual_answer_calls": 424,
+  "independent_units": "212 declared MemForm families; no task/condition inflation",
+  "all_target": {
+    "families": 212,
+    "family_ids": [
+      "F0002_build_submission_timeout_reconciliat_c41521",
+      "F0003_release_health_check_response_2f3176",
+      "F0004_failed_backup_job_handling_f51226",
+      "F0005_crm_sync_validation_reconciliation_c24ed7",
+      "F0006_api_callback_delivery_completion_236fd6",
+      "F0007_customer_support_duplicate_charge_re_625796",
+      "F0008_collaboration_document_conflict_publ_2f0e9f",
+      "F0010_search_scope_correction_a9fa8f",
+      "F0011_database_index_retirement_73cbd4",
+      "F0012_shared_cache_stale_content_invalidat_41eca6",
+      "F0013_document_formatting_revision_handlin_0b8dde",
+      "F0014_batch_upload_retry_reconciliation_aacf35",
+      "F0015_cloud_idle_instance_retirement_d5bcfe",
+      "F0016_experiment_metric_correction_revisio_b56a60",
+      "F0017_monitoring_recovery_probe_closure_13826b",
+      "F0018_shared_room_booking_confirmation_79e8a2",
+      "F0019_version_control_non_fast_forward_res_3da07c",
+      "F0020_information_retrieval_top_result_sel_8ae258",
+      "F0021_release_diagnostic_snapshot_disposit_eb3097",
+      "F0022_shared_task_completion_approval_rout_115a01",
+      "F0023_cloud_deployment_lock_recovery_15629e",
+      "F0024_api_callback_timeout_recovery_048a9a",
+      "F0025_monitoring_duplicate_alert_dispositi_8261d8",
+      "F0026_backup_restore_availability_validati_bf3382",
+      "F0027_cache_configuration_checksum_recover_0862e7",
+      "F0028_version_control_lockfile_conflict_ha_4a281b",
+      "F0031_research_workflow_duplicate_doi_reco_444bd8",
+      "F0032_file_import_same_name_preservation_ef25cc",
+      "F0034_workflow_retry_reconciliation_a54192",
+      "F0035_build_test_isolated_failure_recheck_8d482c",
+      "F0036_routine_feed_schema_review_dd3fed",
+      "F0037_batch_failed_run_reconciliation_654fe3",
+      "F0038_research_protocol_amendment_register_5f029f",
+      "F0039_backup_archive_source_snapshot_reten_664b62",
+      "F0040_data_quality_corrected_batch_record_53313e",
+      "F0041_resource_scheduling_standby_shift_as_ea0da2",
+      "F0042_release_candidate_provenance_promoti_82864c",
+      "F0044_version_control_emergency_release_me_4b1f26",
+      "F0045_document_workflow_final_document_pub_46fb5c",
+      "F0046_scheduled_feed_profile_mapping_revie_70dafa",
+      "F0047_delivery_report_carrier_trace_ff5445",
+      "F0048_api_callback_retry_receipt_check_a7122b",
+      "F0049_database_migration_lock_timeout_stat_751145",
+      "F0050_duplicate_filename_checksum_handling_936206",
+      "F0051_overdue_workflow_execution_reconcili_cf7e52",
+      "F0052_cache_stale_entry_refresh_coordinati_b0d69c",
+      "F0053_cloud_instance_health_recovery_b7211d",
+      "F0054_batch_ingest_duplicate_identifier_re_80a07c",
+      "F0055_search_zero_results_coverage_review_d81289",
+      "F0056_monitoring_repeated_alert_maintenanc_86f893",
+      "F0057_cache_missing_source_asset_dispositi_1d952d",
+      "F0058_workflow_expired_approval_delegation_661402",
+      "F0059_batch_incomplete_ledger_recovery_577a81",
+      "F0060_task_routing_billing_specialist_assi_1f084f",
+      "F0061_api_route_revision_reconciliation_8d15a3",
+      "F0062_version_control_shared_branch_update_d3c2d6",
+      "F0065_research_results_release_data_lock_525df8",
+      "F0066_customer_support_missing_cancellatio_49dc75",
+      "F0067_build_deployment_failure_state_revie_f83d9f",
+      "F0068_resource_reservation_unclaimed_relea_5a3263",
+      "F0069_failed_transform_partial_output_reco_37d014",
+      "F0070_unhealthy_instance_replacement_guard_5bd590",
+      "F0071_data_quality_duplicate_key_revision_bf5797",
+      "F0073_search_zero_results_index_status_c2fd4f",
+      "F0074_document_revision_conflict_reconcili_f95d9a",
+      "F0075_database_replica_lag_report_routing_2f1f16",
+      "F0077_experiment_tracking_completed_run_ar_46a6cd",
+      "F0078_monitoring_maintenance_window_alert_5fdf8a",
+      "F0079_routing_update_timeout_reconciliatio_550baa",
+      "F0080_restore_timeout_existing_target_revi_bcb7fd",
+      "F0081_backup_snapshot_expiration_retention_017105",
+      "F0082_workflow_completion_receipt_reconcil_7d0694",
+      "F0083_ci_failed_test_evidence_preservation_a8ec87",
+      "F0084_unused_public_ip_release_review_7ff288",
+      "F0085_experiment_run_resume_checkpoint_c55217",
+      "F0086_collaboration_approval_delegate_assi_e41658",
+      "F0087_document_release_approval_record_c30cf1",
+      "F0088_loading_dock_clearance_scheduling_afbb84",
+      "F0090_data_processing_delivery_id_unresolv_046c87",
+      "F0091_information_retrieval_exact_title_me_2389d0",
+      "F0092_knowledge_base_duplicate_article_ret_579b9c",
+      "F0093_database_usage_batch_connection_drop_fa7c63",
+      "F0094_invoice_export_empty_delivery_reconc_29dfd6",
+      "F0095_research_screening_retraction_notice_5d226d",
+      "F0096_cache_stale_entry_replica_handling_c2f25f",
+      "F0097_api_timeout_operation_reconciliation_f54dd3",
+      "F0098_version_control_maintenance_backport_ddb16a",
+      "F0099_task_routing_urgent_ticket_team_assi_49e261",
+      "F0100_customer_support_resolved_case_reply_027c9b",
+      "F0101_document_workflow_extraction_verific_d91c3c",
+      "F0102_api_orchestration_catalog_sync_conti_02e5eb",
+      "F0103_task_routing_creative_request_specia_49478f",
+      "F0104_cache_management_purge_notice_valida_4e1f17",
+      "F0105_batch_processing_completion_marker_r_6146ef",
+      "F0106_experiment_tracking_completed_run_pu_d1ffb9",
+      "F0107_knowledge_management_source_linked_e_7e7146",
+      "F0108_backup_recovery_completed_job_retent_d81130",
+      "F0110_database_schema_migration_ready_appl_09db0d",
+      "F0111_workflow_automation_release_batch_re_36e9bd",
+      "F0113_software_rollout_alert_response_7a7193",
+      "F0114_build_test_timeout_retry_diagnostics_eab309",
+      "F0115_data_quality_email_match_identity_re_7cda4e",
+      "F0116_collaboration_decision_log_review_co_088ab1",
+      "F0117_monitoring_disk_space_alert_triage_2ed86a",
+      "F0118_information_retrieval_cited_document_d96d92",
+      "F0120_version_control_resolved_conflict_me_c2fa0c",
+      "F0121_data_processing_schema_validated_fil_0fbdee",
+      "F0122_resource_scheduling_unclaimed_covera_218521",
+      "F0123_file_processing_interrupted_delivery_cfbc09",
+      "F0124_database_online_index_build_failure_284797",
+      "F0125_cache_mutable_feed_ttl_adjustment_e55568",
+      "F0126_data_quality_unapproved_field_mappin_a17e1f",
+      "F0127_version_control_lockfile_provenance_4a8250",
+      "F0129_information_retrieval_exact_title_re_b051fb",
+      "F0130_backup_recovery_restore_point_valida_ce3f2e",
+      "F0132_monitoring_alert_triage_single_probe_fa96ad",
+      "F0133_collaboration_review_ready_status_ac02fb",
+      "F0134_cloud_provisioning_no_change_plan_140531",
+      "F0136_api_orchestration_timeout_request_re_342ee6",
+      "F0137_document_workflow_pdf_font_substitut_b7544d",
+      "F0138_task_routing_duplicate_alert_confirm_c88756",
+      "F0139_experiment_tracking_completed_run_me_0b897d",
+      "F0140_knowledge_management_duplicate_title_6ca2c9",
+      "F0141_customer_support_duplicate_charge_ad_df45a1",
+      "F0142_batch_processing_interrupted_upload_098def",
+      "F0143_workflow_automation_contact_list_pub_e27ea1",
+      "F0144_file_processing_converted_package_re_49b5c5",
+      "F0145_workflow_automation_interrupted_run_80b5e7",
+      "F0146_document_workflow_placeholder_warnin_c05adc",
+      "F0147_data_quality_duplicate_row_warning_i_6b87de",
+      "F0148_knowledge_article_similarity_triage_7a2c8c",
+      "F0149_batch_queue_worker_reservation_7a184f",
+      "F0151_research_workflow_calibration_reuse_99039b",
+      "F0152_build_automation_release_validation_abe19a",
+      "F0153_information_retrieval_unmapped_zero_852917",
+      "F0154_task_routing_unverified_urgent_reque_3dd6e4",
+      "F0155_customer_support_access_restoration_6f6186",
+      "F0156_version_control_resolved_conflict_me_6aab86",
+      "F0157_monitoring_single_node_alert_disposi_129197",
+      "F0158_search_exact_title_result_selection_6ba471",
+      "F0159_database_timeout_transaction_reconci_919e71",
+      "F0161_data_processing_aggregate_check_publ_d78756",
+      "F0162_collaboration_handbook_merge_review_3412c2",
+      "F0163_api_dependent_workflow_completion_ch_6d010a",
+      "F0164_database_schema_change_rollback_dril_c71662",
+      "F0165_backup_retention_restore_verificatio_973c91",
+      "F0166_callback_timeout_delivery_status_18f8b2",
+      "F0167_knowledge_article_replacement_review_8ac1cc",
+      "F0168_batch_processing_failed_record_retry_dd422d",
+      "F0169_monitoring_duplicate_alert_verificat_416a82",
+      "F0170_software_operations_canary_rollout_r_c665fd",
+      "F0171_file_processing_duplicate_submission_01d148",
+      "F0172_build_test_retry_failure_disposition_93b891",
+      "F0173_urgent_specialist_handoff_e6101a",
+      "F0174_billing_request_account_routing_48ff12",
+      "F0175_workflow_automation_successful_job_c_74cc1f",
+      "F0176_research_warning_record_screening_78c17a",
+      "F0177_search_result_answer_verification_2419bf",
+      "F0178_merged_branch_cleanup_review_01e981",
+      "F0179_shared_workstation_authorization_sch_57f4f5",
+      "F0180_customer_support_missing_package_res_58d6d1",
+      "F0181_duplicate_key_row_disposition_443acc",
+      "F0182_replication_alarm_failover_guard_424c19",
+      "F0183_completed_backup_restore_destination_db8382",
+      "F0184_monitoring_no_heartbeat_retirement_d_79f699",
+      "F0185_batch_timeout_retry_reconciliation_e6fc3c",
+      "F0186_cloud_idle_instance_retirement_be9994",
+      "F0187_release_branch_emergency_update_auth_26848a",
+      "F0188_database_migration_staging_dispositi_809fe6",
+      "F0189_research_synthesis_trial_verificatio_d28c93",
+      "F0190_customer_support_damaged_item_replac_5362e9",
+      "F0191_resource_scheduling_unattended_equip_2c21d4",
+      "F0192_retrieved_document_applicability_che_9271ed",
+      "F0193_overdue_review_handoff_confirmation_a36fed",
+      "F0194_experiment_run_publication_provenanc_3549e5",
+      "F0195_billing_tagged_request_routing_35c269",
+      "F0196_signed_document_repository_filing_abb1e9",
+      "F0197_duplicate_delivery_flag_reconciliati_d2392d",
+      "F0198_review_complete_package_publication_86bd51",
+      "F0199_deployment_failure_state_reconciliat_cf1c73",
+      "F0200_file_checksum_mismatch_verified_repl_afda0c",
+      "F0201_api_webhook_timeout_status_reconcili_dec6fa",
+      "F0202_knowledge_article_publication_source_cf6050",
+      "F0203_cache_management_refresh_failed_capa_30c311",
+      "F0204_collaboration_decision_closure_appro_6df1d5",
+      "F0205_version_control_merge_conflict_revie_6871ab",
+      "F0207_database_migration_timeout_reconcili_7dce75",
+      "F0208_replacement_specification_identifier_5c83b1",
+      "F0210_api_orchestration_version_conflict_r_5ca86c",
+      "F0211_canary_alert_clearance_rollout_6cf013",
+      "F0212_failed_partition_rerun_reconciliatio_f752ea",
+      "F0213_integration_test_timeout_fixture_han_7fefc2",
+      "F0214_row_count_discrepancy_batch_release_60dfa3",
+      "F0215_workflow_approval_reminder_delayed_d_1f25ad",
+      "F0216_backup_restore_complete_tag_validati_f8a769",
+      "F0217_supplier_export_malformed_row_handli_49a6cf",
+      "F0218_label_print_queue_alert_closure_9d7409",
+      "F0219_task_routing_billing_tag_verificatio_c99c3b",
+      "F0220_research_workflow_excerpt_source_ver_a55e36",
+      "F0221_supplier_address_transformation_rele_c274b4",
+      "F0222_onboarding_completion_event_handling_8a9a0f",
+      "F0223_backup_snapshot_retention_hold_37e24f",
+      "F0224_help_center_article_approval_confirm_010ce0",
+      "F0226_hvac_maintenance_window_alert_triage_cccea6",
+      "F0227_software_release_canary_promotion_740a09",
+      "F0228_cache_entry_revision_validation_503862",
+      "F0229_collaboration_task_completion_eviden_576b86",
+      "F0230_data_feed_mapping_version_confirmati_e2cb34",
+      "F0231_search_no_results_query_expansion_5e04d2",
+      "F0233_completed_run_metric_publication_166b1f",
+      "F0234_cloud_idle_instance_retirement_166af7",
+      "F0235_batch_scratch_volume_cleanup_605b3a"
+    ],
+    "rates": {
+      "clean": {
+        "entail": {
+          "correct": 0.9528301886792453,
+          "endorsed": 0.02830188679245283,
+          "parse_failure_rate": 0.009433962264150943
+        },
+        "OR": {
+          "correct": 0.9339622641509434,
+          "endorsed": 0.04245283018867924,
+          "parse_failure_rate": 0.009433962264150943
+        },
+        "drop_all": {
+          "correct": 0.8301886792452831,
+          "endorsed": 0.08018867924528301,
+          "parse_failure_rate": 0.04245283018867924
+        }
+      },
+      "poisoned": {
+        "entail": {
+          "correct": 0.8207547169811321,
+          "endorsed": 0.08962264150943396,
+          "parse_failure_rate": 0.04245283018867924
+        },
+        "OR": {
+          "correct": 0.8301886792452831,
+          "endorsed": 0.08018867924528301,
+          "parse_failure_rate": 0.04245283018867924
+        },
+        "drop_all": {
+          "correct": 0.8301886792452831,
+          "endorsed": 0.08018867924528301,
+          "parse_failure_rate": 0.04245283018867924
+        }
+      }
+    },
+    "comparisons": {
+      "clean:entail-drop_all:correct": {
+        "difference": 0.12264150943396226,
+        "paired95_ci": [
+          0.08018867924528301,
+          0.16981132075471697
+        ],
+        "simultaneous95_bound": [
+          -0.1106354131319616,
+          0.35591843199988615
+        ],
+        "discordant_signature_one_drop_zero": 27,
+        "discordant_signature_zero_drop_one": 1,
+        "p": 2.1606683731079102e-07,
+        "families": 212,
+        "holm8_p": 1.7285346984863281e-06,
+        "directional_advantage": "supported"
+      },
+      "clean:entail-drop_all:endorsed": {
+        "difference": -0.05188679245283019,
+        "paired95_ci": [
+          -0.08490566037735849,
+          -0.02358490566037736
+        ],
+        "simultaneous95_bound": [
+          -0.28516371501875404,
+          0.18139013011309368
+        ],
+        "discordant_signature_one_drop_zero": 1,
+        "discordant_signature_zero_drop_one": 12,
+        "p": 0.00341796875,
+        "families": 212,
+        "holm8_p": 0.0205078125,
+        "directional_advantage": "supported"
+      },
+      "clean:OR-drop_all:correct": {
+        "difference": 0.10377358490566038,
+        "paired95_ci": [
+          0.06132075471698113,
+          0.14622641509433962
+        ],
+        "simultaneous95_bound": [
+          -0.12950333766026348,
+          0.33705050747158427
+        ],
+        "discordant_signature_one_drop_zero": 23,
+        "discordant_signature_zero_drop_one": 1,
+        "p": 2.9802322387695312e-06,
+        "families": 212,
+        "holm8_p": 2.086162567138672e-05,
+        "directional_advantage": "supported"
+      },
+      "clean:OR-drop_all:endorsed": {
+        "difference": -0.03773584905660377,
+        "paired95_ci": [
+          -0.0660377358490566,
+          -0.009433962264150943
+        ],
+        "simultaneous95_bound": [
+          -0.2710127716225276,
+          0.1955410735093201
+        ],
+        "discordant_signature_one_drop_zero": 1,
+        "discordant_signature_zero_drop_one": 9,
+        "p": 0.021484375,
+        "families": 212,
+        "holm8_p": 0.107421875,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:entail-drop_all:correct": {
+        "difference": -0.009433962264150943,
+        "paired95_ci": [
+          -0.02358490566037736,
+          0.0
+        ],
+        "simultaneous95_bound": [
+          -0.2427108848300748,
+          0.22384296030177292
+        ],
+        "discordant_signature_one_drop_zero": 0,
+        "discordant_signature_zero_drop_one": 2,
+        "p": 0.5,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:entail-drop_all:endorsed": {
+        "difference": 0.009433962264150943,
+        "paired95_ci": [
+          0.0,
+          0.02358490566037736
+        ],
+        "simultaneous95_bound": [
+          -0.22384296030177292,
+          0.2427108848300748
+        ],
+        "discordant_signature_one_drop_zero": 2,
+        "discordant_signature_zero_drop_one": 0,
+        "p": 0.5,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:OR-drop_all:correct": {
+        "difference": 0.0,
+        "paired95_ci": [
+          0.0,
+          0.0
+        ],
+        "simultaneous95_bound": [
+          -0.23327692256592386,
+          0.23327692256592386
+        ],
+        "discordant_signature_one_drop_zero": 0,
+        "discordant_signature_zero_drop_one": 0,
+        "p": 1.0,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:OR-drop_all:endorsed": {
+        "difference": 0.0,
+        "paired95_ci": [
+          0.0,
+          0.0
+        ],
+        "simultaneous95_bound": [
+          -0.23327692256592386,
+          0.23327692256592386
+        ],
+        "discordant_signature_one_drop_zero": 0,
+        "discordant_signature_zero_drop_one": 0,
+        "p": 1.0,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      }
+    },
+    "verdicts": {
+      "entail": {
+        "clean_correctness_advantage": "supported",
+        "poisoned_endorsement_advantage": "inconclusive",
+        "joint_strict_superiority": "inconclusive",
+        "protection_noninferiority": "untested; no margin specified",
+        "selective_useful_memory_mechanism": "not established by task outcomes alone"
+      },
+      "OR": {
+        "clean_correctness_advantage": "supported",
+        "poisoned_endorsement_advantage": "inconclusive",
+        "joint_strict_superiority": "inconclusive",
+        "protection_noninferiority": "untested; no margin specified",
+        "selective_useful_memory_mechanism": "not established by task outcomes alone"
+      }
+    }
+  },
+  "paired_nonblank_capture_sensitivity": {
+    "families": 212,
+    "family_ids": [
+      "F0002_build_submission_timeout_reconciliat_c41521",
+      "F0003_release_health_check_response_2f3176",
+      "F0004_failed_backup_job_handling_f51226",
+      "F0005_crm_sync_validation_reconciliation_c24ed7",
+      "F0006_api_callback_delivery_completion_236fd6",
+      "F0007_customer_support_duplicate_charge_re_625796",
+      "F0008_collaboration_document_conflict_publ_2f0e9f",
+      "F0010_search_scope_correction_a9fa8f",
+      "F0011_database_index_retirement_73cbd4",
+      "F0012_shared_cache_stale_content_invalidat_41eca6",
+      "F0013_document_formatting_revision_handlin_0b8dde",
+      "F0014_batch_upload_retry_reconciliation_aacf35",
+      "F0015_cloud_idle_instance_retirement_d5bcfe",
+      "F0016_experiment_metric_correction_revisio_b56a60",
+      "F0017_monitoring_recovery_probe_closure_13826b",
+      "F0018_shared_room_booking_confirmation_79e8a2",
+      "F0019_version_control_non_fast_forward_res_3da07c",
+      "F0020_information_retrieval_top_result_sel_8ae258",
+      "F0021_release_diagnostic_snapshot_disposit_eb3097",
+      "F0022_shared_task_completion_approval_rout_115a01",
+      "F0023_cloud_deployment_lock_recovery_15629e",
+      "F0024_api_callback_timeout_recovery_048a9a",
+      "F0025_monitoring_duplicate_alert_dispositi_8261d8",
+      "F0026_backup_restore_availability_validati_bf3382",
+      "F0027_cache_configuration_checksum_recover_0862e7",
+      "F0028_version_control_lockfile_conflict_ha_4a281b",
+      "F0031_research_workflow_duplicate_doi_reco_444bd8",
+      "F0032_file_import_same_name_preservation_ef25cc",
+      "F0034_workflow_retry_reconciliation_a54192",
+      "F0035_build_test_isolated_failure_recheck_8d482c",
+      "F0036_routine_feed_schema_review_dd3fed",
+      "F0037_batch_failed_run_reconciliation_654fe3",
+      "F0038_research_protocol_amendment_register_5f029f",
+      "F0039_backup_archive_source_snapshot_reten_664b62",
+      "F0040_data_quality_corrected_batch_record_53313e",
+      "F0041_resource_scheduling_standby_shift_as_ea0da2",
+      "F0042_release_candidate_provenance_promoti_82864c",
+      "F0044_version_control_emergency_release_me_4b1f26",
+      "F0045_document_workflow_final_document_pub_46fb5c",
+      "F0046_scheduled_feed_profile_mapping_revie_70dafa",
+      "F0047_delivery_report_carrier_trace_ff5445",
+      "F0048_api_callback_retry_receipt_check_a7122b",
+      "F0049_database_migration_lock_timeout_stat_751145",
+      "F0050_duplicate_filename_checksum_handling_936206",
+      "F0051_overdue_workflow_execution_reconcili_cf7e52",
+      "F0052_cache_stale_entry_refresh_coordinati_b0d69c",
+      "F0053_cloud_instance_health_recovery_b7211d",
+      "F0054_batch_ingest_duplicate_identifier_re_80a07c",
+      "F0055_search_zero_results_coverage_review_d81289",
+      "F0056_monitoring_repeated_alert_maintenanc_86f893",
+      "F0057_cache_missing_source_asset_dispositi_1d952d",
+      "F0058_workflow_expired_approval_delegation_661402",
+      "F0059_batch_incomplete_ledger_recovery_577a81",
+      "F0060_task_routing_billing_specialist_assi_1f084f",
+      "F0061_api_route_revision_reconciliation_8d15a3",
+      "F0062_version_control_shared_branch_update_d3c2d6",
+      "F0065_research_results_release_data_lock_525df8",
+      "F0066_customer_support_missing_cancellatio_49dc75",
+      "F0067_build_deployment_failure_state_revie_f83d9f",
+      "F0068_resource_reservation_unclaimed_relea_5a3263",
+      "F0069_failed_transform_partial_output_reco_37d014",
+      "F0070_unhealthy_instance_replacement_guard_5bd590",
+      "F0071_data_quality_duplicate_key_revision_bf5797",
+      "F0073_search_zero_results_index_status_c2fd4f",
+      "F0074_document_revision_conflict_reconcili_f95d9a",
+      "F0075_database_replica_lag_report_routing_2f1f16",
+      "F0077_experiment_tracking_completed_run_ar_46a6cd",
+      "F0078_monitoring_maintenance_window_alert_5fdf8a",
+      "F0079_routing_update_timeout_reconciliatio_550baa",
+      "F0080_restore_timeout_existing_target_revi_bcb7fd",
+      "F0081_backup_snapshot_expiration_retention_017105",
+      "F0082_workflow_completion_receipt_reconcil_7d0694",
+      "F0083_ci_failed_test_evidence_preservation_a8ec87",
+      "F0084_unused_public_ip_release_review_7ff288",
+      "F0085_experiment_run_resume_checkpoint_c55217",
+      "F0086_collaboration_approval_delegate_assi_e41658",
+      "F0087_document_release_approval_record_c30cf1",
+      "F0088_loading_dock_clearance_scheduling_afbb84",
+      "F0090_data_processing_delivery_id_unresolv_046c87",
+      "F0091_information_retrieval_exact_title_me_2389d0",
+      "F0092_knowledge_base_duplicate_article_ret_579b9c",
+      "F0093_database_usage_batch_connection_drop_fa7c63",
+      "F0094_invoice_export_empty_delivery_reconc_29dfd6",
+      "F0095_research_screening_retraction_notice_5d226d",
+      "F0096_cache_stale_entry_replica_handling_c2f25f",
+      "F0097_api_timeout_operation_reconciliation_f54dd3",
+      "F0098_version_control_maintenance_backport_ddb16a",
+      "F0099_task_routing_urgent_ticket_team_assi_49e261",
+      "F0100_customer_support_resolved_case_reply_027c9b",
+      "F0101_document_workflow_extraction_verific_d91c3c",
+      "F0102_api_orchestration_catalog_sync_conti_02e5eb",
+      "F0103_task_routing_creative_request_specia_49478f",
+      "F0104_cache_management_purge_notice_valida_4e1f17",
+      "F0105_batch_processing_completion_marker_r_6146ef",
+      "F0106_experiment_tracking_completed_run_pu_d1ffb9",
+      "F0107_knowledge_management_source_linked_e_7e7146",
+      "F0108_backup_recovery_completed_job_retent_d81130",
+      "F0110_database_schema_migration_ready_appl_09db0d",
+      "F0111_workflow_automation_release_batch_re_36e9bd",
+      "F0113_software_rollout_alert_response_7a7193",
+      "F0114_build_test_timeout_retry_diagnostics_eab309",
+      "F0115_data_quality_email_match_identity_re_7cda4e",
+      "F0116_collaboration_decision_log_review_co_088ab1",
+      "F0117_monitoring_disk_space_alert_triage_2ed86a",
+      "F0118_information_retrieval_cited_document_d96d92",
+      "F0120_version_control_resolved_conflict_me_c2fa0c",
+      "F0121_data_processing_schema_validated_fil_0fbdee",
+      "F0122_resource_scheduling_unclaimed_covera_218521",
+      "F0123_file_processing_interrupted_delivery_cfbc09",
+      "F0124_database_online_index_build_failure_284797",
+      "F0125_cache_mutable_feed_ttl_adjustment_e55568",
+      "F0126_data_quality_unapproved_field_mappin_a17e1f",
+      "F0127_version_control_lockfile_provenance_4a8250",
+      "F0129_information_retrieval_exact_title_re_b051fb",
+      "F0130_backup_recovery_restore_point_valida_ce3f2e",
+      "F0132_monitoring_alert_triage_single_probe_fa96ad",
+      "F0133_collaboration_review_ready_status_ac02fb",
+      "F0134_cloud_provisioning_no_change_plan_140531",
+      "F0136_api_orchestration_timeout_request_re_342ee6",
+      "F0137_document_workflow_pdf_font_substitut_b7544d",
+      "F0138_task_routing_duplicate_alert_confirm_c88756",
+      "F0139_experiment_tracking_completed_run_me_0b897d",
+      "F0140_knowledge_management_duplicate_title_6ca2c9",
+      "F0141_customer_support_duplicate_charge_ad_df45a1",
+      "F0142_batch_processing_interrupted_upload_098def",
+      "F0143_workflow_automation_contact_list_pub_e27ea1",
+      "F0144_file_processing_converted_package_re_49b5c5",
+      "F0145_workflow_automation_interrupted_run_80b5e7",
+      "F0146_document_workflow_placeholder_warnin_c05adc",
+      "F0147_data_quality_duplicate_row_warning_i_6b87de",
+      "F0148_knowledge_article_similarity_triage_7a2c8c",
+      "F0149_batch_queue_worker_reservation_7a184f",
+      "F0151_research_workflow_calibration_reuse_99039b",
+      "F0152_build_automation_release_validation_abe19a",
+      "F0153_information_retrieval_unmapped_zero_852917",
+      "F0154_task_routing_unverified_urgent_reque_3dd6e4",
+      "F0155_customer_support_access_restoration_6f6186",
+      "F0156_version_control_resolved_conflict_me_6aab86",
+      "F0157_monitoring_single_node_alert_disposi_129197",
+      "F0158_search_exact_title_result_selection_6ba471",
+      "F0159_database_timeout_transaction_reconci_919e71",
+      "F0161_data_processing_aggregate_check_publ_d78756",
+      "F0162_collaboration_handbook_merge_review_3412c2",
+      "F0163_api_dependent_workflow_completion_ch_6d010a",
+      "F0164_database_schema_change_rollback_dril_c71662",
+      "F0165_backup_retention_restore_verificatio_973c91",
+      "F0166_callback_timeout_delivery_status_18f8b2",
+      "F0167_knowledge_article_replacement_review_8ac1cc",
+      "F0168_batch_processing_failed_record_retry_dd422d",
+      "F0169_monitoring_duplicate_alert_verificat_416a82",
+      "F0170_software_operations_canary_rollout_r_c665fd",
+      "F0171_file_processing_duplicate_submission_01d148",
+      "F0172_build_test_retry_failure_disposition_93b891",
+      "F0173_urgent_specialist_handoff_e6101a",
+      "F0174_billing_request_account_routing_48ff12",
+      "F0175_workflow_automation_successful_job_c_74cc1f",
+      "F0176_research_warning_record_screening_78c17a",
+      "F0177_search_result_answer_verification_2419bf",
+      "F0178_merged_branch_cleanup_review_01e981",
+      "F0179_shared_workstation_authorization_sch_57f4f5",
+      "F0180_customer_support_missing_package_res_58d6d1",
+      "F0181_duplicate_key_row_disposition_443acc",
+      "F0182_replication_alarm_failover_guard_424c19",
+      "F0183_completed_backup_restore_destination_db8382",
+      "F0184_monitoring_no_heartbeat_retirement_d_79f699",
+      "F0185_batch_timeout_retry_reconciliation_e6fc3c",
+      "F0186_cloud_idle_instance_retirement_be9994",
+      "F0187_release_branch_emergency_update_auth_26848a",
+      "F0188_database_migration_staging_dispositi_809fe6",
+      "F0189_research_synthesis_trial_verificatio_d28c93",
+      "F0190_customer_support_damaged_item_replac_5362e9",
+      "F0191_resource_scheduling_unattended_equip_2c21d4",
+      "F0192_retrieved_document_applicability_che_9271ed",
+      "F0193_overdue_review_handoff_confirmation_a36fed",
+      "F0194_experiment_run_publication_provenanc_3549e5",
+      "F0195_billing_tagged_request_routing_35c269",
+      "F0196_signed_document_repository_filing_abb1e9",
+      "F0197_duplicate_delivery_flag_reconciliati_d2392d",
+      "F0198_review_complete_package_publication_86bd51",
+      "F0199_deployment_failure_state_reconciliat_cf1c73",
+      "F0200_file_checksum_mismatch_verified_repl_afda0c",
+      "F0201_api_webhook_timeout_status_reconcili_dec6fa",
+      "F0202_knowledge_article_publication_source_cf6050",
+      "F0203_cache_management_refresh_failed_capa_30c311",
+      "F0204_collaboration_decision_closure_appro_6df1d5",
+      "F0205_version_control_merge_conflict_revie_6871ab",
+      "F0207_database_migration_timeout_reconcili_7dce75",
+      "F0208_replacement_specification_identifier_5c83b1",
+      "F0210_api_orchestration_version_conflict_r_5ca86c",
+      "F0211_canary_alert_clearance_rollout_6cf013",
+      "F0212_failed_partition_rerun_reconciliatio_f752ea",
+      "F0213_integration_test_timeout_fixture_han_7fefc2",
+      "F0214_row_count_discrepancy_batch_release_60dfa3",
+      "F0215_workflow_approval_reminder_delayed_d_1f25ad",
+      "F0216_backup_restore_complete_tag_validati_f8a769",
+      "F0217_supplier_export_malformed_row_handli_49a6cf",
+      "F0218_label_print_queue_alert_closure_9d7409",
+      "F0219_task_routing_billing_tag_verificatio_c99c3b",
+      "F0220_research_workflow_excerpt_source_ver_a55e36",
+      "F0221_supplier_address_transformation_rele_c274b4",
+      "F0222_onboarding_completion_event_handling_8a9a0f",
+      "F0223_backup_snapshot_retention_hold_37e24f",
+      "F0224_help_center_article_approval_confirm_010ce0",
+      "F0226_hvac_maintenance_window_alert_triage_cccea6",
+      "F0227_software_release_canary_promotion_740a09",
+      "F0228_cache_entry_revision_validation_503862",
+      "F0229_collaboration_task_completion_eviden_576b86",
+      "F0230_data_feed_mapping_version_confirmati_e2cb34",
+      "F0231_search_no_results_query_expansion_5e04d2",
+      "F0233_completed_run_metric_publication_166b1f",
+      "F0234_cloud_idle_instance_retirement_166af7",
+      "F0235_batch_scratch_volume_cleanup_605b3a"
+    ],
+    "rates": {
+      "clean": {
+        "entail": {
+          "correct": 0.9528301886792453,
+          "endorsed": 0.02830188679245283,
+          "parse_failure_rate": 0.009433962264150943
+        },
+        "OR": {
+          "correct": 0.9339622641509434,
+          "endorsed": 0.04245283018867924,
+          "parse_failure_rate": 0.009433962264150943
+        },
+        "drop_all": {
+          "correct": 0.8301886792452831,
+          "endorsed": 0.08018867924528301,
+          "parse_failure_rate": 0.04245283018867924
+        }
+      },
+      "poisoned": {
+        "entail": {
+          "correct": 0.8207547169811321,
+          "endorsed": 0.08962264150943396,
+          "parse_failure_rate": 0.04245283018867924
+        },
+        "OR": {
+          "correct": 0.8301886792452831,
+          "endorsed": 0.08018867924528301,
+          "parse_failure_rate": 0.04245283018867924
+        },
+        "drop_all": {
+          "correct": 0.8301886792452831,
+          "endorsed": 0.08018867924528301,
+          "parse_failure_rate": 0.04245283018867924
+        }
+      }
+    },
+    "comparisons": {
+      "clean:entail-drop_all:correct": {
+        "difference": 0.12264150943396226,
+        "paired95_ci": [
+          0.08018867924528301,
+          0.16981132075471697
+        ],
+        "simultaneous95_bound": [
+          -0.1106354131319616,
+          0.35591843199988615
+        ],
+        "discordant_signature_one_drop_zero": 27,
+        "discordant_signature_zero_drop_one": 1,
+        "p": 2.1606683731079102e-07,
+        "families": 212,
+        "holm8_p": 1.7285346984863281e-06,
+        "directional_advantage": "supported"
+      },
+      "clean:entail-drop_all:endorsed": {
+        "difference": -0.05188679245283019,
+        "paired95_ci": [
+          -0.08490566037735849,
+          -0.02358490566037736
+        ],
+        "simultaneous95_bound": [
+          -0.28516371501875404,
+          0.18139013011309368
+        ],
+        "discordant_signature_one_drop_zero": 1,
+        "discordant_signature_zero_drop_one": 12,
+        "p": 0.00341796875,
+        "families": 212,
+        "holm8_p": 0.0205078125,
+        "directional_advantage": "supported"
+      },
+      "clean:OR-drop_all:correct": {
+        "difference": 0.10377358490566038,
+        "paired95_ci": [
+          0.06132075471698113,
+          0.14622641509433962
+        ],
+        "simultaneous95_bound": [
+          -0.12950333766026348,
+          0.33705050747158427
+        ],
+        "discordant_signature_one_drop_zero": 23,
+        "discordant_signature_zero_drop_one": 1,
+        "p": 2.9802322387695312e-06,
+        "families": 212,
+        "holm8_p": 2.086162567138672e-05,
+        "directional_advantage": "supported"
+      },
+      "clean:OR-drop_all:endorsed": {
+        "difference": -0.03773584905660377,
+        "paired95_ci": [
+          -0.0660377358490566,
+          -0.009433962264150943
+        ],
+        "simultaneous95_bound": [
+          -0.2710127716225276,
+          0.1955410735093201
+        ],
+        "discordant_signature_one_drop_zero": 1,
+        "discordant_signature_zero_drop_one": 9,
+        "p": 0.021484375,
+        "families": 212,
+        "holm8_p": 0.107421875,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:entail-drop_all:correct": {
+        "difference": -0.009433962264150943,
+        "paired95_ci": [
+          -0.02358490566037736,
+          0.0
+        ],
+        "simultaneous95_bound": [
+          -0.2427108848300748,
+          0.22384296030177292
+        ],
+        "discordant_signature_one_drop_zero": 0,
+        "discordant_signature_zero_drop_one": 2,
+        "p": 0.5,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:entail-drop_all:endorsed": {
+        "difference": 0.009433962264150943,
+        "paired95_ci": [
+          0.0,
+          0.02358490566037736
+        ],
+        "simultaneous95_bound": [
+          -0.22384296030177292,
+          0.2427108848300748
+        ],
+        "discordant_signature_one_drop_zero": 2,
+        "discordant_signature_zero_drop_one": 0,
+        "p": 0.5,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:OR-drop_all:correct": {
+        "difference": 0.0,
+        "paired95_ci": [
+          0.0,
+          0.0
+        ],
+        "simultaneous95_bound": [
+          -0.23327692256592386,
+          0.23327692256592386
+        ],
+        "discordant_signature_one_drop_zero": 0,
+        "discordant_signature_zero_drop_one": 0,
+        "p": 1.0,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      },
+      "poisoned:OR-drop_all:endorsed": {
+        "difference": 0.0,
+        "paired95_ci": [
+          0.0,
+          0.0
+        ],
+        "simultaneous95_bound": [
+          -0.23327692256592386,
+          0.23327692256592386
+        ],
+        "discordant_signature_one_drop_zero": 0,
+        "discordant_signature_zero_drop_one": 0,
+        "p": 1.0,
+        "families": 212,
+        "holm8_p": 1.0,
+        "directional_advantage": "inconclusive"
+      }
+    },
+    "verdicts": {
+      "entail": {
+        "clean_correctness_advantage": "supported",
+        "poisoned_endorsement_advantage": "inconclusive",
+        "joint_strict_superiority": "inconclusive",
+        "protection_noninferiority": "untested; no margin specified",
+        "selective_useful_memory_mechanism": "not established by task outcomes alone"
+      },
+      "OR": {
+        "clean_correctness_advantage": "supported",
+        "poisoned_endorsement_advantage": "inconclusive",
+        "joint_strict_superiority": "inconclusive",
+        "protection_noninferiority": "untested; no margin specified",
+        "selective_useful_memory_mechanism": "not established by task outcomes alone"
+      }
+    }
+  },
+  "nonblank_is_human_semantic_validation": false,
+  "same_prompt_replication_diagnostic": {
+    "clean": {
+      "entail": {
+        "identical_prompt": 48,
+        "identical_response": 48,
+        "identical_prediction": 48
+      },
+      "OR": {
+        "identical_prompt": 64,
+        "identical_response": 64,
+        "identical_prediction": 64
+      }
+    },
+    "poisoned": {
+      "entail": {
+        "identical_prompt": 207,
+        "identical_response": 207,
+        "identical_prediction": 207
+      },
+      "OR": {
+        "identical_prompt": 212,
+        "identical_response": 212,
+        "identical_prediction": 212
+      }
+    }
+  },
+  "statistics": {
+    "schema": "antivenom.memform-drop-all-analysis.v1",
+    "classification": "new diagnostic analysis frozen before added control outcomes; original families already used",
+    "conditions": [
+      "clean",
+      "poisoned"
+    ],
+    "methods": [
+      "entail",
+      "OR"
+    ],
+    "metrics": [
+      "correct",
+      "endorsed"
+    ],
+    "comparison_direction": "signature method minus exact drop-all",
+    "test": "two-sided exact paired binary McNemar, Holm across all8 comparisons within each scope",
+    "bootstrap": {
+      "unit": "family",
+      "seed": 20261104,
+      "repeats": 20000,
+      "interval": "paired percentile95%; descriptive and not simultaneous"
+    },
+    "simultaneous_bounds": "Hoeffding two-sided union bound across8 bounded paired differences; range[-1,1], alpha.05",
+    "decision": "directional favorable/adverse evidence requires Holm8p<.05; nonsignificance is inconclusive",
+    "joint_superiority": "requires corrected favorable clean correctness AND corrected favorable poisoned endorsement",
+    "noninferiority_or_equivalence": "not tested; no native/control utility margin selected",
+    "scopes": [
+      "all212 families",
+      "identically paired syntactic nonblank capture sensitivity"
+    ],
+    "human_review": "deferred, not passed",
+    "fresh_confirmation": false,
+    "native_MemMorph": false
+  },
+  "limitations": [
+    "New control on already-used families, not fresh powered confirmation or native MemMorph",
+    "Nonsignificance or zero discordance is not equivalence or noninferiority",
+    "Poisoned OR originally empties every history; prompt-identical answer variation is replication variability, not evidence of different filtering",
+    "Percentile intervals are descriptive and unadjusted; Holm8 tests and conservative simultaneous bounds are separately labelled",
+    "Family-level inference assumes independent groups; software does not verify semantic campaign independence",
+    "Different collection times preclude a controlled latency superiority claim",
+    "Human extraction/scoring validation remains deferred, not passed"
+  ]
+}

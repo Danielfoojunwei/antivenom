@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "parser_fixture_checks": [
+    "valid JSON unchanged",
+    "no-object unchanged",
+    "missing-field unchanged",
+    "JSONDecodeError logged and invalid",
+    "unrelated exceptions propagate"
+  ],
+  "original_frozen_manifests_match": true,
+  "original_completed_70_prefix_unchanged": true,
+  "replayed_parse_failure_logged": true,
+  "all_planned_targets_retained": true,
+  "amendment": "R2, post-start and explicitly disclosed"
+}

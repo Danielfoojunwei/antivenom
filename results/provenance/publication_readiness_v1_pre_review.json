@@ -1,0 +1,28 @@
+{
+  "errors": [],
+  "executable_freeze_written": false,
+  "missing": [
+    "cohort: /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/data/external/publication_confirmation/cohort.json",
+    "provenance_review: /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/data/external/publication_confirmation/provenance_review.json"
+  ],
+  "model_calls": 0,
+  "native_authorship_authenticated_by_software": false,
+  "native_empirical_validation": false,
+  "prepared_software_is_not_empirical_confirmation": true,
+  "prepared_software_only": {
+    "analysis/publication_power.py": "287eeafd54dc1cd386873d73c6c94b6e992a545860542b2d7f14adc776ceeb88",
+    "docs/PUBLICATION_CONFIRMATION_PROTOCOL_V1.md": "3d8e904ed3678aad44e699d43386035fc801b809a78f7eaf5290e6746dd4fe0d",
+    "experiments/prepare_publication_confirmation.py": "d5a531a942607d05d09c11bf66343d2a05c5ea99b615c070070cfec0868a086d",
+    "results/publication_power_v1.json": "65189d8322a1a90d9cf07bd7f1d2dce4e0640503dcd5540f8ab9945dc841fa52",
+    "src/antivenom/memmorph_eval.py": "2666efaae82ec41a7d932c720950c58ef5f42a1e2eedcdacabf9fa4882fc25dc",
+    "src/antivenom/memmorph_matched_sources.py": "088b4e3ee8763629b8ce3233e23f1d6c36fab615c7d2a1c81dd01fc07c336200",
+    "src/antivenom/publication_study.py": "ccfbea2df2324024660e40a0a8aa7305f37ecf3b6c9a85fd52931a75ebfb4a6b",
+    "src/antivenom/tool_policy_signature.py": "4c4b8385449758a0e1293ee9d2bae31b21266e3d4f1188b0691f0432b9934ee3",
+    "tests/test_publication_power.py": "bb27bf04ae91d324c9c374daafc29aa953b6b64bedb03dc2587cd303215f1eb4",
+    "tests/test_publication_study.py": "9ea0f8f7a526f5d603c5b3b2893225c0e0907d00cc2f5ef4e2f0fad4e4f660d3",
+    "uv.lock": "9a14ed5a38260ad3fe04435b5a7fff800d18f696896c5fdf21ddd940e847165f"
+  },
+  "schema": "antivenom.publication.confirmation.v1",
+  "status": "blocked",
+  "verified_input_files": {}
+}

@@ -1,0 +1,135 @@
+
+==================== hotpotqa  n=50 targets
+  arm                       endorsed [95% CI]          correct [95% CI]
+  clean                    0.04 [0.000, 0.100]   0.54 [0.400, 0.680]
+  attack                   0.88 [0.780, 0.960]   0.18 [0.080, 0.300]
+  v1_block                 0.10 [0.020, 0.200]   0.40 [0.260, 0.540]
+  v1_delete_backfill       0.10 [0.020, 0.200]   0.48 [0.340, 0.620]
+  v2_delete_backfill       0.06 [0.000, 0.140]   0.50 [0.360, 0.640]
+  random_delete_backfill   0.78 [0.660, 0.880]   0.22 [0.120, 0.340]
+  lowrel_delete_backfill   0.88 [0.780, 0.960]   0.10 [0.020, 0.200]
+  coordguard_af            0.04 [0.000, 0.100]   0.24 [0.140, 0.360]
+  coordguard_af_refill     0.04 [0.000, 0.100]   0.30 [0.180, 0.440]
+  trustrag                 0.18 [0.080, 0.300]   0.60 [0.460, 0.740]
+  defclean_v1              0.00 [0.000, 0.000]   0.10 [0.020, 0.180]
+  defclean_v2              0.02 [0.000, 0.060]   0.18 [0.080, 0.280]
+  defclean_coordguard      0.00 [0.000, 0.000]   0.10 [0.020, 0.180]
+
+  CLAIM 1 clean removed at matched recall: CoordGuard recall 1.000 clean removed 0.208 | ours recall 1.000 clean removed 0.468
+          difference (CG - ours) -0.260 [-0.332, 0.168]  bootstrap p=0.7270
+  CLAIM 2 defended-clean correct: ours v1 0.10 vs CG 0.10 (discordant 1/1) McNemar p=1.0000
+          Holm-adjusted: claim1 p=1.0000  claim2 p=1.0000
+  CLAIM 3 endorsed ours v1 - coordguard_af_refill: +0.060 [-0.020, 0.140] (McNemar 4/1 p=0.375)
+  CLAIM 3 endorsed ours v1 - trustrag: -0.080 [-0.200, 0.040] (McNemar 3/7 p=0.344)
+
+  secondary (no multiplicity control):
+    v1_delete_backfill vs coordguard_af_refill endorsed: 4/1 p=0.375
+    v1_delete_backfill vs coordguard_af_refill correct: 13/4 p=0.049
+    v2_delete_backfill vs coordguard_af_refill endorsed: 2/1 p=1.000
+    v2_delete_backfill vs coordguard_af_refill correct: 12/2 p=0.013
+    v1_delete_backfill vs trustrag endorsed: 3/7 p=0.344
+    v1_delete_backfill vs trustrag correct: 5/11 p=0.210
+    v2_delete_backfill vs trustrag endorsed: 1/7 p=0.070
+    v2_delete_backfill vs trustrag correct: 6/11 p=0.332
+    v2_delete_backfill vs v1_delete_backfill endorsed: 1/3 p=0.625
+    v2_delete_backfill vs v1_delete_backfill correct: 4/3 p=1.000
+    defclean_v2 vs defclean_coordguard endorsed: 1/0 p=1.000
+    defclean_v2 vs defclean_coordguard correct: 5/1 p=0.219
+    detection at deployed points: v1 recall 0.960 clean removed 0.040 | v2 recall 0.990 clean removed 0.096
+    attack                 GOLD 0.06 HIJACK 0.88 ABSTAIN 0.00 DRIFT 0.06
+    v1_delete_backfill     GOLD 0.44 HIJACK 0.10 ABSTAIN 0.42 DRIFT 0.04
+    v2_delete_backfill     GOLD 0.46 HIJACK 0.06 ABSTAIN 0.44 DRIFT 0.04
+    coordguard_af_refill   GOLD 0.26 HIJACK 0.04 ABSTAIN 0.68 DRIFT 0.02
+    trustrag               GOLD 0.44 HIJACK 0.18 ABSTAIN 0.00 DRIFT 0.38
+    defclean_v1            GOLD 0.10 HIJACK 0.00 ABSTAIN 0.84 DRIFT 0.06
+    defclean_coordguard    GOLD 0.10 HIJACK 0.00 ABSTAIN 0.84 DRIFT 0.06
+
+==================== msmarco  n=50 targets
+  arm                       endorsed [95% CI]          correct [95% CI]
+  clean                    0.04 [0.000, 0.100]   0.68 [0.560, 0.800]
+  attack                   0.64 [0.500, 0.780]   0.20 [0.100, 0.320]
+  v1_block                 0.10 [0.020, 0.180]   0.58 [0.440, 0.720]
+  v1_delete_backfill       0.14 [0.060, 0.240]   0.60 [0.460, 0.740]
+  v2_delete_backfill       0.08 [0.020, 0.160]   0.56 [0.420, 0.700]
+  random_delete_backfill   0.50 [0.360, 0.640]   0.30 [0.180, 0.420]
+  lowrel_delete_backfill   0.58 [0.440, 0.720]   0.24 [0.120, 0.360]
+  coordguard_af            0.04 [0.000, 0.100]   0.50 [0.360, 0.640]
+  coordguard_af_refill     0.06 [0.000, 0.140]   0.64 [0.500, 0.760]
+  trustrag                 0.06 [0.000, 0.140]   0.46 [0.320, 0.580]
+  defclean_v1              0.02 [0.000, 0.060]   0.60 [0.480, 0.720]
+  defclean_v2              0.04 [0.000, 0.100]   0.60 [0.460, 0.720]
+  defclean_coordguard      0.02 [0.000, 0.060]   0.64 [0.500, 0.780]
+
+  CLAIM 1 clean removed at matched recall: CoordGuard recall 0.995 clean removed 0.204 | ours recall 0.995 clean removed 0.323
+          difference (CG - ours) -0.119 [-0.318, 0.041]  bootstrap p=0.1500
+  CLAIM 2 defended-clean correct: ours v1 0.60 vs CG 0.64 (discordant 2/4) McNemar p=0.6875
+          Holm-adjusted: claim1 p=0.3000  claim2 p=0.6875
+  CLAIM 3 endorsed ours v1 - coordguard_af_refill: +0.080 [0.020, 0.160] (McNemar 4/0 p=0.125)
+  CLAIM 3 endorsed ours v1 - trustrag: +0.080 [-0.040, 0.200] (McNemar 7/3 p=0.344)
+
+  secondary (no multiplicity control):
+    v1_delete_backfill vs coordguard_af_refill endorsed: 4/0 p=0.125
+    v1_delete_backfill vs coordguard_af_refill correct: 1/3 p=0.625
+    v2_delete_backfill vs coordguard_af_refill endorsed: 1/0 p=1.000
+    v2_delete_backfill vs coordguard_af_refill correct: 0/4 p=0.125
+    v1_delete_backfill vs trustrag endorsed: 7/3 p=0.344
+    v1_delete_backfill vs trustrag correct: 14/7 p=0.189
+    v2_delete_backfill vs trustrag endorsed: 4/3 p=1.000
+    v2_delete_backfill vs trustrag correct: 11/6 p=0.332
+    v2_delete_backfill vs v1_delete_backfill endorsed: 1/4 p=0.375
+    v2_delete_backfill vs v1_delete_backfill correct: 2/4 p=0.688
+    defclean_v2 vs defclean_coordguard endorsed: 1/0 p=1.000
+    defclean_v2 vs defclean_coordguard correct: 2/4 p=0.688
+    detection at deployed points: v1 recall 0.974 clean removed 0.185 | v2 recall 0.963 clean removed 0.196
+    attack                 GOLD 0.10 HIJACK 0.64 ABSTAIN 0.00 DRIFT 0.26
+    v1_delete_backfill     GOLD 0.52 HIJACK 0.14 ABSTAIN 0.12 DRIFT 0.22
+    v2_delete_backfill     GOLD 0.50 HIJACK 0.08 ABSTAIN 0.14 DRIFT 0.28
+    coordguard_af_refill   GOLD 0.58 HIJACK 0.06 ABSTAIN 0.16 DRIFT 0.20
+    trustrag               GOLD 0.46 HIJACK 0.06 ABSTAIN 0.00 DRIFT 0.48
+    defclean_v1            GOLD 0.58 HIJACK 0.02 ABSTAIN 0.14 DRIFT 0.26
+    defclean_coordguard    GOLD 0.62 HIJACK 0.02 ABSTAIN 0.14 DRIFT 0.22
+
+==================== pooled  n=100 targets
+  arm                       endorsed [95% CI]          correct [95% CI]
+  clean                    0.04 [0.010, 0.080]   0.61 [0.510, 0.700]
+  attack                   0.76 [0.670, 0.840]   0.19 [0.120, 0.270]
+  v1_block                 0.10 [0.040, 0.160]   0.49 [0.390, 0.590]
+  v1_delete_backfill       0.12 [0.060, 0.190]   0.54 [0.440, 0.640]
+  v2_delete_backfill       0.07 [0.020, 0.130]   0.53 [0.440, 0.630]
+  random_delete_backfill   0.64 [0.540, 0.730]   0.26 [0.180, 0.350]
+  lowrel_delete_backfill   0.73 [0.640, 0.820]   0.17 [0.100, 0.250]
+  coordguard_af            0.04 [0.010, 0.080]   0.37 [0.280, 0.460]
+  coordguard_af_refill     0.05 [0.010, 0.100]   0.47 [0.370, 0.570]
+  trustrag                 0.12 [0.060, 0.190]   0.53 [0.430, 0.630]
+  defclean_v1              0.01 [0.000, 0.030]   0.35 [0.250, 0.440]
+  defclean_v2              0.03 [0.000, 0.070]   0.39 [0.290, 0.480]
+  defclean_coordguard      0.01 [0.000, 0.030]   0.37 [0.270, 0.460]
+
+  CLAIM 1 clean removed at matched recall: CoordGuard recall 0.997 clean removed 0.206 | ours recall 0.997 clean removed 0.402
+          difference (CG - ours) -0.196 [-0.375, 0.060]  bootstrap p=0.2490
+  CLAIM 2 defended-clean correct: ours v1 0.35 vs CG 0.37 (discordant 3/5) McNemar p=0.7266
+          Holm-adjusted: claim1 p=0.4980  claim2 p=0.7266
+  CLAIM 3 endorsed ours v1 - coordguard_af_refill: +0.070 [0.020, 0.130] (McNemar 8/1 p=0.039)
+  CLAIM 3 endorsed ours v1 - trustrag: +0.000 [-0.090, 0.090] (McNemar 10/10 p=1.000)
+
+  secondary (no multiplicity control):
+    v1_delete_backfill vs coordguard_af_refill endorsed: 8/1 p=0.039
+    v1_delete_backfill vs coordguard_af_refill correct: 14/7 p=0.189
+    v2_delete_backfill vs coordguard_af_refill endorsed: 3/1 p=0.625
+    v2_delete_backfill vs coordguard_af_refill correct: 12/6 p=0.238
+    v1_delete_backfill vs trustrag endorsed: 10/10 p=1.000
+    v1_delete_backfill vs trustrag correct: 19/18 p=1.000
+    v2_delete_backfill vs trustrag endorsed: 5/10 p=0.302
+    v2_delete_backfill vs trustrag correct: 17/17 p=1.000
+    v2_delete_backfill vs v1_delete_backfill endorsed: 2/7 p=0.180
+    v2_delete_backfill vs v1_delete_backfill correct: 6/7 p=1.000
+    defclean_v2 vs defclean_coordguard endorsed: 2/0 p=0.500
+    defclean_v2 vs defclean_coordguard correct: 7/5 p=0.774
+    detection at deployed points: v1 recall 0.967 clean removed 0.114 | v2 recall 0.977 clean removed 0.147
+    attack                 GOLD 0.08 HIJACK 0.76 ABSTAIN 0.00 DRIFT 0.16
+    v1_delete_backfill     GOLD 0.48 HIJACK 0.12 ABSTAIN 0.27 DRIFT 0.13
+    v2_delete_backfill     GOLD 0.48 HIJACK 0.07 ABSTAIN 0.29 DRIFT 0.16
+    coordguard_af_refill   GOLD 0.42 HIJACK 0.05 ABSTAIN 0.42 DRIFT 0.11
+    trustrag               GOLD 0.45 HIJACK 0.12 ABSTAIN 0.00 DRIFT 0.43
+    defclean_v1            GOLD 0.34 HIJACK 0.01 ABSTAIN 0.49 DRIFT 0.16
+    defclean_coordguard    GOLD 0.36 HIJACK 0.01 ABSTAIN 0.49 DRIFT 0.14

@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-31T02:56:13.794827+00:00",
+  "status": "resumed_automatically_after_priority_process_exit",
+  "worker_pid": 38263,
+  "verified_process_state": "S",
+  "completed_recurrence_cases": 158,
+  "saved_recurrence_arms": 2218,
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "thread_title": "Assess Qwen Bit Changes in Swarms",
+    "human_answer": "Pause the other model workers (Recommended)",
+    "scope": "Temporary pause of Antivenom and Qwen v5.2; automatic resumption when peer-review run finishes"
+  },
+  "guard_config": "/tmp/peer_review_resource_guard_65858/config.json",
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_peer_review_v2/runs/repaired_001/resource_pause.json",
+  "guard_watcher_pid": 76314,
+  "priority_run_pid": 65858,
+  "priority_run_identity": "Sat Oct 31 08:21:53 2026     ../qwen_experiment/.venv/bin/python run_study.py --run-id repaired_001 --qualification development/explicit_table_005 --dyad-preflight development/dyad_checks_003",
+  "worker_identity": "Fri Oct 30 22:36:19 2026     /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py recurrence",
+  "paused_at_utc": "2026-10-31T02:12:47.030258+00:00",
+  "resume_condition": "Priority process with matching identity exits; watcher sends SIGCONT to the same unchanged worker",
+  "action": "External watcher resumed same worker; fresh checkpoint progress verified; no local restart",
+  "priority_run_still_active": false,
+  "resume_watcher_alive": false,
+  "resumed_at_utc": "2026-10-31T02:40:11.931142+00:00"
+}

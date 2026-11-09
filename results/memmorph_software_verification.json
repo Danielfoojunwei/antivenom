@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-11-03T13:08:59.804748+00:00",
+  "software_checks_passed": true,
+  "synthetic_software_tests": 31,
+  "suites": {
+    "test_memmorph_eval": 14,
+    "test_memmorph_readiness": 7,
+    "test_tool_policy_signature": 10
+  },
+  "model_calls": 0,
+  "actual_MemMorph_tasks_run": 0,
+  "native_empirical_validation": false,
+  "software_manifest": "results/memmorph_alignment_software_manifest.json",
+  "software_manifest_sha256": "2c939207282da1702c85375e69c95cb6a89d0405bd1ba979ad3c2caf2a1d4be0",
+  "preparation_sources_pinned": 9,
+  "native_artifact_gate": "blocked_native_artifacts_missing",
+  "missing_native_artifacts": [
+    "native_bundle.json",
+    "native_harness_manifest.json",
+    "reference_baseline.json",
+    "provenance_review.json"
+  ],
+  "user_has_official_artifacts": false,
+  "previous_scientific_results": "30 old frozen manifests verified unchanged in memmorph_source_audit.json",
+  "not_proven": [
+    "native attack reduction",
+    "native clean utility preservation",
+    "semantic extraction correctness",
+    "native prompt/writer/retriever/tool/scorer reproduction"
+  ],
+  "note": "Software behaviour only; no native benchmark, attack generator, tool or upstream runtime executed"
+}

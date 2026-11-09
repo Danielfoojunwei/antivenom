@@ -1,0 +1,32 @@
+E32/E34 M3 backfill controls (NQ development; exploratory)
+Exact McNemar; target bootstrap B=2000, seed=0; Holm within each six-comparison family.
+Existing responses match frozen scoring rules. Human validation remains pending.
+E12 reproduction on shared targets: {'n_shared_targets': 75, 'response_comparisons': 150, 'response_mismatches': 0}
+Placebo content audit (token overlap does not establish relevance): {'n_placebo_with_gold_token': 3, 'n_placebo_with_target_token': 0, 'n_placebo_with_receiver_top100_doc': 0}
+
+E32 appended backfill, n=80
+  delete_true_backfill: correct 0.6000 [0.4875, 0.7125]; endorsed 0.1000 [0.0375, 0.1625]
+  delete_placebo_backfill: correct 0.4875 [0.375, 0.6]; endorsed 0.0750 [0.025, 0.1375]
+  delete_only: correct 0.4625 [0.35, 0.575]; endorsed 0.0750 [0.025, 0.1375]
+  delete_true_backfill - delete_placebo_backfill: correct: diff +0.1125 [0.025, 0.2]; discordant [11, 2], p=0.022461, Holm p=0.112305
+  delete_true_backfill - delete_placebo_backfill: endorsed: diff +0.0250 [-0.0375, 0.0875]; discordant [4, 2], p=0.687500, Holm p=1.000000
+  delete_true_backfill - delete_only: correct: diff +0.1375 [0.0625, 0.225]; discordant [12, 1], p=0.003418, Holm p=0.020508
+  delete_true_backfill - delete_only: endorsed: diff +0.0250 [-0.025, 0.075]; discordant [3, 1], p=0.625000, Holm p=1.000000
+  delete_placebo_backfill - delete_only: correct: diff +0.0250 [-0.025, 0.075]; discordant [3, 1], p=0.625000, Holm p=1.000000
+  delete_placebo_backfill - delete_only: endorsed: diff +0.0000 [-0.0375, 0.0375]; discordant [1, 1], p=1.000000, Holm p=1.000000
+
+E34 original passage-slot backfill, n=80 (token positions and lengths vary)
+  true_inplace: correct 0.5500 [0.4375, 0.6625]; endorsed 0.1125 [0.05, 0.1875]
+  placebo_inplace: correct 0.5125 [0.4, 0.625]; endorsed 0.0500 [0.0125, 0.1]
+  delete_only: correct 0.4625 [0.35, 0.575]; endorsed 0.0750 [0.025, 0.1375]
+  true_inplace - placebo_inplace: correct: diff +0.0375 [-0.0625, 0.1375]; discordant [10, 7], p=0.629059, Holm p=1.000000
+  true_inplace - placebo_inplace: endorsed: diff +0.0625 [0.0125, 0.125]; discordant [5, 0], p=0.062500, Holm p=0.375000
+  true_inplace - delete_only: correct: diff +0.0875 [0.0, 0.175]; discordant [10, 3], p=0.092285, Holm p=0.461426
+  true_inplace - delete_only: endorsed: diff +0.0375 [-0.0125, 0.1]; discordant [4, 1], p=0.375000, Holm p=1.000000
+  placebo_inplace - delete_only: correct: diff +0.0500 [0.0, 0.1125]; discordant [5, 1], p=0.218750, Holm p=0.875000
+  placebo_inplace - delete_only: endorsed: diff -0.0250 [-0.075, 0.025]; discordant [1, 3], p=0.625000, Holm p=1.000000
+  Poison in true/placebo replacements: 3/0
+  Secondary placement comparison true_inplace - delete_true_backfill: correct: {'difference': -0.05, 'ci': [-0.125, 0.012812499999998296], 'discordant': [2, 6], 'p': 0.2890625, 'holm_p': 1.0}
+  Secondary placement comparison true_inplace - delete_true_backfill: endorsed: {'difference': 0.0125, 'ci': [-0.0375, 0.075], 'discordant': [3, 2], 'p': 1.0, 'holm_p': 1.0}
+  Secondary placement comparison placebo_inplace - delete_placebo_backfill: correct: {'difference': 0.025, 'ci': [-0.0375, 0.0875], 'discordant': [5, 3], 'p': 0.7265625, 'holm_p': 1.0}
+  Secondary placement comparison placebo_inplace - delete_placebo_backfill: endorsed: {'difference': -0.025, 'ci': [-0.075, 0.025], 'discordant': [1, 3], 'p': 0.625, 'holm_p': 1.0}

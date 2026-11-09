@@ -1,0 +1,17 @@
+{
+  "restarted_utc": "2026-10-29T05:13:43.709341+00:00",
+  "prior_status": {
+    "queue_pid": 25390,
+    "status": "running",
+    "completed_phases": [
+      "prepare"
+    ],
+    "protocol": "docs/REMAINING_RUNS_PROTOCOL.md",
+    "phase": "llama",
+    "child_pid": 25403,
+    "updated_utc": "2026-10-29T02:26:36.248677+00:00"
+  },
+  "queue_pid": 29536,
+  "original_frozen_inputs_match": true,
+  "launch": "detached session; checkpoint resume"
+}

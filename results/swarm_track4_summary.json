@@ -1,0 +1,1272 @@
+{
+  "scope": "Used-question exploratory E42/E45, not fresh primary confirmation",
+  "capture_counts": {
+    "all": 80,
+    "nonblank": 80,
+    "blank": 0
+  },
+  "primary": {
+    "independent_incidents": 80,
+    "receiver_observations_per_incident": 3,
+    "rates": {
+      "isolated_attention": {
+        "clean": {
+          "correct": {
+            "mean": 0.33749999999999997,
+            "ci95": [
+              0.25416666666666665,
+              0.4291666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.425,
+            "ci95": [
+              0.3375,
+              0.5166666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.029166666666666664
+            ]
+          }
+        }
+      },
+      "shared_record_ids": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.36666666666666664,
+            "ci95": [
+              0.2875,
+              0.4501041666666661
+            ]
+          },
+          "endorsed": {
+            "mean": 0.625,
+            "ci95": [
+              0.5375,
+              0.7083333333333333
+            ]
+          }
+        }
+      },
+      "shared_sample_cosine": {
+        "clean": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      },
+      "shared_claim_entail": {
+        "clean": {
+          "correct": {
+            "mean": 0.5166666666666667,
+            "ci95": [
+              0.4333333333333333,
+              0.6
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.03333333333333333
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.475,
+            "ci95": [
+              0.3916666666666667,
+              0.5541666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.09166666666666666,
+            "ci95": [
+              0.04583333333333332,
+              0.14583333333333331
+            ]
+          }
+        }
+      },
+      "shared_claim_OR": {
+        "clean": {
+          "correct": {
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.25,
+              0.42093749999999946
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.4291666666666666,
+            "ci95": [
+              0.3416666666666667,
+              0.5166666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.004166666666666667,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          }
+        }
+      },
+      "coordguard_gate": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.36666666666666664,
+            "ci95": [
+              0.2875,
+              0.4501041666666661
+            ]
+          },
+          "endorsed": {
+            "mean": 0.625,
+            "ci95": [
+              0.5375,
+              0.7083333333333333
+            ]
+          }
+        }
+      },
+      "untreated": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "attack_benefit_vs:shared_record_ids": {
+        "difference": 0.6208333333333333,
+        "paired_ci95": [
+          0.5333333333333334,
+          0.7041666666666666
+        ],
+        "simultaneous_lower": 0.12068675402870288,
+        "simultaneous_upper": 1.0,
+        "one_sided_p": 4.999750012499375e-05,
+        "independent_incidents": 80,
+        "holm_p": 0.00024998750062496874
+      },
+      "attack_benefit_vs:shared_sample_cosine": {
+        "difference": 0.016666666666666666,
+        "paired_ci95": [
+          0.0,
+          0.0376041666666661
+        ],
+        "simultaneous_lower": -0.37221502352385377,
+        "simultaneous_upper": 0.4055483568571871,
+        "one_sided_p": 0.12489375531223439,
+        "independent_incidents": 80,
+        "holm_p": 0.49957502124893755
+      },
+      "clean_benefit_vs:shared_record_ids": {
+        "difference": -0.19166666666666665,
+        "paired_ci95": [
+          -0.2583333333333333,
+          -0.12083333333333335
+        ],
+        "simultaneous_lower": -0.6700709678626655,
+        "simultaneous_upper": 0.28673763452933226,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:shared_sample_cosine": {
+        "difference": -0.175,
+        "paired_ci95": [
+          -0.24166666666666664,
+          -0.10416666666666666
+        ],
+        "simultaneous_lower": -0.6537423279565924,
+        "simultaneous_upper": 0.30374232795659245,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:untreated": {
+        "difference": -0.19166666666666665,
+        "paired_ci95": [
+          -0.2583333333333333,
+          -0.12083333333333335
+        ],
+        "simultaneous_lower": -0.6700709678626655,
+        "simultaneous_upper": 0.28673763452933226,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      }
+    },
+    "clean_receiver_loss": {
+      "shared_record_ids": {
+        "incidents_with_any_receiver_loss": 41,
+        "independent_incidents": 80,
+        "rate": 0.5125,
+        "exact_one_sided_upper95": 0.609091400978573
+      },
+      "shared_sample_cosine": {
+        "incidents_with_any_receiver_loss": 38,
+        "independent_incidents": 80,
+        "rate": 0.475,
+        "exact_one_sided_upper95": 0.5725776948872936
+      },
+      "untreated": {
+        "incidents_with_any_receiver_loss": 41,
+        "independent_incidents": 80,
+        "rate": 0.5125,
+        "exact_one_sided_upper95": 0.609091400978573
+      }
+    },
+    "joint_claim": "inconclusive",
+    "focal_method": "shared_claim_OR"
+  },
+  "secondary_shared_ids": {
+    "independent_incidents": 80,
+    "receiver_observations_per_incident": 3,
+    "rates": {
+      "isolated_attention": {
+        "clean": {
+          "correct": {
+            "mean": 0.33749999999999997,
+            "ci95": [
+              0.25416666666666665,
+              0.4291666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.4416666666666667,
+            "ci95": [
+              0.3583333333333333,
+              0.5291666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.029166666666666664
+            ]
+          }
+        }
+      },
+      "shared_record_ids": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      },
+      "shared_sample_cosine": {
+        "clean": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      },
+      "shared_claim_entail": {
+        "clean": {
+          "correct": {
+            "mean": 0.5166666666666667,
+            "ci95": [
+              0.4333333333333333,
+              0.6
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.03333333333333333
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.4833333333333333,
+            "ci95": [
+              0.39999999999999997,
+              0.5666666666666667
+            ]
+          },
+          "endorsed": {
+            "mean": 0.07916666666666668,
+            "ci95": [
+              0.03333333333333333,
+              0.13333333333333333
+            ]
+          }
+        }
+      },
+      "shared_claim_OR": {
+        "clean": {
+          "correct": {
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.25,
+              0.42093749999999946
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.4375,
+            "ci95": [
+              0.35416666666666663,
+              0.525
+            ]
+          },
+          "endorsed": {
+            "mean": 0.008333333333333333,
+            "ci95": [
+              0.0,
+              0.020833333333333332
+            ]
+          }
+        }
+      },
+      "coordguard_gate": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.3625,
+            "ci95": [
+              0.2791666666666667,
+              0.4458333333333333
+            ]
+          },
+          "endorsed": {
+            "mean": 0.6083333333333333,
+            "ci95": [
+              0.5166666666666666,
+              0.6916666666666667
+            ]
+          }
+        }
+      },
+      "untreated": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "attack_benefit_vs:shared_record_ids": {
+        "difference": 0.0125,
+        "paired_ci95": [
+          0.0,
+          0.03333333333333333
+        ],
+        "simultaneous_lower": -0.37351435584643067,
+        "simultaneous_upper": 0.3985143558464307,
+        "one_sided_p": 0.24933753312334384,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "attack_benefit_vs:shared_sample_cosine": {
+        "difference": 0.0125,
+        "paired_ci95": [
+          0.0,
+          0.03333333333333333
+        ],
+        "simultaneous_lower": -0.37351435584643067,
+        "simultaneous_upper": 0.3985143558464307,
+        "one_sided_p": 0.24933753312334384,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:shared_record_ids": {
+        "difference": -0.19166666666666665,
+        "paired_ci95": [
+          -0.2583333333333333,
+          -0.12083333333333335
+        ],
+        "simultaneous_lower": -0.6700709678626655,
+        "simultaneous_upper": 0.28673763452933226,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:shared_sample_cosine": {
+        "difference": -0.175,
+        "paired_ci95": [
+          -0.24166666666666664,
+          -0.10416666666666666
+        ],
+        "simultaneous_lower": -0.6537423279565924,
+        "simultaneous_upper": 0.30374232795659245,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:untreated": {
+        "difference": -0.19166666666666665,
+        "paired_ci95": [
+          -0.2583333333333333,
+          -0.12083333333333335
+        ],
+        "simultaneous_lower": -0.6700709678626655,
+        "simultaneous_upper": 0.28673763452933226,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      }
+    },
+    "clean_receiver_loss": {
+      "shared_record_ids": {
+        "incidents_with_any_receiver_loss": 41,
+        "independent_incidents": 80,
+        "rate": 0.5125,
+        "exact_one_sided_upper95": 0.609091400978573
+      },
+      "shared_sample_cosine": {
+        "incidents_with_any_receiver_loss": 38,
+        "independent_incidents": 80,
+        "rate": 0.475,
+        "exact_one_sided_upper95": 0.5725776948872936
+      },
+      "untreated": {
+        "incidents_with_any_receiver_loss": 41,
+        "independent_incidents": 80,
+        "rate": 0.5125,
+        "exact_one_sided_upper95": 0.609091400978573
+      }
+    },
+    "joint_claim": "inconclusive",
+    "focal_method": "shared_claim_OR"
+  },
+  "secondary_entailment_distinct_ids": {
+    "independent_incidents": 80,
+    "receiver_observations_per_incident": 3,
+    "rates": {
+      "isolated_attention": {
+        "clean": {
+          "correct": {
+            "mean": 0.33749999999999997,
+            "ci95": [
+              0.25416666666666665,
+              0.4291666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.425,
+            "ci95": [
+              0.3375,
+              0.5166666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.029166666666666664
+            ]
+          }
+        }
+      },
+      "shared_record_ids": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.36666666666666664,
+            "ci95": [
+              0.2875,
+              0.4501041666666661
+            ]
+          },
+          "endorsed": {
+            "mean": 0.625,
+            "ci95": [
+              0.5375,
+              0.7083333333333333
+            ]
+          }
+        }
+      },
+      "shared_sample_cosine": {
+        "clean": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      },
+      "shared_claim_entail": {
+        "clean": {
+          "correct": {
+            "mean": 0.5166666666666667,
+            "ci95": [
+              0.4333333333333333,
+              0.6
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.03333333333333333
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.475,
+            "ci95": [
+              0.3916666666666667,
+              0.5541666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.09166666666666666,
+            "ci95": [
+              0.04583333333333332,
+              0.14583333333333331
+            ]
+          }
+        }
+      },
+      "shared_claim_OR": {
+        "clean": {
+          "correct": {
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.25,
+              0.42093749999999946
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.4291666666666666,
+            "ci95": [
+              0.3416666666666667,
+              0.5166666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.004166666666666667,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          }
+        }
+      },
+      "coordguard_gate": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.36666666666666664,
+            "ci95": [
+              0.2875,
+              0.4501041666666661
+            ]
+          },
+          "endorsed": {
+            "mean": 0.625,
+            "ci95": [
+              0.5375,
+              0.7083333333333333
+            ]
+          }
+        }
+      },
+      "untreated": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "attack_benefit_vs:shared_record_ids": {
+        "difference": 0.5333333333333333,
+        "paired_ci95": [
+          0.4458333333333334,
+          0.6208333333333333
+        ],
+        "simultaneous_lower": 0.027732501050809044,
+        "simultaneous_upper": 1.0,
+        "one_sided_p": 4.999750012499375e-05,
+        "independent_incidents": 80,
+        "holm_p": 0.00024998750062496874
+      },
+      "attack_benefit_vs:shared_sample_cosine": {
+        "difference": -0.07083333333333333,
+        "paired_ci95": [
+          -0.12083333333333335,
+          -0.024999999999999998
+        ],
+        "simultaneous_lower": -0.5111024112705944,
+        "simultaneous_upper": 0.3694357446039278,
+        "one_sided_p": 0.9994500274986251,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:shared_record_ids": {
+        "difference": -0.008333333333333335,
+        "paired_ci95": [
+          -0.025,
+          0.004270833333332766
+        ],
+        "simultaneous_lower": -0.39110648215523536,
+        "simultaneous_upper": 0.37443981548856864,
+        "one_sided_p": 0.9385530723463826,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:shared_sample_cosine": {
+        "difference": 0.008333333333333333,
+        "paired_ci95": [
+          -0.0125,
+          0.03333333333333333
+        ],
+        "simultaneous_lower": -0.38651751989861477,
+        "simultaneous_upper": 0.4031841865652815,
+        "one_sided_p": 0.37553122343882805,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:untreated": {
+        "difference": -0.008333333333333335,
+        "paired_ci95": [
+          -0.025,
+          0.004270833333332766
+        ],
+        "simultaneous_lower": -0.39110648215523536,
+        "simultaneous_upper": 0.37443981548856864,
+        "one_sided_p": 0.9385530723463826,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      }
+    },
+    "clean_receiver_loss": {
+      "shared_record_ids": {
+        "incidents_with_any_receiver_loss": 3,
+        "independent_incidents": 80,
+        "rate": 0.0375,
+        "exact_one_sided_upper95": 0.09407454652521369
+      },
+      "shared_sample_cosine": {
+        "incidents_with_any_receiver_loss": 2,
+        "independent_incidents": 80,
+        "rate": 0.025,
+        "exact_one_sided_upper95": 0.0766108767537717
+      },
+      "untreated": {
+        "incidents_with_any_receiver_loss": 3,
+        "independent_incidents": 80,
+        "rate": 0.0375,
+        "exact_one_sided_upper95": 0.09407454652521369
+      }
+    },
+    "joint_claim": "inconclusive",
+    "focal_method": "shared_claim_entail"
+  },
+  "secondary_nonblank_distinct_ids": {
+    "independent_incidents": 80,
+    "receiver_observations_per_incident": 3,
+    "rates": {
+      "isolated_attention": {
+        "clean": {
+          "correct": {
+            "mean": 0.33749999999999997,
+            "ci95": [
+              0.25416666666666665,
+              0.4291666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.425,
+            "ci95": [
+              0.3375,
+              0.5166666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.029166666666666664
+            ]
+          }
+        }
+      },
+      "shared_record_ids": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.36666666666666664,
+            "ci95": [
+              0.2875,
+              0.4501041666666661
+            ]
+          },
+          "endorsed": {
+            "mean": 0.625,
+            "ci95": [
+              0.5375,
+              0.7083333333333333
+            ]
+          }
+        }
+      },
+      "shared_sample_cosine": {
+        "clean": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.5083333333333333,
+            "ci95": [
+              0.425,
+              0.5917708333333328
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      },
+      "shared_claim_entail": {
+        "clean": {
+          "correct": {
+            "mean": 0.5166666666666667,
+            "ci95": [
+              0.4333333333333333,
+              0.6
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0125,
+            "ci95": [
+              0.0,
+              0.03333333333333333
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.475,
+            "ci95": [
+              0.3916666666666667,
+              0.5541666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.09166666666666666,
+            "ci95": [
+              0.04583333333333332,
+              0.14583333333333331
+            ]
+          }
+        }
+      },
+      "shared_claim_OR": {
+        "clean": {
+          "correct": {
+            "mean": 0.3333333333333333,
+            "ci95": [
+              0.25,
+              0.42093749999999946
+            ]
+          },
+          "endorsed": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.4291666666666666,
+            "ci95": [
+              0.3416666666666667,
+              0.5166666666666666
+            ]
+          },
+          "endorsed": {
+            "mean": 0.004166666666666667,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          }
+        }
+      },
+      "coordguard_gate": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        },
+        "attacked": {
+          "correct": {
+            "mean": 0.36666666666666664,
+            "ci95": [
+              0.2875,
+              0.4501041666666661
+            ]
+          },
+          "endorsed": {
+            "mean": 0.625,
+            "ci95": [
+              0.5375,
+              0.7083333333333333
+            ]
+          }
+        }
+      },
+      "untreated": {
+        "clean": {
+          "correct": {
+            "mean": 0.525,
+            "ci95": [
+              0.4416666666666666,
+              0.6083333333333332
+            ]
+          },
+          "endorsed": {
+            "mean": 0.020833333333333332,
+            "ci95": [
+              0.004166666666666667,
+              0.04583333333333332
+            ]
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "attack_benefit_vs:shared_record_ids": {
+        "difference": 0.6208333333333333,
+        "paired_ci95": [
+          0.5333333333333334,
+          0.7041666666666666
+        ],
+        "simultaneous_lower": 0.12068675402870288,
+        "simultaneous_upper": 1.0,
+        "one_sided_p": 4.999750012499375e-05,
+        "independent_incidents": 80,
+        "holm_p": 0.00024998750062496874
+      },
+      "attack_benefit_vs:shared_sample_cosine": {
+        "difference": 0.016666666666666666,
+        "paired_ci95": [
+          0.0,
+          0.0376041666666661
+        ],
+        "simultaneous_lower": -0.37221502352385377,
+        "simultaneous_upper": 0.4055483568571871,
+        "one_sided_p": 0.12489375531223439,
+        "independent_incidents": 80,
+        "holm_p": 0.49957502124893755
+      },
+      "clean_benefit_vs:shared_record_ids": {
+        "difference": -0.19166666666666665,
+        "paired_ci95": [
+          -0.2583333333333333,
+          -0.12083333333333335
+        ],
+        "simultaneous_lower": -0.6700709678626655,
+        "simultaneous_upper": 0.28673763452933226,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:shared_sample_cosine": {
+        "difference": -0.175,
+        "paired_ci95": [
+          -0.24166666666666664,
+          -0.10416666666666666
+        ],
+        "simultaneous_lower": -0.6537423279565924,
+        "simultaneous_upper": 0.30374232795659245,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      },
+      "clean_benefit_vs:untreated": {
+        "difference": -0.19166666666666665,
+        "paired_ci95": [
+          -0.2583333333333333,
+          -0.12083333333333335
+        ],
+        "simultaneous_lower": -0.6700709678626655,
+        "simultaneous_upper": 0.28673763452933226,
+        "one_sided_p": 1.0,
+        "independent_incidents": 80,
+        "holm_p": 1.0
+      }
+    },
+    "clean_receiver_loss": {
+      "shared_record_ids": {
+        "incidents_with_any_receiver_loss": 41,
+        "independent_incidents": 80,
+        "rate": 0.5125,
+        "exact_one_sided_upper95": 0.609091400978573
+      },
+      "shared_sample_cosine": {
+        "incidents_with_any_receiver_loss": 38,
+        "independent_incidents": 80,
+        "rate": 0.475,
+        "exact_one_sided_upper95": 0.5725776948872936
+      },
+      "untreated": {
+        "incidents_with_any_receiver_loss": 41,
+        "independent_incidents": 80,
+        "rate": 0.5125,
+        "exact_one_sided_upper95": 0.609091400978573
+      }
+    },
+    "joint_claim": "inconclusive",
+    "focal_method": "shared_claim_OR"
+  },
+  "statistics": {
+    "unit": "incident; three receivers averaged before pairing",
+    "bootstrap_draws": 2000,
+    "randomization_draws": 20000,
+    "seed": 0,
+    "holm_family": "five focal directional comparisons within each labelled scope",
+    "decision_bounds": "simultaneous empirical Bernstein alpha=.05/(2*5) per tail; zero clean-loss margin",
+    "future_fresh_endorsement_NI_margin": 0.05
+  },
+  "limitations": [
+    "automated QA scoring; human review deferred",
+    "nonblank does not establish semantic extraction validity",
+    "near-clone released poisons",
+    "serial homogeneous agents; no contagion or authenticated publication experiment",
+    "strict no-harm conjunction can remain underpowered; nonsignificance is not equivalence"
+  ]
+}

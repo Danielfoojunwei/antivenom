@@ -1,0 +1,121 @@
+{
+  "checked_utc": "2026-11-03T08:35:51.964320+00:00",
+  "queue": {
+    "queue_pid": 54055,
+    "status": "automated_incident_suite_complete",
+    "phase": "integrity",
+    "completed_phases": [
+      "weights_before",
+      "calibrate_contriever",
+      "base",
+      "power",
+      "prefixfree",
+      "recurrence",
+      "calibrate_e5",
+      "e5",
+      "swarm",
+      "memform_diagnostic",
+      "memform_analysis",
+      "weights_after",
+      "analysis",
+      "integrity"
+    ],
+    "protocol": "docs/INCIDENT_RESPONSE_PROTOCOL.md",
+    "updated_utc": "2026-11-03T07:53:31.931610+00:00",
+    "child_pid": null,
+    "fresh_confirmation": "not established by development runs; inspect power and external-data eligibility",
+    "runtime_launcher": "experiments/run_resilient_queue.py",
+    "runtime_manifest": "results/performance_runtime_manifest.json",
+    "runtime_validation": "results/performance_validation.json",
+    "runtime_arguments": [
+      "incident"
+    ],
+    "extraction_amendment": "docs/EXTRACTION_RESILIENCE_AMENDMENT.md",
+    "extraction_runtime_manifest": "results/extraction_resilience_manifest.json"
+  },
+  "process_alive": {
+    "queue_pid": false,
+    "child_pid": false
+  },
+  "counts": {
+    "base": {
+      "complete_cases": 80,
+      "planned_cases": 80,
+      "planned_result_arms_per_case": 24,
+      "checkpointed_cases": 80,
+      "saved_result_arms": 1920
+    },
+    "prefixfree": {
+      "complete_cases": 80,
+      "planned_cases": 80,
+      "planned_result_arms_per_case": 18,
+      "checkpointed_cases": 80,
+      "saved_result_arms": 1440
+    },
+    "recurrence": {
+      "complete_cases": 160,
+      "planned_cases": 160,
+      "planned_result_arms_per_case": 14,
+      "checkpointed_cases": 160,
+      "saved_result_arms": 2240
+    },
+    "e5": {
+      "complete_cases": 80,
+      "planned_cases": 80,
+      "planned_result_arms_per_case": 22,
+      "checkpointed_cases": 80,
+      "saved_result_arms": 1760
+    },
+    "swarm": {
+      "checkpointed_cases": 80,
+      "saved_result_arms": 5920,
+      "complete_targets": 80,
+      "planned_targets": 80,
+      "planned_publisher_and_receiver_arms_per_target": 74
+    },
+    "memform": {
+      "checkpointed_cases": 212,
+      "saved_result_arms": 2968,
+      "complete_families": 212,
+      "planned_families": 212,
+      "planned_memory_condition_arms_per_family": 14
+    },
+    "calibration": {
+      "contriever": 20,
+      "e5": 20
+    }
+  },
+  "counting_note": "Saved result arms are not generation-call counts: TrustRAG has multiple internal generations, and MemForm has memory compilation plus decisions.",
+  "runtime_configuration": {
+    "accepted": false,
+    "selected_configuration": "original_default",
+    "all_exact": true
+  },
+  "process_check_note": "Verified current queue/worker identity through permitted ps; os.kill(0) blocked by execution sandbox, not a worker failure.",
+  "actual_process_state": {
+    "queue_pid": "normal exit after all phases completed",
+    "child_pid": "none; original suite complete"
+  },
+  "supplemental_queue": {
+    "queue_pid": 54083,
+    "status": "automated_swarm_extension_complete",
+    "child_pid": null,
+    "runtime_launcher": "experiments/run_swarm_track4.py",
+    "runtime_arguments": [],
+    "protocol": "docs/SWARM_TRACK4_PROTOCOL.md",
+    "completed_phases": [
+      "clean_reference",
+      "focused_analysis"
+    ],
+    "idle_sleep_inhibitor_pid": 54084,
+    "updated_utc": "2026-11-03T08:31:50.255705+00:00",
+    "phase": "focused_analysis"
+  },
+  "supplemental_progress": {
+    "complete_incidents": 80,
+    "planned_incidents": 80,
+    "completed_reference_calls": 480,
+    "planned_reference_calls": 480,
+    "integrity_passed": true
+  }
+}

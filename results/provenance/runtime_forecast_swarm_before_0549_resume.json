@@ -1,0 +1,83 @@
+{
+  "estimated_utc": "2026-10-31T04:21:48.710112+00:00",
+  "active_phase": "calibrate_e5",
+  "complete_cases": 16,
+  "planned_cases": 20,
+  "current_phase_planning_hours": [
+    0.25,
+    0.5
+  ],
+  "swarm_start_planning_hours_from_now": [
+    6.25,
+    12.5
+  ],
+  "swarm_comparison_planning_hours_from_now": [
+    24.25,
+    44.5
+  ],
+  "all_remaining_including_untreated_clean_reference_planning_hours": [
+    35.75,
+    72.5
+  ],
+  "phase_planning_hours": {
+    "e5_calibration_remaining": [
+      0.25,
+      0.5
+    ],
+    "e5_transfer": [
+      6.0,
+      12.0
+    ],
+    "swarm": [
+      18.0,
+      32.0
+    ],
+    "memform": [
+      10.0,
+      24.0
+    ],
+    "integrity_and_clean_supplement": [
+      1.5,
+      4.0
+    ]
+  },
+  "measured_recurrence_recent20_checkpoint_minutes": {
+    "median": 1.6449314177036285,
+    "mean": 10.029592224756877,
+    "max": 163.36034861008326
+  },
+  "base_method_quantile_extrapolation": {
+    "0.25": {
+      "swarm_hours": 15.72148363592682,
+      "e5_hours": 5.491089530934308,
+      "clean_reference_hours": 0.5921686597333368
+    },
+    "0.5": {
+      "swarm_hours": 21.345890235552602,
+      "e5_hours": 7.499464084333481,
+      "clean_reference_hours": 0.8486902222008211
+    },
+    "0.75": {
+      "swarm_hours": 29.97797192271149,
+      "e5_hours": 10.25727284535646,
+      "clean_reference_hours": 1.122285545800211
+    }
+  },
+  "swarm_actual_result_arms": 5920,
+  "clean_reference_actual_calls": 480,
+  "method": "Frozen loop counts multiplied by completed base uncached method timing quantiles, widened for unmeasured E5 retrieval and receiver contexts. Engineering planning bands, not statistical intervals or promised completion times.",
+  "assumptions": [
+    "current Mac remains awake",
+    "one GPU experiment, original allocator default",
+    "no recipe, model, precision, batching or sample-size changes"
+  ],
+  "limitations": [
+    "E5 and swarm actual timings are not yet measured; extrapolation from original base contexts may differ",
+    "MemForm native memory compilation remains unmeasured",
+    "checkpoint gaps contain a 163-minute delay; sleep/load can extend calendar completion",
+    "E45 waits for MemForm and full original integrity, so untreated clean comparison arrives later than raw E42"
+  ],
+  "confirmed_latest_sleep": "2026-10-31 04:35\u201307:14 Singapore, low battery; woke on AC",
+  "external_pause_status": "Ended: same worker resumed automatically at 2026-10-31T02:40:11.931142+00:00",
+  "forecast_interpretation_after_pause": "Priority pause ended; current planning ranges start now and assume continuous awake operation. Future E5 transfer and swarm durations still extrapolated."
+}

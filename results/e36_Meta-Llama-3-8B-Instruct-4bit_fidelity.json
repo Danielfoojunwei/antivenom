@@ -1,0 +1,23 @@
+{
+  "use_fast_ordinary": true,
+  "tests": [
+    {
+      "id": "test1",
+      "identical": true,
+      "regular": "According to the provided contexts, there are 24 episodes in Chicago Fire Season 4.",
+      "masked": "According to the provided contexts, there are 24 episodes in Chicago Fire Season 4."
+    },
+    {
+      "id": "test11",
+      "identical": true,
+      "regular": "According to the provided contexts, Frank Sinatra recorded a version of \"I Can't Help Falling in Love with You\".",
+      "masked": "According to the provided contexts, Frank Sinatra recorded a version of \"I Can't Help Falling in Love with You\"."
+    },
+    {
+      "id": "test16",
+      "identical": true,
+      "regular": "I don't know. The information provided suggests that the atom bomb dropped on Hiroshima was not named \"Big Man\" but actually \"Little Boy\".",
+      "masked": "I don't know. The information provided suggests that the atom bomb dropped on Hiroshima was not named \"Big Man\" but actually \"Little Boy\"."
+    }
+  ]
+}

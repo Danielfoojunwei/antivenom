@@ -1,0 +1,56 @@
+{
+  "checked_utc": "2026-10-31T13:27:32.501647+00:00",
+  "status": "resumed",
+  "authorization_basis": "Actual human reply verified via read_thread: Restart from checkpoints (Recommended). Approval explicitly covers stopping worker and queue and restarting from preserved checkpoints after neuron tests.",
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "user_message_id": "01a190ab-b6ac-7662-a5f1-939bbe433359",
+    "human_answer": "Restart from checkpoints (Recommended)"
+  },
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/qwen35_novel_002_antivenom_pause.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/qwen35_novel_002_antivenom_pause_guard_lbxuql2y/config.json",
+  "guard_watcher_pid": 52710,
+  "priority_run_pid": 52632,
+  "priority_run_identity": {
+    "pid": 52632,
+    "start": "Sat Oct 31 15:44:19 2026",
+    "command": ".venv-qwen35/bin/python qwen35_search_session.py --session-dir search_sessions/novel_002 --model-path models/qwen35_4b_mlx4bit_0e7ffd5 --start-gate /tmp/qwen35_novel_002.go"
+  },
+  "targets": [
+    {
+      "pid": 52441,
+      "start": "Sat Oct 31 15:41:56 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py calibrate --engine e5",
+      "role": "worker",
+      "queue_pid": 52292,
+      "name": "Antivenom successor model worker",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 52292,
+      "start": "Sat Oct 31 15:39:54 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom experiment queue",
+      "pause_status": "paused"
+    }
+  ],
+  "restart_journal": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/qwen35_novel_001_antivenom_restart_execution.json",
+  "restart_watcher_pid": 52053,
+  "supervision_recovery_pid": 35250,
+  "supervision_recovery_status": "results/external_supervision_recovery.json",
+  "e5_calibration_cases": 20,
+  "e5_complete_cases": 6,
+  "e5_saved_result_arms": 132,
+  "integrity": "22 frozen manifests, six E5 checkpoint hashes and E37 original-first70 prefix match",
+  "resume_condition": "External approved restarter launches status-authorized incident queue after personality process exits; local helper restores inhibitors and frozen supplemental supervisor",
+  "action": "Priority guard resumed same root; frozen launcher completed saved calibration checks and continued E5 using saved checkpoints",
+  "restarted_at_utc": "2026-10-31T07:39:54.145787+00:00",
+  "new_incident_queue_pid": 52292,
+  "new_incident_child_pid": 36550,
+  "new_incident_inhibitor_pid": 52648,
+  "new_swarm_supervisor_pid": 52650,
+  "new_swarm_inhibitor_pid": 52651,
+  "paused_at_utc": "2026-10-31T07:44:50.054896+00:00",
+  "resumed_at_utc": "2026-10-31T13:07:00.323707+00:00"
+}

@@ -1,0 +1,21 @@
+n = 90; mean poison passages in top-k = 4.97; mean control passages blocked = 4.97
+
+condition                   endorsed [95% CI]       correct [95% CI]        
+clean                       0.04 [0.01, 0.09]       0.69 [0.59, 0.78]       
+attack                      0.91 [0.84, 0.97]       0.23 [0.14, 0.32]       
+block_poison_-5             0.06 [0.01, 0.11]       0.54 [0.44, 0.64]       
+block_random_clean_-5       0.94 [0.89, 0.99]       0.06 [0.01, 0.11]       
+block_poison_-10000         0.06 [0.01, 0.11]       0.52 [0.42, 0.62]       
+block_random_clean_-10000   0.94 [0.89, 0.99]       0.06 [0.01, 0.11]       
+
+Exact McNemar (paired over targets)
+                    attack vs block_poison_-5        endorsed  p=1.3e-23
+                    attack vs block_poison_-5        correct   p=2.5e-07
+     block_random_clean_-5 vs block_poison_-5        endorsed  p=1.7e-24
+     block_random_clean_-5 vs block_poison_-5        correct   p=1.1e-13
+                     clean vs block_poison_-5        endorsed  p=1
+                     clean vs block_poison_-5        correct   p=0.0023
+                    attack vs block_random_clean_-5  endorsed  p=0.45
+                    attack vs block_random_clean_-5  correct   p=3.1e-05
+           block_poison_-5 vs block_poison_-10000    endorsed  p=1
+           block_poison_-5 vs block_poison_-10000    correct   p=0.5

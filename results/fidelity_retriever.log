@@ -1,0 +1,6 @@
+W1027 13:47:08.743000 42526 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12824.84it/s]
+nq: n_pairs=300 max_abs_diff=2.62e-06 mean_abs_diff=9.16e-07 share_within_1e-3=1.000
+hotpotqa: n_pairs=300 max_abs_diff=2.38e-06 mean_abs_diff=6.78e-07 share_within_1e-3=1.000
+msmarco: n_pairs=300 max_abs_diff=2.98e-06 mean_abs_diff=1.16e-06 share_within_1e-3=1.000

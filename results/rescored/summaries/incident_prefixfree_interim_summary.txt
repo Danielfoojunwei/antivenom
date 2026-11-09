@@ -1,0 +1,11 @@
+Prefix-free incident scope complete: 80 targets, 1440 answer checks; full suite integrity pending
+Nonblank selected captures: 80/80
+none: attacked endorsed=0.6750, correct=0.3500; clean correct=0.6500
+attention: attacked endorsed=0.1500, correct=0.5625; clean correct=0.4250
+entail: attacked endorsed=0.1625, correct=0.5625; clean correct=0.6250
+OR: attacked endorsed=0.1125, correct=0.5750; clean correct=0.4125
+avidity: attacked endorsed=0.0875, correct=0.5250; clean correct=0.4125
+cosine: attacked endorsed=0.1500, correct=0.5875; clean correct=0.6375
+coordguard_gate: attacked endorsed=0.6125, correct=0.3750; clean correct=0.6500
+trustrag: attacked endorsed=0.0875, correct=0.5000; clean correct=0.5750
+gated_OR: attacked endorsed=0.2375, correct=0.5250; clean correct=0.6250

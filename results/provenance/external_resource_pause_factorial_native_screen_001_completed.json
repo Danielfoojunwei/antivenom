@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-31T06:13:50.184265+00:00",
+  "status": "resumed",
+  "authorization_basis": "Other chat applies the previously verified human temporary-pause approval to successor Antivenom worker and queue; no new human approval inferred solely from guard flag. Preserve intentional suspension while verifying priority-run completion.",
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "thread_title": "Assess Qwen Bit Changes in Swarms",
+    "human_answer": "Pause the other model workers (Recommended)",
+    "scope": "Temporary pause of Antivenom and Qwen v5.2; automatic resumption when peer-review run finishes"
+  },
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_native_screen_001.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_native_screen_001_guard__0en3ryp/config.json",
+  "guard_watcher_pid": 20601,
+  "priority_run_pid": 20543,
+  "priority_run_identity": {
+    "pid": 20543,
+    "start": "Sat Oct 31 14:10:51 2026",
+    "command": "../qwen_experiment/.venv/bin/python challenge_screen.py --run-id factorial_native_screen_001 --configs runs/geometry_factorial_pilot_001/activation_configs.json --n 16 --max-tokens 256 --word-limit 80 --question-setup confirmation_pressure --start-gate /tmp/personality_factorial_native_screen_001.ready"
+  },
+  "targets": [
+    {
+      "pid": 2150,
+      "start": "Sat Oct 31 12:48:33 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py e5",
+      "role": "worker",
+      "queue_pid": 1824,
+      "name": "Antivenom successor model worker",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 1824,
+      "start": "Sat Oct 31 12:46:29 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom experiment queue",
+      "pause_status": "paused"
+    }
+  ],
+  "paused_at_utc": "2026-10-31T06:11:02.264881+00:00",
+  "e5_calibration_cases": 20,
+  "e5_complete_cases": 4,
+  "e5_saved_result_arms": 88,
+  "resume_condition": "Live standalone watcher resumes exact stopped worker and supervisor once priority run exits",
+  "action": "Preserve live priority guard and stopped identities; no forced resumption, restart or duplicate",
+  "resumed_at_utc": "2026-10-31T06:18:32.392703+00:00"
+}

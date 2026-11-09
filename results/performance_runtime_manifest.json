@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_incident_optimized.py": "c2bca126e83ba73e71d50c5add8372080ff72e75801ec4e2389227942127e0a0",
+    "docs/PERFORMANCE_RUNTIME_AMENDMENT.md": "614ea140b5d4e761ca4acc1e06c31f06a56ed95baa9cc93c54d54a2cb7337e08",
+    "experiments/performance_guard.py": "67c15037282606b231e5cc0f26caa9796eba37cea73e5828b23a9e89459c8726",
+    "experiments/performance_validation.py": "748daef4ac42a5a262ac52020dbbe815259a3f4dbc62362d57df08262e712b2e",
+    "results/incident_queue_manifest.json": "ccd213612e6d816e18b82f8760f0edc06fad4c1183cf58d11385394e9e5e6bc7"
+  },
+  "settings": {
+    "current_mac_only": true,
+    "extra_model_workers": 0,
+    "fallback": "unchanged default if calibration validation does not select cap"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "actual_answer_calls": 424,
+  "fresh_confirmation": false,
+  "human_semantics": "deferred, not passed",
+  "independent_families": 212,
+  "output_sha256": "9184ae5a9de76ffa99c87a95a32c2ba2c886afa45ffcde67068dfeb4408f2ab9",
+  "passed": true,
+  "plan_sha256": "090f34b13ced0723021a372516bf61bbbeb688af11f96ee865a793334891f363",
+  "reader_weights_unchanged": true
+}

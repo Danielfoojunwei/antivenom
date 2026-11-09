@@ -1,0 +1,2705 @@
+{
+  "scope": "Completed used-question recurrence, actual reretrieval, captured passage excluded",
+  "integrity": {
+    "passed": true,
+    "independent_incidents": 80,
+    "sessions": 160,
+    "checked_answers": 2240,
+    "full_suite": "pending"
+  },
+  "capture_counts": {
+    "nonblank_incidents": 80,
+    "blank_incidents": 0
+  },
+  "all_targets": {
+    "cases": 160,
+    "targets": 80,
+    "rates": {
+      "attacked:OR": {
+        "correct": {
+          "mean": 0.48125,
+          "ci95": [
+            0.38125,
+            0.5875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.09375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.07615079365079365,
+          "ci95": [
+            0.05288169642857143,
+            0.10136284722222219
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.9873417721518988,
+          "ci95": [
+            0.9762262658227848,
+            0.9968354430379747
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 12.84367157423021,
+          "ci95": [
+            9.748375028125828,
+            16.452009058287082
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:attention": {
+        "correct": {
+          "mean": 0.4375,
+          "ci95": [
+            0.3375,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.25625,
+          "ci95": [
+            0.175,
+            0.34375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.048025793650793645,
+          "ci95": [
+            0.02985863095238095,
+            0.06910887896825395
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.8871308016877637,
+          "ci95": [
+            0.8554852320675105,
+            0.9156118143459915
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 8.326832296886277,
+          "ci95": [
+            6.8257337748559666,
+            10.060851218659993
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:coordguard_gate": {
+        "correct": {
+          "mean": 0.29375,
+          "ci95": [
+            0.19375,
+            0.39375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.078125,
+          "ci95": [
+            0.040625,
+            0.11979166666666666
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.14556962025316456,
+          "ci95": [
+            0.0759493670886076,
+            0.22151898734177214
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 13.351432959062185,
+          "ci95": [
+            9.973121898366303,
+            17.217026574815932
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:cosine": {
+        "correct": {
+          "mean": 0.54375,
+          "ci95": [
+            0.44375,
+            0.64375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.03125,
+          "ci95": [
+            0.012499999999999999,
+            0.05625
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 7.428726552124499,
+          "ci95": [
+            5.971799295552582,
+            9.1038819534231
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:gated_OR": {
+        "correct": {
+          "mean": 0.4375,
+          "ci95": [
+            0.3375,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.1125,
+          "ci95": [
+            0.05625,
+            0.18125
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0662202380952381,
+          "ci95": [
+            0.04538690476190475,
+            0.0892931547619047
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.8765822784810127,
+          "ci95": [
+            0.7990110759493672,
+            0.9414556962025317
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 12.839357503292376,
+          "ci95": [
+            9.391145685089368,
+            16.982479859826665
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:none": {
+        "correct": {
+          "mean": 0.3,
+          "ci95": [
+            0.2,
+            0.4
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.75,
+          "ci95": [
+            0.65625,
+            0.83125
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 3.906007236494588,
+          "ci95": [
+            3.441773790332613,
+            4.438123218487625
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:trustrag": {
+        "correct": {
+          "mean": 0.4875,
+          "ci95": [
+            0.3875,
+            0.59375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.05625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.20480654761904757,
+          "ci95": [
+            0.15354055059523808,
+            0.26151674107142847
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.9810126582278481,
+          "ci95": [
+            0.9493670886075949,
+            1.0
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 29.4050971362185,
+          "ci95": [
+            16.26586705372483,
+            52.38838328246123
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:OR": {
+        "correct": {
+          "mean": 0.45,
+          "ci95": [
+            0.35,
+            0.55
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.01875,
+          "ci95": [
+            0.0,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.32625000000000004,
+          "ci95": [
+            0.304375,
+            0.34812499999999996
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 13.975077500755651,
+          "ci95": [
+            10.579576963964008,
+            17.88589850546883
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:attention": {
+        "correct": {
+          "mean": 0.45,
+          "ci95": [
+            0.35,
+            0.55
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.05625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.31437499999999996,
+          "ci95": [
+            0.2925,
+            0.335
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 9.097031071638412,
+          "ci95": [
+            7.642268045436731,
+            10.748596729464616
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:coordguard_gate": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.475,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.031875,
+          "ci95": [
+            0.005,
+            0.06999999999999999
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 14.607951446130027,
+          "ci95": [
+            11.162798389596484,
+            18.703219539491432
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:cosine": {
+        "correct": {
+          "mean": 0.5375,
+          "ci95": [
+            0.4375,
+            0.6375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.024374999999999997,
+          "ci95": [
+            0.011859375000000002,
+            0.040625
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 8.063816621613114,
+          "ci95": [
+            6.34837393032727,
+            9.957562351257966
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:gated_OR": {
+        "correct": {
+          "mean": 0.55,
+          "ci95": [
+            0.45,
+            0.65
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.013750000000000002,
+          "ci95": [
+            0.0,
+            0.0325
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 9.291201455481678,
+          "ci95": [
+            7.2935937684413465,
+            11.524616866548916
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:none": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.475,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 4.769661212799656,
+          "ci95": [
+            4.2214433157527855,
+            5.367015499310733
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:trustrag": {
+        "correct": {
+          "mean": 0.53125,
+          "ci95": [
+            0.43109375000000005,
+            0.63125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.0,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.22625,
+          "ci95": [
+            0.17935937500000002,
+            0.27999999999999997
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 19.773298742148835,
+          "ci95": [
+            16.343485312529204,
+            24.346956134814658
+          ],
+          "independent_targets": 80
+        }
+      }
+    },
+    "comparisons": {
+      "clean:OR - attention:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.01875,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - attention:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.01875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          -0.01875,
+          0.10625
+        ],
+        "independent_targets": 80,
+        "p": 0.24933753312334384,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:endorsed": {
+        "mean": -0.20625,
+        "ci95": [
+          -0.29375,
+          -0.125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:OR - coordguard_gate:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.225,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.020998950052497377,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_gate:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05625,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.783960801959902,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_gate:correct": {
+        "mean": 0.1875,
+        "ci95": [
+          0.09375,
+          0.2875
+        ],
+        "independent_targets": 80,
+        "p": 0.0006499675016249188,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.038348082595870206
+      },
+      "attacked:OR - coordguard_gate:endorsed": {
+        "mean": -0.6,
+        "ci95": [
+          -0.7,
+          -0.5
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:OR - cosine:correct": {
+        "mean": -0.0875,
+        "ci95": [
+          -0.18125,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.08774561271936403,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - cosine:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05,
+          0.03140624999999915
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:correct": {
+        "mean": -0.0625,
+        "ci95": [
+          -0.13125,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.08704564771761412,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:endorsed": {
+        "mean": 0.01875,
+        "ci95": [
+          0.0,
+          0.05
+        ],
+        "independent_targets": 80,
+        "p": 0.5056747162641868,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - gated_OR:correct": {
+        "mean": -0.1,
+        "ci95": [
+          -0.19375,
+          -0.00625
+        ],
+        "independent_targets": 80,
+        "p": 0.05704714764261787,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - gated_OR:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05625,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.783960801959902,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          0.0,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.12439378031098446,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:endorsed": {
+        "mean": -0.0625,
+        "ci95": [
+          -0.1125,
+          -0.01875
+        ],
+        "independent_targets": 80,
+        "p": 0.013799310034498274,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.6899655017249138
+      },
+      "clean:OR - none:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.225,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.020998950052497377,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - none:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05625,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.783960801959902,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - none:correct": {
+        "mean": 0.18125,
+        "ci95": [
+          0.075,
+          0.2875
+        ],
+        "independent_targets": 80,
+        "p": 0.0021498925053747312,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.12254387280635969
+      },
+      "attacked:OR - none:endorsed": {
+        "mean": -0.7,
+        "ci95": [
+          -0.7875,
+          -0.60625
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:OR - trustrag:correct": {
+        "mean": -0.08125,
+        "ci95": [
+          -0.18125,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 0.15204239788010598,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.7494125293735313,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:correct": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.1125,
+          0.09375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          -0.025,
+          0.08125
+        ],
+        "independent_targets": 80,
+        "p": 0.49627518624068795,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - coordguard_gate:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.23125,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.025248737563121845,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - coordguard_gate:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.0375,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - coordguard_gate:correct": {
+        "mean": 0.14375,
+        "ci95": [
+          0.0625,
+          0.23125
+        ],
+        "independent_targets": 80,
+        "p": 0.0022498875056247186,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.12599370031498425
+      },
+      "attacked:attention - coordguard_gate:endorsed": {
+        "mean": -0.39375,
+        "ci95": [
+          -0.5125,
+          -0.275
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:attention - cosine:correct": {
+        "mean": -0.0875,
+        "ci95": [
+          -0.18125,
+          0.00625
+        ],
+        "independent_targets": 80,
+        "p": 0.09879506024698766,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - cosine:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.03125,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - cosine:correct": {
+        "mean": -0.10625,
+        "ci95": [
+          -0.18125,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.012599370031498426,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.6425678716064197
+      },
+      "attacked:attention - cosine:endorsed": {
+        "mean": 0.225,
+        "ci95": [
+          0.14375,
+          0.3125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:attention - trustrag:correct": {
+        "mean": -0.08125,
+        "ci95": [
+          -0.18140625,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 0.16584170791460426,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - trustrag:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.175,
+          0.05625
+        ],
+        "independent_targets": 80,
+        "p": 0.4632268386580671,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:endorsed": {
+        "mean": 0.23125,
+        "ci95": [
+          0.14375,
+          0.31875
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:coordguard_gate - cosine:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.2513874306284686,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - cosine:endorsed": {
+        "mean": 0.00625,
+        "ci95": [
+          0.0,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - cosine:correct": {
+        "mean": -0.25,
+        "ci95": [
+          -0.34375,
+          -0.1625
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "attacked:coordguard_gate - cosine:endorsed": {
+        "mean": 0.61875,
+        "ci95": [
+          0.51875,
+          0.7125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:coordguard_gate - gated_OR:correct": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.4976751162441878,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - gated_OR:correct": {
+        "mean": -0.14375,
+        "ci95": [
+          -0.23125,
+          -0.06234375000000085
+        ],
+        "independent_targets": 80,
+        "p": 0.0028998550072496373,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.15949202539873006
+      },
+      "attacked:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.5375,
+        "ci95": [
+          0.43125,
+          0.65
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:coordguard_gate - none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - none:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:correct": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:endorsed": {
+        "mean": -0.1,
+        "ci95": [
+          -0.16875,
+          -0.0375
+        ],
+        "independent_targets": 80,
+        "p": 0.003649817509124544,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.19344032798360083
+      },
+      "clean:coordguard_gate - trustrag:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          -0.06875,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.5230738463076846,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - trustrag:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.05,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - trustrag:correct": {
+        "mean": -0.19375,
+        "ci95": [
+          -0.3125,
+          -0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.0015999200039998,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.0927953602319884
+      },
+      "attacked:coordguard_gate - trustrag:endorsed": {
+        "mean": 0.625,
+        "ci95": [
+          0.525,
+          0.725
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:cosine - gated_OR:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:cosine - gated_OR:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.01875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - gated_OR:correct": {
+        "mean": 0.10625,
+        "ci95": [
+          0.03125,
+          0.1875
+        ],
+        "independent_targets": 80,
+        "p": 0.014199290035498226,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.6957652117394131
+      },
+      "attacked:cosine - gated_OR:endorsed": {
+        "mean": -0.08125,
+        "ci95": [
+          -0.1375,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.006999650017499125,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.3639818009099545
+      },
+      "clean:cosine - none:correct": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.2513874306284686,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:cosine - none:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.01875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - none:correct": {
+        "mean": 0.24375,
+        "ci95": [
+          0.14375,
+          0.34375
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "attacked:cosine - none:endorsed": {
+        "mean": -0.71875,
+        "ci95": [
+          -0.80625,
+          -0.625
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:cosine - trustrag:correct": {
+        "mean": 0.00625,
+        "ci95": [
+          -0.10625,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:cosine - trustrag:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05625,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:correct": {
+        "mean": 0.05625,
+        "ci95": [
+          -0.05625,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.3705314734263287,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:endorsed": {
+        "mean": 0.00625,
+        "ci95": [
+          -0.0375,
+          0.05
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:gated_OR - trustrag:correct": {
+        "mean": 0.01875,
+        "ci95": [
+          -0.09375,
+          0.13125
+        ],
+        "independent_targets": 80,
+        "p": 0.8187090645467726,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:gated_OR - trustrag:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.05,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.15625,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 0.40362981850907453,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:endorsed": {
+        "mean": 0.0875,
+        "ci95": [
+          0.01875,
+          0.16265624999999914
+        ],
+        "independent_targets": 80,
+        "p": 0.03214839258037098,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          -0.06875,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.5230738463076846,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.05,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:none - trustrag:correct": {
+        "mean": -0.1875,
+        "ci95": [
+          -0.30015624999999996,
+          -0.08109375000000085
+        ],
+        "independent_targets": 80,
+        "p": 0.0029498525073746312,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.15949202539873006
+      },
+      "attacked:none - trustrag:endorsed": {
+        "mean": 0.725,
+        "ci95": [
+          0.63125,
+          0.8125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      }
+    },
+    "holm_family": "All listed method pairs, both conditions and both answer endpoints within this scope",
+    "scoring": "Frozen automated rules; independent human review deferred",
+    "timing": "Warm method filtering plus answer generation, includes independently recomputed features; loading and capture extraction separate"
+  },
+  "nonblank_secondary": {
+    "cases": 160,
+    "targets": 80,
+    "rates": {
+      "attacked:OR": {
+        "correct": {
+          "mean": 0.48125,
+          "ci95": [
+            0.38125,
+            0.5875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.09375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.07615079365079365,
+          "ci95": [
+            0.05288169642857143,
+            0.10136284722222219
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.9873417721518988,
+          "ci95": [
+            0.9762262658227848,
+            0.9968354430379747
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 12.84367157423021,
+          "ci95": [
+            9.748375028125828,
+            16.452009058287082
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:attention": {
+        "correct": {
+          "mean": 0.4375,
+          "ci95": [
+            0.3375,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.25625,
+          "ci95": [
+            0.175,
+            0.34375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.048025793650793645,
+          "ci95": [
+            0.02985863095238095,
+            0.06910887896825395
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.8871308016877637,
+          "ci95": [
+            0.8554852320675105,
+            0.9156118143459915
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 8.326832296886277,
+          "ci95": [
+            6.8257337748559666,
+            10.060851218659993
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:coordguard_gate": {
+        "correct": {
+          "mean": 0.29375,
+          "ci95": [
+            0.19375,
+            0.39375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.078125,
+          "ci95": [
+            0.040625,
+            0.11979166666666666
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.14556962025316456,
+          "ci95": [
+            0.0759493670886076,
+            0.22151898734177214
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 13.351432959062185,
+          "ci95": [
+            9.973121898366303,
+            17.217026574815932
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:cosine": {
+        "correct": {
+          "mean": 0.54375,
+          "ci95": [
+            0.44375,
+            0.64375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.03125,
+          "ci95": [
+            0.012499999999999999,
+            0.05625
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 7.428726552124499,
+          "ci95": [
+            5.971799295552582,
+            9.1038819534231
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:gated_OR": {
+        "correct": {
+          "mean": 0.4375,
+          "ci95": [
+            0.3375,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.1125,
+          "ci95": [
+            0.05625,
+            0.18125
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0662202380952381,
+          "ci95": [
+            0.04538690476190475,
+            0.0892931547619047
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.8765822784810127,
+          "ci95": [
+            0.7990110759493672,
+            0.9414556962025317
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 12.839357503292376,
+          "ci95": [
+            9.391145685089368,
+            16.982479859826665
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:none": {
+        "correct": {
+          "mean": 0.3,
+          "ci95": [
+            0.2,
+            0.4
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.75,
+          "ci95": [
+            0.65625,
+            0.83125
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 3.906007236494588,
+          "ci95": [
+            3.441773790332613,
+            4.438123218487625
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:trustrag": {
+        "correct": {
+          "mean": 0.4875,
+          "ci95": [
+            0.3875,
+            0.59375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.05625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.20480654761904757,
+          "ci95": [
+            0.15354055059523808,
+            0.26151674107142847
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.9810126582278481,
+          "ci95": [
+            0.9493670886075949,
+            1.0
+          ],
+          "independent_targets": 79
+        },
+        "pipeline_seconds": {
+          "mean": 29.4050971362185,
+          "ci95": [
+            16.26586705372483,
+            52.38838328246123
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:OR": {
+        "correct": {
+          "mean": 0.45,
+          "ci95": [
+            0.35,
+            0.55
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.01875,
+          "ci95": [
+            0.0,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.32625000000000004,
+          "ci95": [
+            0.304375,
+            0.34812499999999996
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 13.975077500755651,
+          "ci95": [
+            10.579576963964008,
+            17.88589850546883
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:attention": {
+        "correct": {
+          "mean": 0.45,
+          "ci95": [
+            0.35,
+            0.55
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.05625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.31437499999999996,
+          "ci95": [
+            0.2925,
+            0.335
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 9.097031071638412,
+          "ci95": [
+            7.642268045436731,
+            10.748596729464616
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:coordguard_gate": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.475,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.031875,
+          "ci95": [
+            0.005,
+            0.06999999999999999
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 14.607951446130027,
+          "ci95": [
+            11.162798389596484,
+            18.703219539491432
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:cosine": {
+        "correct": {
+          "mean": 0.5375,
+          "ci95": [
+            0.4375,
+            0.6375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.024374999999999997,
+          "ci95": [
+            0.011859375000000002,
+            0.040625
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 8.063816621613114,
+          "ci95": [
+            6.34837393032727,
+            9.957562351257966
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:gated_OR": {
+        "correct": {
+          "mean": 0.55,
+          "ci95": [
+            0.45,
+            0.65
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.013750000000000002,
+          "ci95": [
+            0.0,
+            0.0325
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 9.291201455481678,
+          "ci95": [
+            7.2935937684413465,
+            11.524616866548916
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:none": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.475,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.00625,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 4.769661212799656,
+          "ci95": [
+            4.2214433157527855,
+            5.367015499310733
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:trustrag": {
+        "correct": {
+          "mean": 0.53125,
+          "ci95": [
+            0.43109375000000005,
+            0.63125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.0,
+            0.06875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.22625,
+          "ci95": [
+            0.17935937500000002,
+            0.27999999999999997
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 19.773298742148835,
+          "ci95": [
+            16.343485312529204,
+            24.346956134814658
+          ],
+          "independent_targets": 80
+        }
+      }
+    },
+    "comparisons": {
+      "clean:OR - attention:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.01875,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - attention:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.01875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          -0.01875,
+          0.10625
+        ],
+        "independent_targets": 80,
+        "p": 0.24933753312334384,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:endorsed": {
+        "mean": -0.20625,
+        "ci95": [
+          -0.29375,
+          -0.125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:OR - coordguard_gate:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.225,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.020998950052497377,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_gate:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05625,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.783960801959902,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_gate:correct": {
+        "mean": 0.1875,
+        "ci95": [
+          0.09375,
+          0.2875
+        ],
+        "independent_targets": 80,
+        "p": 0.0006499675016249188,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.038348082595870206
+      },
+      "attacked:OR - coordguard_gate:endorsed": {
+        "mean": -0.6,
+        "ci95": [
+          -0.7,
+          -0.5
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:OR - cosine:correct": {
+        "mean": -0.0875,
+        "ci95": [
+          -0.18125,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.08774561271936403,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - cosine:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05,
+          0.03140624999999915
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:correct": {
+        "mean": -0.0625,
+        "ci95": [
+          -0.13125,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.08704564771761412,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:endorsed": {
+        "mean": 0.01875,
+        "ci95": [
+          0.0,
+          0.05
+        ],
+        "independent_targets": 80,
+        "p": 0.5056747162641868,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - gated_OR:correct": {
+        "mean": -0.1,
+        "ci95": [
+          -0.19375,
+          -0.00625
+        ],
+        "independent_targets": 80,
+        "p": 0.05704714764261787,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - gated_OR:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05625,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.783960801959902,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          0.0,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.12439378031098446,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:endorsed": {
+        "mean": -0.0625,
+        "ci95": [
+          -0.1125,
+          -0.01875
+        ],
+        "independent_targets": 80,
+        "p": 0.013799310034498274,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.6899655017249138
+      },
+      "clean:OR - none:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.225,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.020998950052497377,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - none:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05625,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.783960801959902,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - none:correct": {
+        "mean": 0.18125,
+        "ci95": [
+          0.075,
+          0.2875
+        ],
+        "independent_targets": 80,
+        "p": 0.0021498925053747312,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.12254387280635969
+      },
+      "attacked:OR - none:endorsed": {
+        "mean": -0.7,
+        "ci95": [
+          -0.7875,
+          -0.60625
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:OR - trustrag:correct": {
+        "mean": -0.08125,
+        "ci95": [
+          -0.18125,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 0.15204239788010598,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:OR - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.7494125293735313,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:correct": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.1125,
+          0.09375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          -0.025,
+          0.08125
+        ],
+        "independent_targets": 80,
+        "p": 0.49627518624068795,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - coordguard_gate:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.23125,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.025248737563121845,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - coordguard_gate:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.0375,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - coordguard_gate:correct": {
+        "mean": 0.14375,
+        "ci95": [
+          0.0625,
+          0.23125
+        ],
+        "independent_targets": 80,
+        "p": 0.0022498875056247186,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.12599370031498425
+      },
+      "attacked:attention - coordguard_gate:endorsed": {
+        "mean": -0.39375,
+        "ci95": [
+          -0.5125,
+          -0.275
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:attention - cosine:correct": {
+        "mean": -0.0875,
+        "ci95": [
+          -0.18125,
+          0.00625
+        ],
+        "independent_targets": 80,
+        "p": 0.09879506024698766,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - cosine:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.03125,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - cosine:correct": {
+        "mean": -0.10625,
+        "ci95": [
+          -0.18125,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.012599370031498426,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.6425678716064197
+      },
+      "attacked:attention - cosine:endorsed": {
+        "mean": 0.225,
+        "ci95": [
+          0.14375,
+          0.3125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:attention - trustrag:correct": {
+        "mean": -0.08125,
+        "ci95": [
+          -0.18140625,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 0.16584170791460426,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:attention - trustrag:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05,
+          0.03125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.175,
+          0.05625
+        ],
+        "independent_targets": 80,
+        "p": 0.4632268386580671,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:endorsed": {
+        "mean": 0.23125,
+        "ci95": [
+          0.14375,
+          0.31875
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:coordguard_gate - cosine:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.2513874306284686,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - cosine:endorsed": {
+        "mean": 0.00625,
+        "ci95": [
+          0.0,
+          0.01875
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - cosine:correct": {
+        "mean": -0.25,
+        "ci95": [
+          -0.34375,
+          -0.1625
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "attacked:coordguard_gate - cosine:endorsed": {
+        "mean": 0.61875,
+        "ci95": [
+          0.51875,
+          0.7125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:coordguard_gate - gated_OR:correct": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.4976751162441878,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - gated_OR:correct": {
+        "mean": -0.14375,
+        "ci95": [
+          -0.23125,
+          -0.06234375000000085
+        ],
+        "independent_targets": 80,
+        "p": 0.0028998550072496373,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.15949202539873006
+      },
+      "attacked:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.5375,
+        "ci95": [
+          0.43125,
+          0.65
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:coordguard_gate - none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - none:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:correct": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:endorsed": {
+        "mean": -0.1,
+        "ci95": [
+          -0.16875,
+          -0.0375
+        ],
+        "independent_targets": 80,
+        "p": 0.003649817509124544,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.19344032798360083
+      },
+      "clean:coordguard_gate - trustrag:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          -0.06875,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.5230738463076846,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - trustrag:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.05,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - trustrag:correct": {
+        "mean": -0.19375,
+        "ci95": [
+          -0.3125,
+          -0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.0015999200039998,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.0927953602319884
+      },
+      "attacked:coordguard_gate - trustrag:endorsed": {
+        "mean": 0.625,
+        "ci95": [
+          0.525,
+          0.725
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:cosine - gated_OR:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:cosine - gated_OR:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.01875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - gated_OR:correct": {
+        "mean": 0.10625,
+        "ci95": [
+          0.03125,
+          0.1875
+        ],
+        "independent_targets": 80,
+        "p": 0.014199290035498226,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.6957652117394131
+      },
+      "attacked:cosine - gated_OR:endorsed": {
+        "mean": -0.08125,
+        "ci95": [
+          -0.1375,
+          -0.03125
+        ],
+        "independent_targets": 80,
+        "p": 0.006999650017499125,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.3639818009099545
+      },
+      "clean:cosine - none:correct": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.2513874306284686,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:cosine - none:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.01875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - none:correct": {
+        "mean": 0.24375,
+        "ci95": [
+          0.14375,
+          0.34375
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "attacked:cosine - none:endorsed": {
+        "mean": -0.71875,
+        "ci95": [
+          -0.80625,
+          -0.625
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      },
+      "clean:cosine - trustrag:correct": {
+        "mean": 0.00625,
+        "ci95": [
+          -0.10625,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:cosine - trustrag:endorsed": {
+        "mean": -0.00625,
+        "ci95": [
+          -0.05625,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:correct": {
+        "mean": 0.05625,
+        "ci95": [
+          -0.05625,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.3705314734263287,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:endorsed": {
+        "mean": 0.00625,
+        "ci95": [
+          -0.0375,
+          0.05
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:gated_OR - trustrag:correct": {
+        "mean": 0.01875,
+        "ci95": [
+          -0.09375,
+          0.13125
+        ],
+        "independent_targets": 80,
+        "p": 0.8187090645467726,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:gated_OR - trustrag:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.05,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.15625,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 0.40362981850907453,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:endorsed": {
+        "mean": 0.0875,
+        "ci95": [
+          0.01875,
+          0.16265624999999914
+        ],
+        "independent_targets": 80,
+        "p": 0.03214839258037098,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:correct": {
+        "mean": 0.04375,
+        "ci95": [
+          -0.06875,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.5230738463076846,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.05,
+          0.04375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 1.0
+      },
+      "attacked:none - trustrag:correct": {
+        "mean": -0.1875,
+        "ci95": [
+          -0.30015624999999996,
+          -0.08109375000000085
+        ],
+        "independent_targets": 80,
+        "p": 0.0029498525073746312,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.15949202539873006
+      },
+      "attacked:none - trustrag:endorsed": {
+        "mean": 0.725,
+        "ci95": [
+          0.63125,
+          0.8125
+        ],
+        "independent_targets": 80,
+        "p": 4.999750012499375e-05,
+        "test": "target-level paired sign randomization, 20000 draws",
+        "holm_p": 0.00359982000899955
+      }
+    },
+    "holm_family": "All listed method pairs, both conditions and both answer endpoints within this scope",
+    "scoring": "Frozen automated rules; independent human review deferred",
+    "timing": "Warm method filtering plus answer generation, includes independently recomputed features; loading and capture extraction separate"
+  },
+  "limitations": [
+    "used questions and stored paraphrases, not fresh confirmation",
+    "two sessions are correlated within incident",
+    "no swarm receiver outcomes",
+    "automated scoring and nonblank semantics not independently human validated",
+    "historical E18 stored-context results are a separate evaluation"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "ours": {
+  "recall": 0.871875,
+  "clean_removed": 0.02638888888888889
+ },
+ "cg": {
+  "recall": 0.95,
+  "clean_removed": 0.7163194444444444
+ },
+ "n_contexts": 320
+}

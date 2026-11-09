@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# not redistributed (see data/README.md, THIRD_PARTY_NOTICES.md)
+data/external/
+data/cache/
+data/baselines/
+results/checkpoints/
+.venv/
+__pycache__/
+
+# blinding key for human adjudication
+results/sprint/human/PRIVATE_key_do_not_share.json

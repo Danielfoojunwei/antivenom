@@ -1,0 +1,21 @@
+{
+  "relaunch_utc": "2026-10-29T10:36:30.457921+00:00",
+  "prior_waiting_state": {
+    "queue_pid": 29569,
+    "status": "waiting_for_remaining_queue",
+    "phase": "wait_E36_E38",
+    "completed_phases": [],
+    "protocol": "docs/INCIDENT_RESPONSE_PROTOCOL.md",
+    "updated_utc": "2026-10-29T05:14:27.195604+00:00"
+  },
+  "new_supervisor_pid": 36006,
+  "launch": "experiments/run_incident_optimized.py",
+  "reason": "Current-Mac-only calibration-gated allocator-cache trial before incident inference",
+  "original_scientific_manifests_match": true,
+  "main_remaining_queue_untouched": true,
+  "idle_sleep_inhibitor_pid": 35978,
+  "initial_wrapper_pid": 35977,
+  "initial_wrapper_result": "Startup manifest check rejected relative __file__ identity before inference",
+  "corrected_source_identity": "absolute original frozen __file__",
+  "corrected_runtime_manifest": "results/performance_runtime_manifest.json"
+}

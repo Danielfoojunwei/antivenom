@@ -1,0 +1,39 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/incident_suite.py": "9001157b83c83f3ecf1fc47a103781bb677110ff7e2b09a8a75577eeae0a02bc",
+    "data/cache/e36_contexts_nq.jsonl": "a228e8014905663b2bbad4571887c5212b9c4c1b77147f80cc486ca3f82f340a",
+    "data/external/poisonedrag/nq-contriever.json": "a5e9d9ca8e65b61e2fa34428e154a55c2e97c2064c97af09bf87822a61995fa5",
+    "data/external/poisonedrag/nq.json": "44df711454a9bada08e72e9e4a003a2cc845c43707ac93a3493e5168ec415cf2",
+    "data/external/poisonedrag/nq_target_corpus.json": "fd2e82184e99113e9300d3229b9c82c50035125c90bb9924d59dae4c7d47bc7b",
+    "docs/INCIDENT_RESPONSE_PROTOCOL.md": "e24c7f94e3862f0fff6c582649a3b32fd7a696a475ea34a67362acb1f350ee0d",
+    "results/e11a_flag_scores_nq_k10.jsonl": "cdb7004566f631b56016659fe674427416ac14bf0025ee3d7ae8082f02be1968",
+    "src/antivenom/antibody.py": "57b964f7e7ec4571ded143f4bce45e1fbd6a993466056fea78bdfcfd5780afa1",
+    "src/antivenom/baselines/coordguard.py": "3d52ae36f5a205f4176c27b21b66da3df4dc2ef0c09cc561b853381b8a7d3fc4",
+    "src/antivenom/baselines/trustrag.py": "9868cf09e65d79aff44d5519d253e7dd7b961d5444b6b848c360831d458c11a1",
+    "src/antivenom/continuation.py": "84e86d8566d899ddd3e062639369db76ce31558355c77055738e2c378bd9d54e",
+    "src/antivenom/incident.py": "e98149f3a6a625eb5f8612a4f2914d906f94f80a692d270bed89100f54135840",
+    "src/antivenom/llm.py": "8f0c232f15d64b53e49e247cc990bf8a5d5fb2335d728d640aaa38cd35c9da49",
+    "src/antivenom/masked.py": "fff2cabed1c4ebbd3d64e01b972b940ffbbde01e838d2be7207a0f1eecf414a1",
+    "src/antivenom/poisonedrag.py": "94b2ef464419a628a606a94ae5a8f83072991111f59364651c955049bd0089bc",
+    "src/antivenom/qa.py": "59082b2e4bd5274585fa512eabfb6f57927a61d2dfaaea5754a6fd7f0660000f",
+    "src/antivenom/retriever.py": "a81b2a153e25e442eec32ef468a9db06ef531944654e9159a91426789921ad6f"
+  },
+  "settings": {
+    "mode": "e5",
+    "engine": "e5",
+    "methods": [
+      "none",
+      "entail",
+      "attention",
+      "OR",
+      "avidity",
+      "cosine",
+      "exact_hash",
+      "coordguard_af",
+      "coordguard_gate",
+      "trustrag",
+      "gated_OR"
+    ],
+    "captured_excluded_from_pool": true
+  }
+}

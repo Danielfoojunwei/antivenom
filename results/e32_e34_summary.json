@@ -1,0 +1,336 @@
+{
+  "n_targets": 80,
+  "split": "NQ development; exploratory; rule-scored",
+  "scoring_mismatches": 0,
+  "e32": {
+    "arms": {
+      "delete_true_backfill": {
+        "correct": {
+          "rate": 0.6,
+          "ci": [
+            0.4875,
+            0.7125
+          ]
+        },
+        "endorsed": {
+          "rate": 0.1,
+          "ci": [
+            0.0375,
+            0.1625
+          ]
+        }
+      },
+      "delete_placebo_backfill": {
+        "correct": {
+          "rate": 0.4875,
+          "ci": [
+            0.375,
+            0.6
+          ]
+        },
+        "endorsed": {
+          "rate": 0.075,
+          "ci": [
+            0.025,
+            0.1375
+          ]
+        }
+      },
+      "delete_only": {
+        "correct": {
+          "rate": 0.4625,
+          "ci": [
+            0.35,
+            0.575
+          ]
+        },
+        "endorsed": {
+          "rate": 0.075,
+          "ci": [
+            0.025,
+            0.1375
+          ]
+        }
+      }
+    },
+    "comparisons": {
+      "delete_true_backfill - delete_placebo_backfill: correct": {
+        "difference": 0.1125,
+        "ci": [
+          0.025,
+          0.2
+        ],
+        "discordant": [
+          11,
+          2
+        ],
+        "p": 0.0224609375,
+        "holm_p": 0.1123046875
+      },
+      "delete_true_backfill - delete_placebo_backfill: endorsed": {
+        "difference": 0.025,
+        "ci": [
+          -0.0375,
+          0.0875
+        ],
+        "discordant": [
+          4,
+          2
+        ],
+        "p": 0.6875,
+        "holm_p": 1.0
+      },
+      "delete_true_backfill - delete_only: correct": {
+        "difference": 0.1375,
+        "ci": [
+          0.0625,
+          0.225
+        ],
+        "discordant": [
+          12,
+          1
+        ],
+        "p": 0.00341796875,
+        "holm_p": 0.0205078125
+      },
+      "delete_true_backfill - delete_only: endorsed": {
+        "difference": 0.025,
+        "ci": [
+          -0.025,
+          0.075
+        ],
+        "discordant": [
+          3,
+          1
+        ],
+        "p": 0.625,
+        "holm_p": 1.0
+      },
+      "delete_placebo_backfill - delete_only: correct": {
+        "difference": 0.025,
+        "ci": [
+          -0.025,
+          0.075
+        ],
+        "discordant": [
+          3,
+          1
+        ],
+        "p": 0.625,
+        "holm_p": 1.0
+      },
+      "delete_placebo_backfill - delete_only: endorsed": {
+        "difference": 0.0,
+        "ci": [
+          -0.0375,
+          0.0375
+        ],
+        "discordant": [
+          1,
+          1
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      }
+    }
+  },
+  "e12_reproduction": {
+    "n_shared_targets": 75,
+    "response_comparisons": 150,
+    "response_mismatches": 0
+  },
+  "placebo_content_audit": {
+    "n_placebo_with_gold_token": 3,
+    "n_placebo_with_target_token": 0,
+    "n_placebo_with_receiver_top100_doc": 0
+  },
+  "e34_completed_targets": 80,
+  "e34": {
+    "arms": {
+      "true_inplace": {
+        "correct": {
+          "rate": 0.55,
+          "ci": [
+            0.4375,
+            0.6625
+          ]
+        },
+        "endorsed": {
+          "rate": 0.1125,
+          "ci": [
+            0.05,
+            0.1875
+          ]
+        }
+      },
+      "placebo_inplace": {
+        "correct": {
+          "rate": 0.5125,
+          "ci": [
+            0.4,
+            0.625
+          ]
+        },
+        "endorsed": {
+          "rate": 0.05,
+          "ci": [
+            0.0125,
+            0.1
+          ]
+        }
+      },
+      "delete_only": {
+        "correct": {
+          "rate": 0.4625,
+          "ci": [
+            0.35,
+            0.575
+          ]
+        },
+        "endorsed": {
+          "rate": 0.075,
+          "ci": [
+            0.025,
+            0.1375
+          ]
+        }
+      }
+    },
+    "comparisons": {
+      "true_inplace - placebo_inplace: correct": {
+        "difference": 0.0375,
+        "ci": [
+          -0.0625,
+          0.1375
+        ],
+        "discordant": [
+          10,
+          7
+        ],
+        "p": 0.629058837890625,
+        "holm_p": 1.0
+      },
+      "true_inplace - placebo_inplace: endorsed": {
+        "difference": 0.0625,
+        "ci": [
+          0.0125,
+          0.125
+        ],
+        "discordant": [
+          5,
+          0
+        ],
+        "p": 0.0625,
+        "holm_p": 0.375
+      },
+      "true_inplace - delete_only: correct": {
+        "difference": 0.0875,
+        "ci": [
+          0.0,
+          0.175
+        ],
+        "discordant": [
+          10,
+          3
+        ],
+        "p": 0.09228515625,
+        "holm_p": 0.46142578125
+      },
+      "true_inplace - delete_only: endorsed": {
+        "difference": 0.0375,
+        "ci": [
+          -0.0125,
+          0.1
+        ],
+        "discordant": [
+          4,
+          1
+        ],
+        "p": 0.375,
+        "holm_p": 1.0
+      },
+      "placebo_inplace - delete_only: correct": {
+        "difference": 0.05,
+        "ci": [
+          0.0,
+          0.1125
+        ],
+        "discordant": [
+          5,
+          1
+        ],
+        "p": 0.21875,
+        "holm_p": 0.875
+      },
+      "placebo_inplace - delete_only: endorsed": {
+        "difference": -0.025,
+        "ci": [
+          -0.075,
+          0.025
+        ],
+        "discordant": [
+          1,
+          3
+        ],
+        "p": 0.625,
+        "holm_p": 1.0
+      }
+    },
+    "secondary_placement_comparisons": {
+      "true_inplace - delete_true_backfill: correct": {
+        "difference": -0.05,
+        "ci": [
+          -0.125,
+          0.012812499999998296
+        ],
+        "discordant": [
+          2,
+          6
+        ],
+        "p": 0.2890625,
+        "holm_p": 1.0
+      },
+      "true_inplace - delete_true_backfill: endorsed": {
+        "difference": 0.0125,
+        "ci": [
+          -0.0375,
+          0.075
+        ],
+        "discordant": [
+          3,
+          2
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      },
+      "placebo_inplace - delete_placebo_backfill: correct": {
+        "difference": 0.025,
+        "ci": [
+          -0.0375,
+          0.0875
+        ],
+        "discordant": [
+          5,
+          3
+        ],
+        "p": 0.7265625,
+        "holm_p": 1.0
+      },
+      "placebo_inplace - delete_placebo_backfill: endorsed": {
+        "difference": -0.025,
+        "ci": [
+          -0.075,
+          0.025
+        ],
+        "discordant": [
+          1,
+          3
+        ],
+        "p": 0.625,
+        "holm_p": 1.0
+      }
+    },
+    "true_replacement_poison_count": 3,
+    "placebo_replacement_poison_count": 0
+  }
+}

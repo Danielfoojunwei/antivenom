@@ -1,0 +1,612 @@
+{
+  "scope": "Completed Mistral HotpotQA only, 50 used-question targets; MS-MARCO and full reader results pending. Frozen per-dataset analysis functions/family reused.",
+  "empty_claims": 0,
+  "automated_score_checks": 650,
+  "summary": {
+    "n_targets": 50,
+    "arms": {
+      "clean": {
+        "correct": {
+          "rate": 0.66,
+          "ci": [
+            0.52,
+            0.78
+          ]
+        },
+        "endorsed": {
+          "rate": 0.14,
+          "ci": [
+            0.06,
+            0.24
+          ]
+        }
+      },
+      "attack": {
+        "correct": {
+          "rate": 0.26,
+          "ci": [
+            0.14,
+            0.38
+          ]
+        },
+        "endorsed": {
+          "rate": 0.78,
+          "ci": [
+            0.66,
+            0.88
+          ]
+        }
+      },
+      "v1_block": {
+        "correct": {
+          "rate": 0.6,
+          "ci": [
+            0.46,
+            0.72
+          ]
+        },
+        "endorsed": {
+          "rate": 0.1,
+          "ci": [
+            0.02,
+            0.18
+          ]
+        }
+      },
+      "v1_delete_backfill": {
+        "correct": {
+          "rate": 0.66,
+          "ci": [
+            0.52,
+            0.78
+          ]
+        },
+        "endorsed": {
+          "rate": 0.18,
+          "ci": [
+            0.08,
+            0.28
+          ]
+        }
+      },
+      "v2_delete_backfill": {
+        "correct": {
+          "rate": 0.62,
+          "ci": [
+            0.48,
+            0.76
+          ]
+        },
+        "endorsed": {
+          "rate": 0.18,
+          "ci": [
+            0.08,
+            0.28
+          ]
+        }
+      },
+      "random_delete_backfill": {
+        "correct": {
+          "rate": 0.34,
+          "ci": [
+            0.22,
+            0.48
+          ]
+        },
+        "endorsed": {
+          "rate": 0.66,
+          "ci": [
+            0.52,
+            0.8
+          ]
+        }
+      },
+      "lowrel_delete_backfill": {
+        "correct": {
+          "rate": 0.22,
+          "ci": [
+            0.12,
+            0.34
+          ]
+        },
+        "endorsed": {
+          "rate": 0.86,
+          "ci": [
+            0.76,
+            0.94
+          ]
+        }
+      },
+      "coordguard_af": {
+        "correct": {
+          "rate": 0.4,
+          "ci": [
+            0.26,
+            0.54
+          ]
+        },
+        "endorsed": {
+          "rate": 0.1,
+          "ci": [
+            0.02,
+            0.18
+          ]
+        }
+      },
+      "coordguard_af_refill": {
+        "correct": {
+          "rate": 0.48,
+          "ci": [
+            0.34,
+            0.62
+          ]
+        },
+        "endorsed": {
+          "rate": 0.16,
+          "ci": [
+            0.06,
+            0.26
+          ]
+        }
+      },
+      "trustrag": {
+        "correct": {
+          "rate": 0.64,
+          "ci": [
+            0.5,
+            0.76
+          ]
+        },
+        "endorsed": {
+          "rate": 0.12,
+          "ci": [
+            0.04,
+            0.22
+          ]
+        }
+      },
+      "defclean_v1": {
+        "correct": {
+          "rate": 0.46,
+          "ci": [
+            0.32,
+            0.6
+          ]
+        },
+        "endorsed": {
+          "rate": 0.1,
+          "ci": [
+            0.02,
+            0.18
+          ]
+        }
+      },
+      "defclean_v2": {
+        "correct": {
+          "rate": 0.62,
+          "ci": [
+            0.48,
+            0.74
+          ]
+        },
+        "endorsed": {
+          "rate": 0.12,
+          "ci": [
+            0.04,
+            0.22
+          ]
+        }
+      },
+      "defclean_coordguard": {
+        "correct": {
+          "rate": 0.34,
+          "ci": [
+            0.22,
+            0.48
+          ]
+        },
+        "endorsed": {
+          "rate": 0.08,
+          "ci": [
+            0.02,
+            0.16
+          ]
+        }
+      },
+      "gated_v1": {
+        "correct": {
+          "rate": 0.6,
+          "ci": [
+            0.46,
+            0.74
+          ]
+        },
+        "endorsed": {
+          "rate": 0.24,
+          "ci": [
+            0.12,
+            0.36
+          ]
+        }
+      },
+      "gated_v2": {
+        "correct": {
+          "rate": 0.56,
+          "ci": [
+            0.42,
+            0.7
+          ]
+        },
+        "endorsed": {
+          "rate": 0.24,
+          "ci": [
+            0.12,
+            0.36
+          ]
+        }
+      },
+      "gated_cg": {
+        "correct": {
+          "rate": 0.46,
+          "ci": [
+            0.32,
+            0.6
+          ]
+        },
+        "endorsed": {
+          "rate": 0.22,
+          "ci": [
+            0.12,
+            0.34
+          ]
+        }
+      },
+      "gated_clean_v1": {
+        "correct": {
+          "rate": 0.64,
+          "ci": [
+            0.5,
+            0.76
+          ]
+        },
+        "endorsed": {
+          "rate": 0.14,
+          "ci": [
+            0.06,
+            0.24
+          ]
+        }
+      },
+      "gated_clean_v2": {
+        "correct": {
+          "rate": 0.66,
+          "ci": [
+            0.52,
+            0.78
+          ]
+        },
+        "endorsed": {
+          "rate": 0.16,
+          "ci": [
+            0.06,
+            0.26
+          ]
+        }
+      },
+      "gated_clean_cg": {
+        "correct": {
+          "rate": 0.66,
+          "ci": [
+            0.52,
+            0.78
+          ]
+        },
+        "endorsed": {
+          "rate": 0.16,
+          "ci": [
+            0.06,
+            0.26
+          ]
+        }
+      },
+      "geometry_gated_cg": {
+        "correct": {
+          "rate": 0.38,
+          "ci": [
+            0.24,
+            0.52
+          ]
+        },
+        "endorsed": {
+          "rate": 0.38,
+          "ci": [
+            0.26,
+            0.52
+          ]
+        }
+      },
+      "geometry_gated_clean_cg": {
+        "correct": {
+          "rate": 0.66,
+          "ci": [
+            0.52,
+            0.78
+          ]
+        },
+        "endorsed": {
+          "rate": 0.14,
+          "ci": [
+            0.06,
+            0.24
+          ]
+        }
+      }
+    },
+    "transfer_comparison_family": {
+      "v1_delete_backfill - coordguard_af_refill: correct": {
+        "difference": 0.18,
+        "ci": [
+          0.06,
+          0.3
+        ],
+        "discordant": [
+          10,
+          1
+        ],
+        "p": 0.01171875,
+        "holm_p": 0.1171875
+      },
+      "v1_delete_backfill - coordguard_af_refill: endorsed": {
+        "difference": 0.02,
+        "ci": [
+          -0.04,
+          0.1
+        ],
+        "discordant": [
+          2,
+          1
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      },
+      "v1_delete_backfill - trustrag: correct": {
+        "difference": 0.02,
+        "ci": [
+          -0.14,
+          0.16
+        ],
+        "discordant": [
+          8,
+          7
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      },
+      "v1_delete_backfill - trustrag: endorsed": {
+        "difference": 0.06,
+        "ci": [
+          -0.02,
+          0.16
+        ],
+        "discordant": [
+          4,
+          1
+        ],
+        "p": 0.375,
+        "holm_p": 1.0
+      },
+      "v2_delete_backfill - coordguard_af_refill: correct": {
+        "difference": 0.14,
+        "ci": [
+          0.0,
+          0.28
+        ],
+        "discordant": [
+          10,
+          3
+        ],
+        "p": 0.09228515625,
+        "holm_p": 0.83056640625
+      },
+      "v2_delete_backfill - coordguard_af_refill: endorsed": {
+        "difference": 0.02,
+        "ci": [
+          0.0,
+          0.06
+        ],
+        "discordant": [
+          1,
+          0
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      },
+      "v2_delete_backfill - v1_delete_backfill: correct": {
+        "difference": -0.04,
+        "ci": [
+          -0.12,
+          0.04
+        ],
+        "discordant": [
+          1,
+          3
+        ],
+        "p": 0.625,
+        "holm_p": 1.0
+      },
+      "v2_delete_backfill - v1_delete_backfill: endorsed": {
+        "difference": 0.0,
+        "ci": [
+          -0.06,
+          0.06
+        ],
+        "discordant": [
+          1,
+          1
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      },
+      "defclean_v1 - defclean_coordguard: correct": {
+        "difference": 0.12,
+        "ci": [
+          -0.020499999999999973,
+          0.28
+        ],
+        "discordant": [
+          11,
+          5
+        ],
+        "p": 0.210113525390625,
+        "holm_p": 1.0
+      },
+      "defclean_v1 - defclean_coordguard: endorsed": {
+        "difference": 0.02,
+        "ci": [
+          -0.06,
+          0.1
+        ],
+        "discordant": [
+          3,
+          2
+        ],
+        "p": 1.0,
+        "holm_p": 1.0
+      }
+    },
+    "gate_comparison_family": {
+      "gated_v1 - v1_delete_backfill: correct": {
+        "difference": -0.06,
+        "ci": [
+          -0.14,
+          0.02
+        ],
+        "discordant": [
+          1,
+          4
+        ],
+        "p": 0.375,
+        "holm_p": 1.0
+      },
+      "gated_v1 - v1_delete_backfill: endorsed": {
+        "difference": 0.06,
+        "ci": [
+          0.0,
+          0.14
+        ],
+        "discordant": [
+          3,
+          0
+        ],
+        "p": 0.25,
+        "holm_p": 1.0
+      },
+      "gated_v2 - v2_delete_backfill: correct": {
+        "difference": -0.06,
+        "ci": [
+          -0.14,
+          0.0
+        ],
+        "discordant": [
+          0,
+          3
+        ],
+        "p": 0.25,
+        "holm_p": 1.0
+      },
+      "gated_v2 - v2_delete_backfill: endorsed": {
+        "difference": 0.06,
+        "ci": [
+          0.0,
+          0.14
+        ],
+        "discordant": [
+          3,
+          0
+        ],
+        "p": 0.25,
+        "holm_p": 1.0
+      },
+      "gated_clean_v1 - defclean_v1: correct": {
+        "difference": 0.18,
+        "ci": [
+          0.04,
+          0.32
+        ],
+        "discordant": [
+          11,
+          2
+        ],
+        "p": 0.0224609375,
+        "holm_p": 0.224609375
+      },
+      "gated_clean_v1 - defclean_v1: endorsed": {
+        "difference": 0.04,
+        "ci": [
+          -0.04,
+          0.12
+        ],
+        "discordant": [
+          3,
+          1
+        ],
+        "p": 0.625,
+        "holm_p": 1.0
+      },
+      "gated_clean_v2 - defclean_v2: correct": {
+        "difference": 0.04,
+        "ci": [
+          -0.06,
+          0.14
+        ],
+        "discordant": [
+          4,
+          2
+        ],
+        "p": 0.6875,
+        "holm_p": 1.0
+      },
+      "gated_clean_v2 - defclean_v2: endorsed": {
+        "difference": 0.04,
+        "ci": [
+          0.0,
+          0.1
+        ],
+        "discordant": [
+          2,
+          0
+        ],
+        "p": 0.5,
+        "holm_p": 1.0
+      },
+      "gated_cg - geometry_gated_cg: correct": {
+        "difference": 0.08,
+        "ci": [
+          0.02,
+          0.16
+        ],
+        "discordant": [
+          4,
+          0
+        ],
+        "p": 0.125,
+        "holm_p": 1.0
+      },
+      "gated_cg - geometry_gated_cg: endorsed": {
+        "difference": -0.16,
+        "ci": [
+          -0.3,
+          -0.04
+        ],
+        "discordant": [
+          2,
+          10
+        ],
+        "p": 0.03857421875,
+        "holm_p": 0.34716796875
+      }
+    },
+    "gate_fires_attacked": 0.84,
+    "gate_fires_clean": 0.02
+  }
+}

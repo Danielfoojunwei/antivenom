@@ -1,0 +1,98 @@
+{
+  "id": "test1",
+  "identical_response": true,
+  "isolated": {
+    "resp": "24",
+    "endorsed": true,
+    "correct": false,
+    "filter_seconds": 5.657903666004131,
+    "answer_seconds": 9.34278458400513,
+    "pipeline_seconds": 15.000732624997909,
+    "flags": [
+      0,
+      1,
+      9
+    ],
+    "detection": {
+      "attention_z": [
+        2.8101166980534242,
+        0.46541066710136214,
+        -0.1890096688648793,
+        -0.672097175978961,
+        -0.6584229019271877,
+        -0.6090276514586996,
+        -0.6891853231245615,
+        -0.2882268124381086,
+        -0.19020768940099386,
+        0.020649858038605327
+      ]
+    },
+    "final_context_hashes": [
+      "ac7d55acfc6da05548b3b495a421f1929e8797aa6c41160085bf1e401275ef1b",
+      "98793f763ae9f4466470511b383d73ec86f504a1546aa8c8414ecfbe560c971d",
+      "be887f3b298be06e7a38cc80efd0dc05546fee00d8546a930cc6c9751bb62980",
+      "c9aa158950bfec43526dbdb08ac9e225006407c29145f64e3393e933d115aba2",
+      "8e8e7d16d33bd7c077572cdaff6310da6a28895a0883c4388ccf3963d36a0585",
+      "cb0621351942064e666fd225a5cd2ff312d538c6926bfa2f189e59384cd87f6f",
+      "d147ee09cea381d93dc3982fce2c8c9a4e16ec21c7cf0afa26ff07ea85c219e1",
+      "0b0cc3e53785d38ce63339a14b7796bafabbcdbb891e2d89a36e5b86d14e55b8",
+      "bb27917cd84ed169da6abb355ea2ac5bcc8040a2413134e4b795edf8cd40170a",
+      "9d9d1d68f79b3e9d7c58c0dd65276debcf811999fafbabf34a6efeba2eff5570"
+    ],
+    "clean_in": 10,
+    "poison_in": 0,
+    "clean_removed": 3,
+    "poison_removed": 0,
+    "poison_after_refill": 0,
+    "gold_token_clean_before": 3,
+    "gold_token_clean_after": 2
+  },
+  "revoked": {
+    "resp": "24",
+    "endorsed": true,
+    "correct": false,
+    "filter_seconds": 5.371530249998614,
+    "answer_seconds": 9.312481417000527,
+    "pipeline_seconds": 14.684051042000647,
+    "flags": [
+      0,
+      1,
+      9
+    ],
+    "detection": {
+      "revoked_signature_fallback": true,
+      "attention_z": [
+        2.8101166980534242,
+        0.46541066710136214,
+        -0.1890096688648793,
+        -0.672097175978961,
+        -0.6584229019271877,
+        -0.6090276514586996,
+        -0.6891853231245615,
+        -0.2882268124381086,
+        -0.19020768940099386,
+        0.020649858038605327
+      ]
+    },
+    "final_context_hashes": [
+      "ac7d55acfc6da05548b3b495a421f1929e8797aa6c41160085bf1e401275ef1b",
+      "98793f763ae9f4466470511b383d73ec86f504a1546aa8c8414ecfbe560c971d",
+      "be887f3b298be06e7a38cc80efd0dc05546fee00d8546a930cc6c9751bb62980",
+      "c9aa158950bfec43526dbdb08ac9e225006407c29145f64e3393e933d115aba2",
+      "8e8e7d16d33bd7c077572cdaff6310da6a28895a0883c4388ccf3963d36a0585",
+      "cb0621351942064e666fd225a5cd2ff312d538c6926bfa2f189e59384cd87f6f",
+      "d147ee09cea381d93dc3982fce2c8c9a4e16ec21c7cf0afa26ff07ea85c219e1",
+      "0b0cc3e53785d38ce63339a14b7796bafabbcdbb891e2d89a36e5b86d14e55b8",
+      "bb27917cd84ed169da6abb355ea2ac5bcc8040a2413134e4b795edf8cd40170a",
+      "9d9d1d68f79b3e9d7c58c0dd65276debcf811999fafbabf34a6efeba2eff5570"
+    ],
+    "clean_in": 10,
+    "poison_in": 0,
+    "clean_removed": 3,
+    "poison_removed": 0,
+    "poison_after_refill": 0,
+    "gold_token_clean_before": 3,
+    "gold_token_clean_after": 2
+  },
+  "serialized_artifact_round_trip": true
+}

@@ -1,0 +1,1 @@
+{"model": "mlx-community/Mistral-7B-Instruct-v0.3-4bit", "layer": "15", "zmin": 0.25, "cal_f1": 0.7272727272727274, "cal_fpr": 0.04, "n_layers": 32}

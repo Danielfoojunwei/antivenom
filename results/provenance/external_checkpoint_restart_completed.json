@@ -1,0 +1,54 @@
+{
+  "checked_utc": "2026-10-31T07:14:02.543942+00:00",
+  "status": "checkpoint_restart_complete",
+  "authorization_basis": "Actual human reply verified via read_thread: Restart from checkpoints (Recommended). Approval explicitly covers stopping worker and queue and restarting from preserved checkpoints after neuron tests.",
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "user_message_id": "01a190ab-b6ac-7662-a5f1-939bbe433359",
+    "human_answer": "Restart from checkpoints (Recommended)"
+  },
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_native_screen_002.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_native_screen_002_guard_8o_ferx6/config.json",
+  "guard_watcher_pid": 23550,
+  "priority_run_pid": 23528,
+  "priority_run_identity": {
+    "pid": 23528,
+    "start": "Sat Oct 31 14:18:41 2026",
+    "command": "../qwen_experiment/.venv/bin/python limited_screen.py --run-id factorial_native_screen_002 --configs runs/geometry_factorial_pilot_001/activation_configs.json --n 16 --max-tokens 256 --word-limit 80 --question-setup confirmation_pressure --start-gate /tmp/personality_factorial_native_screen_002.ready"
+  },
+  "targets": [
+    {
+      "pid": 2150,
+      "start": "Sat Oct 31 12:48:33 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py e5",
+      "role": "worker",
+      "queue_pid": 1824,
+      "name": "Antivenom successor model worker",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 1824,
+      "start": "Sat Oct 31 12:46:29 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom experiment queue",
+      "pause_status": "paused"
+    }
+  ],
+  "restart_journal": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_native_screen_002_checkpoint_restart_execution.json",
+  "restart_watcher_pid": 29999,
+  "supervision_recovery_pid": 35250,
+  "supervision_recovery_status": "results/external_supervision_recovery.json",
+  "e5_calibration_cases": 20,
+  "e5_complete_cases": 4,
+  "e5_saved_result_arms": 88,
+  "integrity": "22 frozen manifests and all 385 external restart snapshot files match; E37 prefix intact",
+  "resume_condition": "External approved restarter launches status-authorized incident queue after personality process exits; local helper restores inhibitors and frozen supplemental supervisor",
+  "action": "Existing external restarter and local helper completed normally; no manual duplicate launch",
+  "restarted_at_utc": "2026-10-31T07:07:10.992822+00:00",
+  "new_incident_queue_pid": 49464,
+  "new_incident_child_pid": 49980,
+  "new_incident_inhibitor_pid": 49491,
+  "new_swarm_supervisor_pid": 49493,
+  "new_swarm_inhibitor_pid": 49494
+}

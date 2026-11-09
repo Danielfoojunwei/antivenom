@@ -1,0 +1,10 @@
+{
+  "script": "experiments/incident_memform.py",
+  "arguments": [],
+  "configuration": "original_default",
+  "cache_limit_bytes": 16320875724,
+  "scientific_source_unchanged": true,
+  "status": "complete",
+  "wall_seconds": 36741.09708483299,
+  "peak_memory_bytes": 4787286884
+}

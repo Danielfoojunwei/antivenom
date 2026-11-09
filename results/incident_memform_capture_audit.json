@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-03T08:02:11.327607+00:00",
+  "scope": "Completed 212 held-out MemForm families; operational capture audit only",
+  "inputs": {
+    "results/incident_memform.jsonl": "17c0f4ef2b0bbb9e789cafd30030e17ca94cc4333c20f8c88119cb7cfc08eb18",
+    "results/incident_memform_summary.json": "3e2bde2e87a52417f79ea8afa80a1b7d4a257da43aa97dd5199c8b40ed38cb6c"
+  },
+  "all_target_families": 212,
+  "nonblank_selected_question_and_claim": 212,
+  "blank_selected_ids": [],
+  "secondary_paired_nonblank_sensitivity": {
+    "all_tasks": "Identical 212 families and every comparator to the main all_tasks analysis",
+    "fixed_causal_eligible": "Identical 170 families and every comparator to the fixed_causal_eligible analysis",
+    "summary": "results/incident_memform_summary.json"
+  },
+  "semantic_validation": "Nonblank only; human semantic and scoring validation remain deferred"
+}

@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/analysis/e37_capture_sensitivity.py": "56fe6cc501b162f844f02db9f39a17dc26a00683697e1014d4782a535cfd0eab",
+    "analysis/continuation_stats.py": "5b6ce5d740b4b93ec0142606c544257ce88cd7f6c4e6f9140226db4ab9c0819f",
+    "analysis/remaining_summary.py": "071f517f4e2e10fd2e6547a281820402a22ef03f58ada7271964cad5394a6aba",
+    "docs/EXTRACTION_RESILIENCE_AMENDMENT.md": "ad71c65719afc224e27a4bf8857dd403613645655df4ba2291dedec3e6ef30fb",
+    "results/e11a_flag_scores_nq_k10.jsonl": "cdb7004566f631b56016659fe674427416ac14bf0025ee3d7ae8082f02be1968",
+    "results/e37_composite_nq_k10.jsonl": "c72c9b475e036095ba6eedbd6ed3efd9e0c8e90389ad03435889486779ea5768",
+    "results/provenance/e37_extraction_failures_at_completion.json": "20c1a9a7803e2608bdfd666a8d7908c60a57b5eb5df4ca44759c973f84beba5f",
+    "results/provenance/e37_original_first70_hash.json": "afe46b87c1ecbb773c2e12cabd242a45ecd7139d34e1db0a815d242c314d1f1c"
+  },
+  "settings": {
+    "rule": "Secondary same-subset comparison using nonblank selected question AND claim; semantic correctness unverified",
+    "all_target_main_retained": 80
+  }
+}

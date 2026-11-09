@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/analysis/e37_gate_replay.py": "cc5868ee5393bbc775d921e32298950526ae312e970903c375586133965fe5af",
+    "analysis/continuation_stats.py": "5b6ce5d740b4b93ec0142606c544257ce88cd7f6c4e6f9140226db4ab9c0819f",
+    "docs/EXTRACTION_RESILIENCE_AMENDMENT.md": "ad71c65719afc224e27a4bf8857dd403613645655df4ba2291dedec3e6ef30fb",
+    "docs/REMAINING_RUNS_PROTOCOL.md": "f6c530a2e4b34ad3ca50d567281c1d76e86b6fa7416d2ea13dc2bbc342f39ea6",
+    "results/e30_attack_gate.json": "f59fb8787c4dd178b7bee46f68932a55a7672f334eb650964087774bdd0d2fee",
+    "results/e36_geometry_gate_calibration.json": "4f0c220d255e414ae0683a5e96838a082e043f723fdbe7bf3537f8df8b60cff7",
+    "results/e37_composite_nq_k10.jsonl": "c72c9b475e036095ba6eedbd6ed3efd9e0c8e90389ad03435889486779ea5768"
+  },
+  "settings": {
+    "scope": "Planned fixed E30 gate replay; extra exploratory comparison family, not fresh confirmation",
+    "nli_threshold": 0.9749041199999999,
+    "geometry_threshold": 1.5993295617551075,
+    "no_threshold_refit": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "entail": {
+    "clean_correctness_advantage": "supported",
+    "poisoned_endorsement_advantage": "inconclusive",
+    "joint_strict_superiority": "inconclusive",
+    "protection_noninferiority": "untested; no margin specified",
+    "selective_useful_memory_mechanism": "not established by task outcomes alone"
+  },
+  "OR": {
+    "clean_correctness_advantage": "supported",
+    "poisoned_endorsement_advantage": "inconclusive",
+    "joint_strict_superiority": "inconclusive",
+    "protection_noninferiority": "untested; no margin specified",
+    "selective_useful_memory_mechanism": "not established by task outcomes alone"
+  }
+}

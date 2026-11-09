@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-10-31T04:27:12.847254+00:00",
+  "status": "intentional_external_resource_suspension_for_personality_activation_screen",
+  "authorization_basis": "Other chat applies the previously verified human approval to successor Antivenom worker and queue; latest human steering prioritizes personality activation screening. No new approval is inferred from model outcomes.",
+  "authorization_source": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "thread_title": "Assess Qwen Bit Changes in Swarms",
+    "human_answer": "Pause the other model workers (Recommended)",
+    "scope": "Temporary pause of Antivenom and Qwen v5.2; automatic resumption when peer-review run finishes"
+  },
+  "guard_config": "/var/folders/kx/80_lxpgd2r78xfgmv2__lnrc0000gn/T/personality_activation_3048_y7u_2ivo/config.json",
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/native_constructed_001.json",
+  "guard_watcher_pid": 3187,
+  "priority_run_pid": 3048,
+  "priority_run_identity": "Sat Oct 31 12:25:28 2026     ../qwen_experiment/.venv/bin/python activation_screen.py --run-id native_constructed_001 --configs configs/native_constructed_L19_001.json --n 8 --word-limit 80 --start-gate /tmp/personality_native_constructed_001.ready",
+  "targets": [
+    {
+      "pid": 84348,
+      "name": "Antivenom successor model worker",
+      "identity": "Sat Oct 31 10:59:44 2026     /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_suite.py calibrate --engine e5"
+    },
+    {
+      "pid": 75351,
+      "name": "Antivenom experiment queue",
+      "identity": "Fri Oct 30 03:13:26 2026     /Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident"
+    }
+  ],
+  "paused_at_utc": "2026-10-31T04:25:44.554519+00:00",
+  "e5_calibration_cases": 18,
+  "resume_condition": "Existing watcher resumes exact stopped identities when activation-screen process exits",
+  "action": "No forced SIGCONT, restart or duplicate; original sources/checkpoints retained"
+}

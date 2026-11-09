@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-03T13:05:57.128447+00:00",
+  "target": "MemMorph native tool-choice evaluation",
+  "paper": "https://arxiv.org/html/2605.26154v1",
+  "artifact_status": "No author-linked harness or saved record archive located in current paper and targeted searches",
+  "dependency_not_release": "https://github.com/mem0ai/mem0",
+  "third_party_implementations_used": false,
+  "official_data_substituted": false,
+  "queries": [
+    "MemMorph 2605.26154 github code memory poisoning",
+    "MemMorph official authors code dataset archive"
+  ],
+  "required_author_artifacts": [
+    "raw and rewritten saved benign/poisoned memories",
+    "native prompts/tool schemas/task split and scorer",
+    "native harness/model/writer/retrieval configuration",
+    "reference reproduction outputs and untouched campaigns"
+  ],
+  "previous_frozen_manifests_verified": 30,
+  "previous_mismatches": [],
+  "e37_original_first70_prefix_preserved": true,
+  "native_empirical_validation": false,
+  "model_calls": 0
+}

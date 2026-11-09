@@ -1,0 +1,52 @@
+{
+  "schema": "antivenom.memform-drop-all-analysis.v1",
+  "classification": "new diagnostic analysis frozen before added control outcomes; original families already used",
+  "conditions": [
+    "clean",
+    "poisoned"
+  ],
+  "methods": [
+    "entail",
+    "OR"
+  ],
+  "metrics": [
+    "correct",
+    "endorsed"
+  ],
+  "comparison_direction": "signature method minus exact drop-all",
+  "test": "two-sided exact paired binary McNemar, Holm across all8 comparisons within each scope",
+  "bootstrap": {
+    "unit": "family",
+    "seed": 20261104,
+    "repeats": 20000,
+    "interval": "paired percentile95%; descriptive and not simultaneous"
+  },
+  "simultaneous_bounds": "Hoeffding two-sided union bound across8 bounded paired differences; range[-1,1], alpha.05",
+  "decision": "directional favorable/adverse evidence requires Holm8p<.05; nonsignificance is inconclusive",
+  "joint_superiority": "requires corrected favorable clean correctness AND corrected favorable poisoned endorsement",
+  "noninferiority_or_equivalence": "not tested; no native/control utility margin selected",
+  "scopes": [
+    "all212 families",
+    "identically paired syntactic nonblank capture sensitivity"
+  ],
+  "human_review": "deferred, not passed",
+  "fresh_confirmation": false,
+  "native_MemMorph": false,
+  "inputs": {
+    "analysis/memform_drop_all_summary.py": "f6f80c9ee82b372e4387bc33d0c094324319b1446c24e798ad18cb319c02611f",
+    "tests/test_memform_drop_all_summary.py": "04e104113a49cfeac3b87e41fcd6d75570d71de8268846b3f4626cead1657a62",
+    "docs/MEMFORM_DROP_ALL_ANALYSIS.md": "1e4d6b711b46f748639aa5747de8836b8e8a09ed53080678645de265ba19a71f",
+    "results/memform_drop_all_plan_v1.json": "02c79c8a6f56af7733c25930fa5ea3f388490545b41a0f117640d4536ef2d182",
+    "experiments/memform_drop_all_control.py": "a8254c54d8a50856b22c8b070d269c90f0fc0de8112b53fd682130df28f50f0e",
+    "results/incident_memform.jsonl": "17c0f4ef2b0bbb9e789cafd30030e17ca94cc4333c20f8c88119cb7cfc08eb18",
+    "results/incident_memform_manifest.json": "23b9b02195f28fb5ec2d26864e10279accb835c5e3bf294c30d7307bc75ccee5",
+    "results/incident_memform_integrity.json": "7679a58c27ca1b8bd018ee2ee8ff08ef1f160b2f7e3430471585db22ee271fa6",
+    "results/incident_memform_capture_audit.json": "cecb027db277cee0f3e66317e5692f5b0ae328eb61618907e8ebc18dae9616da",
+    "src/antivenom/memform_port.py": "89970b970029aa6b4c21e6c0a7e5c8f9bed250117b2125535dcf180fc36978bd",
+    "data/external/memform/accepted_mcq.jsonl": "fc9e76b051c21c378281ed4dcbb648f76820a2eaf086683b0c1d24db7fcaaee5",
+    "data/external/memform/reference/memform/eval/core.py": "586ed27553ce8d89620dc55d7273703f394755e16a75d8364bc88fc074804683",
+    "uv.lock": "9a14ed5a38260ad3fe04435b5a7fff800d18f696896c5fdf21ddd940e847165f"
+  },
+  "numpy_version": "2.5.4",
+  "frozen_utc": "2026-11-03T19:36:45.572854+00:00"
+}

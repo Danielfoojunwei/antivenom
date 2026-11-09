@@ -1,0 +1,33 @@
+{
+  "queue_pid": 54055,
+  "status": "automated_incident_suite_complete",
+  "phase": "integrity",
+  "completed_phases": [
+    "weights_before",
+    "calibrate_contriever",
+    "base",
+    "power",
+    "prefixfree",
+    "recurrence",
+    "calibrate_e5",
+    "e5",
+    "swarm",
+    "memform_diagnostic",
+    "memform_analysis",
+    "weights_after",
+    "analysis",
+    "integrity"
+  ],
+  "protocol": "docs/INCIDENT_RESPONSE_PROTOCOL.md",
+  "updated_utc": "2026-11-03T07:53:31.931610+00:00",
+  "child_pid": null,
+  "fresh_confirmation": "not established by development runs; inspect power and external-data eligibility",
+  "runtime_launcher": "experiments/run_resilient_queue.py",
+  "runtime_manifest": "results/performance_runtime_manifest.json",
+  "runtime_validation": "results/performance_validation.json",
+  "runtime_arguments": [
+    "incident"
+  ],
+  "extraction_amendment": "docs/EXTRACTION_RESILIENCE_AMENDMENT.md",
+  "extraction_runtime_manifest": "results/extraction_resilience_manifest.json"
+}

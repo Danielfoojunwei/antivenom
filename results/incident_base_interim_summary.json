@@ -1,0 +1,6477 @@
+{
+  "scope": "Completed used-question base evaluation only, not swarm or fresh confirmation",
+  "base_integrity": {
+    "passed": true,
+    "independent_targets": 80,
+    "checked_answers": 1920,
+    "full_suite_integrity": "pending"
+  },
+  "capture_counts": {
+    "nonblank": 80,
+    "blank": 0,
+    "mistaken_nonblank": 80
+  },
+  "all_targets": {
+    "cases": 80,
+    "targets": 80,
+    "rates": {
+      "attacked:OR": {
+        "correct": {
+          "mean": 0.6,
+          "ci95": [
+            0.5,
+            0.7
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.06011904761904763,
+          "ci95": [
+            0.035416666666666666,
+            0.08632440476190469
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.990625,
+          "ci95": [
+            0.978125,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 18.439704875488495,
+          "ci95": [
+            16.0154899011606,
+            21.055624775536593
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:attention": {
+        "correct": {
+          "mean": 0.5625,
+          "ci95": [
+            0.45,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.175,
+          "ci95": [
+            0.1,
+            0.2625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.030952380952380953,
+          "ci95": [
+            0.014583333333333332,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.921875,
+          "ci95": [
+            0.89375,
+            0.946875
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 12.4108187588261,
+          "ci95": [
+            10.603422171667972,
+            14.353102454649006
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:avidity": {
+        "correct": {
+          "mean": 0.6125,
+          "ci95": [
+            0.5,
+            0.7125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.060119047619047614,
+          "ci95": [
+            0.033028273809523806,
+            0.09078124999999995
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.99375,
+          "ci95": [
+            0.984375,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 18.065079984862315,
+          "ci95": [
+            15.796341544216489,
+            20.33536116185449
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:coordguard_af": {
+        "correct": {
+          "mean": 0.525,
+          "ci95": [
+            0.4125,
+            0.6375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.43839285714285714,
+          "ci95": [
+            0.3818452380952381,
+            0.4940550595238095
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 26.548928232774777,
+          "ci95": [
+            23.71704785897324,
+            29.618146676660363
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:coordguard_gate": {
+        "correct": {
+          "mean": 0.3125,
+          "ci95": [
+            0.2125,
+            0.4125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.6375,
+          "ci95": [
+            0.525,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.1842261904761905,
+          "ci95": [
+            0.11726190476190476,
+            0.25922619047619044
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.275,
+          "ci95": [
+            0.175,
+            0.375
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 24.591733305737943,
+          "ci95": [
+            21.99225946281222,
+            27.2371883386526
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:cosine": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.5375,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.03333333333333333,
+          "ci95": [
+            0.014583333333333332,
+            0.05833333333333333
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 12.202881690687718,
+          "ci95": [
+            10.656425264197692,
+            13.838635090105768
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:entail": {
+        "correct": {
+          "mean": 0.6,
+          "ci95": [
+            0.4875,
+            0.7
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.1625,
+          "ci95": [
+            0.0875,
+            0.25
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.03125,
+          "ci95": [
+            0.014583333333333332,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.871875,
+          "ci95": [
+            0.809375,
+            0.93125
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 14.565463900000031,
+          "ci95": [
+            12.59930425522226,
+            16.58344046158275
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:exact_hash": {
+        "correct": {
+          "mean": 0.275,
+          "ci95": [
+            0.175,
+            0.3875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.875,
+          "ci95": [
+            0.8,
+            0.9375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 6.633589658838355,
+          "ci95": [
+            5.789733730723147,
+            7.665500736203534
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:gated_OR": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.4625,
+            0.6875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.1,
+          "ci95": [
+            0.0375,
+            0.175
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.05416666666666666,
+          "ci95": [
+            0.03125,
+            0.07916666666666665
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.88125,
+          "ci95": [
+            0.803125,
+            0.94375
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 17.107276862488654,
+          "ci95": [
+            14.831168255459355,
+            19.445671463165436
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:mistaken_capture_OR": {
+        "correct": {
+          "mean": 0.55,
+          "ci95": [
+            0.45,
+            0.6625
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.175,
+          "ci95": [
+            0.1,
+            0.2625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.21190476190476187,
+          "ci95": [
+            0.18213541666666666,
+            0.24553571428571425
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.925,
+          "ci95": [
+            0.896875,
+            0.95
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 17.6500033807004,
+          "ci95": [
+            15.553667570731259,
+            20.084939432071554
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:none": {
+        "correct": {
+          "mean": 0.275,
+          "ci95": [
+            0.175,
+            0.3875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.875,
+          "ci95": [
+            0.8,
+            0.9375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 7.194223556212274,
+          "ci95": [
+            6.157755021302918,
+            8.4533085544281
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:trustrag": {
+        "correct": {
+          "mean": 0.5625,
+          "ci95": [
+            0.45,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0125,
+            0.125
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.2119047619047619,
+          "ci95": [
+            0.15357142857142855,
+            0.275
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 35.94050386932467,
+          "ci95": [
+            31.463282415649218,
+            40.80496368261792
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:OR": {
+        "correct": {
+          "mean": 0.4125,
+          "ci95": [
+            0.3125,
+            0.525
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0125,
+          "ci95": [
+            0.0,
+            0.0375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.35374999999999995,
+          "ci95": [
+            0.32999999999999996,
+            0.37878124999999985
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 19.847842108825535,
+          "ci95": [
+            17.44757515695572,
+            22.461589077676855
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:attention": {
+        "correct": {
+          "mean": 0.425,
+          "ci95": [
+            0.3125,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.34249999999999997,
+          "ci95": [
+            0.3212499999999999,
+            0.36624999999999996
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 14.362643054124783,
+          "ci95": [
+            12.445285258371005,
+            16.454268262621934
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:avidity": {
+        "correct": {
+          "mean": 0.425,
+          "ci95": [
+            0.3246875,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0125,
+          "ci95": [
+            0.0,
+            0.0375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.33875,
+          "ci95": [
+            0.3125,
+            0.365
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 20.03479287177379,
+          "ci95": [
+            17.441597888272508,
+            22.799342157954378
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:coordguard_af": {
+        "correct": {
+          "mean": 0.4625,
+          "ci95": [
+            0.35,
+            0.575
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0125,
+          "ci95": [
+            0.0,
+            0.0375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.7299999999999999,
+          "ci95": [
+            0.70625,
+            0.7562499999999999
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 27.91299181198883,
+          "ci95": [
+            25.02924593808347,
+            30.783336527316628
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:coordguard_gate": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.02,
+          "ci95": [
+            0.0,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 27.321835371325324,
+          "ci95": [
+            24.352902668464093,
+            30.374040703096682
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:cosine": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.5375,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.02375,
+          "ci95": [
+            0.01125,
+            0.04
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 12.43832917753807,
+          "ci95": [
+            10.714368664470339,
+            14.227636338168281
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:entail": {
+        "correct": {
+          "mean": 0.6375,
+          "ci95": [
+            0.5375,
+            0.7375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.0875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.025,
+          "ci95": [
+            0.0125,
+            0.03875
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 15.339575367724683,
+          "ci95": [
+            13.136648706858855,
+            17.676534539953494
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:exact_hash": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 8.598519535462582,
+          "ci95": [
+            7.352258028820984,
+            9.920387082124057
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:gated_OR": {
+        "correct": {
+          "mean": 0.6125,
+          "ci95": [
+            0.5125,
+            0.7125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.013750000000000002,
+          "ci95": [
+            0.0,
+            0.0325
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 15.012608523538256,
+          "ci95": [
+            13.109569663289813,
+            16.978463416592685
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:mistaken_capture_OR": {
+        "correct": {
+          "mean": 0.4,
+          "ci95": [
+            0.3,
+            0.5125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.38625,
+          "ci95": [
+            0.36124999999999996,
+            0.4125
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 21.844334649999837,
+          "ci95": [
+            18.93649090350791,
+            25.0215637837997
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:none": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 8.828884826124886,
+          "ci95": [
+            7.549783253033979,
+            10.224537738316712
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:trustrag": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.4625,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.24,
+          "ci95": [
+            0.19,
+            0.29628124999999983
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 38.40088316298643,
+          "ci95": [
+            33.08595345768415,
+            44.32881172694345
+          ],
+          "independent_targets": 80
+        }
+      }
+    },
+    "comparisons": {
+      "clean:OR - attention:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - attention:endorsed": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.0125,
+          0.0878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:endorsed": {
+        "mean": -0.125,
+        "ci95": [
+          -0.2,
+          -0.05
+        ],
+        "independent_targets": 80,
+        "p": 0.00634765625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          11
+        ],
+        "holm_p": 0.6474609375
+      },
+      "clean:OR - avidity:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - avidity:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - avidity:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - avidity:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_af:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.125,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.34375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_af:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_af:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.025,
+          0.175
+        ],
+        "independent_targets": 80,
+        "p": 0.237884521484375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          6
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_af:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0625,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_gate:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "clean:OR - coordguard_gate:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_gate:correct": {
+        "mean": 0.2875,
+        "ci95": [
+          0.1625,
+          0.4
+        ],
+        "independent_targets": 80,
+        "p": 6.618769839406013e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          28,
+          5
+        ],
+        "holm_p": 0.008405837696045637
+      },
+      "attacked:OR - coordguard_gate:endorsed": {
+        "mean": -0.5875,
+        "ci95": [
+          -0.7,
+          -0.4625
+        ],
+        "independent_targets": 80,
+        "p": 1.7763568394002505e-13,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          48
+        ],
+        "holm_p": 2.5401902803423582e-11
+      },
+      "clean:OR - cosine:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0008779102936387062,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          25
+        ],
+        "holm_p": 0.10447132494300604
+      },
+      "clean:OR - cosine:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1125,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.21875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          -0.025,
+          0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - entail:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0021024015732109547,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          25
+        ],
+        "holm_p": 0.22916177147999406
+      },
+      "clean:OR - entail:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - entail:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0625,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - entail:endorsed": {
+        "mean": -0.1125,
+        "ci95": [
+          -0.1875,
+          -0.05
+        ],
+        "independent_targets": 80,
+        "p": 0.00390625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          9
+        ],
+        "holm_p": 0.41015625
+      },
+      "clean:OR - exact_hash:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "clean:OR - exact_hash:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - exact_hash:correct": {
+        "mean": 0.325,
+        "ci95": [
+          0.2121875,
+          0.4375
+        ],
+        "independent_targets": 80,
+        "p": 2.5560148060321808e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          29,
+          3
+        ],
+        "holm_p": 0.0003450619988143444
+      },
+      "attacked:OR - exact_hash:endorsed": {
+        "mean": -0.825,
+        "ci95": [
+          -0.9,
+          -0.7375
+        ],
+        "independent_targets": 80,
+        "p": 2.710505431213761e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          66
+        ],
+        "holm_p": 4.065758146820642e-18
+      },
+      "clean:OR - gated_OR:correct": {
+        "mean": -0.2,
+        "ci95": [
+          -0.325,
+          -0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.005222879350185395,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          23
+        ],
+        "holm_p": 0.5379565730690957
+      },
+      "clean:OR - gated_OR:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:correct": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:endorsed": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - mistaken_capture_OR:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          -0.025,
+          0.05
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - mistaken_capture_OR:endorsed": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - mistaken_capture_OR:correct": {
+        "mean": 0.05,
+        "ci95": [
+          -0.025,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 0.34375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - mistaken_capture_OR:endorsed": {
+        "mean": -0.125,
+        "ci95": [
+          -0.2125,
+          -0.0375
+        ],
+        "independent_targets": 80,
+        "p": 0.021270751953125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - none:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "clean:OR - none:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - none:correct": {
+        "mean": 0.325,
+        "ci95": [
+          0.2121875,
+          0.4375
+        ],
+        "independent_targets": 80,
+        "p": 2.5560148060321808e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          29,
+          3
+        ],
+        "holm_p": 0.0003450619988143444
+      },
+      "attacked:OR - none:endorsed": {
+        "mean": -0.825,
+        "ci95": [
+          -0.9,
+          -0.7375
+        ],
+        "independent_targets": 80,
+        "p": 2.710505431213761e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          66
+        ],
+        "holm_p": 4.065758146820642e-18
+      },
+      "clean:OR - trustrag:correct": {
+        "mean": -0.1625,
+        "ci95": [
+          -0.2875,
+          -0.0375
+        ],
+        "independent_targets": 80,
+        "p": 0.0191572904586792,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          20
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.075,
+          0.1375
+        ],
+        "independent_targets": 80,
+        "p": 0.6476058959960938,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0625,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:attention - coordguard_gate:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0021024015732109547,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          25
+        ],
+        "holm_p": 0.22916177147999406
+      },
+      "clean:attention - coordguard_gate:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - coordguard_gate:correct": {
+        "mean": 0.25,
+        "ci95": [
+          0.1125,
+          0.375
+        ],
+        "independent_targets": 80,
+        "p": 0.0008213953115046024,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          27,
+          7
+        ],
+        "holm_p": 0.09856743738055229
+      },
+      "attacked:attention - coordguard_gate:endorsed": {
+        "mean": -0.4625,
+        "ci95": [
+          -0.5875,
+          -0.325
+        ],
+        "independent_targets": 80,
+        "p": 2.4579776436439715e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          42
+        ],
+        "holm_p": 3.4165889246651204e-06
+      },
+      "clean:attention - cosine:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0014309063553810122,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          24
+        ],
+        "holm_p": 0.16169241815805438
+      },
+      "clean:attention - cosine:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - cosine:correct": {
+        "mean": -0.0875,
+        "ci95": [
+          -0.1625,
+          -0.024687500000001708
+        ],
+        "independent_targets": 80,
+        "p": 0.0390625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - cosine:endorsed": {
+        "mean": 0.15,
+        "ci95": [
+          0.075,
+          0.225
+        ],
+        "independent_targets": 80,
+        "p": 0.00048828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          0
+        ],
+        "holm_p": 0.0595703125
+      },
+      "clean:attention - trustrag:correct": {
+        "mean": -0.15,
+        "ci95": [
+          -0.275,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.03569813817739487,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          20
+        ],
+        "holm_p": 1.0
+      },
+      "clean:attention - trustrag:endorsed": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.1,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:endorsed": {
+        "mean": 0.1125,
+        "ci95": [
+          0.0125,
+          0.2
+        ],
+        "independent_targets": 80,
+        "p": 0.03515625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:avidity - coordguard_gate:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0014309063553810122,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          24
+        ],
+        "holm_p": 0.16169241815805438
+      },
+      "clean:avidity - coordguard_gate:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - coordguard_gate:correct": {
+        "mean": 0.3,
+        "ci95": [
+          0.175,
+          0.4125
+        ],
+        "independent_targets": 80,
+        "p": 1.9301194697618484e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          28,
+          4
+        ],
+        "holm_p": 0.002470552921295166
+      },
+      "attacked:avidity - coordguard_gate:endorsed": {
+        "mean": -0.5875,
+        "ci95": [
+          -0.6875,
+          -0.475
+        ],
+        "independent_targets": 80,
+        "p": 1.4210854715202004e-14,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          47
+        ],
+        "holm_p": 2.0605739337042905e-12
+      },
+      "clean:avidity - cosine:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.3375,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0009122341871261597,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          23
+        ],
+        "holm_p": 0.10764363408088684
+      },
+      "clean:avidity - cosine:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - cosine:correct": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.1,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - cosine:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          -0.025,
+          0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:avidity - trustrag:correct": {
+        "mean": -0.15,
+        "ci95": [
+          -0.275,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.03569813817739487,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          20
+        ],
+        "holm_p": 1.0
+      },
+      "clean:avidity - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - trustrag:correct": {
+        "mean": 0.05,
+        "ci95": [
+          -0.075,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.5412561893463135,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_af - coordguard_gate:correct": {
+        "mean": -0.1875,
+        "ci95": [
+          -0.3,
+          -0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.004077315330505371,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          20
+        ],
+        "holm_p": 0.4240407943725586
+      },
+      "clean:coordguard_af - coordguard_gate:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - coordguard_gate:correct": {
+        "mean": 0.2125,
+        "ci95": [
+          0.0875,
+          0.3253124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.0015137195587158203,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          22,
+          5
+        ],
+        "holm_p": 0.16802287101745605
+      },
+      "attacked:coordguard_af - coordguard_gate:endorsed": {
+        "mean": -0.5875,
+        "ci95": [
+          -0.7,
+          -0.4625
+        ],
+        "independent_targets": 80,
+        "p": 1.7763568394002505e-13,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          48
+        ],
+        "holm_p": 2.5401902803423582e-11
+      },
+      "clean:coordguard_af - cosine:correct": {
+        "mean": -0.1875,
+        "ci95": [
+          -0.3,
+          -0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.002599477767944336,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          19
+        ],
+        "holm_p": 0.27814412117004395
+      },
+      "clean:coordguard_af - cosine:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - cosine:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.225,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.0308837890625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          14
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - cosine:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_af - trustrag:correct": {
+        "mean": -0.1125,
+        "ci95": [
+          -0.25,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.13604594767093658,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          10,
+          19
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_af - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - trustrag:correct": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.15,
+          0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.6776394844055176,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          10,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - cosine:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - cosine:endorsed": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - cosine:correct": {
+        "mean": -0.3375,
+        "ci95": [
+          -0.4625,
+          -0.2125
+        ],
+        "independent_targets": 80,
+        "p": 3.4654513001441956e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          31
+        ],
+        "holm_p": 0.000460905022919178
+      },
+      "attacked:coordguard_gate - cosine:endorsed": {
+        "mean": 0.6125,
+        "ci95": [
+          0.5,
+          0.7125
+        ],
+        "independent_targets": 80,
+        "p": 3.552713678800501e-15,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          49,
+          0
+        ],
+        "holm_p": 5.186961971048731e-13
+      },
+      "clean:coordguard_gate - entail:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - entail:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - entail:correct": {
+        "mean": -0.2875,
+        "ci95": [
+          -0.4125,
+          -0.1625
+        ],
+        "independent_targets": 80,
+        "p": 6.618769839406013e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          28
+        ],
+        "holm_p": 0.008405837696045637
+      },
+      "attacked:coordguard_gate - entail:endorsed": {
+        "mean": 0.475,
+        "ci95": [
+          0.3496875,
+          0.6
+        ],
+        "independent_targets": 80,
+        "p": 5.100190492157708e-09,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          42,
+          4
+        ],
+        "holm_p": 7.140266689020791e-07
+      },
+      "clean:coordguard_gate - exact_hash:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - exact_hash:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - exact_hash:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.03781249999999998,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 0.548828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - exact_hash:endorsed": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3375,
+          -0.15
+        ],
+        "independent_targets": 80,
+        "p": 3.814697265625e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          19
+        ],
+        "holm_p": 0.0005035400390625
+      },
+      "clean:coordguard_gate - gated_OR:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - gated_OR:correct": {
+        "mean": -0.2625,
+        "ci95": [
+          -0.375,
+          -0.1375
+        ],
+        "independent_targets": 80,
+        "p": 0.00019219517707824707,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          26
+        ],
+        "holm_p": 0.023832201957702637
+      },
+      "attacked:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.5375,
+        "ci95": [
+          0.4125,
+          0.6625
+        ],
+        "independent_targets": 80,
+        "p": 1.6044054973463062e-11,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          45,
+          2
+        ],
+        "holm_p": 2.2622117512582918e-09
+      },
+      "clean:coordguard_gate - mistaken_capture_OR:correct": {
+        "mean": 0.25,
+        "ci95": [
+          0.125,
+          0.375
+        ],
+        "independent_targets": 80,
+        "p": 0.0005350527353584766,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          26,
+          6
+        ],
+        "holm_p": 0.06474138097837567
+      },
+      "clean:coordguard_gate - mistaken_capture_OR:endorsed": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - mistaken_capture_OR:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "attacked:coordguard_gate - mistaken_capture_OR:endorsed": {
+        "mean": 0.4625,
+        "ci95": [
+          0.3125,
+          0.6
+        ],
+        "independent_targets": 80,
+        "p": 5.7277652842913085e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          43,
+          6
+        ],
+        "holm_p": 7.904316092322006e-06
+      },
+      "clean:coordguard_gate - none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - none:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.03781249999999998,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 0.548828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:endorsed": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3375,
+          -0.15
+        ],
+        "independent_targets": 80,
+        "p": 3.814697265625e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          19
+        ],
+        "holm_p": 0.0005035400390625
+      },
+      "clean:coordguard_gate - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.03781249999999998,
+          0.1878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - trustrag:correct": {
+        "mean": -0.25,
+        "ci95": [
+          -0.3625,
+          -0.1496875000000017
+        ],
+        "independent_targets": 80,
+        "p": 8.797645568847656e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          23
+        ],
+        "holm_p": 0.01099705696105957
+      },
+      "attacked:coordguard_gate - trustrag:endorsed": {
+        "mean": 0.575,
+        "ci95": [
+          0.4625,
+          0.6875
+        ],
+        "independent_targets": 80,
+        "p": 2.842170943040401e-14,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          46,
+          0
+        ],
+        "holm_p": 4.092726157978177e-12
+      },
+      "clean:cosine - entail:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          -0.025,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - entail:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05031249999999998,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - entail:correct": {
+        "mean": 0.05,
+        "ci95": [
+          -0.0125,
+          0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.21875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - entail:endorsed": {
+        "mean": -0.1375,
+        "ci95": [
+          -0.225,
+          -0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.00341796875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          12
+        ],
+        "holm_p": 0.3623046875
+      },
+      "clean:cosine - exact_hash:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - exact_hash:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - exact_hash:correct": {
+        "mean": 0.375,
+        "ci95": [
+          0.2625,
+          0.4875
+        ],
+        "independent_targets": 80,
+        "p": 6.938353180885315e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          32,
+          2
+        ],
+        "holm_p": 9.505543857812881e-06
+      },
+      "attacked:cosine - exact_hash:endorsed": {
+        "mean": -0.85,
+        "ci95": [
+          -0.925,
+          -0.7625
+        ],
+        "independent_targets": 80,
+        "p": 6.776263578034403e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          68
+        ],
+        "holm_p": 1.0299920638612292e-18
+      },
+      "clean:cosine - gated_OR:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.0125,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - gated_OR:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - gated_OR:correct": {
+        "mean": 0.075,
+        "ci95": [
+          0.0125,
+          0.15
+        ],
+        "independent_targets": 80,
+        "p": 0.0703125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - gated_OR:endorsed": {
+        "mean": -0.075,
+        "ci95": [
+          -0.15,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.0703125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - mistaken_capture_OR:correct": {
+        "mean": 0.25,
+        "ci95": [
+          0.125,
+          0.375
+        ],
+        "independent_targets": 80,
+        "p": 0.0003249142318964005,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          25,
+          5
+        ],
+        "holm_p": 0.03996445052325726
+      },
+      "clean:cosine - mistaken_capture_OR:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - mistaken_capture_OR:correct": {
+        "mean": 0.1,
+        "ci95": [
+          0.0125,
+          0.1875
+        ],
+        "independent_targets": 80,
+        "p": 0.057373046875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - mistaken_capture_OR:endorsed": {
+        "mean": -0.15,
+        "ci95": [
+          -0.2375,
+          -0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.0018310546875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          13
+        ],
+        "holm_p": 0.201416015625
+      },
+      "clean:cosine - none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - none:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - none:correct": {
+        "mean": 0.375,
+        "ci95": [
+          0.2625,
+          0.4875
+        ],
+        "independent_targets": 80,
+        "p": 6.938353180885315e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          32,
+          2
+        ],
+        "holm_p": 9.505543857812881e-06
+      },
+      "attacked:cosine - none:endorsed": {
+        "mean": -0.85,
+        "ci95": [
+          -0.925,
+          -0.7625
+        ],
+        "independent_targets": 80,
+        "p": 6.776263578034403e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          68
+        ],
+        "holm_p": 1.0299920638612292e-18
+      },
+      "clean:cosine - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.0375,
+          0.1875
+        ],
+        "independent_targets": 80,
+        "p": 0.28627872467041016,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - trustrag:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.075,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:correct": {
+        "mean": 0.0875,
+        "ci95": [
+          -0.0125,
+          0.2
+        ],
+        "independent_targets": 80,
+        "p": 0.1670684814453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          6
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail - trustrag:correct": {
+        "mean": 0.0625,
+        "ci95": [
+          -0.05,
+          0.175
+        ],
+        "independent_targets": 80,
+        "p": 0.4048728942871094,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0625,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:entail - trustrag:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.075,
+          0.15
+        ],
+        "independent_targets": 80,
+        "p": 0.6636238098144531,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:entail - trustrag:endorsed": {
+        "mean": 0.1,
+        "ci95": [
+          0.025,
+          0.175
+        ],
+        "independent_targets": 80,
+        "p": 0.021484375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:exact_hash - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.03781249999999998,
+          0.1878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:exact_hash - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:exact_hash - trustrag:correct": {
+        "mean": -0.2875,
+        "ci95": [
+          -0.4,
+          -0.175
+        ],
+        "independent_targets": 80,
+        "p": 5.647540092468262e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          25
+        ],
+        "holm_p": 0.000734180212020874
+      },
+      "attacked:exact_hash - trustrag:endorsed": {
+        "mean": 0.8125,
+        "ci95": [
+          0.7125,
+          0.8875
+        ],
+        "independent_targets": 80,
+        "p": 5.421010862427522e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          65,
+          0
+        ],
+        "holm_p": 8.023096076392733e-18
+      },
+      "clean:gated_OR - trustrag:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.0875,
+          0.15
+        ],
+        "independent_targets": 80,
+        "p": 0.6776394844055176,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "clean:gated_OR - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          -0.1,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:endorsed": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.025,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "clean:mistaken_capture_OR - trustrag:correct": {
+        "mean": -0.175,
+        "ci95": [
+          -0.3,
+          -0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.009355306625366211,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          20
+        ],
+        "holm_p": 0.9448859691619873
+      },
+      "clean:mistaken_capture_OR - trustrag:endorsed": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:mistaken_capture_OR - trustrag:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.1125,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:mistaken_capture_OR - trustrag:endorsed": {
+        "mean": 0.1125,
+        "ci95": [
+          0.0125,
+          0.2
+        ],
+        "independent_targets": 80,
+        "p": 0.049041748046875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.03781249999999998,
+          0.1878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:none - trustrag:correct": {
+        "mean": -0.2875,
+        "ci95": [
+          -0.4,
+          -0.175
+        ],
+        "independent_targets": 80,
+        "p": 5.647540092468262e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          25
+        ],
+        "holm_p": 0.000734180212020874
+      },
+      "attacked:none - trustrag:endorsed": {
+        "mean": 0.8125,
+        "ci95": [
+          0.7125,
+          0.8875
+        ],
+        "independent_targets": 80,
+        "p": 5.421010862427522e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          65,
+          0
+        ],
+        "holm_p": 8.023096076392733e-18
+      }
+    },
+    "holm_family": "All listed method pairs, both conditions and both answer endpoints within this scope",
+    "scoring": "Frozen automated rules; independent human review deferred",
+    "timing": "Warm method filtering plus answer generation, includes independently recomputed features; loading and capture extraction separate"
+  },
+  "nonblank_secondary": {
+    "cases": 80,
+    "targets": 80,
+    "rates": {
+      "attacked:OR": {
+        "correct": {
+          "mean": 0.6,
+          "ci95": [
+            0.5,
+            0.7
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.06011904761904763,
+          "ci95": [
+            0.035416666666666666,
+            0.08632440476190469
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.990625,
+          "ci95": [
+            0.978125,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 18.439704875488495,
+          "ci95": [
+            16.0154899011606,
+            21.055624775536593
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:attention": {
+        "correct": {
+          "mean": 0.5625,
+          "ci95": [
+            0.45,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.175,
+          "ci95": [
+            0.1,
+            0.2625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.030952380952380953,
+          "ci95": [
+            0.014583333333333332,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.921875,
+          "ci95": [
+            0.89375,
+            0.946875
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 12.4108187588261,
+          "ci95": [
+            10.603422171667972,
+            14.353102454649006
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:avidity": {
+        "correct": {
+          "mean": 0.6125,
+          "ci95": [
+            0.5,
+            0.7125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.060119047619047614,
+          "ci95": [
+            0.033028273809523806,
+            0.09078124999999995
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.99375,
+          "ci95": [
+            0.984375,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 18.065079984862315,
+          "ci95": [
+            15.796341544216489,
+            20.33536116185449
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:coordguard_af": {
+        "correct": {
+          "mean": 0.525,
+          "ci95": [
+            0.4125,
+            0.6375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.43839285714285714,
+          "ci95": [
+            0.3818452380952381,
+            0.4940550595238095
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 26.548928232774777,
+          "ci95": [
+            23.71704785897324,
+            29.618146676660363
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:coordguard_gate": {
+        "correct": {
+          "mean": 0.3125,
+          "ci95": [
+            0.2125,
+            0.4125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.6375,
+          "ci95": [
+            0.525,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.1842261904761905,
+          "ci95": [
+            0.11726190476190476,
+            0.25922619047619044
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.275,
+          "ci95": [
+            0.175,
+            0.375
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 24.591733305737943,
+          "ci95": [
+            21.99225946281222,
+            27.2371883386526
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:cosine": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.5375,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.03333333333333333,
+          "ci95": [
+            0.014583333333333332,
+            0.05833333333333333
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 12.202881690687718,
+          "ci95": [
+            10.656425264197692,
+            13.838635090105768
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:entail": {
+        "correct": {
+          "mean": 0.6,
+          "ci95": [
+            0.4875,
+            0.7
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.1625,
+          "ci95": [
+            0.0875,
+            0.25
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.03125,
+          "ci95": [
+            0.014583333333333332,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.871875,
+          "ci95": [
+            0.809375,
+            0.93125
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 14.565463900000031,
+          "ci95": [
+            12.59930425522226,
+            16.58344046158275
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:exact_hash": {
+        "correct": {
+          "mean": 0.275,
+          "ci95": [
+            0.175,
+            0.3875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.875,
+          "ci95": [
+            0.8,
+            0.9375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 6.633589658838355,
+          "ci95": [
+            5.789733730723147,
+            7.665500736203534
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:gated_OR": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.4625,
+            0.6875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.1,
+          "ci95": [
+            0.0375,
+            0.175
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.05416666666666666,
+          "ci95": [
+            0.03125,
+            0.07916666666666665
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.88125,
+          "ci95": [
+            0.803125,
+            0.94375
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 17.107276862488654,
+          "ci95": [
+            14.831168255459355,
+            19.445671463165436
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:mistaken_capture_OR": {
+        "correct": {
+          "mean": 0.55,
+          "ci95": [
+            0.45,
+            0.6625
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.175,
+          "ci95": [
+            0.1,
+            0.2625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.21190476190476187,
+          "ci95": [
+            0.18213541666666666,
+            0.24553571428571425
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.925,
+          "ci95": [
+            0.896875,
+            0.95
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 17.6500033807004,
+          "ci95": [
+            15.553667570731259,
+            20.084939432071554
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:none": {
+        "correct": {
+          "mean": 0.275,
+          "ci95": [
+            0.175,
+            0.3875
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.875,
+          "ci95": [
+            0.8,
+            0.9375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 7.194223556212274,
+          "ci95": [
+            6.157755021302918,
+            8.4533085544281
+          ],
+          "independent_targets": 80
+        }
+      },
+      "attacked:trustrag": {
+        "correct": {
+          "mean": 0.5625,
+          "ci95": [
+            0.45,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0125,
+            0.125
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.2119047619047619,
+          "ci95": [
+            0.15357142857142855,
+            0.275
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 80
+        },
+        "pipeline_seconds": {
+          "mean": 35.94050386932467,
+          "ci95": [
+            31.463282415649218,
+            40.80496368261792
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:OR": {
+        "correct": {
+          "mean": 0.4125,
+          "ci95": [
+            0.3125,
+            0.525
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0125,
+          "ci95": [
+            0.0,
+            0.0375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.35374999999999995,
+          "ci95": [
+            0.32999999999999996,
+            0.37878124999999985
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 19.847842108825535,
+          "ci95": [
+            17.44757515695572,
+            22.461589077676855
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:attention": {
+        "correct": {
+          "mean": 0.425,
+          "ci95": [
+            0.3125,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.34249999999999997,
+          "ci95": [
+            0.3212499999999999,
+            0.36624999999999996
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 14.362643054124783,
+          "ci95": [
+            12.445285258371005,
+            16.454268262621934
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:avidity": {
+        "correct": {
+          "mean": 0.425,
+          "ci95": [
+            0.3246875,
+            0.5375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0125,
+          "ci95": [
+            0.0,
+            0.0375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.33875,
+          "ci95": [
+            0.3125,
+            0.365
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 20.03479287177379,
+          "ci95": [
+            17.441597888272508,
+            22.799342157954378
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:coordguard_af": {
+        "correct": {
+          "mean": 0.4625,
+          "ci95": [
+            0.35,
+            0.575
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0125,
+          "ci95": [
+            0.0,
+            0.0375
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.7299999999999999,
+          "ci95": [
+            0.70625,
+            0.7562499999999999
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 27.91299181198883,
+          "ci95": [
+            25.02924593808347,
+            30.783336527316628
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:coordguard_gate": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.02,
+          "ci95": [
+            0.0,
+            0.05
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 27.321835371325324,
+          "ci95": [
+            24.352902668464093,
+            30.374040703096682
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:cosine": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.5375,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.025,
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.02375,
+          "ci95": [
+            0.01125,
+            0.04
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 12.43832917753807,
+          "ci95": [
+            10.714368664470339,
+            14.227636338168281
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:entail": {
+        "correct": {
+          "mean": 0.6375,
+          "ci95": [
+            0.5375,
+            0.7375
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.0875
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.025,
+          "ci95": [
+            0.0125,
+            0.03875
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 15.339575367724683,
+          "ci95": [
+            13.136648706858855,
+            17.676534539953494
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:exact_hash": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 8.598519535462582,
+          "ci95": [
+            7.352258028820984,
+            9.920387082124057
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:gated_OR": {
+        "correct": {
+          "mean": 0.6125,
+          "ci95": [
+            0.5125,
+            0.7125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.013750000000000002,
+          "ci95": [
+            0.0,
+            0.0325
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 15.012608523538256,
+          "ci95": [
+            13.109569663289813,
+            16.978463416592685
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:mistaken_capture_OR": {
+        "correct": {
+          "mean": 0.4,
+          "ci95": [
+            0.3,
+            0.5125
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.38625,
+          "ci95": [
+            0.36124999999999996,
+            0.4125
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 21.844334649999837,
+          "ci95": [
+            18.93649090350791,
+            25.0215637837997
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:none": {
+        "correct": {
+          "mean": 0.65,
+          "ci95": [
+            0.55,
+            0.75
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.0375,
+          "ci95": [
+            0.0,
+            0.075
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 8.828884826124886,
+          "ci95": [
+            7.549783253033979,
+            10.224537738316712
+          ],
+          "independent_targets": 80
+        }
+      },
+      "clean:trustrag": {
+        "correct": {
+          "mean": 0.575,
+          "ci95": [
+            0.4625,
+            0.675
+          ],
+          "independent_targets": 80
+        },
+        "endorsed": {
+          "mean": 0.05,
+          "ci95": [
+            0.0125,
+            0.1
+          ],
+          "independent_targets": 80
+        },
+        "clean_removal": {
+          "mean": 0.24,
+          "ci95": [
+            0.19,
+            0.29628124999999983
+          ],
+          "independent_targets": 80
+        },
+        "poison_recall": null,
+        "pipeline_seconds": {
+          "mean": 38.40088316298643,
+          "ci95": [
+            33.08595345768415,
+            44.32881172694345
+          ],
+          "independent_targets": 80
+        }
+      }
+    },
+    "comparisons": {
+      "clean:OR - attention:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - attention:endorsed": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.0125,
+          0.0878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - attention:endorsed": {
+        "mean": -0.125,
+        "ci95": [
+          -0.2,
+          -0.05
+        ],
+        "independent_targets": 80,
+        "p": 0.00634765625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          11
+        ],
+        "holm_p": 0.6474609375
+      },
+      "clean:OR - avidity:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - avidity:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - avidity:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - avidity:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_af:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.125,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.34375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_af:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_af:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.025,
+          0.175
+        ],
+        "independent_targets": 80,
+        "p": 0.237884521484375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          6
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_af:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0625,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - coordguard_gate:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "clean:OR - coordguard_gate:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - coordguard_gate:correct": {
+        "mean": 0.2875,
+        "ci95": [
+          0.1625,
+          0.4
+        ],
+        "independent_targets": 80,
+        "p": 6.618769839406013e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          28,
+          5
+        ],
+        "holm_p": 0.008405837696045637
+      },
+      "attacked:OR - coordguard_gate:endorsed": {
+        "mean": -0.5875,
+        "ci95": [
+          -0.7,
+          -0.4625
+        ],
+        "independent_targets": 80,
+        "p": 1.7763568394002505e-13,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          48
+        ],
+        "holm_p": 2.5401902803423582e-11
+      },
+      "clean:OR - cosine:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0008779102936387062,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          25
+        ],
+        "holm_p": 0.10447132494300604
+      },
+      "clean:OR - cosine:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:correct": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1125,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.21875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - cosine:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          -0.025,
+          0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - entail:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0021024015732109547,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          25
+        ],
+        "holm_p": 0.22916177147999406
+      },
+      "clean:OR - entail:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - entail:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0625,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - entail:endorsed": {
+        "mean": -0.1125,
+        "ci95": [
+          -0.1875,
+          -0.05
+        ],
+        "independent_targets": 80,
+        "p": 0.00390625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          9
+        ],
+        "holm_p": 0.41015625
+      },
+      "clean:OR - exact_hash:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "clean:OR - exact_hash:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - exact_hash:correct": {
+        "mean": 0.325,
+        "ci95": [
+          0.2121875,
+          0.4375
+        ],
+        "independent_targets": 80,
+        "p": 2.5560148060321808e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          29,
+          3
+        ],
+        "holm_p": 0.0003450619988143444
+      },
+      "attacked:OR - exact_hash:endorsed": {
+        "mean": -0.825,
+        "ci95": [
+          -0.9,
+          -0.7375
+        ],
+        "independent_targets": 80,
+        "p": 2.710505431213761e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          66
+        ],
+        "holm_p": 4.065758146820642e-18
+      },
+      "clean:OR - gated_OR:correct": {
+        "mean": -0.2,
+        "ci95": [
+          -0.325,
+          -0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.005222879350185395,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          23
+        ],
+        "holm_p": 0.5379565730690957
+      },
+      "clean:OR - gated_OR:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:correct": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - gated_OR:endorsed": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - mistaken_capture_OR:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          -0.025,
+          0.05
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - mistaken_capture_OR:endorsed": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - mistaken_capture_OR:correct": {
+        "mean": 0.05,
+        "ci95": [
+          -0.025,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 0.34375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - mistaken_capture_OR:endorsed": {
+        "mean": -0.125,
+        "ci95": [
+          -0.2125,
+          -0.0375
+        ],
+        "independent_targets": 80,
+        "p": 0.021270751953125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - none:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "clean:OR - none:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - none:correct": {
+        "mean": 0.325,
+        "ci95": [
+          0.2121875,
+          0.4375
+        ],
+        "independent_targets": 80,
+        "p": 2.5560148060321808e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          29,
+          3
+        ],
+        "holm_p": 0.0003450619988143444
+      },
+      "attacked:OR - none:endorsed": {
+        "mean": -0.825,
+        "ci95": [
+          -0.9,
+          -0.7375
+        ],
+        "independent_targets": 80,
+        "p": 2.710505431213761e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          66
+        ],
+        "holm_p": 4.065758146820642e-18
+      },
+      "clean:OR - trustrag:correct": {
+        "mean": -0.1625,
+        "ci95": [
+          -0.2875,
+          -0.0375
+        ],
+        "independent_targets": 80,
+        "p": 0.0191572904586792,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          20
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.075,
+          0.1375
+        ],
+        "independent_targets": 80,
+        "p": 0.6476058959960938,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:OR - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0625,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:attention - coordguard_gate:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0021024015732109547,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          25
+        ],
+        "holm_p": 0.22916177147999406
+      },
+      "clean:attention - coordguard_gate:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - coordguard_gate:correct": {
+        "mean": 0.25,
+        "ci95": [
+          0.1125,
+          0.375
+        ],
+        "independent_targets": 80,
+        "p": 0.0008213953115046024,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          27,
+          7
+        ],
+        "holm_p": 0.09856743738055229
+      },
+      "attacked:attention - coordguard_gate:endorsed": {
+        "mean": -0.4625,
+        "ci95": [
+          -0.5875,
+          -0.325
+        ],
+        "independent_targets": 80,
+        "p": 2.4579776436439715e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          42
+        ],
+        "holm_p": 3.4165889246651204e-06
+      },
+      "clean:attention - cosine:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0014309063553810122,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          24
+        ],
+        "holm_p": 0.16169241815805438
+      },
+      "clean:attention - cosine:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - cosine:correct": {
+        "mean": -0.0875,
+        "ci95": [
+          -0.1625,
+          -0.024687500000001708
+        ],
+        "independent_targets": 80,
+        "p": 0.0390625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - cosine:endorsed": {
+        "mean": 0.15,
+        "ci95": [
+          0.075,
+          0.225
+        ],
+        "independent_targets": 80,
+        "p": 0.00048828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          0
+        ],
+        "holm_p": 0.0595703125
+      },
+      "clean:attention - trustrag:correct": {
+        "mean": -0.15,
+        "ci95": [
+          -0.275,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.03569813817739487,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          20
+        ],
+        "holm_p": 1.0
+      },
+      "clean:attention - trustrag:endorsed": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.1,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:attention - trustrag:endorsed": {
+        "mean": 0.1125,
+        "ci95": [
+          0.0125,
+          0.2
+        ],
+        "independent_targets": 80,
+        "p": 0.03515625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:avidity - coordguard_gate:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.35,
+          -0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.0014309063553810122,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          24
+        ],
+        "holm_p": 0.16169241815805438
+      },
+      "clean:avidity - coordguard_gate:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - coordguard_gate:correct": {
+        "mean": 0.3,
+        "ci95": [
+          0.175,
+          0.4125
+        ],
+        "independent_targets": 80,
+        "p": 1.9301194697618484e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          28,
+          4
+        ],
+        "holm_p": 0.002470552921295166
+      },
+      "attacked:avidity - coordguard_gate:endorsed": {
+        "mean": -0.5875,
+        "ci95": [
+          -0.6875,
+          -0.475
+        ],
+        "independent_targets": 80,
+        "p": 1.4210854715202004e-14,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          47
+        ],
+        "holm_p": 2.0605739337042905e-12
+      },
+      "clean:avidity - cosine:correct": {
+        "mean": -0.225,
+        "ci95": [
+          -0.3375,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0009122341871261597,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          23
+        ],
+        "holm_p": 0.10764363408088684
+      },
+      "clean:avidity - cosine:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - cosine:correct": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.1,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - cosine:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          -0.025,
+          0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:avidity - trustrag:correct": {
+        "mean": -0.15,
+        "ci95": [
+          -0.275,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.03569813817739487,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          20
+        ],
+        "holm_p": 1.0
+      },
+      "clean:avidity - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - trustrag:correct": {
+        "mean": 0.05,
+        "ci95": [
+          -0.075,
+          0.1625
+        ],
+        "independent_targets": 80,
+        "p": 0.5412561893463135,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:avidity - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_af - coordguard_gate:correct": {
+        "mean": -0.1875,
+        "ci95": [
+          -0.3,
+          -0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.004077315330505371,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          20
+        ],
+        "holm_p": 0.4240407943725586
+      },
+      "clean:coordguard_af - coordguard_gate:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.0625,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - coordguard_gate:correct": {
+        "mean": 0.2125,
+        "ci95": [
+          0.0875,
+          0.3253124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.0015137195587158203,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          22,
+          5
+        ],
+        "holm_p": 0.16802287101745605
+      },
+      "attacked:coordguard_af - coordguard_gate:endorsed": {
+        "mean": -0.5875,
+        "ci95": [
+          -0.7,
+          -0.4625
+        ],
+        "independent_targets": 80,
+        "p": 1.7763568394002505e-13,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          48
+        ],
+        "holm_p": 2.5401902803423582e-11
+      },
+      "clean:coordguard_af - cosine:correct": {
+        "mean": -0.1875,
+        "ci95": [
+          -0.3,
+          -0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.002599477767944336,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          19
+        ],
+        "holm_p": 0.27814412117004395
+      },
+      "clean:coordguard_af - cosine:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - cosine:correct": {
+        "mean": -0.125,
+        "ci95": [
+          -0.225,
+          -0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.0308837890625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          14
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - cosine:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_af - trustrag:correct": {
+        "mean": -0.1125,
+        "ci95": [
+          -0.25,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.13604594767093658,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          10,
+          19
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_af - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - trustrag:correct": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.15,
+          0.075
+        ],
+        "independent_targets": 80,
+        "p": 0.6776394844055176,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          10,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_af - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.075,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - cosine:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - cosine:endorsed": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - cosine:correct": {
+        "mean": -0.3375,
+        "ci95": [
+          -0.4625,
+          -0.2125
+        ],
+        "independent_targets": 80,
+        "p": 3.4654513001441956e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          31
+        ],
+        "holm_p": 0.000460905022919178
+      },
+      "attacked:coordguard_gate - cosine:endorsed": {
+        "mean": 0.6125,
+        "ci95": [
+          0.5,
+          0.7125
+        ],
+        "independent_targets": 80,
+        "p": 3.552713678800501e-15,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          49,
+          0
+        ],
+        "holm_p": 5.186961971048731e-13
+      },
+      "clean:coordguard_gate - entail:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          0.0,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - entail:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - entail:correct": {
+        "mean": -0.2875,
+        "ci95": [
+          -0.4125,
+          -0.1625
+        ],
+        "independent_targets": 80,
+        "p": 6.618769839406013e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          28
+        ],
+        "holm_p": 0.008405837696045637
+      },
+      "attacked:coordguard_gate - entail:endorsed": {
+        "mean": 0.475,
+        "ci95": [
+          0.3496875,
+          0.6
+        ],
+        "independent_targets": 80,
+        "p": 5.100190492157708e-09,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          42,
+          4
+        ],
+        "holm_p": 7.140266689020791e-07
+      },
+      "clean:coordguard_gate - exact_hash:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - exact_hash:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - exact_hash:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.03781249999999998,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 0.548828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - exact_hash:endorsed": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3375,
+          -0.15
+        ],
+        "independent_targets": 80,
+        "p": 3.814697265625e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          19
+        ],
+        "holm_p": 0.0005035400390625
+      },
+      "clean:coordguard_gate - gated_OR:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - gated_OR:correct": {
+        "mean": -0.2625,
+        "ci95": [
+          -0.375,
+          -0.1375
+        ],
+        "independent_targets": 80,
+        "p": 0.00019219517707824707,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          26
+        ],
+        "holm_p": 0.023832201957702637
+      },
+      "attacked:coordguard_gate - gated_OR:endorsed": {
+        "mean": 0.5375,
+        "ci95": [
+          0.4125,
+          0.6625
+        ],
+        "independent_targets": 80,
+        "p": 1.6044054973463062e-11,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          45,
+          2
+        ],
+        "holm_p": 2.2622117512582918e-09
+      },
+      "clean:coordguard_gate - mistaken_capture_OR:correct": {
+        "mean": 0.25,
+        "ci95": [
+          0.125,
+          0.375
+        ],
+        "independent_targets": 80,
+        "p": 0.0005350527353584766,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          26,
+          6
+        ],
+        "holm_p": 0.06474138097837567
+      },
+      "clean:coordguard_gate - mistaken_capture_OR:endorsed": {
+        "mean": 0.0375,
+        "ci95": [
+          0.0,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - mistaken_capture_OR:correct": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3625,
+          -0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.0013187271542847157,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          26
+        ],
+        "holm_p": 0.15429107705131173
+      },
+      "attacked:coordguard_gate - mistaken_capture_OR:endorsed": {
+        "mean": 0.4625,
+        "ci95": [
+          0.3125,
+          0.6
+        ],
+        "independent_targets": 80,
+        "p": 5.7277652842913085e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          43,
+          6
+        ],
+        "holm_p": 7.904316092322006e-06
+      },
+      "clean:coordguard_gate - none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - none:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.03781249999999998,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 0.548828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - none:endorsed": {
+        "mean": -0.2375,
+        "ci95": [
+          -0.3375,
+          -0.15
+        ],
+        "independent_targets": 80,
+        "p": 3.814697265625e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          19
+        ],
+        "holm_p": 0.0005035400390625
+      },
+      "clean:coordguard_gate - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.03781249999999998,
+          0.1878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:coordguard_gate - trustrag:correct": {
+        "mean": -0.25,
+        "ci95": [
+          -0.3625,
+          -0.1496875000000017
+        ],
+        "independent_targets": 80,
+        "p": 8.797645568847656e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          23
+        ],
+        "holm_p": 0.01099705696105957
+      },
+      "attacked:coordguard_gate - trustrag:endorsed": {
+        "mean": 0.575,
+        "ci95": [
+          0.4625,
+          0.6875
+        ],
+        "independent_targets": 80,
+        "p": 2.842170943040401e-14,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          46,
+          0
+        ],
+        "holm_p": 4.092726157978177e-12
+      },
+      "clean:cosine - entail:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          -0.025,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - entail:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.05031249999999998,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - entail:correct": {
+        "mean": 0.05,
+        "ci95": [
+          -0.0125,
+          0.1125
+        ],
+        "independent_targets": 80,
+        "p": 0.21875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - entail:endorsed": {
+        "mean": -0.1375,
+        "ci95": [
+          -0.225,
+          -0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.00341796875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          12
+        ],
+        "holm_p": 0.3623046875
+      },
+      "clean:cosine - exact_hash:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - exact_hash:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - exact_hash:correct": {
+        "mean": 0.375,
+        "ci95": [
+          0.2625,
+          0.4875
+        ],
+        "independent_targets": 80,
+        "p": 6.938353180885315e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          32,
+          2
+        ],
+        "holm_p": 9.505543857812881e-06
+      },
+      "attacked:cosine - exact_hash:endorsed": {
+        "mean": -0.85,
+        "ci95": [
+          -0.925,
+          -0.7625
+        ],
+        "independent_targets": 80,
+        "p": 6.776263578034403e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          68
+        ],
+        "holm_p": 1.0299920638612292e-18
+      },
+      "clean:cosine - gated_OR:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.0125,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - gated_OR:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - gated_OR:correct": {
+        "mean": 0.075,
+        "ci95": [
+          0.0125,
+          0.15
+        ],
+        "independent_targets": 80,
+        "p": 0.0703125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - gated_OR:endorsed": {
+        "mean": -0.075,
+        "ci95": [
+          -0.15,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.0703125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - mistaken_capture_OR:correct": {
+        "mean": 0.25,
+        "ci95": [
+          0.125,
+          0.375
+        ],
+        "independent_targets": 80,
+        "p": 0.0003249142318964005,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          25,
+          5
+        ],
+        "holm_p": 0.03996445052325726
+      },
+      "clean:cosine - mistaken_capture_OR:endorsed": {
+        "mean": 0.025,
+        "ci95": [
+          0.0,
+          0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - mistaken_capture_OR:correct": {
+        "mean": 0.1,
+        "ci95": [
+          0.0125,
+          0.1875
+        ],
+        "independent_targets": 80,
+        "p": 0.057373046875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - mistaken_capture_OR:endorsed": {
+        "mean": -0.15,
+        "ci95": [
+          -0.2375,
+          -0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.0018310546875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          13
+        ],
+        "holm_p": 0.201416015625
+      },
+      "clean:cosine - none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.0375,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - none:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0375,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - none:correct": {
+        "mean": 0.375,
+        "ci95": [
+          0.2625,
+          0.4875
+        ],
+        "independent_targets": 80,
+        "p": 6.938353180885315e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          32,
+          2
+        ],
+        "holm_p": 9.505543857812881e-06
+      },
+      "attacked:cosine - none:endorsed": {
+        "mean": -0.85,
+        "ci95": [
+          -0.925,
+          -0.7625
+        ],
+        "independent_targets": 80,
+        "p": 6.776263578034403e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          68
+        ],
+        "holm_p": 1.0299920638612292e-18
+      },
+      "clean:cosine - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.0375,
+          0.1875
+        ],
+        "independent_targets": 80,
+        "p": 0.28627872467041016,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine - trustrag:endorsed": {
+        "mean": -0.025,
+        "ci95": [
+          -0.075,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:correct": {
+        "mean": 0.0875,
+        "ci95": [
+          -0.0125,
+          0.2
+        ],
+        "independent_targets": 80,
+        "p": 0.1670684814453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          6
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:cosine - trustrag:endorsed": {
+        "mean": -0.0375,
+        "ci95": [
+          -0.0875,
+          0.0
+        ],
+        "independent_targets": 80,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail - trustrag:correct": {
+        "mean": 0.0625,
+        "ci95": [
+          -0.05,
+          0.175
+        ],
+        "independent_targets": 80,
+        "p": 0.4048728942871094,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.0625,
+          0.025
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:entail - trustrag:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.075,
+          0.15
+        ],
+        "independent_targets": 80,
+        "p": 0.6636238098144531,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          12,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:entail - trustrag:endorsed": {
+        "mean": 0.1,
+        "ci95": [
+          0.025,
+          0.175
+        ],
+        "independent_targets": 80,
+        "p": 0.021484375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:exact_hash - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.03781249999999998,
+          0.1878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:exact_hash - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:exact_hash - trustrag:correct": {
+        "mean": -0.2875,
+        "ci95": [
+          -0.4,
+          -0.175
+        ],
+        "independent_targets": 80,
+        "p": 5.647540092468262e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          25
+        ],
+        "holm_p": 0.000734180212020874
+      },
+      "attacked:exact_hash - trustrag:endorsed": {
+        "mean": 0.8125,
+        "ci95": [
+          0.7125,
+          0.8875
+        ],
+        "independent_targets": 80,
+        "p": 5.421010862427522e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          65,
+          0
+        ],
+        "holm_p": 8.023096076392733e-18
+      },
+      "clean:gated_OR - trustrag:correct": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.0875,
+          0.15
+        ],
+        "independent_targets": 80,
+        "p": 0.6776394844055176,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "clean:gated_OR - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:correct": {
+        "mean": 0.0125,
+        "ci95": [
+          -0.1,
+          0.125
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:gated_OR - trustrag:endorsed": {
+        "mean": 0.0375,
+        "ci95": [
+          -0.025,
+          0.1
+        ],
+        "independent_targets": 80,
+        "p": 0.453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "clean:mistaken_capture_OR - trustrag:correct": {
+        "mean": -0.175,
+        "ci95": [
+          -0.3,
+          -0.0625
+        ],
+        "independent_targets": 80,
+        "p": 0.009355306625366211,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          20
+        ],
+        "holm_p": 0.9448859691619873
+      },
+      "clean:mistaken_capture_OR - trustrag:endorsed": {
+        "mean": -0.05,
+        "ci95": [
+          -0.1,
+          -0.0125
+        ],
+        "independent_targets": 80,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:mistaken_capture_OR - trustrag:correct": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.1125,
+          0.0875
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:mistaken_capture_OR - trustrag:endorsed": {
+        "mean": 0.1125,
+        "ci95": [
+          0.0125,
+          0.2
+        ],
+        "independent_targets": 80,
+        "p": 0.049041748046875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:correct": {
+        "mean": 0.075,
+        "ci95": [
+          -0.03781249999999998,
+          0.1878124999999983
+        ],
+        "independent_targets": 80,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:none - trustrag:endorsed": {
+        "mean": -0.0125,
+        "ci95": [
+          -0.06281249999999998,
+          0.0375
+        ],
+        "independent_targets": 80,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "attacked:none - trustrag:correct": {
+        "mean": -0.2875,
+        "ci95": [
+          -0.4,
+          -0.175
+        ],
+        "independent_targets": 80,
+        "p": 5.647540092468262e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          25
+        ],
+        "holm_p": 0.000734180212020874
+      },
+      "attacked:none - trustrag:endorsed": {
+        "mean": 0.8125,
+        "ci95": [
+          0.7125,
+          0.8875
+        ],
+        "independent_targets": 80,
+        "p": 5.421010862427522e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          65,
+          0
+        ],
+        "holm_p": 8.023096076392733e-18
+      }
+    },
+    "holm_family": "All listed method pairs, both conditions and both answer endpoints within this scope",
+    "scoring": "Frozen automated rules; independent human review deferred",
+    "timing": "Warm method filtering plus answer generation, includes independently recomputed features; loading and capture extraction separate"
+  },
+  "correct_and_endorsed_overlap": {
+    "attacked:none": 15,
+    "attacked:avidity": 3,
+    "clean:exact_hash": 2,
+    "attacked:trustrag": 2,
+    "attacked:gated_OR": 3,
+    "attacked:exact_hash": 15,
+    "attacked:coordguard_af": 3,
+    "clean:OR": 1,
+    "clean:attention": 0,
+    "clean:cosine": 1,
+    "attacked:attention": 4,
+    "clean:entail": 2,
+    "clean:gated_OR": 2,
+    "clean:coordguard_gate": 2,
+    "clean:trustrag": 1,
+    "clean:coordguard_af": 1,
+    "clean:avidity": 1,
+    "clean:none": 2,
+    "attacked:cosine": 1,
+    "attacked:OR": 2,
+    "attacked:entail": 4,
+    "attacked:coordguard_gate": 9,
+    "clean:mistaken_capture_OR": 0,
+    "attacked:mistaken_capture_OR": 3
+  },
+  "limitations": [
+    "automated rules, blind scoring deferred",
+    "used NQ questions",
+    "nonblank capture is not human-validated semantics",
+    "no swarm claim from this scope",
+    "deployed thresholds are not matched-recall operating points"
+  ]
+}

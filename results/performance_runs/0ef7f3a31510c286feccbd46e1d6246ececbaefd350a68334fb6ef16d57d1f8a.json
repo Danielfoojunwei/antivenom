@@ -1,0 +1,12 @@
+{
+  "script": "experiments/incident_suite.py",
+  "arguments": [
+    "calibrate"
+  ],
+  "configuration": "original_default",
+  "cache_limit_bytes": 16320875724,
+  "scientific_source_unchanged": true,
+  "status": "complete",
+  "wall_seconds": 14.000026125002478,
+  "peak_memory_bytes": 4852657368
+}

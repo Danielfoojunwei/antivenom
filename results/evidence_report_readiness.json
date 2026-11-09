@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-03T08:35:51.964320+00:00",
+  "report": "docs/EVIDENCE_REPORT.md",
+  "report_sha256": "6fba1c02f4445683e08baf631f4c19d2b352d88b612d588c356565f8a9112667",
+  "local_evidence_links_checked": 44,
+  "broken_links": [],
+  "required_final_artifact_presence": {
+    "results/remaining_runs_summary.json": true,
+    "results/e35_confirmatory_audit.json": true,
+    "results/incident_summary.json": true,
+    "results/incident_memform_summary.json": true,
+    "results/incident_memform_integrity.json": true,
+    "results/incident_integrity.json": true,
+    "results/incident_power.json": true,
+    "results/swarm_clean_reference_integrity.json": true,
+    "results/swarm_track4_summary.json": true
+  },
+  "all_required_integrities_passed": true,
+  "final_report_complete": true,
+  "human_review": "deferred, not passed",
+  "powered_fresh_primary_confirmation": "unestablished"
+}

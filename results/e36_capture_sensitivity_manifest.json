@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/analysis/e36_capture_sensitivity.py": "e484cafe307ccbd6540e057b0ab678bb7a63f06e617e748d2b33b1ac08f5532e",
+    "analysis/continuation_stats.py": "5b6ce5d740b4b93ec0142606c544257ce88cd7f6c4e6f9140226db4ab9c0819f",
+    "analysis/remaining_summary.py": "071f517f4e2e10fd2e6547a281820402a22ef03f58ada7271964cad5394a6aba",
+    "docs/EXTRACTION_RESILIENCE_AMENDMENT.md": "ad71c65719afc224e27a4bf8857dd403613645655df4ba2291dedec3e6ef30fb",
+    "results/e36_Meta-Llama-3-8B-Instruct-4bit_hotpotqa_k10.jsonl": "26c2a5b60186bf72d6a9ede6a17d78ff9b588077085580bebb493a0a1c2687a0",
+    "results/e36_Meta-Llama-3-8B-Instruct-4bit_msmarco_k10.jsonl": "0f926e2b3fd06d0fb8b2fe1fbfb672e9edb261e7613826a54b13fae45fe328d9",
+    "results/e36_Mistral-7B-Instruct-v0.3-4bit_hotpotqa_k10.jsonl": "d6266fec05ba82f91b391394a456e6c8353af078fc0e33b9189ccc10d711c3aa",
+    "results/e36_Mistral-7B-Instruct-v0.3-4bit_msmarco_k10.jsonl": "af4138437772d309355485cba56c34e64a64b76af6986a7db0409218ed59420f",
+    "results/e36_geometry_gate_calibration.json": "4f0c220d255e414ae0683a5e96838a082e043f723fdbe7bf3537f8df8b60cff7"
+  },
+  "settings": {}
+}

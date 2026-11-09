@@ -1,0 +1,277 @@
+{
+  "margin_absolute": 0.05,
+  "development_targets": 80,
+  "alpha_per_component": 0.0125,
+  "method": "Normal approximation for paired differences; conservative Bonferroni planning across four conditions. Joint power bound uses union bound on component failure probabilities.",
+  "estimates": {
+    "coordguard_gate:utility_superiority": {
+      "paired_difference": -0.0375,
+      "paired_disagreement_rate": 0.0375,
+      "paired_variance": 0.036550632911392426,
+      "slack_to_null": -0.0375,
+      "individual_80_percent_n": null,
+      "individual_90_percent_n": null,
+      "joint_80_percent_conservative_n": null,
+      "joint_90_percent_conservative_n": null
+    },
+    "coordguard_gate:endorsement_NI": {
+      "paired_difference": -0.5375,
+      "paired_disagreement_rate": 0.5875,
+      "paired_variance": 0.30237341772151904,
+      "slack_to_null": 0.5875,
+      "individual_80_percent_n": 9,
+      "individual_90_percent_n": 11,
+      "joint_80_percent_conservative_n": 14,
+      "joint_90_percent_conservative_n": 16
+    },
+    "trustrag:utility_superiority": {
+      "paired_difference": 0.0375,
+      "paired_disagreement_rate": 0.2875,
+      "paired_variance": 0.2897151898734178,
+      "slack_to_null": 0.0375,
+      "individual_80_percent_n": 1959,
+      "individual_90_percent_n": 2557,
+      "joint_80_percent_conservative_n": 3112,
+      "joint_90_percent_conservative_n": 3637
+    },
+    "trustrag:endorsement_NI": {
+      "paired_difference": 0.0375,
+      "paired_disagreement_rate": 0.0875,
+      "paired_variance": 0.0871835443037975,
+      "slack_to_null": 0.012500000000000004,
+      "individual_80_percent_n": 5304,
+      "individual_90_percent_n": 6926,
+      "joint_80_percent_conservative_n": 8428,
+      "joint_90_percent_conservative_n": 9850
+    }
+  },
+  "maximum_required_independent_targets": {
+    "80": null,
+    "90": null
+  },
+  "sensitivity": [
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 840
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 840
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 7552
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 303
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 840
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 7552
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 303
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 840
+    },
+    {
+      "paired_variance": 0.05,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 7552
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 1679
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 1679
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 15103
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 605
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 1679
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 15103
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 605
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 1679
+    },
+    {
+      "paired_variance": 0.1,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 15103
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 3357
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 3357
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 30206
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 1209
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 3357
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 30206
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 1209
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 3357
+    },
+    {
+      "paired_variance": 0.2,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 30206
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 6713
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 6713
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.03,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 60412
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 2417
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 6713
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.05,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 60412
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.0,
+      "joint_80_percent_conservative_n": 2417
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.02,
+      "joint_80_percent_conservative_n": 6713
+    },
+    {
+      "paired_variance": 0.4,
+      "clean_accuracy_gain": 0.1,
+      "endorsement_difference": 0.04,
+      "joint_80_percent_conservative_n": 60412
+    }
+  ],
+  "limitations": [
+    "Planning approximation, not an empirical confirmation or guarantee of power",
+    "Estimates from 80 used targets have substantial uncertainty; inspect sensitivity",
+    "Repeated tasks per incident/family do not add independent samples",
+    "A null sample size means the estimated effect does not support the chosen alternative",
+    "Freeze one fresh-set method, endpoints, eligibility, family unit, margins and sample size before fresh model outcomes"
+  ]
+}

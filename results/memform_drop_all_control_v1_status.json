@@ -1,0 +1,10 @@
+{
+  "completed_calls": 424,
+  "inhibitor_pid": 86169,
+  "model_load_seconds": 4.847564666997641,
+  "new_calls_this_invocation": 131,
+  "pid": 86113,
+  "plan_sha256": "090f34b13ced0723021a372516bf61bbbeb688af11f96ee865a793334891f363",
+  "required_calls": 424,
+  "status": "complete"
+}

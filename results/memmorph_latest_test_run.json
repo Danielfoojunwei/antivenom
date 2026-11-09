@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-03T13:39:49.150970+00:00",
+  "software_tests": {
+    "passed": 31,
+    "failed": 0,
+    "native_contract_and_readiness": 21,
+    "signature_adapter": 10
+  },
+  "pinned_software_verified": true,
+  "native_benchmark_attempt": {
+    "status": "blocked_native_artifacts_missing",
+    "exit_code": 2,
+    "missing": [
+      "native_bundle.json",
+      "native_harness_manifest.json",
+      "reference_baseline.json",
+      "provenance_review.json"
+    ]
+  },
+  "actual_native_cases_run": 0,
+  "model_calls": 0,
+  "empirical_validation": false,
+  "interpretation": "Software tests pass. Official native benchmark cannot start without the missing author-issued fixtures, harness/configuration, reference outputs and source review."
+}

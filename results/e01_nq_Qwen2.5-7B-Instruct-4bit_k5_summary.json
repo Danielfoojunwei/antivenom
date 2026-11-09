@@ -1,0 +1,8 @@
+{
+ "clean_correct": 0.53,
+ "clean_poisoned": 0.04,
+ "att_correct": 0.11,
+ "att_poisoned": 0.99,
+ "mean_poison_in_topk": 4.79,
+ "n": 100
+}

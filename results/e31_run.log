@@ -1,0 +1,98 @@
+W1028 14:04:11.769000 19914 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 22405.11it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 64798.27it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 11246.86it/s]
+test87
+test88
+test90
+test94
+test106
+test107
+test110
+test113
+test120
+test127
+test130
+test138
+test145
+test152
+test156
+test157
+test159
+test161
+test164
+test165
+test166
+test177
+test185
+test188
+test191
+test192
+test208
+test213
+test216
+test226
+test228
+test229
+test231
+test243
+test254
+test256
+test273
+test282
+test291
+test294
+test308
+test311
+test312
+test315
+test317
+test318
+test327
+test332
+test337
+test347
+test348
+test363
+test369
+test371
+test375
+test379
+test383
+test387
+test395
+test397
+test400
+test404
+test407
+test408
+test410
+test412
+test413
+test417
+test418
+test419
+test423
+test424
+test426
+test430
+test442
+test452
+test454
+test462
+test464
+test466
+{
+ "ours": {
+  "recall": 0.871875,
+  "clean_removed": 0.02638888888888889
+ },
+ "cg": {
+  "recall": 0.95,
+  "clean_removed": 0.7163194444444444
+ },
+ "n_contexts": 320
+}

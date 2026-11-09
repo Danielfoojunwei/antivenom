@@ -1,0 +1,16 @@
+OMP: Warning #179: Function Can't set size of /tmp file failed:
+W1108 11:36:28.251000 20052 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/sprint/run.py", line 280, in <module>
+    main()
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/sprint/run.py", line 260, in main
+    lab = Lab()
+          ^^^^^
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/sprint/run.py", line 74, in __init__
+    self.reader = Reader("mlx-community/Qwen2.5-7B-Instruct-4bit", V2["layer"])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/src/antivenom/continuation.py", line 88, in __init__
+    from .llm import LocalLLM
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/src/antivenom/llm.py", line 15, in <module>
+    import mlx.core as mx
+ImportError: [metal::load_device] No Metal device available. This typically occurs in headless, sandboxed, or virtualized macOS sessions where the GPU is not accessible.

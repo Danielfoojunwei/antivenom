@@ -1,0 +1,1957 @@
+{
+  "available_input_audit": {
+    "all_family_ids": 235,
+    "fresh_usable_family_count": 0,
+    "input_rows": 994,
+    "other_interfaces_are_not_independent_new_families": true,
+    "previously_assigned_calibration_families": 20,
+    "previously_assigned_diagnostic_families": 212,
+    "saved_outcomes_opened": false,
+    "source": "data/external/memform/accepted_mcq.jsonl",
+    "source_sha256": "fc9e76b051c21c378281ed4dcbb648f76820a2eaf086683b0c1d24db7fcaaee5",
+    "status": "no_untouched_eligible_P1_to_P2_families",
+    "unassigned": [
+      {
+        "family_id": "F0001_duplicate_ticket_routing_dea7bb",
+        "interfaces": [
+          "P1",
+          "P2",
+          "P3",
+          "P5"
+        ],
+        "reason": "schema_inspection_family_not_fresh"
+      },
+      {
+        "family_id": "F0009_knowledge_article_discovery_resoluti_b61735",
+        "interfaces": [
+          "P3",
+          "P5"
+        ],
+        "reason": "missing_P1_capture_or_P2_case"
+      },
+      {
+        "family_id": "F0029_document_intake_template_mapping_381ffe",
+        "interfaces": [
+          "P1",
+          "P3",
+          "P4"
+        ],
+        "reason": "missing_P1_capture_or_P2_case"
+      }
+    ]
+  },
+  "bound_planning_files": {
+    "analysis/publication_power.py": "287eeafd54dc1cd386873d73c6c94b6e992a545860542b2d7f14adc776ceeb88",
+    "docs/PUBLICATION_CONFIRMATION_PROTOCOL_V1.md": "3d8e904ed3678aad44e699d43386035fc801b809a78f7eaf5290e6746dd4fe0d",
+    "tests/test_publication_power.py": "bb27bf04ae91d324c9c374daafc29aa953b6b64bedb03dc2587cd303215f1eb4"
+  },
+  "conservative_component_alpha": 0.0125,
+  "exact_superiority_method": "Sum over Binomial discordance counts of conditional exact two-sided McNemar favourable-tail rejection probability",
+  "execution_blockers": [
+    "No untouched eligible MemForm family pool remains in the accepted release",
+    "No author-native MemMorph bundle and reviewed native harness are available",
+    "Independent campaign-family provenance and overlap review are missing",
+    "Fresh calibration/test IDs and content hashes are not available",
+    "Final calibration, reader/parser bindings and accepted planning assumptions/N are not frozen"
+  ],
+  "family_alpha": 0.05,
+  "joint_power_note": "Four components each at power .95 give union-bound joint power >= .80; .975 gives >= .90. Joint power .80 for either two-component claim needs each at .90. Final N requires explicit accepted planning assumptions.",
+  "limitations": [
+    "Hypothetical distributions are not estimates of efficacy",
+    "Exact numerical power assumes independent incident-family units",
+    "File hashes cannot establish semantic independence or author provenance",
+    "No new adversarial text, target skipping, thresholds or answers are generated",
+    "The old .05 future NI margin and original zero-loss swarm criterion remain scoped to their original studies"
+  ],
+  "model_calls": 0,
+  "ni_sensitivity": [
+    {
+      "approximate_n_for_95_percent_component_power": 15103,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 3776,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 1679,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 605,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 15088,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 3772,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 943,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 15043,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 1672,
+      "assumed_discordance": 0.1,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 30206,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 7552,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 3357,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 1209,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 30191,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 7548,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 1887,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 30146,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 3350,
+      "assumed_discordance": 0.2,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 60412,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 15103,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 6713,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 2417,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.0,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 60397,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 15100,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 3775,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.01,
+      "hypothetical_margin_not_accepted": 0.05
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.01
+    },
+    {
+      "approximate_n_for_95_percent_component_power": null,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.02
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 60352,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.03
+    },
+    {
+      "approximate_n_for_95_percent_component_power": 6706,
+      "assumed_discordance": 0.4,
+      "assumed_endorsement_increase": 0.02,
+      "hypothetical_margin_not_accepted": 0.05
+    }
+  ],
+  "ni_sensitivity_method": "Optional hypothetical normal paired-difference approximation Var(D)=discordance-E[D]^2; not part of primary design",
+  "primary_components": 4,
+  "primary_margin": 0,
+  "primary_tests": "strict superiority; no NI",
+  "sample_grid": [
+    100,
+    150,
+    200,
+    250,
+    300,
+    400,
+    500,
+    750,
+    1000,
+    1500,
+    2000,
+    3000,
+    5000,
+    7500,
+    10000,
+    15000,
+    20000
+  ],
+  "schema": "antivenom-publication-power-v1",
+  "selected_ni_margin": null,
+  "selected_sample_size": null,
+  "status": "design_frozen_execution_blocked",
+  "superiority_grid": [
+    {
+      "assumed_discordance": 0.1,
+      "assumed_gain": 0.03,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8724055354284269,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.0268656527442987
+            },
+            {
+              "n": 150,
+              "power": 0.04923907644411213
+            },
+            {
+              "n": 200,
+              "power": 0.08049217863688024
+            },
+            {
+              "n": 250,
+              "power": 0.11172562905237776
+            },
+            {
+              "n": 300,
+              "power": 0.14578372704864145
+            },
+            {
+              "n": 400,
+              "power": 0.22486168348845598
+            },
+            {
+              "n": 500,
+              "power": 0.30357080329311337
+            },
+            {
+              "n": 750,
+              "power": 0.498987193489017
+            },
+            {
+              "n": 1000,
+              "power": 0.668075015514301
+            },
+            {
+              "n": 1500,
+              "power": 0.8724055354284269
+            }
+          ],
+          "first_adequate_grid_n": 1500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9575239787543807,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.0268656527442987
+            },
+            {
+              "n": 150,
+              "power": 0.04923907644411213
+            },
+            {
+              "n": 200,
+              "power": 0.08049217863688024
+            },
+            {
+              "n": 250,
+              "power": 0.11172562905237776
+            },
+            {
+              "n": 300,
+              "power": 0.14578372704864145
+            },
+            {
+              "n": 400,
+              "power": 0.22486168348845598
+            },
+            {
+              "n": 500,
+              "power": 0.30357080329311337
+            },
+            {
+              "n": 750,
+              "power": 0.498987193489017
+            },
+            {
+              "n": 1000,
+              "power": 0.668075015514301
+            },
+            {
+              "n": 1500,
+              "power": 0.8724055354284269
+            },
+            {
+              "n": 2000,
+              "power": 0.9575239787543807
+            }
+          ],
+          "first_adequate_grid_n": 2000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9575239787543807,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.0268656527442987
+            },
+            {
+              "n": 150,
+              "power": 0.04923907644411213
+            },
+            {
+              "n": 200,
+              "power": 0.08049217863688024
+            },
+            {
+              "n": 250,
+              "power": 0.11172562905237776
+            },
+            {
+              "n": 300,
+              "power": 0.14578372704864145
+            },
+            {
+              "n": 400,
+              "power": 0.22486168348845598
+            },
+            {
+              "n": 500,
+              "power": 0.30357080329311337
+            },
+            {
+              "n": 750,
+              "power": 0.498987193489017
+            },
+            {
+              "n": 1000,
+              "power": 0.668075015514301
+            },
+            {
+              "n": 1500,
+              "power": 0.8724055354284269
+            },
+            {
+              "n": 2000,
+              "power": 0.9575239787543807
+            }
+          ],
+          "first_adequate_grid_n": 2000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9965950548464441,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.0268656527442987
+            },
+            {
+              "n": 150,
+              "power": 0.04923907644411213
+            },
+            {
+              "n": 200,
+              "power": 0.08049217863688024
+            },
+            {
+              "n": 250,
+              "power": 0.11172562905237776
+            },
+            {
+              "n": 300,
+              "power": 0.14578372704864145
+            },
+            {
+              "n": 400,
+              "power": 0.22486168348845598
+            },
+            {
+              "n": 500,
+              "power": 0.30357080329311337
+            },
+            {
+              "n": 750,
+              "power": 0.498987193489017
+            },
+            {
+              "n": 1000,
+              "power": 0.668075015514301
+            },
+            {
+              "n": 1500,
+              "power": 0.8724055354284269
+            },
+            {
+              "n": 2000,
+              "power": 0.9575239787543807
+            },
+            {
+              "n": 3000,
+              "power": 0.9965950548464441
+            }
+          ],
+          "first_adequate_grid_n": 3000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.2,
+      "assumed_gain": 0.03,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8742231285727418,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.019257803446350794
+            },
+            {
+              "n": 150,
+              "power": 0.029851230870161404
+            },
+            {
+              "n": 200,
+              "power": 0.04313379442990806
+            },
+            {
+              "n": 250,
+              "power": 0.05584785069743397
+            },
+            {
+              "n": 300,
+              "power": 0.06986875209175712
+            },
+            {
+              "n": 400,
+              "power": 0.10099198578490334
+            },
+            {
+              "n": 500,
+              "power": 0.13687088662303518
+            },
+            {
+              "n": 750,
+              "power": 0.23043838348689258
+            },
+            {
+              "n": 1000,
+              "power": 0.3281772641480557
+            },
+            {
+              "n": 1500,
+              "power": 0.5197290403782505
+            },
+            {
+              "n": 2000,
+              "power": 0.6769717736412725
+            },
+            {
+              "n": 3000,
+              "power": 0.8742231285727418
+            }
+          ],
+          "first_adequate_grid_n": 3000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9870772025638418,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.019257803446350794
+            },
+            {
+              "n": 150,
+              "power": 0.029851230870161404
+            },
+            {
+              "n": 200,
+              "power": 0.04313379442990806
+            },
+            {
+              "n": 250,
+              "power": 0.05584785069743397
+            },
+            {
+              "n": 300,
+              "power": 0.06986875209175712
+            },
+            {
+              "n": 400,
+              "power": 0.10099198578490334
+            },
+            {
+              "n": 500,
+              "power": 0.13687088662303518
+            },
+            {
+              "n": 750,
+              "power": 0.23043838348689258
+            },
+            {
+              "n": 1000,
+              "power": 0.3281772641480557
+            },
+            {
+              "n": 1500,
+              "power": 0.5197290403782505
+            },
+            {
+              "n": 2000,
+              "power": 0.6769717736412725
+            },
+            {
+              "n": 3000,
+              "power": 0.8742231285727418
+            },
+            {
+              "n": 5000,
+              "power": 0.9870772025638418
+            }
+          ],
+          "first_adequate_grid_n": 5000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9870772025638418,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.019257803446350794
+            },
+            {
+              "n": 150,
+              "power": 0.029851230870161404
+            },
+            {
+              "n": 200,
+              "power": 0.04313379442990806
+            },
+            {
+              "n": 250,
+              "power": 0.05584785069743397
+            },
+            {
+              "n": 300,
+              "power": 0.06986875209175712
+            },
+            {
+              "n": 400,
+              "power": 0.10099198578490334
+            },
+            {
+              "n": 500,
+              "power": 0.13687088662303518
+            },
+            {
+              "n": 750,
+              "power": 0.23043838348689258
+            },
+            {
+              "n": 1000,
+              "power": 0.3281772641480557
+            },
+            {
+              "n": 1500,
+              "power": 0.5197290403782505
+            },
+            {
+              "n": 2000,
+              "power": 0.6769717736412725
+            },
+            {
+              "n": 3000,
+              "power": 0.8742231285727418
+            },
+            {
+              "n": 5000,
+              "power": 0.9870772025638418
+            }
+          ],
+          "first_adequate_grid_n": 5000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9870772025638418,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.019257803446350794
+            },
+            {
+              "n": 150,
+              "power": 0.029851230870161404
+            },
+            {
+              "n": 200,
+              "power": 0.04313379442990806
+            },
+            {
+              "n": 250,
+              "power": 0.05584785069743397
+            },
+            {
+              "n": 300,
+              "power": 0.06986875209175712
+            },
+            {
+              "n": 400,
+              "power": 0.10099198578490334
+            },
+            {
+              "n": 500,
+              "power": 0.13687088662303518
+            },
+            {
+              "n": 750,
+              "power": 0.23043838348689258
+            },
+            {
+              "n": 1000,
+              "power": 0.3281772641480557
+            },
+            {
+              "n": 1500,
+              "power": 0.5197290403782505
+            },
+            {
+              "n": 2000,
+              "power": 0.6769717736412725
+            },
+            {
+              "n": 3000,
+              "power": 0.8742231285727418
+            },
+            {
+              "n": 5000,
+              "power": 0.9870772025638418
+            }
+          ],
+          "first_adequate_grid_n": 5000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.4,
+      "assumed_gain": 0.03,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.9446807242210761,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.01444174837471362
+            },
+            {
+              "n": 150,
+              "power": 0.019902558358136747
+            },
+            {
+              "n": 200,
+              "power": 0.025753799140509737
+            },
+            {
+              "n": 250,
+              "power": 0.03252699497260207
+            },
+            {
+              "n": 300,
+              "power": 0.03820436483175668
+            },
+            {
+              "n": 400,
+              "power": 0.05206052813146704
+            },
+            {
+              "n": 500,
+              "power": 0.06553861470566712
+            },
+            {
+              "n": 750,
+              "power": 0.10462233651282675
+            },
+            {
+              "n": 1000,
+              "power": 0.1472719443539651
+            },
+            {
+              "n": 1500,
+              "power": 0.24182434256773402
+            },
+            {
+              "n": 2000,
+              "power": 0.3406743266961385
+            },
+            {
+              "n": 3000,
+              "power": 0.5292032895985569
+            },
+            {
+              "n": 5000,
+              "power": 0.7985249220484038
+            },
+            {
+              "n": 7500,
+              "power": 0.9446807242210761
+            }
+          ],
+          "first_adequate_grid_n": 7500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9446807242210761,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.01444174837471362
+            },
+            {
+              "n": 150,
+              "power": 0.019902558358136747
+            },
+            {
+              "n": 200,
+              "power": 0.025753799140509737
+            },
+            {
+              "n": 250,
+              "power": 0.03252699497260207
+            },
+            {
+              "n": 300,
+              "power": 0.03820436483175668
+            },
+            {
+              "n": 400,
+              "power": 0.05206052813146704
+            },
+            {
+              "n": 500,
+              "power": 0.06553861470566712
+            },
+            {
+              "n": 750,
+              "power": 0.10462233651282675
+            },
+            {
+              "n": 1000,
+              "power": 0.1472719443539651
+            },
+            {
+              "n": 1500,
+              "power": 0.24182434256773402
+            },
+            {
+              "n": 2000,
+              "power": 0.3406743266961385
+            },
+            {
+              "n": 3000,
+              "power": 0.5292032895985569
+            },
+            {
+              "n": 5000,
+              "power": 0.7985249220484038
+            },
+            {
+              "n": 7500,
+              "power": 0.9446807242210761
+            }
+          ],
+          "first_adequate_grid_n": 7500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9872512004263121,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.01444174837471362
+            },
+            {
+              "n": 150,
+              "power": 0.019902558358136747
+            },
+            {
+              "n": 200,
+              "power": 0.025753799140509737
+            },
+            {
+              "n": 250,
+              "power": 0.03252699497260207
+            },
+            {
+              "n": 300,
+              "power": 0.03820436483175668
+            },
+            {
+              "n": 400,
+              "power": 0.05206052813146704
+            },
+            {
+              "n": 500,
+              "power": 0.06553861470566712
+            },
+            {
+              "n": 750,
+              "power": 0.10462233651282675
+            },
+            {
+              "n": 1000,
+              "power": 0.1472719443539651
+            },
+            {
+              "n": 1500,
+              "power": 0.24182434256773402
+            },
+            {
+              "n": 2000,
+              "power": 0.3406743266961385
+            },
+            {
+              "n": 3000,
+              "power": 0.5292032895985569
+            },
+            {
+              "n": 5000,
+              "power": 0.7985249220484038
+            },
+            {
+              "n": 7500,
+              "power": 0.9446807242210761
+            },
+            {
+              "n": 10000,
+              "power": 0.9872512004263121
+            }
+          ],
+          "first_adequate_grid_n": 10000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9872512004263121,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.01444174837471362
+            },
+            {
+              "n": 150,
+              "power": 0.019902558358136747
+            },
+            {
+              "n": 200,
+              "power": 0.025753799140509737
+            },
+            {
+              "n": 250,
+              "power": 0.03252699497260207
+            },
+            {
+              "n": 300,
+              "power": 0.03820436483175668
+            },
+            {
+              "n": 400,
+              "power": 0.05206052813146704
+            },
+            {
+              "n": 500,
+              "power": 0.06553861470566712
+            },
+            {
+              "n": 750,
+              "power": 0.10462233651282675
+            },
+            {
+              "n": 1000,
+              "power": 0.1472719443539651
+            },
+            {
+              "n": 1500,
+              "power": 0.24182434256773402
+            },
+            {
+              "n": 2000,
+              "power": 0.3406743266961385
+            },
+            {
+              "n": 3000,
+              "power": 0.5292032895985569
+            },
+            {
+              "n": 5000,
+              "power": 0.7985249220484038
+            },
+            {
+              "n": 7500,
+              "power": 0.9446807242210761
+            },
+            {
+              "n": 10000,
+              "power": 0.9872512004263121
+            }
+          ],
+          "first_adequate_grid_n": 10000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.1,
+      "assumed_gain": 0.05,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8417411565001376,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.09896092272382628
+            },
+            {
+              "n": 150,
+              "power": 0.1974921190523914
+            },
+            {
+              "n": 200,
+              "power": 0.3215195392038881
+            },
+            {
+              "n": 250,
+              "power": 0.43741750491405684
+            },
+            {
+              "n": 300,
+              "power": 0.5431024838565508
+            },
+            {
+              "n": 400,
+              "power": 0.7239908660216648
+            },
+            {
+              "n": 500,
+              "power": 0.8417411565001376
+            }
+          ],
+          "first_adequate_grid_n": 500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9684279329990367,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.09896092272382628
+            },
+            {
+              "n": 150,
+              "power": 0.1974921190523914
+            },
+            {
+              "n": 200,
+              "power": 0.3215195392038881
+            },
+            {
+              "n": 250,
+              "power": 0.43741750491405684
+            },
+            {
+              "n": 300,
+              "power": 0.5431024838565508
+            },
+            {
+              "n": 400,
+              "power": 0.7239908660216648
+            },
+            {
+              "n": 500,
+              "power": 0.8417411565001376
+            },
+            {
+              "n": 750,
+              "power": 0.9684279329990367
+            }
+          ],
+          "first_adequate_grid_n": 750,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9684279329990367,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.09896092272382628
+            },
+            {
+              "n": 150,
+              "power": 0.1974921190523914
+            },
+            {
+              "n": 200,
+              "power": 0.3215195392038881
+            },
+            {
+              "n": 250,
+              "power": 0.43741750491405684
+            },
+            {
+              "n": 300,
+              "power": 0.5431024838565508
+            },
+            {
+              "n": 400,
+              "power": 0.7239908660216648
+            },
+            {
+              "n": 500,
+              "power": 0.8417411565001376
+            },
+            {
+              "n": 750,
+              "power": 0.9684279329990367
+            }
+          ],
+          "first_adequate_grid_n": 750,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9951477462783396,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.09896092272382628
+            },
+            {
+              "n": 150,
+              "power": 0.1974921190523914
+            },
+            {
+              "n": 200,
+              "power": 0.3215195392038881
+            },
+            {
+              "n": 250,
+              "power": 0.43741750491405684
+            },
+            {
+              "n": 300,
+              "power": 0.5431024838565508
+            },
+            {
+              "n": 400,
+              "power": 0.7239908660216648
+            },
+            {
+              "n": 500,
+              "power": 0.8417411565001376
+            },
+            {
+              "n": 750,
+              "power": 0.9684279329990367
+            },
+            {
+              "n": 1000,
+              "power": 0.9951477462783396
+            }
+          ],
+          "first_adequate_grid_n": 1000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.2,
+      "assumed_gain": 0.05,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8397382018161198,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.05198694458933918
+            },
+            {
+              "n": 150,
+              "power": 0.09097228691210762
+            },
+            {
+              "n": 200,
+              "power": 0.1402690334698333
+            },
+            {
+              "n": 250,
+              "power": 0.19017008297821145
+            },
+            {
+              "n": 300,
+              "power": 0.24388908040072826
+            },
+            {
+              "n": 400,
+              "power": 0.35567361429878974
+            },
+            {
+              "n": 500,
+              "power": 0.468101911343872
+            },
+            {
+              "n": 750,
+              "power": 0.6939249091805283
+            },
+            {
+              "n": 1000,
+              "power": 0.8397382018161198
+            }
+          ],
+          "first_adequate_grid_n": 1000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9650551404377246,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.05198694458933918
+            },
+            {
+              "n": 150,
+              "power": 0.09097228691210762
+            },
+            {
+              "n": 200,
+              "power": 0.1402690334698333
+            },
+            {
+              "n": 250,
+              "power": 0.19017008297821145
+            },
+            {
+              "n": 300,
+              "power": 0.24388908040072826
+            },
+            {
+              "n": 400,
+              "power": 0.35567361429878974
+            },
+            {
+              "n": 500,
+              "power": 0.468101911343872
+            },
+            {
+              "n": 750,
+              "power": 0.6939249091805283
+            },
+            {
+              "n": 1000,
+              "power": 0.8397382018161198
+            },
+            {
+              "n": 1500,
+              "power": 0.9650551404377246
+            }
+          ],
+          "first_adequate_grid_n": 1500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9650551404377246,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.05198694458933918
+            },
+            {
+              "n": 150,
+              "power": 0.09097228691210762
+            },
+            {
+              "n": 200,
+              "power": 0.1402690334698333
+            },
+            {
+              "n": 250,
+              "power": 0.19017008297821145
+            },
+            {
+              "n": 300,
+              "power": 0.24388908040072826
+            },
+            {
+              "n": 400,
+              "power": 0.35567361429878974
+            },
+            {
+              "n": 500,
+              "power": 0.468101911343872
+            },
+            {
+              "n": 750,
+              "power": 0.6939249091805283
+            },
+            {
+              "n": 1000,
+              "power": 0.8397382018161198
+            },
+            {
+              "n": 1500,
+              "power": 0.9650551404377246
+            }
+          ],
+          "first_adequate_grid_n": 1500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9937169516433764,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.05198694458933918
+            },
+            {
+              "n": 150,
+              "power": 0.09097228691210762
+            },
+            {
+              "n": 200,
+              "power": 0.1402690334698333
+            },
+            {
+              "n": 250,
+              "power": 0.19017008297821145
+            },
+            {
+              "n": 300,
+              "power": 0.24388908040072826
+            },
+            {
+              "n": 400,
+              "power": 0.35567361429878974
+            },
+            {
+              "n": 500,
+              "power": 0.468101911343872
+            },
+            {
+              "n": 750,
+              "power": 0.6939249091805283
+            },
+            {
+              "n": 1000,
+              "power": 0.8397382018161198
+            },
+            {
+              "n": 1500,
+              "power": 0.9650551404377246
+            },
+            {
+              "n": 2000,
+              "power": 0.9937169516433764
+            }
+          ],
+          "first_adequate_grid_n": 2000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.4,
+      "assumed_gain": 0.05,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8437666888579763,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.030618974875108278
+            },
+            {
+              "n": 150,
+              "power": 0.04743255709446833
+            },
+            {
+              "n": 200,
+              "power": 0.06669140811471655
+            },
+            {
+              "n": 250,
+              "power": 0.0892854530807426
+            },
+            {
+              "n": 300,
+              "power": 0.11047428521512162
+            },
+            {
+              "n": 400,
+              "power": 0.16066846816753874
+            },
+            {
+              "n": 500,
+              "power": 0.21153456439008245
+            },
+            {
+              "n": 750,
+              "power": 0.3494740264954242
+            },
+            {
+              "n": 1000,
+              "power": 0.48229689383868635
+            },
+            {
+              "n": 1500,
+              "power": 0.7017928584756467
+            },
+            {
+              "n": 2000,
+              "power": 0.8437666888579763
+            }
+          ],
+          "first_adequate_grid_n": 2000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.965134804442582,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.030618974875108278
+            },
+            {
+              "n": 150,
+              "power": 0.04743255709446833
+            },
+            {
+              "n": 200,
+              "power": 0.06669140811471655
+            },
+            {
+              "n": 250,
+              "power": 0.0892854530807426
+            },
+            {
+              "n": 300,
+              "power": 0.11047428521512162
+            },
+            {
+              "n": 400,
+              "power": 0.16066846816753874
+            },
+            {
+              "n": 500,
+              "power": 0.21153456439008245
+            },
+            {
+              "n": 750,
+              "power": 0.3494740264954242
+            },
+            {
+              "n": 1000,
+              "power": 0.48229689383868635
+            },
+            {
+              "n": 1500,
+              "power": 0.7017928584756467
+            },
+            {
+              "n": 2000,
+              "power": 0.8437666888579763
+            },
+            {
+              "n": 3000,
+              "power": 0.965134804442582
+            }
+          ],
+          "first_adequate_grid_n": 3000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.965134804442582,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.030618974875108278
+            },
+            {
+              "n": 150,
+              "power": 0.04743255709446833
+            },
+            {
+              "n": 200,
+              "power": 0.06669140811471655
+            },
+            {
+              "n": 250,
+              "power": 0.0892854530807426
+            },
+            {
+              "n": 300,
+              "power": 0.11047428521512162
+            },
+            {
+              "n": 400,
+              "power": 0.16066846816753874
+            },
+            {
+              "n": 500,
+              "power": 0.21153456439008245
+            },
+            {
+              "n": 750,
+              "power": 0.3494740264954242
+            },
+            {
+              "n": 1000,
+              "power": 0.48229689383868635
+            },
+            {
+              "n": 1500,
+              "power": 0.7017928584756467
+            },
+            {
+              "n": 2000,
+              "power": 0.8437666888579763
+            },
+            {
+              "n": 3000,
+              "power": 0.965134804442582
+            }
+          ],
+          "first_adequate_grid_n": 3000,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9989777131750235,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.030618974875108278
+            },
+            {
+              "n": 150,
+              "power": 0.04743255709446833
+            },
+            {
+              "n": 200,
+              "power": 0.06669140811471655
+            },
+            {
+              "n": 250,
+              "power": 0.0892854530807426
+            },
+            {
+              "n": 300,
+              "power": 0.11047428521512162
+            },
+            {
+              "n": 400,
+              "power": 0.16066846816753874
+            },
+            {
+              "n": 500,
+              "power": 0.21153456439008245
+            },
+            {
+              "n": 750,
+              "power": 0.3494740264954242
+            },
+            {
+              "n": 1000,
+              "power": 0.48229689383868635
+            },
+            {
+              "n": 1500,
+              "power": 0.7017928584756467
+            },
+            {
+              "n": 2000,
+              "power": 0.8437666888579763
+            },
+            {
+              "n": 3000,
+              "power": 0.965134804442582
+            },
+            {
+              "n": 5000,
+              "power": 0.9989777131750235
+            }
+          ],
+          "first_adequate_grid_n": 5000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.1,
+      "assumed_gain": 0.1,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.9859806667442927,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.7939491381959898
+            },
+            {
+              "n": 150,
+              "power": 0.9859806667442927
+            }
+          ],
+          "first_adequate_grid_n": 150,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9859806667442927,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.7939491381959898
+            },
+            {
+              "n": 150,
+              "power": 0.9859806667442927
+            }
+          ],
+          "first_adequate_grid_n": 150,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9859806667442927,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.7939491381959898
+            },
+            {
+              "n": 150,
+              "power": 0.9859806667442927
+            }
+          ],
+          "first_adequate_grid_n": 150,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9859806667442927,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.7939491381959898
+            },
+            {
+              "n": 150,
+              "power": 0.9859806667442927
+            }
+          ],
+          "first_adequate_grid_n": 150,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.2,
+      "assumed_gain": 0.1,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8428226267884382,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.32222542844799973
+            },
+            {
+              "n": 150,
+              "power": 0.5434691703677484
+            },
+            {
+              "n": 200,
+              "power": 0.7253913663810323
+            },
+            {
+              "n": 250,
+              "power": 0.8428226267884382
+            }
+          ],
+          "first_adequate_grid_n": 250,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9150953419916099,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.32222542844799973
+            },
+            {
+              "n": 150,
+              "power": 0.5434691703677484
+            },
+            {
+              "n": 200,
+              "power": 0.7253913663810323
+            },
+            {
+              "n": 250,
+              "power": 0.8428226267884382
+            },
+            {
+              "n": 300,
+              "power": 0.9150953419916099
+            }
+          ],
+          "first_adequate_grid_n": 300,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9783008299998621,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.32222542844799973
+            },
+            {
+              "n": 150,
+              "power": 0.5434691703677484
+            },
+            {
+              "n": 200,
+              "power": 0.7253913663810323
+            },
+            {
+              "n": 250,
+              "power": 0.8428226267884382
+            },
+            {
+              "n": 300,
+              "power": 0.9150953419916099
+            },
+            {
+              "n": 400,
+              "power": 0.9783008299998621
+            }
+          ],
+          "first_adequate_grid_n": 400,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9783008299998621,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.32222542844799973
+            },
+            {
+              "n": 150,
+              "power": 0.5434691703677484
+            },
+            {
+              "n": 200,
+              "power": 0.7253913663810323
+            },
+            {
+              "n": 250,
+              "power": 0.8428226267884382
+            },
+            {
+              "n": 300,
+              "power": 0.9150953419916099
+            },
+            {
+              "n": 400,
+              "power": 0.9783008299998621
+            }
+          ],
+          "first_adequate_grid_n": 400,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    },
+    {
+      "assumed_discordance": 0.4,
+      "assumed_gain": 0.1,
+      "powers": {
+        "0.8": {
+          "achieved_power": 0.8402129287732663,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.14039726541958364
+            },
+            {
+              "n": 150,
+              "power": 0.2439467667177673
+            },
+            {
+              "n": 200,
+              "power": 0.35556062426287227
+            },
+            {
+              "n": 250,
+              "power": 0.46854490174443636
+            },
+            {
+              "n": 300,
+              "power": 0.5654393805449875
+            },
+            {
+              "n": 400,
+              "power": 0.7303500476036313
+            },
+            {
+              "n": 500,
+              "power": 0.8402129287732663
+            }
+          ],
+          "first_adequate_grid_n": 500,
+          "not_a_minimal_integer_n": true
+        },
+        "0.9": {
+          "achieved_power": 0.9653050888617515,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.14039726541958364
+            },
+            {
+              "n": 150,
+              "power": 0.2439467667177673
+            },
+            {
+              "n": 200,
+              "power": 0.35556062426287227
+            },
+            {
+              "n": 250,
+              "power": 0.46854490174443636
+            },
+            {
+              "n": 300,
+              "power": 0.5654393805449875
+            },
+            {
+              "n": 400,
+              "power": 0.7303500476036313
+            },
+            {
+              "n": 500,
+              "power": 0.8402129287732663
+            },
+            {
+              "n": 750,
+              "power": 0.9653050888617515
+            }
+          ],
+          "first_adequate_grid_n": 750,
+          "not_a_minimal_integer_n": true
+        },
+        "0.95": {
+          "achieved_power": 0.9653050888617515,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.14039726541958364
+            },
+            {
+              "n": 150,
+              "power": 0.2439467667177673
+            },
+            {
+              "n": 200,
+              "power": 0.35556062426287227
+            },
+            {
+              "n": 250,
+              "power": 0.46854490174443636
+            },
+            {
+              "n": 300,
+              "power": 0.5654393805449875
+            },
+            {
+              "n": 400,
+              "power": 0.7303500476036313
+            },
+            {
+              "n": 500,
+              "power": 0.8402129287732663
+            },
+            {
+              "n": 750,
+              "power": 0.9653050888617515
+            }
+          ],
+          "first_adequate_grid_n": 750,
+          "not_a_minimal_integer_n": true
+        },
+        "0.975": {
+          "achieved_power": 0.9937958518031056,
+          "evaluated_grid": [
+            {
+              "n": 100,
+              "power": 0.14039726541958364
+            },
+            {
+              "n": 150,
+              "power": 0.2439467667177673
+            },
+            {
+              "n": 200,
+              "power": 0.35556062426287227
+            },
+            {
+              "n": 250,
+              "power": 0.46854490174443636
+            },
+            {
+              "n": 300,
+              "power": 0.5654393805449875
+            },
+            {
+              "n": 400,
+              "power": 0.7303500476036313
+            },
+            {
+              "n": 500,
+              "power": 0.8402129287732663
+            },
+            {
+              "n": 750,
+              "power": 0.9653050888617515
+            },
+            {
+              "n": 1000,
+              "power": 0.9937958518031056
+            }
+          ],
+          "first_adequate_grid_n": 1000,
+          "not_a_minimal_integer_n": true
+        }
+      }
+    }
+  ],
+  "uses_saved_model_outcomes": false
+}

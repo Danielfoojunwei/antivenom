@@ -1,0 +1,24 @@
+{
+  "archive_members_verified": 269,
+  "archive_sha256": "97d46e044db8b16aee1ec42d692093ecf892d5e69b955bf19f218239722496f6",
+  "artifacts_reproduced_byte_for_byte": {
+    "paper/evidence_index.json": "ba59ace7e033c4c33ea63003fee3338f06ff79c343c16ce02c4d85ddc72c5b64",
+    "paper/figures/exact_control.svg": "24c0e49ae0548e1570cf1ad7ad237ad7de19c4c0b163d5c3b41a140911db4557",
+    "paper/manuscript.md": "3eb4f6c7577c4746b9f2fc6f6ba235765f48bf4a8748b0ca246d7505018e854d",
+    "paper/tables/table1_memform_rates.csv": "6fe7a748ac2f8f5e8c6acfd537a54e30e8901b3e3691de716f4cbdf857960add",
+    "paper/tables/table1_memform_rates.md": "41a2f4233710a5294f4de2643c50028e6c7344777e4d4004b4d9d6e4ac000d3b",
+    "paper/tables/table2_exact_control_effects.csv": "5dd5b21d9d7e8c922aa02a2bd217f52392e233cf8ff15a44e295cdb3eeb60595",
+    "paper/tables/table2_exact_control_effects.md": "66f5e121568bb1410229fc94e1eef8cc1c8a40545a2e0dc4141d50421b26f74f",
+    "paper/tables/table3_swarm_primary.csv": "54175bbeb4decbe9f84927a0891c06ccc5b1e986d30f6d89dc6bcb2d2afc04b1",
+    "paper/tables/table3_swarm_primary.md": "6778ad153f4c02778bff14fe1d0e743b2b246c05c35dfea652be411173506b04",
+    "paper/tables/table4_swarm_rates.csv": "e153bfa07ee6250033e39f2b5c3d623592583a9a34670fb32f5be5184e30bc05",
+    "paper/tables/table4_swarm_rates.md": "528b85e3c02630a9a8fc8ad13ae86d3b02dbe3041126fdf7cb3d434f1e480080"
+  },
+  "external_data_weights_and_checkpoints_excluded": true,
+  "isolated_extraction": true,
+  "new_model_calls": 0,
+  "reviewer_sheets_and_private_mappings_excluded": true,
+  "schema": "antivenom.publication-review-reproduction.v1",
+  "scope": "table/figure/manuscript export reproducibility; not independent scientific replication",
+  "table_rebuild_exit_code": 0
+}

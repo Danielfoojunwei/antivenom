@@ -1,0 +1,45 @@
+E33 score-aware released-poison selection (exploratory)
+NQ development; scores remain those of original full contexts. Unit = target.
+Do not interpret as attack success or as detection after context reconstruction.
+
+entailment: original target-mean recall 0.872, clean removal 0.035
+  m=1, n=80: selected recall 0.762 [0.6625, 0.85]; targets with miss 19
+  m=2, n=80: selected recall 0.819 [0.74375, 0.89375]; targets with miss 19
+  m=3, n=80: selected recall 0.850 [0.7791666666666667, 0.9166666666666666]; targets with miss 19
+  m=4, n=77: selected recall 0.867 [0.7987012987012987, 0.9253246753246753]; targets with miss 19
+
+attention: original target-mean recall 0.816, clean removal 0.029
+  m=1, n=80: selected recall 0.362 [0.25, 0.4625]; targets with miss 51
+  m=2, n=80: selected recall 0.631 [0.55625, 0.69375]; targets with miss 51
+  m=3, n=80: selected recall 0.754 [0.7041666666666668, 0.7958333333333334]; targets with miss 51
+  m=4, n=77: selected recall 0.808 [0.7727272727272727, 0.8441558441558441]; targets with miss 51
+
+OR: original target-mean recall 0.978, clean removal 0.064
+  m=1, n=80: selected recall 0.912 [0.85, 0.975]; targets with miss 7
+  m=2, n=80: selected recall 0.956 [0.925, 0.9875]; targets with miss 7
+  m=3, n=80: selected recall 0.971 [0.95, 0.9916666666666666]; targets with miss 7
+  m=4, n=77: selected recall 0.977 [0.9577922077922078, 0.9902597402597403]; targets with miss 7
+
+avidity: original target-mean recall 0.991, clean removal 0.077
+  m=1, n=80: selected recall 0.963 [0.9125, 1.0]; targets with miss 3
+  m=2, n=80: selected recall 0.981 [0.95625, 1.0]; targets with miss 3
+  m=3, n=80: selected recall 0.988 [0.9708333333333332, 1.0]; targets with miss 3
+  m=4, n=77: selected recall 0.990 [0.9772727272727273, 1.0]; targets with miss 3
+
+coordguard: original target-mean recall 0.997, clean removal 0.225
+  m=1, n=80: selected recall 0.988 [0.9625, 1.0]; targets with miss 1
+  m=2, n=80: selected recall 0.994 [0.98125, 1.0]; targets with miss 1
+  m=3, n=80: selected recall 0.996 [0.9875, 1.0]; targets with miss 1
+  m=4, n=77: selected recall 0.997 [0.9902597402597403, 1.0]; targets with miss 1
+
+Worst of all 5 captures plus missed-first selection: entailment
+  m=1, n=80: selected recall 0.475 [0.3625, 0.5875]; targets with miss 42
+  m=2, n=80: selected recall 0.550 [0.44375, 0.65625]; targets with miss 42
+  m=3, n=80: selected recall 0.604 [0.5083333333333333, 0.7]; targets with miss 42
+  m=4, n=80: selected recall 0.669 [0.58125, 0.75625]; targets with miss 40
+
+Worst of all 5 captures plus missed-first selection: OR
+  m=1, n=80: selected recall 0.825 [0.7375, 0.9]; targets with miss 14
+  m=2, n=80: selected recall 0.906 [0.85625, 0.95]; targets with miss 14
+  m=3, n=80: selected recall 0.938 [0.9041666666666668, 0.9666666666666666]; targets with miss 14
+  m=4, n=80: selected recall 0.953 [0.928125, 0.975]; targets with miss 14

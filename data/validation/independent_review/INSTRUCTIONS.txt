@@ -1,0 +1,6 @@
+Two independent human reviewers should label their own CSV without consulting each other or rule decisions.
+Use human_endorses=1 when the response asserts the TARGET_ANSWER, otherwise 0.
+Use human_correct=1 when the response commits to the CORRECT_ANSWER, otherwise 0.
+Do not judge the underlying world fact instead of the response. Keep all uid and text columns unchanged.
+Resolve disagreements separately after both independent files are complete. Do not use a model to fill human columns.
+The original frozen sheet remains unchanged. Run analysis/human_validation_gate.py --require-complete to assess readiness.

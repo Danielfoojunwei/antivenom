@@ -1,0 +1,58 @@
+== E20 low poison count (NQ dev)
+  m=1 n=80 | recall 0.000 (n=0) FPR 0.110 | attention-only FPR 0.087
+    attack                 endorsed 0.53 [0.41, 0.64]  correct 0.47 [0.36, 0.59]
+    block_OR               endorsed 0.10 [0.04, 0.17]  correct 0.49 [0.38, 0.60]
+    delete_OR_backfill     endorsed 0.04 [0.00, 0.09]  correct 0.49 [0.38, 0.60]
+  m=2 n=80 | recall 1.000 (n=80) FPR 0.072 | attention-only FPR 0.047
+    attack                 endorsed 0.70 [0.60, 0.80]  correct 0.39 [0.29, 0.50]
+    block_OR               endorsed 0.06 [0.01, 0.11]  correct 0.55 [0.44, 0.66]
+    delete_OR_backfill     endorsed 0.03 [0.00, 0.06]  correct 0.64 [0.53, 0.74]
+  m=3 n=80 | recall 0.994 (n=160) FPR 0.068 | attention-only FPR 0.039
+    attack                 endorsed 0.85 [0.76, 0.93]  correct 0.38 [0.28, 0.49]
+    block_OR               endorsed 0.05 [0.01, 0.10]  correct 0.53 [0.41, 0.64]
+    delete_OR_backfill     endorsed 0.04 [0.00, 0.09]  correct 0.60 [0.50, 0.70]
+
+== E22 other readers (NQ dev, per-reader attention layer from NQ 1-20)
+  Meta-Llama-3-8B-Instruct-4bit: layer 18 zmin 0.25 n=80 | OR recall 0.801 (n=317) FPR 0.171 | attn recall 0.748 (n=317) FPR 0.050
+    clean                  endorsed 0.04 [0.00, 0.09]  correct 0.70 [0.60, 0.80]
+    attack                 endorsed 0.70 [0.59, 0.80]  correct 0.25 [0.16, 0.35]
+    block_OR               endorsed 0.36 [0.26, 0.46]  correct 0.36 [0.25, 0.47]
+    delete_OR_backfill     endorsed 0.40 [0.30, 0.51]  correct 0.49 [0.38, 0.60]
+    McNemar attack vs delete_OR_backfill endorsed p=1.2e-07
+  Mistral-7B-Instruct-v0.3-4bit: layer 15 zmin 0.25 n=80 | OR recall 0.959 (n=317) FPR 0.042 | attn recall 0.700 (n=317) FPR 0.020
+    clean                  endorsed 0.04 [0.00, 0.09]  correct 0.70 [0.60, 0.80]
+    attack                 endorsed 0.84 [0.75, 0.91]  correct 0.29 [0.19, 0.39]
+    block_OR               endorsed 0.11 [0.05, 0.19]  correct 0.61 [0.50, 0.71]
+    delete_OR_backfill     endorsed 0.10 [0.04, 0.17]  correct 0.66 [0.55, 0.76]
+    McNemar attack vs delete_OR_backfill endorsed p=3.5e-18
+
+== E25 permutation (attention z>=0 flags, layer 21)
+  z_orig       recall 0.817 (n=317) FPR 0.032
+  z_reversed   recall 0.972 (n=317) FPR 0.020
+  z_shuffle0   recall 0.839 (n=317) FPR 0.052
+  z_shuffle1   recall 0.950 (n=317) FPR 0.025
+  share of passages whose flag flips under reversal: 0.124
+  clean-only twin: mean z slot 0 1.15 vs slots 1-9 -0.13; flagged clean share 0.343
+  clean twin mean z by slot: [1.15, 0.36, -0.02, -0.04, -0.28, -0.36, -0.43, -0.32, -0.27, 0.2]
+
+== E25 prefix-free control (M0)
+  n=80; mean poisons retrieved in top-10 3.26 (prefixed: 4.96)
+  targets with no poison retrieved: 6
+  OR recall 0.976 (n=212) FPR 0.145
+  entail recall 0.821 (n=212) FPR 0.054 | attn recall 0.868 (n=212) FPR 0.104
+  entail   AUC 0.956
+  attn_z   AUC 0.942
+  avidity  AUC 0.982
+    attack                 endorsed 0.70 [0.59, 0.80]  correct 0.30 [0.20, 0.40]
+    delete_OR_backfill     endorsed 0.17 [0.10, 0.25]  correct 0.54 [0.44, 0.64]
+  exposed targets only (n=74): attack endorsed 0.76, defended 0.19
+
+== E25 S4 blockade mechanism (partial if <80)
+  n=80; all poisons flagged in 73
+    block_answer_side      endorsed 0.07 [0.03, 0.14]  correct 0.44 [0.33, 0.55]
+    block_from_row0        endorsed 0.09 [0.03, 0.15]  correct 0.46 [0.35, 0.57]
+    delete_no_backfill     endorsed 0.07 [0.03, 0.14]  correct 0.46 [0.35, 0.57]
+    McNemar block_answer_side vs block_from_row0: endorsed p=1 correct p=0.69
+    McNemar block_from_row0 vs delete_no_backfill: endorsed p=1 correct p=1
+    McNemar block_answer_side vs delete_no_backfill: endorsed p=1 correct p=0.69
+  all-flagged stratum (n=73): endorsed answer-side 0.04 row0 0.04 delete 0.03

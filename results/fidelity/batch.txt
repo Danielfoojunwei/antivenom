@@ -1,0 +1,1 @@
+prompts=20 identical=20/20 sequential=90.8s batched=180.4s speedup=0.50x

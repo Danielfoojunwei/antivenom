@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 55, in main
+    os.kill(prior["queue_pid"], 0)
+ProcessLookupError: [Errno 3] No such process
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 83, in <module>
+    main()
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 57, in main
+    raise RuntimeError("Original incident supervisor stopped; preserve and recover it first")
+RuntimeError: Original incident supervisor stopped; preserve and recover it first
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 55, in main
+    os.kill(prior["queue_pid"], 0)
+ProcessLookupError: [Errno 3] No such process
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 83, in <module>
+    main()
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 57, in main
+    raise RuntimeError("Original incident supervisor stopped; preserve and recover it first")
+RuntimeError: Original incident supervisor stopped; preserve and recover it first
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 55, in main
+    os.kill(prior["queue_pid"], 0)
+ProcessLookupError: [Errno 3] No such process
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 83, in <module>
+    main()
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_swarm_track4.py", line 57, in main
+    raise RuntimeError("Original incident supervisor stopped; preserve and recover it first")
+RuntimeError: Original incident supervisor stopped; preserve and recover it first

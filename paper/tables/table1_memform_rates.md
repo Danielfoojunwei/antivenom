@@ -1,0 +1,10 @@
+| Method | Families | Clean correct (%) | Poisoned correct (%) | Poisoned endorsement (%) | Clean parse failures (%) | Poisoned parse failures (%) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Untreated | 212 | 96.70 | 41.04 | 54.25 | 0.94 | 1.89 |
+| Captured-sample cosine | 212 | 96.23 | 44.81 | 51.89 | 1.42 | 1.42 |
+| Claim entailment | 212 | 95.28 | 82.08 | 8.96 | 0.94 | 4.25 |
+| Claim + attention OR | 212 | 93.40 | 83.02 | 8.02 | 0.94 | 4.25 |
+| Gated OR | 212 | 92.92 | 83.02 | 8.02 | 1.42 | 4.25 |
+| CoordGuard geometry gate | 212 | 94.81 | 41.51 | 54.72 | 1.42 | 2.36 |
+| TrustRAG document filter | 212 | 81.13 | 80.19 | 11.32 | 3.30 | 4.25 |
+| Exact empty history | 212 | 83.02 | 83.02 | 8.02 | 4.25 | 4.25 |

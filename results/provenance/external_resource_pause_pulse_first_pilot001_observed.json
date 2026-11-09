@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-11-03T00:59:03.128435+00:00",
+  "status": "paused",
+  "guard_state": "/Users/danielfoojunwei/Desktop/liquid probe/work/pulse_first_transfer_v2/runs/pilot_001/resource_state.json",
+  "guard_config": "/Users/danielfoojunwei/Desktop/liquid probe/work/pulse_first_transfer_v2/runs/pilot_001/resource_state_guard_ah_fb_a1/config.json",
+  "guard_watcher_pid": 42190,
+  "priority_run_pid": 42183,
+  "priority_run_identity": {
+    "pid": 42183,
+    "start": "Tue Nov 3 08:36:34 2026",
+    "command": "work/neuron_explorer_review/.venv-qwen35/bin/python -B work/pulse_first_transfer_v2/runs/pilot_001/frozen/coordinator.py --execute /Users/danielfoojunwei/Desktop/liquid probe/work/pulse_first_transfer_v2/runs/pilot_001"
+  },
+  "targets": [
+    {
+      "pid": 54055,
+      "start": "Sun Nov 1 12:55:16 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/run_resilient_queue.py incident",
+      "role": "queue",
+      "name": "Antivenom incident queue",
+      "pause_status": "paused"
+    },
+    {
+      "pid": 32972,
+      "start": "Tue Nov 3 04:50:12 2026",
+      "command": "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/bin/python -u experiments/extraction_guard.py experiments/performance_guard.py experiments/incident_memform.py",
+      "role": "worker",
+      "queue_pid": 54055,
+      "name": "Antivenom guarded worker",
+      "pause_status": "paused"
+    }
+  ],
+  "paused_at_utc": "2026-11-03T00:36:41.439877+00:00",
+  "authorization_basis": "Guard applies prior verified temporary-resource-pause scope; no new human pause approval inferred from its local flag. Latest human pilot-run instruction verified read-only in original chat. Preserve watcher ownership; no SIGCONT/restart sent.",
+  "authorization_source": {
+    "previous_verified_checkpoint_restart_user_message": "01a190ab-b6ac-7662-a5f1-939bbe433359",
+    "latest_actual_pilot_run_instruction": "01a19e7d-a286-7b00-adbf-addb924ad4aa",
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44"
+  },
+  "memform": {
+    "checkpointed_cases": 102,
+    "saved_result_arms": 1414,
+    "complete_families": 101,
+    "planned_families": 212,
+    "planned_memory_condition_arms_per_family": 14
+  },
+  "integrity": "27 frozen manifests and E37 prefix match",
+  "resume_condition": "Matching live guard watcher automatically resumes exact stopped identities after its priority coordinator exits",
+  "action": "Read-only inspection; defer to live watcher, no duplicate launch"
+}

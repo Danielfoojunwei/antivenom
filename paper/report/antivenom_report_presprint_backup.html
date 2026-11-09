@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>AntiVenom</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f2430;--mute:#6b7280;--rule:#d1d5db;--ours:#0f766e;--cg:#7c3aed;--warn:#dc2626;--ok:#16a34a;--card:#f3f4f6;--dark:#374151}
+@page{size:A4;margin:18mm 17mm 18mm 17mm;@bottom-center{content:counter(page);font:9pt 'Source Serif 4',Georgia,serif;color:#6b7280}}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Source Serif 4',Georgia,serif;font-size:9.6pt;line-height:1.32;color:var(--ink);margin:0}
+h1.title{font-family:'Roboto Slab',Georgia,serif;font-weight:700;font-size:19pt;text-align:center;line-height:1.25;margin:4mm 0 5mm;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);padding:4mm 0}
+.author{text-align:center;margin:0}.author b{font-size:11pt}.aff{text-align:center;margin:0 0 3mm}
+h2{font-family:'Roboto Slab',Georgia,serif;font-weight:700;font-size:14pt;margin:6mm 0 2mm;break-after:avoid}
+h3{font-family:'Roboto Slab',Georgia,serif;font-weight:700;font-size:11.5pt;margin:4mm 0 1.5mm;break-after:avoid}
+.abstract-h{text-align:center;font-family:'Roboto Slab',Georgia,serif;font-size:13pt;margin:4mm 0 1mm}
+.abstract{font-style:italic;margin:0 9mm 3mm;text-align:justify}
+p{margin:0 0 2.2mm;text-align:justify}
+.lead{font-weight:700}
+.fn{font-size:8.6pt;color:var(--ink);border-top:1px solid var(--rule);padding-top:1.5mm;margin-top:3mm}
+table{border-collapse:collapse;width:100%;font-family:Inter,Arial,sans-serif;font-size:8.3pt;margin:1.5mm 0 1mm;break-inside:avoid}
+th{background:var(--dark);color:#fff;text-align:left;padding:1.4mm 1.6mm;font-weight:600}
+td{padding:1.2mm 1.6mm;border-bottom:1px solid var(--rule);vertical-align:top}
+tr.ours td{background:#ccfbf1;font-weight:600}
+tr.sprint td{background:#ede9fe;font-style:italic}
+.cap{font-size:9pt;margin:1mm 0 3.5mm;text-align:justify}.cap b{font-weight:700}
+figure{margin:2mm 0 0;break-inside:avoid}figure img{width:100%;display:block}
+.two{display:flex;gap:4mm;align-items:flex-start}.two>*{flex:1}
+.callout{border:1.5px solid var(--cg);background:#faf5ff;border-radius:3mm;padding:2mm 3mm;margin:2mm 0 3mm;font-family:Inter,Arial,sans-serif;font-size:8.6pt;break-inside:avoid}
+.callout b{color:var(--cg)}
+/* diagrams */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm 4mm;font-family:Inter,Arial,sans-serif;font-size:8pt;margin:2mm 0 1mm}
+.step{border:1.2px solid var(--rule);border-radius:2.5mm;padding:2mm;background:#fff;position:relative}
+.step .n{display:inline-block;width:5mm;height:5mm;border-radius:50%;background:var(--ink);color:#fff;text-align:center;line-height:5mm;font-weight:700;margin-right:1.5mm}
+.step .h{font-weight:700;font-size:8.6pt}
+.badge{display:inline-block;font-weight:700;color:#fff;border-radius:1mm;padding:0 1.2mm;margin-right:1mm;font-size:7.4pt}
+.bS{background:var(--ours)}.bW{background:var(--cg)}
+.legend{font-family:Inter,Arial,sans-serif;font-size:7.8pt;margin:1mm 0}
+.swarm{display:grid;grid-template-columns:1.05fr .25fr 1.2fr .25fr 1.1fr .25fr 1.3fr;align-items:center;font-family:Inter,Arial,sans-serif;font-size:8.2pt;margin:2mm 0 1mm}
+.node{border-radius:2.5mm;color:#fff;padding:2mm 2.2mm;text-align:center;font-weight:600;line-height:1.25}
+.node small{display:block;font-weight:400;font-size:7.4pt;opacity:.95}
+.arr{text-align:center;color:var(--mute);font-size:15pt}
+.recv{display:flex;flex-direction:column;gap:1.5mm}
+.rx{display:flex;align-items:center;gap:1.2mm;font-size:7.6pt}
+.rx .r{background:var(--dark);color:#fff;border-radius:1.5mm;padding:1mm 1.6mm;font-weight:600}
+.rx .p{background:var(--warn);color:#fff;border-radius:1.5mm;padding:1mm 1.4mm}
+.rx .ok{color:var(--ok);font-weight:700}.rx .no{color:#9ca3af;font-weight:700}
+.stats{display:flex;gap:3mm;margin:2mm 0 1mm}.stat{flex:1;border-left:3px solid var(--ours);padding-left:2mm;font-family:Inter,Arial,sans-serif}
+.stat .big{font-size:15pt;font-weight:700;color:var(--ours)}.stat .s{font-size:7.8pt;color:var(--ink)}
+.pb{break-before:page}
+.mono{font-family:Menlo,monospace;font-size:8.2pt}
+ol.refs{font-size:8.6pt;padding-left:5mm}ol.refs li{margin-bottom:1mm}
+
+/* cute overview figure */
+.ov{border:1.5px solid #e5e7eb;border-radius:4mm;padding:2.5mm;font-family:Inter,Arial,sans-serif;font-size:7.6pt;line-height:1.25;background:#fffdf7}
+.band{border-radius:3mm;padding:2mm 2.2mm 2.4mm;margin-bottom:2mm}
+.band.bio{background:#fef6dd;border:1.2px dashed #e7c66b}
+.band.sw{background:#e6f6f3;border:1.2px dashed #6cc2b3}
+.band h4{margin:0 0 1.6mm;font-size:8.6pt;font-weight:700;color:#1f2430}
+.band h4 span,.lane h4 span{font-family:Inter,Arial,sans-serif}
+.row5{display:grid;grid-template-columns:1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;align-items:stretch}
+.cc{background:#fff;border:1px solid #e5e7eb;border-radius:2.5mm;padding:1.5mm;text-align:center;box-shadow:0 .6mm 0 rgba(0,0,0,.05)}
+.cc .em{font-size:15pt;line-height:1.1;display:block;margin-bottom:.8mm}
+.cc b{display:block;font-size:7.7pt;margin-bottom:.4mm}
+.ar{display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:10pt}
+.insp{display:grid;grid-template-columns:repeat(5,1fr);gap:0 10px;margin:-1mm 0 1mm;text-align:center;color:#b45309;font-size:7pt;font-weight:600}
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm}
+.lane{border-radius:3mm;padding:2mm;border:1.2px solid}
+.lane.bad{background:#fff1f1;border-color:#f3b4b4}.lane.good{background:#eefbf3;border-color:#9ad8b0}
+.lane h4{margin:0 0 1.5mm;font-size:8.4pt}
+.chain{display:flex;align-items:center;gap:1.2mm}
+.chain .ic{font-size:14pt}
+.bub{background:#fff;border:1px solid #d1d5db;border-radius:2.5mm;padding:1.2mm 1.6mm;position:relative}
+.red{color:#dc2626;font-weight:700}.grn{color:#15803d;font-weight:700}
+.docs{font-size:10.5pt;letter-spacing:.3mm;font-family:'Apple Color Emoji','Segoe UI Emoji',sans-serif}
+.em,.ic,.band h4,.lane h4,.insp{font-family:'Apple Color Emoji',Inter,Arial,sans-serif}
+.strike{opacity:.35;text-decoration:line-through}
+
+.tm{display:grid;grid-template-columns:.9fr .22fr 1.5fr .22fr 1.3fr;align-items:center;gap:0}
+.box{background:#fff;border:1px solid #e5e7eb;border-radius:2.5mm;padding:1.6mm;text-align:center}
+.box .em{font-size:16pt;display:block;line-height:1.1}
+.store{background:#fff;border:1.2px solid #e5e7eb;border-radius:2.5mm;padding:1.4mm 1.8mm}
+.store .em{font-size:12pt;letter-spacing:.4mm;font-family:'Apple Color Emoji',sans-serif}
+.idtag{display:inline-block;background:#fee2e2;color:#b91c1c;border-radius:1mm;padding:0 1mm;font-size:6.8pt;font-weight:700;margin:.3mm}
+.pipe{display:grid;grid-template-columns:1fr 8px 1.35fr 8px 1fr 8px 1.25fr 8px 1fr 8px 1fr;align-items:stretch}
+.sig{background:#0f766e;color:#fff;border-radius:2mm;padding:1.2mm 1.5mm;text-align:left;font-family:Menlo,monospace;font-size:6.4pt;line-height:1.3;margin-top:1mm}
+.sig .k{color:#99f6e4}
+.tiles{display:grid;grid-template-columns:22mm repeat(10,1fr);gap:1mm;font-family:Inter,Arial,sans-serif;font-size:7.2pt;align-items:center}
+.tiles .lab{font-weight:700;text-align:right;padding-right:1mm;font-family:'Apple Color Emoji',Inter,sans-serif}
+.tl{border-radius:1.6mm;text-align:center;padding:1mm 0;font-weight:700}
+.tl .em{font-size:12pt;display:block}
+.sq{display:block;width:4mm;height:5mm;border-radius:.8mm;margin:0 auto .5mm}
+.dec{display:block;font-size:11pt;color:#b91c1c;font-family:Inter,Arial,sans-serif}
+.thr{font-size:6.8pt;color:#6b7280;text-align:right;margin-top:.6mm}
+.we{display:grid;grid-template-columns:1fr 2.6fr;gap:3mm;align-items:start}
+
+.band h4,.lane h4{font-family:Inter,'Apple Color Emoji',Arial,sans-serif !important}
+.tiles .lab{font-family:Inter,Arial,sans-serif !important}
+.nov{border-left:3.5px solid #0f766e;background:#ecfdf5;border-radius:0 2mm 2mm 0;padding:1.6mm 2.5mm;margin:1.5mm 0 2.5mm;font-family:Inter,Arial,sans-serif;font-size:8.4pt;break-inside:avoid}
+.nov b.t{color:#0f766e}
+.sc td,.sc th{text-align:center;padding:1mm 1.1mm}
+.sc td:first-child,.sc th:first-child{text-align:left}
+.sc .y{color:#0f766e;font-weight:700;font-size:10pt}.sc .h{color:#d97706;font-weight:700;font-size:10pt}.sc .n{color:#9ca3af;font-size:10pt}
+.sc th.grp{background:#4b5563}
+.sc tr.ours td{background:#ccfbf1}
+.sc .best{font-weight:700;color:#0f766e}
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm;margin:1.5mm 0 3mm;font-family:Inter,Arial,sans-serif;font-size:8pt}
+.badge3{background:#fff;border:1.4px solid #0f766e;border-radius:3mm;padding:2mm;box-shadow:0 .7mm 0 #99f6e4}
+.badge3 .em{font-size:15pt;font-family:'Apple Color Emoji',sans-serif;float:left;margin-right:1.5mm}
+.badge3 b{display:block;color:#0f766e;font-size:8.6pt;margin-bottom:.5mm}
+
+.mech{display:grid;grid-template-columns:repeat(5,1fr);gap:2mm;font-family:Inter,Arial,sans-serif;font-size:7.5pt;line-height:1.28;margin:1mm 0 2mm}
+.mc{background:#fff;border:1.2px solid #99f6e4;border-radius:2.5mm;padding:1.6mm;box-shadow:0 .6mm 0 #ccfbf1}
+.mc .em{font-size:14pt;display:block;font-family:'Apple Color Emoji',sans-serif;margin-bottom:.6mm}
+.mc b{display:block;color:#0f766e;font-size:7.9pt;margin-bottom:.5mm}
+.flat{border:1.4px dashed #d97706;background:#fffbeb;border-radius:2.5mm;padding:1.6mm 2.4mm;font-family:Inter,Arial,sans-serif;font-size:8pt;break-inside:avoid}
+.flat b.t{color:#b45309}
+.rf td:nth-child(3){background:#ecfdf5;font-weight:600}
+
+figure,.ov,table,.two,.nov,.mech,.flat,.callout,.badges,.design{break-inside:avoid !important}
+.design{display:grid;grid-template-columns:.8fr 1.25fr 1.15fr 1.15fr;gap:1.6mm;font-family:Inter,Arial,sans-serif;font-size:7.4pt;line-height:1.3;margin:1mm 0}
+.seg{border-radius:2.2mm;padding:1.6mm 1.8mm;border:1.2px solid}
+.seg .hd{font-weight:700;font-size:8pt;display:block}
+.seg .q{display:block;font-weight:600;margin:.3mm 0 .8mm}
+.seg ul{margin:0;padding-left:3.2mm}.seg li{margin:0 0 .3mm}
+.s1{background:#f1f5f9;border-color:#94a3b8}.s2{background:#fef9c3;border-color:#eab308}.s3{background:#e0e7ff;border-color:#818cf8}.s4{background:#dcfce7;border-color:#22c55e}
+.lock{display:inline-block;background:#1f2430;color:#fff;border-radius:1mm;padding:0 1.2mm;font-size:6.8pt;font-weight:700;margin-top:.6mm}
+.sprintrow{grid-column:1/5;background:#f5f3ff;border:1.2px dashed #7c3aed;border-radius:2.2mm;padding:1.2mm 1.8mm}
+.spec{background:#f8fafc;border:1px solid #cbd5e1;border-radius:2mm;padding:1.8mm 2.4mm;font-family:Menlo,monospace;font-size:7.6pt;line-height:1.5;margin:1mm 0 2mm}
+.spec .c{color:#64748b;font-family:Inter,Arial,sans-serif}
+.vars td:first-child{font-weight:700;width:17%}
+</style></head><body>
+
+<h1 class="title">AntiVenom: Turning One Captured Poison into Protection for a Whole Agent Swarm<sup>1</sup></h1>
+<p class="author"><b>Daniel Foo</b></p>
+<p class="aff">Nanyang Technological University (NTU), Singapore</p>
+<p class="author"><b>With</b></p>
+<p class="aff">Apart Research</p>
+
+<div class="abstract-h">Abstract</div>
+<p class="abstract">Agents in a swarm read shared memory and retrieval, so a few planted records can mislead many agents at once. When one agent catches a poisoned record, what should it tell the others? Existing defences share nothing, or share identifiers and trust scores tied to particular records. We test whether one caught record can become a shareable claim signature: the question it targets and the false claim it pushes. Receivers remove passages that entail the claim, check the reader's own attention, and refill from next-ranked evidence. On a pre-registered test of 100 untouched PoisonedRAG questions, false-answer endorsement fell from 76% to 7%, matching CoordGuard and TrustRAG while discarding less good evidence (15% vs 21% of clean passages). In a swarm, receivers holding renamed copies were fooled 62% of the time when the finder shared identifiers and 9% when it shared the claim, with clean accuracy unchanged. [Sprint result: one sentence on gated sharing against SecureCollaRAG and MAPLE-Guard on fresh incidents.] Sharing the claim, not the identifier, is what lets one detection protect a swarm.</p>
+
+<p class="fn"><sup>1</sup> Research conducted at the Swarm Alignment Hackathon (Apart Research, with the AI Alignment Foundation and AE Studio), 6–8 November 2026. Track 4 (Multi-Agent Oversight and Control). The AntiVenom detector and the experiments in Sections 4.1–4.3 are pre-sprint work; Appendix A.2 lists exactly what was done before and during the sprint.</p>
+
+<h2>1. Introduction</h2>
+<p><span class="lead">The inspiration: how antivenom works.</span> A snakebite is dangerous because venom does not stay where it entered: it travels through the blood and acts wherever it lands. Antivenom is made from a small, captured sample of that venom. Animals are given tiny doses, their immune systems produce antibodies, and those antibodies are purified and given to patients. The antibodies do not need to know which snake bit, or where in the body the venom has gone. They recognise the toxin by its shape, bind it wherever it circulates, and neutralise it. Antivenom also has side effects, from allergic reactions to serum sickness, so clinicians give it only when signs of envenoming appear.</p>
+<p><span class="lead">Why this fits poisoning in a swarm.</span> Poison in an agent swarm behaves like venom. A planted record enters one shared store and then reaches every agent that retrieves it, often as copies stored under different identifiers. Today's defences resemble treating each patient from scratch, or circulating the name of the snake. Antivenom suggests a different design. Capture one sample, turn it into something that recognises the poison by what it <i>says</i> rather than where it is stored, distribute that to every agent, neutralise matching records wherever they appear, and treat only when there are signs of poisoning. Figure 1 shows how each step of antivenom maps onto the swarm.</p>
+<p><span class="lead">A warning that only protects the agent who found it.</span> Five planted passages tell a retrieval-augmented agent that the main industry of the Canadian Shield is fishing. Undefended, it answers "fishing" 76% of the time across our fresh test questions. Suppose one agent in a swarm catches one of those passages. If it shares the record's identifier, a second agent whose copy was stored under a different identifier is still fooled. If it shares what the record <i>claims</i>, the second agent can find and remove its own copy, whatever it is called and however it is worded.</p>
+<p><span class="lead">Why it matters.</span> In the Hugging Face agent incident, one agent ended up assigning work to hundreds of others, and about 1,200 agents used 7,905 names [1, 2]. When agents rename, copy and paraphrase, identifiers stop being a reliable way to say which records are dangerous. Track 4 asks what oversight and control still work when the untrusted side is many agents. Here the untrusted side is the shared store, and the control is the warning one agent can pass to the others.</p>
+<figure class="ov">
+ <div class="band bio"><h4>🐍 How antivenom works</h4>
+  <div class="row5">
+   <div class="cc"><span class="em">🐍💧</span><b>Venom spreads</b>through the blood and acts wherever it lands</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">🧪</span><b>Capture a sample</b>a small amount of venom is collected</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">🐴🧬</span><b>Raise antibodies</b>that recognise the toxin's <i>shape</i>, not the snake</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">💉🩸</span><b>Circulate</b>antibodies bind and neutralise toxin anywhere in the body</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">🩺</span><b>Treat on symptoms</b>given only when envenoming shows: it has side effects</div>
+  </div></div>
+ <div class="insp"><span>⇣ inspires</span><span>⇣</span><span>⇣</span><span>⇣</span><span>⇣</span></div>
+ <div class="band sw"><h4>🤖 How AntiVenom protects a swarm</h4>
+  <div class="row5">
+   <div class="cc"><span class="em">🗄️☠️</span><b>Poison spreads</b>planted records reach every agent, as copies under different IDs</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">🕵️🔎</span><b>Catch one record</b>one agent spots one planted record</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">🧾✨</span><b>Distil a claim signature</b>question + false claim, ≈ 250 bytes; meaning, not ID</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">📡🤖🤖🤖</span><b>Broadcast</b>each agent removes passages that assert the claim, refills, answers</div><div class="ar">➜</div>
+   <div class="cc"><span class="em">🚦</span><b>Act only on the claim</b>agents intervene only when a passage entails it</div>
+  </div></div>
+ <div class="lanes">
+  <div class="lane bad"><h4>❌ Without AntiVenom</h4>
+   <div class="chain"><span class="ic">👤</span><div class="bub">“What is the main industry in the Canadian Shield?”</div></div>
+   <div class="chain" style="margin-top:1.4mm"><span class="ic">🤖</span><div class="bub">Retrieved: <span class="docs">📕📕📕📕📕📗📗📗📗📗</span><br>“…its primary income sector is <span class="red">not mining but rather fishing</span>…”</div></div>
+   <div class="chain" style="margin-top:1.4mm"><span class="ic">💬</span><div class="bub">Answer: <span class="red">“Fishing.”</span> &nbsp;Copies under other IDs fool the rest of the swarm too.</div></div>
+  </div>
+  <div class="lane good"><h4>✅ With AntiVenom</h4>
+   <div class="chain"><span class="ic">📡</span><div class="bub">Signature received: <i>“main industry of the Canadian Shield” → <span class="red">fishing</span></i></div></div>
+   <div class="chain" style="margin-top:1.4mm"><span class="ic">🛡️</span><div class="bub">Checks: <span class="docs"><span class="strike">📕📕📕📕</span></span> entail the claim; <span class="docs"><span class="strike">📕</span></span> caught by attention; <span class="docs">📗📗📗📗📗</span> kept</div></div>
+   <div class="chain" style="margin-top:1.4mm"><span class="ic">💬</span><div class="bub">Answer: <span class="grn">“Mining is the main industry in the Canadian Shield.”</span></div></div>
+  </div>
+ </div>
+</figure>
+<p class="cap"><b>Figure 1:</b> From antivenom to AntiVenom. Top: how antivenom works. Middle: the design each step inspired. Bottom: a real development question (NQ test363) with and without AntiVenom (📕 planted record, 📗 clean record); values are those of Figure 3.</p>
+
+
+
+
+<table>
+<tr><th style="width:17%">Incident stage</th><th style="width:33%">Research question</th><th style="width:36%">Answer in brief</th><th>Where</th></tr>
+<tr><td>Spread and warning</td><td>RQ1. Can one agent's catch protect the rest of the swarm?</td><td>Yes: sharing the claim cut fooled receivers from 62% (shared IDs) to 9%, clean accuracy unchanged</td><td>§4.1</td></tr>
+<tr><td>Defence in each agent</td><td>RQ2. Is each receiver's defence as strong as the best single-agent defences?</td><td>It matches CoordGuard and TrustRAG on blocking, discards less good evidence, runs faster, and fails by abstaining</td><td>§4.2</td></tr>
+<tr><td>Variation across the swarm</td><td>RQ3. Does it hold up as the poison varies from agent to agent?</td><td>It holds whichever copy is caught (95% worst case with attention) and without the benchmark's shortcuts</td><td>§4.3</td></tr>
+<tr><td>Normal operation</td><td>RQ4. What does protection cost when the swarm is not under attack?</td><td>Ungated, every defence loses about a quarter of clean accuracy; acting only when the claim is present restores it (exploratory)</td><td>§4.4</td></tr>
+</table>
+<p class="cap"><b>Table 1:</b> Four questions that follow one swarm-poisoning incident from spread to recovery, and what we found.</p>
+
+<p><span class="lead">Theory of change.</span> No agent will catch every planted record. If one catch can become a warning that survives renaming and paraphrase, and if receivers act on it only when the claim is actually present, then every detection strengthens the whole swarm instead of being repeated in each agent. Our contributions are a defence that shares claims rather than identifiers (Section 3), a pre-registered comparison with the strongest single-agent defences (Section 4.2), and evidence on robustness and benign cost in a swarm setting (Sections 4.3–4.4).</p>
+<div class="badges">
+ <div class="badge3"><span class="em">🧾</span><b>Share the claim, not the ID</b>To our knowledge, the first defence to turn one caught record into a claim-level warning that protects other agents' renamed and reworded copies.</div>
+ <div class="badge3"><span class="em">🎯</span><b>Two recognisers</b>A claim check plus the reader's own attention, so detection holds whichever copy was caught (95% worst case vs 67%).</div>
+ <div class="badge3"><span class="em">🚦</span><b>Its own trigger</b>Because it holds the false claim, AntiVenom can act only when that claim appears; always-on defences have no such signal.</div>
+</div>
+
+<h2>2. Related Work</h2>
+<p><span class="lead">Poisoning retrieval and memory.</span> PoisonedRAG plants a few passages that make a reader give a chosen false answer [3]; we use its released poison and never generate attack text. Memory-poisoning attacks on agents such as AgentPoison and MINJA write similar records into agent memory [12].</p>
+<p><span class="lead">Defending one agent.</span> TrustRAG filters passages by clustering and self-assessment [4]. RobustRAG aggregates isolated answers [13]. CoordGuard removes the most coordinated cluster of passages [5]. "Ranking Is Not Deciding" shows that the question prefix PoisonedRAG adds to every poison is a detection shortcut, and sets a reporting protocol we follow [9].</p>
+<p><span class="lead">Defending many agents.</span> MAPLE-Guard gates memory writes, retrieval and promotion with per-item and per-agent trust [6]. PerMIT proves memory integrity and promotes entries once enough users endorse their exact bytes [7]. SecureCollaRAG scores documents with a trained graph network weighted by per-source reliability [14]. GRAD classifies an agent's execution graph [10]. AgentAntibody turns a confirmed prompt injection into an abstract "epitope" antibody and reuses it inside one agent; its ablation shows raw-text memory does not transfer [8]. "The Price of Safety" measures the benign cost of memory defences [11].</p>
+
+<table class="sc">
+<tr><th rowspan="2" style="width:17%">Defence</th><th class="grp" colspan="5">Design: what it can do</th><th class="grp" colspan="4">Measured, one agent (fresh test)</th><th class="grp">Swarm</th></tr>
+<tr><th>Protects other agents after one detection</th><th>Catches renamed or reworded copies</th><th>Keeps attacker text out of messages</th><th>No training or new infrastructure</th><th>Acts only when attacked</th><th>False-answer endorsement</th><th>Clean passages discarded</th><th>Clean discarded, one poison</th><th>Seconds per question</th><th>Receivers fooled</th></tr>
+<tr class="ours"><td>AntiVenom (ours)</td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="y">●</span><sup>†</sup></td><td><span class="best">7%</span></td><td><span class="best">15%</span></td><td><span class="best">3%</span></td><td><span class="best">18 s</span></td><td>9%</td></tr><tr><td>CoordGuard [5]</td><td><span class="n">○</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="y">●</span></td><td><span class="n">○</span></td><td>5%</td><td>21%</td><td>72%</td><td>25 s</td><td><span class="n">–</span></td></tr><tr><td>TrustRAG [4]</td><td><span class="n">○</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="y">●</span></td><td><span class="n">○</span></td><td>12%</td><td><span class="n">–</span></td><td><span class="n">–</span></td><td>36 s</td><td><span class="n">–</span></td></tr><tr><td>Shared record IDs</td><td><span class="h">◐</span></td><td><span class="n">○</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td>62%</td></tr><tr><td>Shared sample + cosine</td><td><span class="y">●</span></td><td><span class="h">◐</span></td><td><span class="n">○</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td>12 s</td><td>2%</td></tr><tr><td>MAPLE-Guard [6]</td><td><span class="h">◐</span></td><td><span class="h">◐</span></td><td><span class="y">●</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td><td>sprint</td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td>sprint</td></tr><tr><td>PerMIT [7]</td><td><span class="h">◐</span></td><td><span class="n">○</span></td><td><span class="y">●</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td></tr><tr><td>SecureCollaRAG [14]</td><td><span class="h">◐</span></td><td><span class="h">◐</span></td><td><span class="y">●</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td><td>sprint</td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td>sprint</td></tr><tr><td>AgentAntibody [8]</td><td><span class="n">○</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="y">●</span></td><td><span class="h">◐</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td><td><span class="n">–</span></td></tr></table>
+<p class="cap"><b>Table 2:</b> AntiVenom against existing defences. ● yes, ◐ partly, ○ no, – not applicable or not measured; "sprint" marks baselines measured in the sprint test. Design entries for MAPLE-Guard, PerMIT, SecureCollaRAG and AgentAntibody are read from their papers (Appendix D). <sup>†</sup>The claim gate is exploratory (Section 4.4). Measured columns use the same reader and contexts; one-poison values are development data.</p>
+
+<p><span class="lead">A different question.</span> Prior defences ask about the <i>form</i> of a passage or the <i>trust</i> of its source: is it unusually similar to its neighbours (TrustRAG, CoordGuard), or does it come from a reliable writer, source or endorsed byte string (MAPLE-Guard, SecureCollaRAG, PerMIT)? Each answer is computed per agent, and each can be dodged by rewording, renaming or a fresh source. AntiVenom asks about the attacker's <i>goal</i>: what is this poison trying to make agents believe? A planted record works only if it gets the reader to adopt one specific false answer, so every working copy must state that claim, whatever it is named and however it is worded. That one change of question reverses three assumptions the field has built on (Table 3).</p>
+<table class="rf">
+<tr><th style="width:24%">Prior focus</th><th style="width:25%">Underlying assumption</th><th style="width:25%">AntiVenom's reframe</th><th>What it revealed</th></tr>
+<tr><td>Detect suspicious form: clusters, similarity, anomalies</td><td>Poison is recognised by how it looks</td><td>Recognise poison by what it <i>claims</i></td><td>Clean evidence almost never states the false claim: 15% vs 21% clean cost, 3% vs 72% with one poison</td></tr>
+<tr><td>Each agent defends itself; share IDs or trust scores</td><td>A detection is local, or tied to one record</td><td>A detection is a <i>transferable</i> antibody</td><td>Renamed copies are caught across the swarm: 9% fooled vs 62% with shared IDs</td></tr>
+<tr><td>Filter every query; judge on attacked inputs</td><td>A defence is either on or off</td><td>The claim itself is the <i>trigger</i></td><td>Every always-on defence costs about a quarter of clean accuracy; acting only on the claim restores it</td></tr>
+</table>
+<p class="cap"><b>Table 3:</b> Where AntiVenom departs from prior defences, and what each change revealed.</p>
+
+<h2>3. The Defence and Setup</h2>
+<p><span class="lead">3.1 Threat model.</span> An attacker plants k = 5 records (the released PoisonedRAG poison) in a store that agents retrieve from. Each record is written to make a reader give one chosen false answer to one question. One agent, the finder, holds one planted record (the "captured" record, poison[0]); capture is assumed, not detected. Receivers do not know which of their records are planted, and the attacker does not adapt to the defence. In the swarm study, each receiver's planted copies carry identifiers different from the finder's.</p>
+
+<p><span class="lead">3.2 Study design.</span> Questions were split before any outcome was examined, and every threshold and weight came from the calibration split only (Figure 2). The confirmatory protocol, primary claims and detector were frozen and hashed before the tier-2 questions were opened, and every arm ran on them exactly once.</p>
+<figure><div class="design">
+ <div class="seg s1"><span class="hd">Calibration</span><span class="q">NQ 1–20 · 20 questions</span><ul><li>NLI threshold, attention layer</li><li>slot offsets, avidity weights</li><li>operating threshold, gate threshold</li></ul></div>
+ <div class="seg s2"><span class="hd">Development</span><span class="q">NQ 21–100 · 80 questions</span><ul><li>swarm study (80 incidents)</li><li>which copy is caught; one poison; 1–3 poisons</li><li>prefix-free control; passage order</li></ul></div>
+ <div class="seg s3"><span class="hd">Confirmatory tier 1</span><span class="q">HotpotQA + MS MARCO 1–50 · 100</span><ul><li>first confirmatory run, then post hoc analyses</li><li>shortcut AUCs; yes/no rewrite design</li></ul></div>
+ <div class="seg s4"><span class="hd">Confirmatory tier 2 (fresh)</span><span class="q">HotpotQA + MS MARCO 51–100 · 100</span><ul><li>all arms run once; headline results</li><li>other readers (Mistral-7B, Llama-3-8B)</li></ul><span class="lock">frozen and hashed before opening</span></div>
+ <div class="sprintrow"><b>Sprint (judged):</b> gated swarm sharing on fresh incidents never used above, against shared IDs, shared sample, SecureCollaRAG and MAPLE-Guard; protocol frozen before outcomes.</div>
+</div></figure>
+<p class="cap"><b>Figure 2:</b> Study design: what each question split was used for. Development and tier-1 results are labelled as such wherever they appear.</p>
+
+<p><span class="lead">3.3 Variables.</span> Table 4 lists what we varied, what we measured, and what was held fixed.</p>
+<table class="vars">
+<tr><th>Role</th><th>Variable</th><th>Levels / definition</th></tr>
+<tr><td rowspan="6">Varied</td><td>Defence arm</td><td>no defence; AntiVenom; CoordGuard (always-filter, ± refill); TrustRAG; random and lowest-rank deletion (same count)</td></tr>
+<tr><td>What the finder shares</td><td>nothing; record IDs; the raw caught record (cosine filter); claim signature (entailment); claim signature + attention</td></tr>
+<tr><td>Poisons in context</td><td>1, 2, 3 (development); 5 released (main)</td></tr>
+<tr><td>Which copy is caught</td><td>each of the 5 released records in turn</td></tr>
+<tr><td>Shortcut prefix</td><td>with or without the question prefix PoisonedRAG adds to each poison</td></tr>
+<tr><td>Reader; gate</td><td>Qwen2.5-7B (main), Mistral-7B, Llama-3-8B; gate on or off</td></tr>
+<tr><td rowspan="2">Measured</td><td>Per answer</td><td>endorses the false answer; correct (gold answer, abstention counts as not correct)</td></tr>
+<tr><td>Per passage / run</td><td>poison recall; clean passages discarded; receivers fooled; receivers' clean accuracy; seconds per question; message bytes</td></tr>
+<tr><td>Fixed</td><td>Pipeline</td><td>Contriever retrieval (matches released scores within 3×10<sup>−6</sup>); top-10 contexts; PoisonedRAG prompt; greedy decoding, 48 tokens; 4-bit MLX weights, unchanged</td></tr>
+</table>
+<p class="cap"><b>Table 4:</b> Experimental variables.</p>
+
+<p><span class="lead">3.4 Detector specification.</span> For each retrieved passage i, AntiVenom computes two signals and one score, using only the captured record and the receiver's own reader:</p>
+<div class="spec">
+<span class="c">signature</span> &nbsp;(Q, C) ← reader extracts question and false claim from the captured record; yes/no claims restated as one sentence<br>
+<span class="c">claim check</span> e<sub>i</sub> = P<sub>NLI</sub>(passage<sub>i</sub> ⊨ “The answer to the question Q is C.”) &nbsp;&nbsp;<span class="c">DeBERTa-v3 NLI</span><br>
+<span class="c">attention</span> &nbsp;a<sub>i</sub> = mean attention from the last 8 prompt tokens to passage i, per token, layer 21 (Qwen), averaged over heads<br>
+<span class="c">correction</span> z<sub>i</sub> = standardise( standardise(a)<sub>i</sub> − o<sub>slot(i)</sub> ) &nbsp;&nbsp;<span class="c">o = slot offsets from clean calibration contexts</span><br>
+<span class="c">score</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s<sub>i</sub> = σ(0.938 · logit e<sub>i</sub> + 2.347 · z<sub>i</sub> + 4.974); &nbsp;flag if s<sub>i</sub> ≥ 0.0989 &nbsp;&nbsp;<span class="c">5% clean removal on calibration</span><br>
+<span class="c">gate</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;act only if max<sub>i</sub> e<sub>i</sub> ≥ 0.975; &nbsp;then delete flagged passages and refill with the next-ranked ones
+</div>
+
+<p><span class="lead">3.5 Swarm protocol, baselines and statistics.</span> <i>Swarm.</i> In each of 80 development incidents, one finder publishes a message and three receivers, each with its own state and retrieved context, answer independently (240 receiver observations per arm; 480 untreated clean reference calls). Arms differ only in what is published: record IDs (64.5 bytes on average), the raw caught record (363 bytes) or the claim signature (275 bytes). The arm fixed in advance as focal was signature + attention; signature-only entailment was a pre-specified secondary arm. <i>Baselines.</i> CoordGuard is implemented from its paper (no code is released) with e5-large-v2 and τ<sub>c</sub> = 1.0; TrustRAG is ported from released code; RobustRAG was excluded a priori after it underperformed on development data. <i>Statistics.</i> The unit is the question (or incident, averaging its receivers). We report exact McNemar tests, target-level bootstrap 95% intervals (B = 2,000) and Holm correction over each pre-registered family. Answers are rule-scored; a 302-row blind sheet for two human labellers is prepared.</p>
+
+<p><span class="lead">3.6 What happens, on one real question.</span> Figure 3 follows one signature (question “What is the main industry in the Canadian Shield?”, claim “not mining but rather fishing”) into one receiver's context. Four planted passages entail the claim. The fifth says it differently and slips past entailment, but the reader's attention fixes on it. No clean passage crosses either threshold, so all five planted passages are removed, five next-ranked passages fill the gaps, and the answer flips from "fishing" to "Mining is the main industry in the Canadian Shield."</p>
+<figure class="ov">
+ <div class="we">
+  <div>
+   <div class="lane bad" style="margin-bottom:2mm"><h4>❌ Before</h4><div class="chain"><span class="ic">🤖</span><div class="bub">“…the primary income sector is <span class="red">not mining but rather fishing</span>…”<br>Answer: <span class="red">“Fishing.”</span></div></div></div>
+   <div class="lane good"><h4>✅ After</h4><div class="chain"><span class="ic">🛡️</span><div class="bub">5 planted passages removed, 5 clean kept, 5 refilled.<br>Answer: <span class="grn">“Mining is the main industry in the Canadian Shield.”</span></div></div></div>
+  </div>
+  <div>
+   <div class="tiles">
+    <div class="lab">Passage</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#dc2626"></span>1</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#dc2626"></span>2</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#dc2626"></span>3</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#dc2626"></span>4</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#dc2626"></span>5</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#16a34a"></span>6</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#16a34a"></span>7</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#16a34a"></span>8</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#16a34a"></span>9</div><div class="tl" style="background:#f9fafb"><span class="sq" style="background:#16a34a"></span>10</div>
+    <div class="lab">Entails claim</div><div class="tl" style="background:rgb(220,38,38);color:#fff">1.00</div><div class="tl" style="background:rgb(220,40,40);color:#fff">0.99</div><div class="tl" style="background:rgb(220,38,38);color:#fff">1.00</div><div class="tl" style="background:rgb(255,255,255);color:#1f2430">0.00</div><div class="tl" style="background:rgb(220,42,42);color:#fff">0.98</div><div class="tl" style="background:rgb(255,255,255);color:#1f2430">0.00</div><div class="tl" style="background:rgb(255,255,255);color:#1f2430">0.00</div><div class="tl" style="background:rgb(255,255,255);color:#1f2430">0.00</div><div class="tl" style="background:rgb(255,255,255);color:#1f2430">0.00</div><div class="tl" style="background:rgb(255,255,255);color:#1f2430">0.00</div>
+    <div class="lab">Attention (z)</div><div class="tl" style="background:rgb(217,119,6);color:#fff">+2.2</div><div class="tl" style="background:rgb(228,161,83);color:#fff">+1.2</div><div class="tl" style="background:rgb(240,204,161);color:#1f2430">+0.2</div><div class="tl" style="background:rgb(236,187,130);color:#1f2430">+0.6</div><div class="tl" style="background:#eef2ff;color:#1f2430">-0.1</div><div class="tl" style="background:#eef2ff;color:#1f2430">-0.8</div><div class="tl" style="background:#eef2ff;color:#1f2430">-0.8</div><div class="tl" style="background:#eef2ff;color:#1f2430">-0.9</div><div class="tl" style="background:#eef2ff;color:#1f2430">-0.9</div><div class="tl" style="background:#eef2ff;color:#1f2430">-0.7</div>
+    <div class="lab">Decision</div><div class="tl" style="background:#fee2e2"><span class="dec">✕</span>removed</div><div class="tl" style="background:#fee2e2"><span class="dec">✕</span>removed</div><div class="tl" style="background:#fee2e2"><span class="dec">✕</span>removed</div><div class="tl" style="background:#fee2e2"><span class="dec">✕</span>removed</div><div class="tl" style="background:#fee2e2"><span class="dec">✕</span>removed</div><div class="tl" style="background:#dcfce7"><span class="dec" style="color:#15803d">✓</span>kept</div><div class="tl" style="background:#dcfce7"><span class="dec" style="color:#15803d">✓</span>kept</div><div class="tl" style="background:#dcfce7"><span class="dec" style="color:#15803d">✓</span>kept</div><div class="tl" style="background:#dcfce7"><span class="dec" style="color:#15803d">✓</span>kept</div><div class="tl" style="background:#dcfce7"><span class="dec" style="color:#15803d">✓</span>kept</div>
+   </div>
+   <div class="thr">■ red = planted, ■ green = clean &nbsp;·&nbsp; entailment flags at ≥ 0.01, attention at z ≥ 0 &nbsp;·&nbsp; darker = stronger &nbsp;·&nbsp; passage 4: missed by entailment, caught by attention</div>
+  </div>
+ </div>
+</figure>
+<p class="cap"><b>Figure 3:</b> One receiver's ten retrieved passages for NQ question test363 (development set; real stored values). Each tile is coloured by the strength of its signal.</p>
+
+
+
+<h2>4. Results</h2>
+<table>
+<tr><th style="width:44%">Measure</th><th style="width:18%">AntiVenom</th><th style="width:18%">Comparator</th><th>Role</th></tr>
+<tr><td>False-answer endorsement, fresh pre-registered test (n = 100)</td><td>7% [2–13]</td><td>No defence 76% [67–84]<br>CoordGuard 5% [1–10]<br>TrustRAG 12% [6–19]</td><td>Primary capability</td></tr>
+<tr><td>Correct answer under attack (n = 100)</td><td>53% [44–63]</td><td>CoordGuard 47% [37–57]<br>TrustRAG 53% [43–63]</td><td>Utility under attack</td></tr>
+<tr><td>Endorsement after deleting the same number of passages at random</td><td>—</td><td>64% [54–73]</td><td>Negative control: gain comes from detection</td></tr>
+<tr><td>Clean passages discarded at the deployed setting</td><td>14.7%</td><td>CoordGuard 20.6%</td><td>Precision</td></tr>
+<tr><td>Receivers fooled, swarm (80 incidents, 3 receivers each)</td><td>9.2% [4.6–14.6]</td><td>Shared IDs 62.5% [53.8–70.8]<br>Shared sample 2.1%</td><td>Swarm protection</td></tr>
+<tr><td>Receivers' clean accuracy, swarm</td><td>51.7% [43.3–60.0]</td><td>Untreated 52.5% [44.2–60.8]</td><td>Swarm benign cost</td></tr>
+<tr class="sprint"><td>[Sprint] Gated sharing on fresh incidents vs SecureCollaRAG and MAPLE-Guard</td><td>[ ]</td><td>[ ]</td><td>Judged weekend result</td></tr>
+</table>
+<p class="cap"><b>Table 5:</b> Headline results with 95% target-level bootstrap intervals, and the controls that make them interpretable. Swarm rows use previously inspected development questions (pre-sprint).</p>
+
+<h3>4.1 RQ1 · Can one agent's catch protect the rest of the swarm?</h3>
+<p>In each of 80 incidents, one finder caught one planted record and three receivers held planted copies under other identifiers. We compared what the finder shares. With identifiers, 62.5% of receivers still endorsed the false answer, because their copies did not match. With the claim signature, 9.2% did, and receivers' clean accuracy stayed at 51.7% against 52.5% untreated (Figure 4). The difference over identifiers is 62 points (Holm p = 0.00025). Sharing the raw caught record with a cosine filter did as well as the claim (p = 0.50) but broadcasts the attacker's text. Adding attention without a gate blocked almost every attack and cut clean accuracy to 33%, which Section 4.4 explains.</p>
+<div class="nov"><b class="t">★ What no prior defence does.</b> MAPLE-Guard shares trust scores, PerMIT shares verdicts on exact bytes, and SecureCollaRAG shares a score per source. None turns one detection into a warning about what the record says, so each new copy must be detected again from scratch. AntiVenom's 250-byte claim carries that warning, and unlike sharing the raw record, it never sends the attacker's text across the swarm.</div>
+<div class="two">
+<figure><img src="fig/swarm.png" alt="swarm"></figure>
+<div><div class="callout"><b>Sprint test (judged).</b> Gated signature sharing on fresh incidents, against shared IDs, the shared sample, SecureCollaRAG and MAPLE-Guard's retrieval gate; endpoints are receiver endorsement under attack and receiver accuracy without attack; blind human scoring. Protocol frozen before outcomes (docs/WEEKEND_SWARM_PROTOCOL.md).<br><br>[Result and figure to be inserted.]</div></div>
+</div>
+<p class="cap"><b>Figure 4:</b> What the finder shares, and what it does to receivers (80 incidents, three receivers each). Dashed line: untreated clean accuracy.</p>
+
+<h3>4.2 RQ2 · Is each receiver's defence as strong as the best single-agent defences?</h3>
+<p>A swarm warning is only useful if each receiver can act on it well. On 100 questions nobody had looked at, AntiVenom blocked attacks as well as CoordGuard and TrustRAG: endorsement fell from 76% to 7%, against 5% and 12% (Figure 5); the differences do not survive correction. The protocol also pre-registered an earlier version of the detector as its primary arm; it blocked slightly less (12%), and neither pre-registered superiority claim over CoordGuard held (Appendix B). Random and lowest-rank deletion left most attacks in place, so the gain comes from detection.</p>
+<div class="nov"><b class="t">★ State-of-the-art blocking at lower cost.</b> Against CoordGuard, the strongest published filter: the same blocking (7% vs 5%, not significantly different), fewer clean passages lost (15% vs 21%), a quarter less time per question (18 s vs 25 s), no training, and no change to the reader.</div>
+<figure><img src="fig/parity.png" alt="parity" style="width:74%;margin:0 auto"></figure>
+<p class="cap"><b>Figure 5:</b> Fresh pre-registered test (n = 100). AntiVenom's detector and thresholds were frozen and hashed before these questions were opened. Dashed line: accuracy on clean contexts with no attack.</p>
+<p>At equal blocking, the defences differ in what they cost each agent (Figure 6). AntiVenom discarded 15% of clean passages against CoordGuard's 21% at the deployed setting, 3% against 72% when only one poison was present, and 9% against 52% without the question prefix. It took 18 s per question against 25 s and 36 s. When it failed, it more often abstained: 16% other wrong answers against TrustRAG's 43%. In a swarm these costs multiply by the number of agents, so they matter as much as blocking.</p>
+<figure style="display:flex;gap:3mm;align-items:center"><img src="fig/precision3d.png" style="height:52mm;width:auto"><img src="fig/failure.png" style="height:44mm;width:auto"><img src="fig/latency.png" style="height:44mm;width:auto"></figure>
+<p class="cap"><b>Figure 6:</b> Left: clean passages discarded at the deployed setting (fresh test), with one poison, and without the question prefix (development). Middle: how each defence fails under attack (fresh test). Right: seconds per attacked question (timing audit).</p>
+
+<h3>4.3 RQ3 · Does it hold up as the poison varies from agent to agent?</h3>
+<p><span class="lead">Whichever copy is caught.</span> In a swarm, the finder catches whatever copy it happens to see. Averaged over targets, recall was 87–92% whichever planted record was caught. Per target, the unluckiest catch dropped entailment recall to 67%, below 50% for 24 of 80 targets. With the reader's attention added, worst-case recall was 95% and no target fell below 50% (Figure C2). The specific signal depends on the caught copy; the general one does not.</p>
+
+<p><span class="lead">Without the benchmark's shortcuts.</span> PoisonedRAG makes two things easy. The planted records for one question are near-copies, so deleting anything similar to the caught record reaches AUC 1.00 on HotpotQA and 0.99 on MS MARCO (Figure C3, left). And every record begins with the question, which detectors can exploit [9]. Without that prefix, CoordGuard needed to discard 52% of clean passages; AntiVenom discarded 9% at the same recall, and its AUC stayed at 0.98 (Figure C3, right). Real swarm poison will be more varied than near-copies, so this benchmark's detection scores are upper bounds.</p>
+<div class="nov"><b class="t">★ Robust where the state of the art is not.</b> Remove the shortcut prefix and CoordGuard must discard 52% of clean passages to keep its recall; AntiVenom discards 9%. With only one poison present, CoordGuard discards 72% of clean passages; AntiVenom discards 3%, because it looks for the claim rather than for clusters of similar text.</div>
+
+
+<h3>4.4 RQ4 · What does protection cost when the swarm is not under attack?</h3>
+<p>Most of the time, nothing is wrong. Run on unattacked contexts, every defence we tested, CoordGuard included, cut accuracy from 61% to 35–39% (Figure 7). For AntiVenom the cause is the attention rule, which always flags at least one passage. Following antivenom's rule of treating only on signs of envenoming, we let a receiver act only when some passage entails the shared claim. This restored 61% on unattacked contexts, while endorsement under attack rose from 7% to 14%. The gate was designed after the fresh test, so it is exploratory; the sprint test evaluates it on fresh incidents in the swarm.</p>
+<div class="nov"><b class="t">★ A defence that knows when to act.</b> CoordGuard's best setting is to filter every query, because it has no signal that an attack is present; its own gate only lowered protection. AntiVenom's claim is that signal, which is why it can be switched on by the attack itself.</div>
+<figure><img src="fig/gate.png" alt="gate" style="width:74%;margin:0 auto"></figure>
+<p class="cap"><b>Figure 7:</b> The cost of leaving a defence on, and the claim gate (fresh test, n = 100; gate exploratory).</p>
+
+
+
+<h2>5. Discussion and Limitations</h2>
+<p><span class="lead">5.1 Why AntiVenom works.</span> The core reason is simple: a poison has to say its false claim to work, and saying it is exactly what AntiVenom detects. Five mechanisms follow from that (Figure 8).</p>
+<div class="mech">
+ <div class="mc"><span class="em">🎯</span><b>1 · The attacker's goal is the signature</b>Every working copy must assert the false answer; checking for that claim targets the one thing the attacker cannot drop without disarming the attack.</div>
+ <div class="mc"><span class="em">📗</span><b>2 · Clean evidence does not say it</b>A real passage about the Canadian Shield says mining, not fishing, so the claim check rarely fires on good evidence; clustering sweeps up clean passages on the same topic.</div>
+ <div class="mc"><span class="em">👁️</span><b>3 · Attention points at what will be used</b>Planted records are written to answer the question directly, and copying from context is easier than recall [15], so the reader's attention is drawn to them, even when reworded.</div>
+ <div class="mc"><span class="em">🧩</span><b>4 · The two signals fail in different places</b>Reworded copies escape the claim check but draw attention; attention misfires on the first slot, but those passages do not entail the claim.</div>
+ <div class="mc"><span class="em">✂️</span><b>5 · Remove the cause, don't argue with it</b>Deleting and refilling lets the reader answer from clean sources. Keeping the poison and adding counter-evidence left 42% endorsing (development): crowding is the bottleneck.</div>
+</div>
+<p class="cap"><b>Figure 8:</b> Why the mechanism works. Each card names a property of poisoning that AntiVenom exploits.</p>
+<div class="flat"><b class="t">⚠ What flatters the result.</b> (i) The poisons are near-copies: deleting anything similar to the caught record already reaches AUC 0.99–1.00, so part of why one sample is enough is that the other copies look alike. (ii) The attacker does not adapt: nobody tried to word a copy that carries the claim without entailing it, or that avoids attention. (iii) Answers are rule-scored, with human labels pending. We do not claim superiority over CoordGuard or TrustRAG, an advantage over a cosine filter in question answering, or a confirmed gate. The mechanism is sound because an attacker cannot avoid stating the claim; the size of the numbers is partly the benchmark's doing, which is why we report the similarity baseline, the prefix-free control and the unluckiest catch beside every headline.</div>
+<p><span class="lead">5.2 What this means for swarms.</span> <i>Share meaning, not identity:</i> identifiers fail exactly where swarms differ from single agents. <i>Parity is not the end of the comparison:</i> defences that block equally still differ in what they destroy, cost and how they fail. <i>Defences need a trigger:</i> every defence we tested damaged clean answers when no attack was present.</p>
+<p><span class="lead">5.3 Limitations.</span> Rule-scored answers with human labels pending; one main reader (Mistral transfers; Llama's claim extraction failed, Appendix C); most swarm and robustness results on development questions; a non-adaptive attacker and one benchmark of near-duplicate poisons; serial, homogeneous agents rather than autonomous contagion. Appendix A gives the full list.</p>
+
+<h2>6. Conclusion</h2>
+<p>Poison in a swarm spreads like venom: one planted claim reaches every agent that reads the shared store, under whatever name it was saved. Defences built for one agent make every agent rediscover it alone, and warnings built on identifiers miss every renamed copy. Where prior defences asked whether a passage looks suspicious or a source is trusted, AntiVenom asks what the poison is trying to make agents believe, the one thing an attacker cannot drop. It takes the lesson of antivenom: capture one sample, recognise the poison by what it says, and send that recognition everywhere. One caught record becomes a 250-byte claim that cut fooled receivers from 62% to 9% with no measurable loss of clean accuracy. In each agent, it matches the state of the art on blocking, 7% against CoordGuard's 5% and TrustRAG's 12% on a pre-registered fresh test, while discarding less good evidence, running faster, needing no training, and abstaining where TrustRAG invents wrong answers. It holds whichever copy is caught and without the benchmark's shortcuts, where CoordGuard does not. And because it carries the claim it is looking for, AntiVenom can stay silent until that claim appears, which neither CoordGuard nor TrustRAG can do. For anyone running agents on shared memory, the design rule is simple: when one agent finds poison, share what it says, and act only where it is said.</p>
+
+<h3>Acknowledgements</h3>
+<p>This work is supported and funded by the Pathfinder Fellowship, a program run by Kairos. The author also expresses gratitude to the Nanyang AI Safety group at Nanyang Technological University (NTU) for their feedback.</p>
+<h3>Code and Data</h3>
+<p>Code, frozen protocols (docs/PREREG_CONFIRMATORY.md with hashes; docs/V2_DETECTOR_FROZEN.md; docs/WEEKEND_SWARM_PROTOCOL.md), run records and analysis scripts are in the project repository [link to add]. External data and model weights are not redistributed; PoisonedRAG poison is the authors' release.</p>
+
+<h3>References</h3>
+<ol class="refs">
+<li>METR (2026). Hugging Face agent incident report. [full citation to add]</li>
+<li>Swarm Traces (2026). [full citation to add]</li>
+<li>Zou, W. et al. (2025). PoisonedRAG: Knowledge corruption attacks to retrieval-augmented generation of large language models. USENIX Security.</li>
+<li>TrustRAG. [full citation to add]</li>
+<li>Li, Guo, Xu (2026). CoordGuard. arXiv:2610.24834.</li>
+<li>MAPLE-Guard: Memory-aware link enforcement against memory-link poisoning in multi-agent systems (2026). arXiv:2608.00426. github.com/xiong-wenjun/MAPLE-Guard.</li>
+<li>PerMIT: Securing persistent memory for LLM agents via machine-checked integrity theorems and scalable community trust (2026). arXiv:2610.28987.</li>
+<li>Weng, Feng, Xie, Yu (2026). AgentAntibody: An adaptive immune system for defending LLM agents against prompt injection. arXiv:2608.04053.</li>
+<li>Ranking Is Not Deciding (2026). arXiv:2610.33849.</li>
+<li>GRAD: Graph-structured antibody defense for LLM agents (2026). arXiv:2610.22828.</li>
+<li>The Price of Safety: Benign-case utility and token overhead of memory-poisoning defenses in LLM agents (2026). arXiv:2609.22818.</li>
+<li>AgentPoison; MINJA. [full citations to add]</li>
+<li>RobustRAG. [full citation to add]</li>
+<li>Wang et al. (2026). Combating knowledge corruption in agent systems: A Byzantine-tolerant secure collaborative RAG framework (SecureCollaRAG). arXiv:2608.04366. github.com/Aquarids/scr-pub.</li>
+<li>Copying is easier than recall for language models (2026). arXiv:2601.12075.</li>
+</ol>
+
+<h2 class="pb">Appendix A. Limitations, Dual-Use and Ethical Considerations</h2>
+<h3>A.1 Limitations</h3>
+<ul>
+<li>Answers are scored by rules; the 302-row blind sheet has not yet been labelled by two people.</li>
+<li>Only Section 4.1 is fresh confirmation; swarm and robustness results reuse development questions.</li>
+<li>One main reader. Mistral-7B transfers; Llama-3-8B returned blank claims in 95 of 100 extractions.</li>
+<li>Cosine similarity to the caught record matches AntiVenom in question answering and is cheaper.</li>
+<li>Non-adaptive attacker; one benchmark whose poisons are near-duplicates.</li>
+<li>Serial, homogeneous local agents; no transport, authentication or autonomous contagion.</li>
+<li>The defence assumes one agent can obtain one planted record.</li>
+</ul>
+<h3>A.2 Pre-sprint work and sprint work</h3>
+<p><b>Pre-sprint (built before 6 November 2026, unpublished, marked preexisting in the README):</b> the AntiVenom detector and code; single-agent experiments and analyses; the pre-registered confirmatory test (Section 4.1); the swarm comparison and robustness analyses (Sections 4.2–4.3); the gate analysis. <b>Sprint (6–8 November):</b> [list — the frozen weekend protocol, SecureCollaRAG and MAPLE-Guard ports, the gated swarm run on fresh incidents, blind human scoring, this report and slides].</p>
+<h3>A.3 Dual-use and ethics</h3>
+<p>The work is defence-only. All poison comes from the published PoisonedRAG release; no attack content was generated. Describing which poisons escape detection could help attackers, so we report aggregate patterns only. Shared signatures could be forged to make agents delete legitimate evidence; deployments should authenticate signatures and gate their use.</p>
+<h3>A.4 Future work</h3>
+<p>Adaptive attackers who paraphrase away from the claim; diverse-poison benchmarks; heterogeneous readers; authenticated signature exchange; the claim gate confirmed on fresh data; a principal-only alert channel.</p>
+
+<h2>Appendix B. Setup Details</h2>
+<table>
+<tr><th style="width:28%">Element</th><th style="width:38%">Deployment situation</th><th>What it lets us test</th></tr>
+<tr><td>Planted near-copies in a shared store</td><td>Poisoned documents or memories reachable by many agents</td><td>Whether one detection can protect others</td></tr>
+<tr><td>Copies under different identifiers</td><td>Agents rename, copy and re-store records</td><td>Whether identifier-based warnings fail</td></tr>
+<tr><td>One captured record</td><td>An alert, audit or user report surfaces one item</td><td>How much a single catch is worth</td></tr>
+<tr><td>Unattacked contexts</td><td>Most traffic is benign</td><td>The cost of leaving a defence on</td></tr>
+</table>
+<p class="cap"><b>Table B1:</b> Each element and the deployment situation it models.</p>
+<p><b>Pre-registered primary arm.</b> The protocol froze an earlier version of the detector (entailment OR attention, without slot correction or the yes/no rewrite) as its primary arm, and the version reported here beside it, both before the fresh questions were opened. On the fresh test the earlier version reached 12% endorsement and 54% accuracy; neither pre-registered superiority claim over CoordGuard held (clean cost at matched recall, Holm p = 0.50; accuracy on unattacked contexts, 35% vs 37%, p = 0.73). All other numbers in this report use the version described here.</p>
+<p>Hyperparameters: NLI model cross-encoder/nli-deberta-v3-base, threshold 0.01; attention at layer 21 (Qwen), last 8 prompt rows, head mean, per-token mass, z ≥ 0 within context, slot offsets fitted on clean NQ 1–20 contexts; avidity score = logistic regression on [logit entailment, debiased z] (coefficients 0.938, 2.347; intercept 4.974; threshold 0.0989 for 5% clean removal on calibration); gate threshold 0.975 (largest value firing on every attacked calibration context, excluding the captured passage). Prompts are reproduced verbatim in the repository.</p>
+
+<h2>Appendix C. Reader Transfer and Robustness</h2>
+<div class="two"><figure><img src="fig/readers.png" alt="readers"></figure>
+<div><p>On Mistral-7B, endorsement fell from 69% to 11% (CoordGuard 9%, TrustRAG 7%). On Llama-3-8B, 95 of 100 claim extractions were blank, so that run does not test the signature; endorsement fell only to 32%. Slot-position correction halved the attention signal's sensitivity to passage order (recall range across four orders 0.155 → 0.082). Removing the question prefix left our detector's AUC at 0.98 (0.99 with it).</p></div></div>
+<p class="cap"><b>Figure C1:</b> Endorsement by reader on the fresh test.</p>
+<div style="break-inside:avoid"><figure><img src="fig/capture.png" alt="capture" style="width:70%;margin:0 auto"></figure>
+<p class="cap"><b>Figure C2:</b> Detection by which planted record was caught (development, n = 80).</p></div>
+<div class="two">
+<figure style="flex:1.6"><img src="fig/shortcut.png" alt="shortcut"></figure>
+<figure style="flex:1"><img src="fig/prefix.png" alt="prefix"></figure>
+</div>
+<p class="cap"><b>Figure C3:</b> Left: passage-level detection AUC on tier-1 confirmatory data (post hoc). Right: clean cost at near-full recall with and without the question prefix.</p>
+
+
+<h2>Appendix D. Related Work in Detail and Track 4 Mapping</h2>
+<p>Code availability: MAPLE-Guard and SecureCollaRAG release code; PerMIT on request; GRAD via a supplementary archive; AgentAntibody not checked. Only SecureCollaRAG uses our benchmark; it reports 12–21% attack success on NQ and HotpotQA under PoisonedRAG with other readers and settings, so its numbers are not comparable to ours. <b>Track 4 mapping.</b> Research question: does oversight still work when the untrusted side is many agents? Our answer for shared memory: a detection becomes a control for the whole swarm when the finder shares the claim and receivers act only when it is present.</p>
+
+<h2>Appendix E. Verification</h2>
+<p>Every number in this report is read from a results file listed in the repository's evidence index; figures are regenerated by paper/deck/make_figs.py and paper/report/make_report_figs.py. A code-level audit rechecked 1,300 confirmatory answers with zero rescoring mismatches; this verifies the rules' implementation, not their agreement with humans.</p>
+
+<h3>LLM Usage Statement</h3>
+<p>LLM coding assistants were used to write experiment and analysis code, run analyses, draft text and produce figures. All results come from logged runs; the author is responsible for every claim.</p>
+</body></html>

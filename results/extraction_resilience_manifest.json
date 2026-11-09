@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/run_resilient_queue.py": "03d7f932d5c2a5ab61c0e5781910bf33b39826dd187f8dc730ccf197cc29313d",
+    "docs/EXTRACTION_RESILIENCE_AMENDMENT.md": "ad71c65719afc224e27a4bf8857dd403613645655df4ba2291dedec3e6ef30fb",
+    "experiments/extraction_guard.py": "4c7c8d207d73b296969dcc5f19be893a41330ecf5a3642dc40bc726e77a1ec1d",
+    "results/incident_queue_manifest.json": "ccd213612e6d816e18b82f8760f0edc06fad4c1183cf58d11385394e9e5e6bc7",
+    "results/performance_runtime_manifest.json": "e6a1022bda7442ee65242e4387448cd2110885094c2cd3b679856af564d26c0a",
+    "results/remaining_queue_manifest_v2.json": "cbf51681b086789764bcab05fa78abc3f360999ee12e854dd6d541af69f9d9c1",
+    "src/antivenom/antibody.py": "57b964f7e7ec4571ded143f4bce45e1fbd6a993466056fea78bdfcfd5780afa1",
+    "src/antivenom/extraction_resilience.py": "a37c45eb4782bc0b08c4e04f4a44c518ec5e89fb8166b7fadf8eaf75e2368c95"
+  },
+  "settings": {
+    "roles": [
+      "remaining",
+      "incident"
+    ],
+    "exception": "JSONDecodeError only",
+    "fallback": "existing no-JSON empty-dictionary behavior; no text repair or better-output retries"
+  }
+}

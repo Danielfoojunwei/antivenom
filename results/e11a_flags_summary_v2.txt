@@ -1,0 +1,55 @@
+calibration split (targets 1-20)
+  claim    tau=0.001  P=0.825 R=0.825 F1=0.825 FPR=0.140
+  claim    tau=0.002  P=0.882 R=0.750 F1=0.811 FPR=0.080
+  claim    tau=0.005  P=0.911 R=0.637 F1=0.750 FPR=0.050
+  claim    tau=0.01   P=0.939 R=0.575 F1=0.713 FPR=0.030
+  claim    tau=0.02   P=0.978 R=0.562 F1=0.714 FPR=0.010
+  claim    tau=0.05   P=0.977 R=0.525 F1=0.683 FPR=0.010
+  claim    tau=0.1    P=0.976 R=0.512 F1=0.672 FPR=0.010
+  claim    tau=0.2    P=0.974 R=0.475 F1=0.639 FPR=0.010
+  claim    tau=0.3    P=0.974 R=0.463 F1=0.627 FPR=0.010
+  claim    tau=0.5    P=0.972 R=0.438 F1=0.603 FPR=0.010
+  claim    tau=0.7    P=0.971 R=0.412 F1=0.579 FPR=0.010
+  claim    tau=0.9    P=0.966 R=0.350 F1=0.514 FPR=0.010
+  qa       tau=0.001  P=0.849 R=0.988 F1=0.913 FPR=0.140
+  qa       tau=0.002  P=0.927 R=0.950 F1=0.938 FPR=0.060
+  qa       tau=0.005  P=0.987 R=0.938 F1=0.962 FPR=0.010
+  qa       tau=0.01   P=1.000 R=0.925 F1=0.961 FPR=0.000
+  qa       tau=0.02   P=1.000 R=0.887 F1=0.940 FPR=0.000
+  qa       tau=0.05   P=1.000 R=0.875 F1=0.933 FPR=0.000
+  qa       tau=0.1    P=1.000 R=0.838 F1=0.912 FPR=0.000
+  qa       tau=0.2    P=1.000 R=0.825 F1=0.904 FPR=0.000
+  qa       tau=0.3    P=1.000 R=0.812 F1=0.897 FPR=0.000
+  qa       tau=0.5    P=1.000 R=0.800 F1=0.889 FPR=0.000
+  qa       tau=0.7    P=1.000 R=0.787 F1=0.881 FPR=0.000
+  qa       tau=0.9    P=1.000 R=0.762 F1=0.865 FPR=0.000
+  q_claim  tau=0.001  P=0.835 R=0.950 F1=0.889 FPR=0.150
+  q_claim  tau=0.002  P=0.916 R=0.950 F1=0.933 FPR=0.070
+  q_claim  tau=0.005  P=0.962 R=0.938 F1=0.949 FPR=0.030
+  q_claim  tau=0.01   P=0.972 R=0.875 F1=0.921 FPR=0.020
+  q_claim  tau=0.02   P=0.972 R=0.863 F1=0.914 FPR=0.020
+  q_claim  tau=0.05   P=0.986 R=0.850 F1=0.913 FPR=0.010
+  q_claim  tau=0.1    P=1.000 R=0.850 F1=0.919 FPR=0.000
+  q_claim  tau=0.2    P=1.000 R=0.825 F1=0.904 FPR=0.000
+  q_claim  tau=0.3    P=1.000 R=0.800 F1=0.889 FPR=0.000
+  q_claim  tau=0.5    P=1.000 R=0.800 F1=0.889 FPR=0.000
+  q_claim  tau=0.7    P=1.000 R=0.800 F1=0.889 FPR=0.000
+  q_claim  tau=0.9    P=1.000 R=0.787 F1=0.881 FPR=0.000
+
+chosen: hypothesis=qa tau=0.005
+HELD-OUT (targets 21-100): precision=0.940 recall=0.893 clean-FPR=0.0447 TP=283 FP=18 FN=34 TN=385 captured flagged 80/80
+saved results/e11a_chosen_flags.json
+
+sensitivity on HELD-OUT for the chosen phrasing (not used for selection):
+  tau=0.001  P=0.840 R=0.931 FPR=0.1390
+  tau=0.002  P=0.893 R=0.918 FPR=0.0868
+  tau=0.005  P=0.940 R=0.893 FPR=0.0447
+  tau=0.01   P=0.952 R=0.871 FPR=0.0347
+  tau=0.02   P=0.961 R=0.855 FPR=0.0273
+  tau=0.05   P=0.967 R=0.842 FPR=0.0223
+  tau=0.1    P=0.974 R=0.830 FPR=0.0174
+  tau=0.2    P=0.977 R=0.817 FPR=0.0149
+  tau=0.3    P=0.981 R=0.817 FPR=0.0124
+  tau=0.5    P=0.985 R=0.808 FPR=0.0099
+  tau=0.7    P=0.984 R=0.798 FPR=0.0099
+  tau=0.9    P=0.988 R=0.760 FPR=0.0074

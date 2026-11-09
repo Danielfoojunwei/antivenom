@@ -1,0 +1,23 @@
+{
+  "use_fast_ordinary": true,
+  "tests": [
+    {
+      "id": "test1",
+      "identical": true,
+      "regular": "The fourth season of Chicago Fire contains 24 episodes.",
+      "masked": "The fourth season of Chicago Fire contains 24 episodes."
+    },
+    {
+      "id": "test11",
+      "identical": true,
+      "regular": "Frank Sinatra recorded 'I Can't Help Falling in Love With You'.",
+      "masked": "Frank Sinatra recorded 'I Can't Help Falling in Love With You'."
+    },
+    {
+      "id": "test16",
+      "identical": true,
+      "regular": "The atom bomb dropped by the USA on Hiroshima was named 'Big Man'.",
+      "masked": "The atom bomb dropped by the USA on Hiroshima was named 'Big Man'."
+    }
+  ]
+}

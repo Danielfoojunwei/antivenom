@@ -1,0 +1,7 @@
+{
+  "helper_pid": 24259,
+  "status": "supervision_restored",
+  "incident_queue_pid": 54055,
+  "incident_inhibitor_pid": 54081,
+  "swarm_supervisor_pid": 54083
+}

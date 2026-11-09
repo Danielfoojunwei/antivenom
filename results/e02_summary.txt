@@ -1,0 +1,37 @@
+n = 100 targets
+
+arm                      n   endorsed [95% CI]       correct [95% CI]         substring
+clean                  100   0.04 [0.01, 0.08]        0.53 [0.43, 0.63]             0.04
+attack                 100   0.96 [0.92, 0.99]        0.11 [0.05, 0.18]             0.99
+warn                   100   0.90 [0.84, 0.96]        0.13 [0.07, 0.20]             0.92
+del_sample             100   0.94 [0.89, 0.98]        0.15 [0.08, 0.22]             0.98
+del_neigh_0.85         100   0.69 [0.60, 0.78]        0.32 [0.23, 0.41]             0.72
+del_neigh_0.75         100   0.17 [0.10, 0.24]        0.47 [0.37, 0.56]             0.17
+flagx1                 100   0.77 [0.69, 0.85]        0.15 [0.08, 0.22]             0.84
+flagx3                 100   0.61 [0.51, 0.70]        0.17 [0.10, 0.24]             0.68
+flagx5                 100   0.55 [0.45, 0.65]        0.15 [0.08, 0.22]             0.62
+clean+flagx5           100   0.03 [0.00, 0.07]        0.45 [0.35, 0.55]             0.07
+bestx1                 100   0.74 [0.65, 0.82]        0.23 [0.15, 0.31]             0.79
+bestx3                 100   0.50 [0.40, 0.60]        0.25 [0.17, 0.34]             0.59
+bestx5                 100   0.43 [0.33, 0.53]        0.26 [0.18, 0.35]             0.49
+clean+bestx5           100   0.04 [0.01, 0.08]        0.47 [0.37, 0.57]             0.09
+flag_noanchor_x5       100   0.92 [0.87, 0.97]        0.11 [0.05, 0.17]             0.95
+offtarget_clean+all    100   0.04 [0.01, 0.08]        0.53 [0.43, 0.63]             0.04
+evidencex1              32   0.56 [0.41, 0.72]        0.50 [0.31, 0.66]             0.59
+evidencex3              32   0.28 [0.12, 0.44]        0.53 [0.38, 0.72]             0.41
+evidencex5              32   0.19 [0.06, 0.31]        0.59 [0.44, 0.75]             0.22
+clean+evidencex5        32   0.03 [0.00, 0.09]        0.66 [0.50, 0.81]             0.06
+
+Exact McNemar, paired over targets that have both arms
+            attack vs bestx5             endorsed  n=100  p=2.2e-16
+            attack vs bestx5             correct   n=100  p=0.00073
+            attack vs flagx5             endorsed  n=100  p=9.1e-13
+            attack vs flagx5             correct   n=100  p=0.29
+            flagx5 vs flag_noanchor_x5   endorsed  n=100  p=1.5e-11
+            flagx5 vs flag_noanchor_x5   correct   n=100  p=0.29
+            bestx5 vs del_neigh_0.75     endorsed  n=100  p=4.2e-05
+            bestx5 vs del_neigh_0.75     correct   n=100  p=0.00032
+            flagx1 vs flagx5             endorsed  n=100  p=1e-05
+            flagx1 vs flagx5             correct   n=100  p=1
+             clean vs clean+bestx5       endorsed  n=100  p=1
+             clean vs clean+bestx5       correct   n=100  p=0.39

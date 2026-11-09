@@ -1,0 +1,22 @@
+{
+  "schema": "antivenom.memform-drop-all.wait-runtime.v1",
+  "inputs": {
+    "experiments/run_memform_drop_all_wait.py": "e1194d86fe4d0bd2b3b00993e758820f6055614a8f435c1235986430b88b86e9",
+    "tests/test_memform_drop_all_wait.py": "a18a30c905b84f106892d86279210f18c496ce10835e1bf2eb2f31554e9ecf10",
+    "results/memform_drop_all_wait_config_v1.json": "e428fd7eb85fab3c66c4881a9a996e0e2e4127e8a39f6419cb94bc4db36a79a7",
+    "results/memform_drop_all_plan_v1.json": "02c79c8a6f56af7733c25930fa5ea3f388490545b41a0f117640d4536ef2d182",
+    "experiments/memform_drop_all_control.py": "a8254c54d8a50856b22c8b070d269c90f0fc0de8112b53fd682130df28f50f0e",
+    "docs/MEMFORM_DROP_ALL_RUNTIME_AMENDMENT.md": "c9e407d64d2f00d14bd0844a88291cfa39556c0336bd6cdf85c84d2632c2371b",
+    "results/memform_drop_all_analysis_manifest_v1.json": "779fc9b5ee04af01fcddbc9d6cab7914248891f634f8eebab2fec7c9f618b8dc",
+    "analysis/memform_drop_all_summary.py": "f6f80c9ee82b372e4387bc33d0c094324319b1446c24e798ad18cb319c02611f"
+  },
+  "settings": {
+    "scope": "Operational waiting only; frozen scientific recipe unchanged",
+    "poll_seconds": 30,
+    "clear_confirmations": 2,
+    "guard_override": "Read-only exact process and dormant-file witnesses",
+    "reader_wrapper": "Resource check before/after init and before every unchanged generate call",
+    "no_foreign_signals": true,
+    "no_response_reuse": true
+  }
+}

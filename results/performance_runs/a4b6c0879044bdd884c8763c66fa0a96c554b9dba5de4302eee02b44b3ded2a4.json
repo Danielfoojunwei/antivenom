@@ -1,0 +1,10 @@
+{
+  "script": "experiments/incident_swarm.py",
+  "arguments": [],
+  "configuration": "original_default",
+  "cache_limit_bytes": 16320875724,
+  "scientific_source_unchanged": true,
+  "status": "complete",
+  "wall_seconds": 47130.38758362499,
+  "peak_memory_bytes": 5125303512
+}

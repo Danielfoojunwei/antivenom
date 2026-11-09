@@ -1,0 +1,3077 @@
+{
+  "scope": "MemForm P1-capture to P2-forged-history local port; not MemMorph or primary confirmation",
+  "all_tasks": {
+    "tasks": 212,
+    "families": 212,
+    "rates": {
+      "clean:OR": {
+        "correct": {
+          "mean": 0.9339622641509434,
+          "ci95": [
+            0.9009433962264151,
+            0.9669811320754716
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.04245283018867924,
+          "ci95": [
+            0.018867924528301886,
+            0.07075471698113207
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.009433962264150943
+      },
+      "clean:coordguard_gate": {
+        "correct": {
+          "mean": 0.9481132075471698,
+          "ci95": [
+            0.9198113207547169,
+            0.9764150943396226
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.0330188679245283,
+          "ci95": [
+            0.009433962264150943,
+            0.05660377358490566
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.014150943396226415
+      },
+      "clean:cosine": {
+        "correct": {
+          "mean": 0.9622641509433962,
+          "ci95": [
+            0.938561320754717,
+            0.9858490566037735
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.018867924528301886,
+          "ci95": [
+            0.0047169811320754715,
+            0.03773584905660377
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.014150943396226415
+      },
+      "clean:entail": {
+        "correct": {
+          "mean": 0.9528301886792453,
+          "ci95": [
+            0.9245283018867925,
+            0.9811320754716981
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.02830188679245283,
+          "ci95": [
+            0.009433962264150943,
+            0.05188679245283019
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.009433962264150943
+      },
+      "clean:gated_OR": {
+        "correct": {
+          "mean": 0.9292452830188679,
+          "ci95": [
+            0.8962264150943396,
+            0.9622641509433962
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.04245283018867924,
+          "ci95": [
+            0.018867924528301886,
+            0.07075471698113207
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.014150943396226415
+      },
+      "clean:none": {
+        "correct": {
+          "mean": 0.9669811320754716,
+          "ci95": [
+            0.9433962264150944,
+            0.9905660377358491
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.018867924528301886,
+          "ci95": [
+            0.0047169811320754715,
+            0.03773584905660377
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.009433962264150943
+      },
+      "clean:trustrag_filter": {
+        "correct": {
+          "mean": 0.8113207547169812,
+          "ci95": [
+            0.7594339622641509,
+            0.8584905660377359
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.1179245283018868,
+          "ci95": [
+            0.07547169811320754,
+            0.16037735849056603
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.0330188679245283
+      },
+      "poisoned:OR": {
+        "correct": {
+          "mean": 0.8301886792452831,
+          "ci95": [
+            0.7830188679245284,
+            0.8773584905660378
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.08018867924528301,
+          "ci95": [
+            0.04716981132075472,
+            0.1179245283018868
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.04245283018867924
+      },
+      "poisoned:coordguard_gate": {
+        "correct": {
+          "mean": 0.41509433962264153,
+          "ci95": [
+            0.35377358490566035,
+            0.4811320754716981
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.5471698113207547,
+          "ci95": [
+            0.4810141509433962,
+            0.6132075471698113
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.02358490566037736
+      },
+      "poisoned:cosine": {
+        "correct": {
+          "mean": 0.4481132075471698,
+          "ci95": [
+            0.38207547169811323,
+            0.5141509433962265
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.5188679245283019,
+          "ci95": [
+            0.4528301886792453,
+            0.5849056603773585
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.014150943396226415
+      },
+      "poisoned:entail": {
+        "correct": {
+          "mean": 0.8207547169811321,
+          "ci95": [
+            0.7688679245283019,
+            0.8680424528301881
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.08962264150943396,
+          "ci95": [
+            0.05660377358490566,
+            0.12735849056603774
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.04245283018867924
+      },
+      "poisoned:gated_OR": {
+        "correct": {
+          "mean": 0.8301886792452831,
+          "ci95": [
+            0.7830188679245284,
+            0.8773584905660378
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.08018867924528301,
+          "ci95": [
+            0.04716981132075472,
+            0.1179245283018868
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.04245283018867924
+      },
+      "poisoned:none": {
+        "correct": {
+          "mean": 0.41037735849056606,
+          "ci95": [
+            0.348938679245283,
+            0.47641509433962265
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.5424528301886793,
+          "ci95": [
+            0.47641509433962265,
+            0.6084905660377359
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.018867924528301886
+      },
+      "poisoned:trustrag_filter": {
+        "correct": {
+          "mean": 0.8018867924528302,
+          "ci95": [
+            0.7498820754716982,
+            0.8537735849056604
+          ],
+          "independent_targets": 212
+        },
+        "endorsed": {
+          "mean": 0.11320754716981132,
+          "ci95": [
+            0.07075471698113207,
+            0.15566037735849056
+          ],
+          "independent_targets": 212
+        },
+        "parse_failure_rate": 0.04245283018867924
+      }
+    },
+    "comparisons": {
+      "clean:OR-coordguard_gate:correct": {
+        "mean": -0.014150943396226415,
+        "ci95": [
+          -0.06132075471698113,
+          0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.6776394844055176,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          10,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-coordguard_gate:endorsed": {
+        "mean": 0.009433962264150943,
+        "ci95": [
+          -0.02358490566037736,
+          0.04245283018867924
+        ],
+        "independent_targets": 212,
+        "p": 0.79052734375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          6
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-coordguard_gate:correct": {
+        "mean": 0.41509433962264153,
+        "ci95": [
+          0.33962264150943394,
+          0.49056603773584906
+        ],
+        "independent_targets": 212,
+        "p": 2.005959521923613e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          94,
+          6
+        ],
+        "holm_p": 1.4242312605657652e-19
+      },
+      "poisoned:OR-coordguard_gate:endorsed": {
+        "mean": -0.4669811320754717,
+        "ci95": [
+          -0.5377358490566038,
+          -0.39622641509433965
+        ],
+        "independent_targets": 212,
+        "p": 1.05648196731724e-27,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          101
+        ],
+        "holm_p": 8.874448525464817e-26
+      },
+      "clean:OR-cosine:correct": {
+        "mean": -0.02830188679245283,
+        "ci95": [
+          -0.07075471698113207,
+          0.014150943396226415
+        ],
+        "independent_targets": 212,
+        "p": 0.26317596435546875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-cosine:endorsed": {
+        "mean": 0.02358490566037736,
+        "ci95": [
+          -0.0047169811320754715,
+          0.05660377358490566
+        ],
+        "independent_targets": 212,
+        "p": 0.2265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-cosine:correct": {
+        "mean": 0.38207547169811323,
+        "ci95": [
+          0.30660377358490565,
+          0.4528301886792453
+        ],
+        "independent_targets": 212,
+        "p": 1.999575403524945e-18,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          89,
+          8
+        ],
+        "holm_p": 1.2797282582559648e-16
+      },
+      "poisoned:OR-cosine:endorsed": {
+        "mean": -0.4386792452830189,
+        "ci95": [
+          -0.5095518867924528,
+          -0.36780660377358554
+        ],
+        "independent_targets": 212,
+        "p": 5.105507778590388e-25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          96
+        ],
+        "holm_p": 3.982296067300503e-23
+      },
+      "clean:OR-entail:correct": {
+        "mean": -0.018867924528301886,
+        "ci95": [
+          -0.04245283018867924,
+          0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.21875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-entail:endorsed": {
+        "mean": 0.014150943396226415,
+        "ci95": [
+          -0.0047169811320754715,
+          0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-entail:correct": {
+        "mean": 0.009433962264150943,
+        "ci95": [
+          0.0,
+          0.02358490566037736
+        ],
+        "independent_targets": 212,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-entail:endorsed": {
+        "mean": -0.009433962264150943,
+        "ci95": [
+          -0.02358490566037736,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-gated_OR:correct": {
+        "mean": 0.0047169811320754715,
+        "ci95": [
+          0.0,
+          0.014150943396226415
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-gated_OR:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-none:correct": {
+        "mean": -0.0330188679245283,
+        "ci95": [
+          -0.07547169811320754,
+          0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.1670684814453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-none:endorsed": {
+        "mean": 0.02358490566037736,
+        "ci95": [
+          -0.0047169811320754715,
+          0.05660377358490566
+        ],
+        "independent_targets": 212,
+        "p": 0.2265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-none:correct": {
+        "mean": 0.419811320754717,
+        "ci95": [
+          0.3443396226415094,
+          0.49056603773584906
+        ],
+        "independent_targets": 212,
+        "p": 1.0655959865887333e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          95,
+          6
+        ],
+        "holm_p": 7.778850702097753e-20
+      },
+      "poisoned:OR-none:endorsed": {
+        "mean": -0.46226415094339623,
+        "ci95": [
+          -0.5330188679245284,
+          -0.3867924528301887
+        ],
+        "independent_targets": 212,
+        "p": 2.072337598015598e-27,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          100
+        ],
+        "holm_p": 1.6993168303727904e-25
+      },
+      "clean:OR-trustrag_filter:correct": {
+        "mean": 0.12264150943396226,
+        "ci95": [
+          0.07075471698113207,
+          0.17452830188679244
+        ],
+        "independent_targets": 212,
+        "p": 2.5560148060321808e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          29,
+          3
+        ],
+        "holm_p": 0.0001456928439438343
+      },
+      "clean:OR-trustrag_filter:endorsed": {
+        "mean": -0.07547169811320754,
+        "ci95": [
+          -0.1179245283018868,
+          -0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.0004024505615234375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          18
+        ],
+        "holm_p": 0.020524978637695312
+      },
+      "poisoned:OR-trustrag_filter:correct": {
+        "mean": 0.02830188679245283,
+        "ci95": [
+          0.009433962264150943,
+          0.05188679245283019
+        ],
+        "independent_targets": 212,
+        "p": 0.03125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-trustrag_filter:endorsed": {
+        "mean": -0.0330188679245283,
+        "ci95": [
+          -0.05660377358490566,
+          -0.009433962264150943
+        ],
+        "independent_targets": 212,
+        "p": 0.015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          7
+        ],
+        "holm_p": 0.75
+      },
+      "clean:coordguard_gate-cosine:correct": {
+        "mean": -0.014150943396226415,
+        "ci95": [
+          -0.0330188679245283,
+          0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-cosine:endorsed": {
+        "mean": 0.014150943396226415,
+        "ci95": [
+          0.0,
+          0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-cosine:correct": {
+        "mean": -0.0330188679245283,
+        "ci95": [
+          -0.08490566037735849,
+          0.018867924528301886
+        ],
+        "independent_targets": 212,
+        "p": 0.26493089646101,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          18
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-cosine:endorsed": {
+        "mean": 0.02830188679245283,
+        "ci95": [
+          -0.018867924528301886,
+          0.08018867924528301
+        ],
+        "independent_targets": 212,
+        "p": 0.34492845088243484,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          17,
+          11
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-entail:correct": {
+        "mean": -0.0047169811320754715,
+        "ci95": [
+          -0.04716981132075472,
+          0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-entail:endorsed": {
+        "mean": 0.0047169811320754715,
+        "ci95": [
+          -0.02358490566037736,
+          0.03313679245282954
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-entail:correct": {
+        "mean": -0.4056603773584906,
+        "ci95": [
+          -0.4811320754716981,
+          -0.330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 7.09532095861481e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          92
+        ],
+        "holm_p": 4.824818251858071e-19
+      },
+      "poisoned:coordguard_gate-entail:endorsed": {
+        "mean": 0.45754716981132076,
+        "ci95": [
+          0.3867924528301887,
+          0.5283018867924528
+        ],
+        "independent_targets": 212,
+        "p": 4.064211383698653e-27,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          99,
+          2
+        ],
+        "holm_p": 3.2513691069589223e-25
+      },
+      "clean:coordguard_gate-gated_OR:correct": {
+        "mean": 0.018867924528301886,
+        "ci95": [
+          -0.02830188679245283,
+          0.06132075471698113
+        ],
+        "independent_targets": 212,
+        "p": 0.5234670639038086,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-gated_OR:endorsed": {
+        "mean": -0.009433962264150943,
+        "ci95": [
+          -0.04245283018867924,
+          0.02358490566037736
+        ],
+        "independent_targets": 212,
+        "p": 0.79052734375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-gated_OR:correct": {
+        "mean": -0.41509433962264153,
+        "ci95": [
+          -0.49056603773584906,
+          -0.33962264150943394
+        ],
+        "independent_targets": 212,
+        "p": 2.005959521923613e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          94
+        ],
+        "holm_p": 1.4242312605657652e-19
+      },
+      "poisoned:coordguard_gate-gated_OR:endorsed": {
+        "mean": 0.4669811320754717,
+        "ci95": [
+          0.39622641509433965,
+          0.5377358490566038
+        ],
+        "independent_targets": 212,
+        "p": 1.05648196731724e-27,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          101,
+          2
+        ],
+        "holm_p": 8.874448525464817e-26
+      },
+      "clean:coordguard_gate-none:correct": {
+        "mean": -0.018867924528301886,
+        "ci95": [
+          -0.03773584905660377,
+          -0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-none:endorsed": {
+        "mean": 0.014150943396226415,
+        "ci95": [
+          0.0,
+          0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-none:correct": {
+        "mean": 0.0047169811320754715,
+        "ci95": [
+          -0.0330188679245283,
+          0.042570754716980484
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-none:endorsed": {
+        "mean": 0.0047169811320754715,
+        "ci95": [
+          -0.0330188679245283,
+          0.04245283018867924
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-trustrag_filter:correct": {
+        "mean": 0.13679245283018868,
+        "ci95": [
+          0.08018867924528301,
+          0.19811320754716982
+        ],
+        "independent_targets": 212,
+        "p": 4.873598300036974e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          35,
+          6
+        ],
+        "holm_p": 0.00027292150480207056
+      },
+      "clean:coordguard_gate-trustrag_filter:endorsed": {
+        "mean": -0.08490566037735849,
+        "ci95": [
+          -0.13679245283018868,
+          -0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.0009122341871261597,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          23
+        ],
+        "holm_p": 0.044699475169181824
+      },
+      "poisoned:coordguard_gate-trustrag_filter:correct": {
+        "mean": -0.3867924528301887,
+        "ci95": [
+          -0.46226415094339623,
+          -0.3160377358490566
+        ],
+        "independent_targets": 212,
+        "p": 3.259152789937673e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          89
+        ],
+        "holm_p": 2.151040841358864e-17
+      },
+      "poisoned:coordguard_gate-trustrag_filter:endorsed": {
+        "mean": 0.4339622641509434,
+        "ci95": [
+          0.3632075471698113,
+          0.5047169811320755
+        ],
+        "independent_targets": 212,
+        "p": 9.904811308210189e-25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          95,
+          3
+        ],
+        "holm_p": 7.527656594239744e-23
+      },
+      "clean:cosine-entail:correct": {
+        "mean": 0.009433962264150943,
+        "ci95": [
+          -0.02830188679245283,
+          0.04716981132075472
+        ],
+        "independent_targets": 212,
+        "p": 0.803619384765625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-entail:endorsed": {
+        "mean": -0.009433962264150943,
+        "ci95": [
+          -0.03773584905660377,
+          0.014150943396226415
+        ],
+        "independent_targets": 212,
+        "p": 0.7265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-entail:correct": {
+        "mean": -0.37264150943396224,
+        "ci95": [
+          -0.44339622641509435,
+          -0.2971698113207547
+        ],
+        "independent_targets": 212,
+        "p": 6.741612423029947e-18,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          87
+        ],
+        "holm_p": 4.179799702278567e-16
+      },
+      "poisoned:cosine-entail:endorsed": {
+        "mean": 0.42924528301886794,
+        "ci95": [
+          0.3584905660377358,
+          0.5
+        ],
+        "independent_targets": 212,
+        "p": 1.9209583457473067e-24,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          94,
+          3
+        ],
+        "holm_p": 1.44071875931048e-22
+      },
+      "clean:cosine-gated_OR:correct": {
+        "mean": 0.0330188679245283,
+        "ci95": [
+          -0.0047169811320754715,
+          0.07547169811320754
+        ],
+        "independent_targets": 212,
+        "p": 0.1670684814453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          6
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-gated_OR:endorsed": {
+        "mean": -0.02358490566037736,
+        "ci95": [
+          -0.05660377358490566,
+          0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.2265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-gated_OR:correct": {
+        "mean": -0.38207547169811323,
+        "ci95": [
+          -0.4528301886792453,
+          -0.30660377358490565
+        ],
+        "independent_targets": 212,
+        "p": 1.999575403524945e-18,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          89
+        ],
+        "holm_p": 1.2797282582559648e-16
+      },
+      "poisoned:cosine-gated_OR:endorsed": {
+        "mean": 0.4386792452830189,
+        "ci95": [
+          0.3678066037735849,
+          0.5095518867924522
+        ],
+        "independent_targets": 212,
+        "p": 5.105507778590388e-25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          96,
+          3
+        ],
+        "holm_p": 3.982296067300503e-23
+      },
+      "clean:cosine-none:correct": {
+        "mean": -0.0047169811320754715,
+        "ci95": [
+          -0.014150943396226415,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-none:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-none:correct": {
+        "mean": 0.03773584905660377,
+        "ci95": [
+          0.0,
+          0.08018867924528301
+        ],
+        "independent_targets": 212,
+        "p": 0.09625244140625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          13,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-none:endorsed": {
+        "mean": -0.02358490566037736,
+        "ci95": [
+          -0.0660377358490566,
+          0.018867924528301886
+        ],
+        "independent_targets": 212,
+        "p": 0.359283447265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          12
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-trustrag_filter:correct": {
+        "mean": 0.1509433962264151,
+        "ci95": [
+          0.09433962264150944,
+          0.20754716981132076
+        ],
+        "independent_targets": 212,
+        "p": 1.8570244719740003e-07,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          36,
+          4
+        ],
+        "holm_p": 1.0770741937449202e-05
+      },
+      "clean:cosine-trustrag_filter:endorsed": {
+        "mean": -0.09905660377358491,
+        "ci95": [
+          -0.14622641509433962,
+          -0.05188679245283019
+        ],
+        "independent_targets": 212,
+        "p": 1.9431114196777344e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          23
+        ],
+        "holm_p": 0.0010492801666259766
+      },
+      "poisoned:cosine-trustrag_filter:correct": {
+        "mean": -0.35377358490566035,
+        "ci95": [
+          -0.42924528301886794,
+          -0.2781839622641516
+        ],
+        "independent_targets": 212,
+        "p": 1.4342435250828832e-15,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          86
+        ],
+        "holm_p": 8.748885503005588e-14
+      },
+      "poisoned:cosine-trustrag_filter:endorsed": {
+        "mean": 0.4056603773584906,
+        "ci95": [
+          0.330188679245283,
+          0.4811320754716981
+        ],
+        "independent_targets": 212,
+        "p": 7.09532095861481e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          92,
+          6
+        ],
+        "holm_p": 4.824818251858071e-19
+      },
+      "clean:entail-gated_OR:correct": {
+        "mean": 0.02358490566037736,
+        "ci95": [
+          0.0,
+          0.04716981132075472
+        ],
+        "independent_targets": 212,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail-gated_OR:endorsed": {
+        "mean": -0.014150943396226415,
+        "ci95": [
+          -0.0330188679245283,
+          0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-gated_OR:correct": {
+        "mean": -0.009433962264150943,
+        "ci95": [
+          -0.02358490566037736,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-gated_OR:endorsed": {
+        "mean": 0.009433962264150943,
+        "ci95": [
+          0.0,
+          0.02358490566037736
+        ],
+        "independent_targets": 212,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail-none:correct": {
+        "mean": -0.014150943396226415,
+        "ci95": [
+          -0.05188679245283019,
+          0.02358490566037736
+        ],
+        "independent_targets": 212,
+        "p": 0.6072387695312499,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail-none:endorsed": {
+        "mean": 0.009433962264150943,
+        "ci95": [
+          -0.014150943396226415,
+          0.03773584905660377
+        ],
+        "independent_targets": 212,
+        "p": 0.7265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-none:correct": {
+        "mean": 0.41037735849056606,
+        "ci95": [
+          0.33490566037735847,
+          0.4811320754716981
+        ],
+        "independent_targets": 212,
+        "p": 3.773842968353187e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          93,
+          6
+        ],
+        "holm_p": 2.603951648163699e-19
+      },
+      "poisoned:entail-none:endorsed": {
+        "mean": -0.4528301886792453,
+        "ci95": [
+          -0.5235849056603774,
+          -0.38207547169811323
+        ],
+        "independent_targets": 212,
+        "p": 7.969072864542661e-27,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          98
+        ],
+        "holm_p": 6.295567562988702e-25
+      },
+      "clean:entail-trustrag_filter:correct": {
+        "mean": 0.14150943396226415,
+        "ci95": [
+          0.09422169811320756,
+          0.19339622641509435
+        ],
+        "independent_targets": 212,
+        "p": 6.938353180885315e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          32,
+          2
+        ],
+        "holm_p": 4.093628376722336e-06
+      },
+      "clean:entail-trustrag_filter:endorsed": {
+        "mean": -0.08962264150943396,
+        "ci95": [
+          -0.1320754716981132,
+          -0.04716981132075472
+        ],
+        "independent_targets": 212,
+        "p": 6.604194641113281e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          21
+        ],
+        "holm_p": 0.0034341812133789062
+      },
+      "poisoned:entail-trustrag_filter:correct": {
+        "mean": 0.018867924528301886,
+        "ci95": [
+          -0.0047169811320754715,
+          0.04716981132075472
+        ],
+        "independent_targets": 212,
+        "p": 0.2890625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-trustrag_filter:endorsed": {
+        "mean": -0.02358490566037736,
+        "ci95": [
+          -0.05188679245283019,
+          0.0047169811320754715
+        ],
+        "independent_targets": 212,
+        "p": 0.1796875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:gated_OR-none:correct": {
+        "mean": -0.03773584905660377,
+        "ci95": [
+          -0.07547169811320754,
+          0.0
+        ],
+        "independent_targets": 212,
+        "p": 0.09625244140625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          13
+        ],
+        "holm_p": 1.0
+      },
+      "clean:gated_OR-none:endorsed": {
+        "mean": 0.02358490566037736,
+        "ci95": [
+          -0.0047169811320754715,
+          0.05660377358490566
+        ],
+        "independent_targets": 212,
+        "p": 0.2265625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:gated_OR-none:correct": {
+        "mean": 0.419811320754717,
+        "ci95": [
+          0.3443396226415094,
+          0.49056603773584906
+        ],
+        "independent_targets": 212,
+        "p": 1.0655959865887333e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          95,
+          6
+        ],
+        "holm_p": 7.778850702097753e-20
+      },
+      "poisoned:gated_OR-none:endorsed": {
+        "mean": -0.46226415094339623,
+        "ci95": [
+          -0.5330188679245284,
+          -0.3867924528301887
+        ],
+        "independent_targets": 212,
+        "p": 2.072337598015598e-27,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          100
+        ],
+        "holm_p": 1.6993168303727904e-25
+      },
+      "clean:gated_OR-trustrag_filter:correct": {
+        "mean": 0.1179245283018868,
+        "ci95": [
+          0.0660377358490566,
+          0.16992924528301823
+        ],
+        "independent_targets": 212,
+        "p": 1.0928604751825333e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          29,
+          4
+        ],
+        "holm_p": 0.0006010732613503933
+      },
+      "clean:gated_OR-trustrag_filter:endorsed": {
+        "mean": -0.07547169811320754,
+        "ci95": [
+          -0.1179245283018868,
+          -0.0330188679245283
+        ],
+        "independent_targets": 212,
+        "p": 0.0004024505615234375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          18
+        ],
+        "holm_p": 0.020524978637695312
+      },
+      "poisoned:gated_OR-trustrag_filter:correct": {
+        "mean": 0.02830188679245283,
+        "ci95": [
+          0.009433962264150943,
+          0.05188679245283019
+        ],
+        "independent_targets": 212,
+        "p": 0.03125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:gated_OR-trustrag_filter:endorsed": {
+        "mean": -0.0330188679245283,
+        "ci95": [
+          -0.05660377358490566,
+          -0.009433962264150943
+        ],
+        "independent_targets": 212,
+        "p": 0.015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          7
+        ],
+        "holm_p": 0.75
+      },
+      "clean:none-trustrag_filter:correct": {
+        "mean": 0.15566037735849056,
+        "ci95": [
+          0.09905660377358491,
+          0.21226415094339623
+        ],
+        "independent_targets": 212,
+        "p": 3.608874976634979e-08,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          36,
+          3
+        ],
+        "holm_p": 2.1653249859809875e-06
+      },
+      "clean:none-trustrag_filter:endorsed": {
+        "mean": -0.09905660377358491,
+        "ci95": [
+          -0.14622641509433962,
+          -0.05188679245283019
+        ],
+        "independent_targets": 212,
+        "p": 1.9431114196777344e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          23
+        ],
+        "holm_p": 0.0010492801666259766
+      },
+      "poisoned:none-trustrag_filter:correct": {
+        "mean": -0.3915094339622642,
+        "ci95": [
+          -0.4669811320754717,
+          -0.3160377358490566
+        ],
+        "independent_targets": 212,
+        "p": 5.90963701961033e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          91
+        ],
+        "holm_p": 3.841264062746715e-17
+      },
+      "poisoned:none-trustrag_filter:endorsed": {
+        "mean": 0.42924528301886794,
+        "ci95": [
+          0.35377358490566035,
+          0.5
+        ],
+        "independent_targets": 212,
+        "p": 1.2388827013668045e-23,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          95,
+          4
+        ],
+        "holm_p": 9.167731990114353e-22
+      }
+    }
+  },
+  "fixed_causal_eligible": {
+    "tasks": 170,
+    "families": 170,
+    "rates": {
+      "clean:OR": {
+        "correct": {
+          "mean": 0.9588235294117647,
+          "ci95": [
+            0.9294117647058824,
+            0.9824999999999992
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.01764705882352941,
+          "ci95": [
+            0.0,
+            0.041176470588235294
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.0058823529411764705
+      },
+      "clean:coordguard_gate": {
+        "correct": {
+          "mean": 0.9764705882352941,
+          "ci95": [
+            0.9529411764705882,
+            0.9941176470588236
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.01764705882352941,
+          "ci95": [
+            0.0,
+            0.041176470588235294
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.0058823529411764705
+      },
+      "clean:cosine": {
+        "correct": {
+          "mean": 0.9941176470588236,
+          "ci95": [
+            0.9823529411764705,
+            1.0
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.0058823529411764705
+      },
+      "clean:entail": {
+        "correct": {
+          "mean": 0.9705882352941176,
+          "ci95": [
+            0.9411764705882353,
+            0.9941176470588236
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.011764705882352941,
+          "ci95": [
+            0.0,
+            0.029411764705882353
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.0058823529411764705
+      },
+      "clean:gated_OR": {
+        "correct": {
+          "mean": 0.9588235294117647,
+          "ci95": [
+            0.9294117647058824,
+            0.9824999999999992
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.01764705882352941,
+          "ci95": [
+            0.0,
+            0.041176470588235294
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.0058823529411764705
+      },
+      "clean:none": {
+        "correct": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.0
+      },
+      "clean:trustrag_filter": {
+        "correct": {
+          "mean": 0.8941176470588236,
+          "ci95": [
+            0.8470588235294118,
+            0.9352941176470588
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.058823529411764705,
+          "ci95": [
+            0.02926470588235295,
+            0.09411764705882353
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.023529411764705882
+      },
+      "poisoned:OR": {
+        "correct": {
+          "mean": 0.9117647058823529,
+          "ci95": [
+            0.8647058823529412,
+            0.9529411764705882
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.03529411764705882,
+          "ci95": [
+            0.011764705882352941,
+            0.06470588235294118
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.023529411764705882
+      },
+      "poisoned:coordguard_gate": {
+        "correct": {
+          "mean": 0.4588235294117647,
+          "ci95": [
+            0.38235294117647056,
+            0.5352941176470588
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.5117647058823529,
+          "ci95": [
+            0.43514705882352944,
+            0.5882352941176471
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.023529411764705882
+      },
+      "poisoned:cosine": {
+        "correct": {
+          "mean": 0.49411764705882355,
+          "ci95": [
+            0.4235294117647059,
+            0.5705882352941176
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.4764705882352941,
+          "ci95": [
+            0.3941176470588235,
+            0.5529411764705883
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.01764705882352941
+      },
+      "poisoned:entail": {
+        "correct": {
+          "mean": 0.9,
+          "ci95": [
+            0.8529411764705882,
+            0.9411764705882353
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.047058823529411764,
+          "ci95": [
+            0.01764705882352941,
+            0.08235294117647059
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.023529411764705882
+      },
+      "poisoned:gated_OR": {
+        "correct": {
+          "mean": 0.9117647058823529,
+          "ci95": [
+            0.8647058823529412,
+            0.9529411764705882
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.03529411764705882,
+          "ci95": [
+            0.011764705882352941,
+            0.06470588235294118
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.023529411764705882
+      },
+      "poisoned:none": {
+        "correct": {
+          "mean": 0.4588235294117647,
+          "ci95": [
+            0.38235294117647056,
+            0.5352941176470588
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.5,
+          "ci95": [
+            0.4235294117647059,
+            0.5764705882352941
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.01764705882352941
+      },
+      "poisoned:trustrag_filter": {
+        "correct": {
+          "mean": 0.8823529411764706,
+          "ci95": [
+            0.8294117647058824,
+            0.9294117647058824
+          ],
+          "independent_targets": 170
+        },
+        "endorsed": {
+          "mean": 0.07647058823529412,
+          "ci95": [
+            0.041176470588235294,
+            0.11764705882352941
+          ],
+          "independent_targets": 170
+        },
+        "parse_failure_rate": 0.023529411764705882
+      }
+    },
+    "comparisons": {
+      "clean:OR-coordguard_gate:correct": {
+        "mean": -0.01764705882352941,
+        "ci95": [
+          -0.052941176470588235,
+          0.023529411764705882
+        ],
+        "independent_targets": 170,
+        "p": 0.548828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-coordguard_gate:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.029411764705882353,
+          0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-coordguard_gate:correct": {
+        "mean": 0.45294117647058824,
+        "ci95": [
+          0.37058823529411766,
+          0.5294117647058824
+        ],
+        "independent_targets": 170,
+        "p": 1.0997423112559616e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          81,
+          4
+        ],
+        "holm_p": 8.02811887216852e-18
+      },
+      "poisoned:OR-coordguard_gate:endorsed": {
+        "mean": -0.4764705882352941,
+        "ci95": [
+          -0.5529411764705883,
+          -0.3998529411764714
+        ],
+        "independent_targets": 170,
+        "p": 8.271806125530277e-25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          81
+        ],
+        "holm_p": 6.948317145445432e-23
+      },
+      "clean:OR-cosine:correct": {
+        "mean": -0.03529411764705882,
+        "ci95": [
+          -0.06470588235294118,
+          -0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.0703125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-cosine:endorsed": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          0.0,
+          0.041176470588235294
+        ],
+        "independent_targets": 170,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-cosine:correct": {
+        "mean": 0.4176470588235294,
+        "ci95": [
+          0.3352941176470588,
+          0.5
+        ],
+        "independent_targets": 170,
+        "p": 2.2643223890053103e-17,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          76,
+          5
+        ],
+        "holm_p": 1.4944527767435048e-15
+      },
+      "poisoned:OR-cosine:endorsed": {
+        "mean": -0.4411764705882353,
+        "ci95": [
+          -0.5177941176470588,
+          -0.36470588235294116
+        ],
+        "independent_targets": 170,
+        "p": 1.0323214044661785e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          76
+        ],
+        "holm_p": 8.052106954836193e-20
+      },
+      "clean:OR-entail:correct": {
+        "mean": -0.011764705882352941,
+        "ci95": [
+          -0.03529411764705882,
+          0.011764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-entail:endorsed": {
+        "mean": 0.0058823529411764705,
+        "ci95": [
+          -0.011764705882352941,
+          0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-entail:correct": {
+        "mean": 0.011764705882352941,
+        "ci95": [
+          0.0,
+          0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-entail:endorsed": {
+        "mean": -0.011764705882352941,
+        "ci95": [
+          -0.029411764705882353,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-gated_OR:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-gated_OR:correct": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:OR-none:correct": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.07058823529411765,
+          -0.01764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 0.015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          7
+        ],
+        "holm_p": 0.8125
+      },
+      "clean:OR-none:endorsed": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          0.0,
+          0.041176470588235294
+        ],
+        "independent_targets": 170,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-none:correct": {
+        "mean": 0.45294117647058824,
+        "ci95": [
+          0.37058823529411766,
+          0.5352941176470588
+        ],
+        "independent_targets": 170,
+        "p": 1.0997423112559616e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          81,
+          4
+        ],
+        "holm_p": 8.02811887216852e-18
+      },
+      "poisoned:OR-none:endorsed": {
+        "mean": -0.4647058823529412,
+        "ci95": [
+          -0.5411764705882353,
+          -0.38823529411764707
+        ],
+        "independent_targets": 170,
+        "p": 3.308722450212111e-24,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          79
+        ],
+        "holm_p": 2.713152409173931e-22
+      },
+      "clean:OR-trustrag_filter:correct": {
+        "mean": 0.06470588235294118,
+        "ci95": [
+          0.023529411764705882,
+          0.11176470588235295
+        ],
+        "independent_targets": 170,
+        "p": 0.012725830078125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          3
+        ],
+        "holm_p": 0.68719482421875
+      },
+      "clean:OR-trustrag_filter:endorsed": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.07647058823529412,
+          -0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.0654296875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-trustrag_filter:correct": {
+        "mean": 0.029411764705882353,
+        "ci95": [
+          0.0058823529411764705,
+          0.058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.0625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:OR-trustrag_filter:endorsed": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.07058823529411765,
+          -0.011764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 0.015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          7
+        ],
+        "holm_p": 0.8125
+      },
+      "clean:coordguard_gate-cosine:correct": {
+        "mean": -0.01764705882352941,
+        "ci95": [
+          -0.047058823529411764,
+          0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.375,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-cosine:endorsed": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          0.0,
+          0.041176470588235294
+        ],
+        "independent_targets": 170,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-cosine:correct": {
+        "mean": -0.03529411764705882,
+        "ci95": [
+          -0.09411764705882353,
+          0.023529411764705882
+        ],
+        "independent_targets": 170,
+        "p": 0.32693958282470703,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          10,
+          16
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-cosine:endorsed": {
+        "mean": 0.03529411764705882,
+        "ci95": [
+          -0.01764705882352941,
+          0.08823529411764706
+        ],
+        "independent_targets": 170,
+        "p": 0.30745625495910645,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-entail:correct": {
+        "mean": 0.0058823529411764705,
+        "ci95": [
+          -0.029411764705882353,
+          0.041176470588235294
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-entail:endorsed": {
+        "mean": 0.0058823529411764705,
+        "ci95": [
+          -0.01764705882352941,
+          0.03529411764705882
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-entail:correct": {
+        "mean": -0.4411764705882353,
+        "ci95": [
+          -0.5235294117647059,
+          -0.3588235294117647
+        ],
+        "independent_targets": 170,
+        "p": 3.9973254947441296e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          79
+        ],
+        "holm_p": 2.7581545913734495e-17
+      },
+      "poisoned:coordguard_gate-entail:endorsed": {
+        "mean": 0.4647058823529412,
+        "ci95": [
+          0.38823529411764707,
+          0.5411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 3.308722450212111e-24,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          79,
+          0
+        ],
+        "holm_p": 2.713152409173931e-22
+      },
+      "clean:coordguard_gate-gated_OR:correct": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          -0.023529411764705882,
+          0.052941176470588235
+        ],
+        "independent_targets": 170,
+        "p": 0.548828125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-gated_OR:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          -0.029411764705882353,
+          0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-gated_OR:correct": {
+        "mean": -0.45294117647058824,
+        "ci95": [
+          -0.5294117647058824,
+          -0.37058823529411766
+        ],
+        "independent_targets": 170,
+        "p": 1.0997423112559616e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          4,
+          81
+        ],
+        "holm_p": 8.02811887216852e-18
+      },
+      "poisoned:coordguard_gate-gated_OR:endorsed": {
+        "mean": 0.4764705882352941,
+        "ci95": [
+          0.39985294117647063,
+          0.5529411764705883
+        ],
+        "independent_targets": 170,
+        "p": 8.271806125530277e-25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          81,
+          0
+        ],
+        "holm_p": 6.948317145445432e-23
+      },
+      "clean:coordguard_gate-none:correct": {
+        "mean": -0.023529411764705882,
+        "ci95": [
+          -0.047058823529411764,
+          -0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          4
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-none:endorsed": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          0.0,
+          0.041176470588235294
+        ],
+        "independent_targets": 170,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-none:correct": {
+        "mean": 0.0,
+        "ci95": [
+          -0.047058823529411764,
+          0.047058823529411764
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          8
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-none:endorsed": {
+        "mean": 0.011764705882352941,
+        "ci95": [
+          -0.03529411764705882,
+          0.058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.803619384765625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          9,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:coordguard_gate-trustrag_filter:correct": {
+        "mean": 0.08235294117647059,
+        "ci95": [
+          0.03529411764705882,
+          0.13529411764705881
+        ],
+        "independent_targets": 170,
+        "p": 0.0025768280029296875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          17,
+          3
+        ],
+        "holm_p": 0.1417255401611328
+      },
+      "clean:coordguard_gate-trustrag_filter:endorsed": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.08235294117647059,
+          -0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.09228515625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:coordguard_gate-trustrag_filter:correct": {
+        "mean": -0.4235294117647059,
+        "ci95": [
+          -0.5058823529411764,
+          -0.3411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 1.2046380153120002e-17,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          77
+        ],
+        "holm_p": 8.071074702590401e-16
+      },
+      "poisoned:coordguard_gate-trustrag_filter:endorsed": {
+        "mean": 0.43529411764705883,
+        "ci95": [
+          0.35294117647058826,
+          0.5117647058823529
+        ],
+        "independent_targets": 170,
+        "p": 2.0381730293306602e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          75,
+          1
+        ],
+        "holm_p": 1.5490115022913017e-19
+      },
+      "clean:cosine-entail:correct": {
+        "mean": 0.023529411764705882,
+        "ci95": [
+          0.0,
+          0.052941176470588235
+        ],
+        "independent_targets": 170,
+        "p": 0.21875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-entail:endorsed": {
+        "mean": -0.011764705882352941,
+        "ci95": [
+          -0.029411764705882353,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-entail:correct": {
+        "mean": -0.40588235294117647,
+        "ci95": [
+          -0.48823529411764705,
+          -0.32941176470588235
+        ],
+        "independent_targets": 170,
+        "p": 7.981384997696379e-17,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          74
+        ],
+        "holm_p": 4.948458698571755e-15
+      },
+      "poisoned:cosine-entail:endorsed": {
+        "mean": 0.4294117647058823,
+        "ci95": [
+          0.35294117647058826,
+          0.5060294117647051
+        ],
+        "independent_targets": 170,
+        "p": 4.0234064994579266e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          74,
+          1
+        ],
+        "holm_p": 3.017554874593445e-19
+      },
+      "clean:cosine-gated_OR:correct": {
+        "mean": 0.03529411764705882,
+        "ci95": [
+          0.0058823529411764705,
+          0.06470588235294118
+        ],
+        "independent_targets": 170,
+        "p": 0.0703125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          7,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-gated_OR:endorsed": {
+        "mean": -0.01764705882352941,
+        "ci95": [
+          -0.041176470588235294,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          3
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-gated_OR:correct": {
+        "mean": -0.4176470588235294,
+        "ci95": [
+          -0.5,
+          -0.3352941176470588
+        ],
+        "independent_targets": 170,
+        "p": 2.2643223890053103e-17,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          76
+        ],
+        "holm_p": 1.4944527767435048e-15
+      },
+      "poisoned:cosine-gated_OR:endorsed": {
+        "mean": 0.4411764705882353,
+        "ci95": [
+          0.36470588235294116,
+          0.5177941176470581
+        ],
+        "independent_targets": 170,
+        "p": 1.0323214044661785e-21,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          76,
+          1
+        ],
+        "holm_p": 8.052106954836193e-20
+      },
+      "clean:cosine-none:correct": {
+        "mean": -0.0058823529411764705,
+        "ci95": [
+          -0.01764705882352941,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-none:endorsed": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-none:correct": {
+        "mean": 0.03529411764705882,
+        "ci95": [
+          -0.0058823529411764705,
+          0.07661764705882274
+        ],
+        "independent_targets": 170,
+        "p": 0.210113525390625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          11,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:cosine-none:endorsed": {
+        "mean": -0.023529411764705882,
+        "ci95": [
+          -0.07058823529411765,
+          0.023529411764705882
+        ],
+        "independent_targets": 170,
+        "p": 0.454498291015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "clean:cosine-trustrag_filter:correct": {
+        "mean": 0.1,
+        "ci95": [
+          0.052941176470588235,
+          0.14705882352941177
+        ],
+        "independent_targets": 170,
+        "p": 7.62939453125e-05,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          18,
+          1
+        ],
+        "holm_p": 0.0045013427734375
+      },
+      "clean:cosine-trustrag_filter:endorsed": {
+        "mean": -0.058823529411764705,
+        "ci95": [
+          -0.09411764705882353,
+          -0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 0.001953125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          10
+        ],
+        "holm_p": 0.11328125
+      },
+      "poisoned:cosine-trustrag_filter:correct": {
+        "mean": -0.38823529411764707,
+        "ci95": [
+          -0.4764705882352941,
+          -0.3057352941176479
+        ],
+        "independent_targets": 170,
+        "p": 1.647020623262653e-14,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          8,
+          74
+        ],
+        "holm_p": 1.0046825801902183e-12
+      },
+      "poisoned:cosine-trustrag_filter:endorsed": {
+        "mean": 0.4,
+        "ci95": [
+          0.3235294117647059,
+          0.4823529411764706
+        ],
+        "independent_targets": 170,
+        "p": 3.589836803538052e-17,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          72,
+          4
+        ],
+        "holm_p": 2.2974955542643533e-15
+      },
+      "clean:entail-gated_OR:correct": {
+        "mean": 0.011764705882352941,
+        "ci95": [
+          -0.011764705882352941,
+          0.03529411764705882
+        ],
+        "independent_targets": 170,
+        "p": 0.625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          1
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail-gated_OR:endorsed": {
+        "mean": -0.0058823529411764705,
+        "ci95": [
+          -0.029411764705882353,
+          0.011764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 1.0,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          1,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-gated_OR:correct": {
+        "mean": -0.011764705882352941,
+        "ci95": [
+          -0.029411764705882353,
+          0.0
+        ],
+        "independent_targets": 170,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-gated_OR:endorsed": {
+        "mean": 0.011764705882352941,
+        "ci95": [
+          0.0,
+          0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail-none:correct": {
+        "mean": -0.029411764705882353,
+        "ci95": [
+          -0.058823529411764705,
+          -0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.0625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          5
+        ],
+        "holm_p": 1.0
+      },
+      "clean:entail-none:endorsed": {
+        "mean": 0.011764705882352941,
+        "ci95": [
+          0.0,
+          0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 0.5,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-none:correct": {
+        "mean": 0.4411764705882353,
+        "ci95": [
+          0.3588235294117647,
+          0.5235294117647059
+        ],
+        "independent_targets": 170,
+        "p": 3.9973254947441296e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          79,
+          4
+        ],
+        "holm_p": 2.7581545913734495e-17
+      },
+      "poisoned:entail-none:endorsed": {
+        "mean": -0.45294117647058824,
+        "ci95": [
+          -0.5294117647058824,
+          -0.3764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 1.3234889800848443e-23,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          77
+        ],
+        "holm_p": 1.045556294267027e-21
+      },
+      "clean:entail-trustrag_filter:correct": {
+        "mean": 0.07647058823529412,
+        "ci95": [
+          0.03529411764705882,
+          0.12352941176470589
+        ],
+        "independent_targets": 170,
+        "p": 0.002349853515625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          15,
+          2
+        ],
+        "holm_p": 0.131591796875
+      },
+      "clean:entail-trustrag_filter:endorsed": {
+        "mean": -0.047058823529411764,
+        "ci95": [
+          -0.08823529411764706,
+          -0.011764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 0.03857421875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          10
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-trustrag_filter:correct": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          -0.011764705882352941,
+          0.047058823529411764
+        ],
+        "independent_targets": 170,
+        "p": 0.453125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          2
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:entail-trustrag_filter:endorsed": {
+        "mean": -0.029411764705882353,
+        "ci95": [
+          -0.06470588235294118,
+          0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.1796875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          7
+        ],
+        "holm_p": 1.0
+      },
+      "clean:gated_OR-none:correct": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.07058823529411765,
+          -0.01764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 0.015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          7
+        ],
+        "holm_p": 0.8125
+      },
+      "clean:gated_OR-none:endorsed": {
+        "mean": 0.01764705882352941,
+        "ci95": [
+          0.0,
+          0.041176470588235294
+        ],
+        "independent_targets": 170,
+        "p": 0.25,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          3,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:gated_OR-none:correct": {
+        "mean": 0.45294117647058824,
+        "ci95": [
+          0.37058823529411766,
+          0.5352941176470588
+        ],
+        "independent_targets": 170,
+        "p": 1.0997423112559616e-19,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          81,
+          4
+        ],
+        "holm_p": 8.02811887216852e-18
+      },
+      "poisoned:gated_OR-none:endorsed": {
+        "mean": -0.4647058823529412,
+        "ci95": [
+          -0.5411764705882353,
+          -0.38823529411764707
+        ],
+        "independent_targets": 170,
+        "p": 3.308722450212111e-24,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          79
+        ],
+        "holm_p": 2.713152409173931e-22
+      },
+      "clean:gated_OR-trustrag_filter:correct": {
+        "mean": 0.06470588235294118,
+        "ci95": [
+          0.023529411764705882,
+          0.11176470588235295
+        ],
+        "independent_targets": 170,
+        "p": 0.012725830078125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          14,
+          3
+        ],
+        "holm_p": 0.68719482421875
+      },
+      "clean:gated_OR-trustrag_filter:endorsed": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.07647058823529412,
+          -0.0058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.0654296875,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          2,
+          9
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:gated_OR-trustrag_filter:correct": {
+        "mean": 0.029411764705882353,
+        "ci95": [
+          0.0058823529411764705,
+          0.058823529411764705
+        ],
+        "independent_targets": 170,
+        "p": 0.0625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          5,
+          0
+        ],
+        "holm_p": 1.0
+      },
+      "poisoned:gated_OR-trustrag_filter:endorsed": {
+        "mean": -0.041176470588235294,
+        "ci95": [
+          -0.07058823529411765,
+          -0.011764705882352941
+        ],
+        "independent_targets": 170,
+        "p": 0.015625,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          7
+        ],
+        "holm_p": 0.8125
+      },
+      "clean:none-trustrag_filter:correct": {
+        "mean": 0.10588235294117647,
+        "ci95": [
+          0.06470588235294118,
+          0.15294117647058825
+        ],
+        "independent_targets": 170,
+        "p": 7.62939453125e-06,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          18,
+          0
+        ],
+        "holm_p": 0.000457763671875
+      },
+      "clean:none-trustrag_filter:endorsed": {
+        "mean": -0.058823529411764705,
+        "ci95": [
+          -0.09411764705882353,
+          -0.029411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 0.001953125,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          0,
+          10
+        ],
+        "holm_p": 0.11328125
+      },
+      "poisoned:none-trustrag_filter:correct": {
+        "mean": -0.4235294117647059,
+        "ci95": [
+          -0.5058823529411764,
+          -0.3411764705882353
+        ],
+        "independent_targets": 170,
+        "p": 4.543102530270037e-17,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          6,
+          78
+        ],
+        "holm_p": 2.8621545940701232e-15
+      },
+      "poisoned:none-trustrag_filter:endorsed": {
+        "mean": 0.4235294117647059,
+        "ci95": [
+          0.34705882352941175,
+          0.5
+        ],
+        "independent_targets": 170,
+        "p": 7.747704489416678e-20,
+        "test": "exact paired binary McNemar",
+        "discordant": [
+          74,
+          2
+        ],
+        "holm_p": 5.733301322168342e-18
+      }
+    }
+  },
+  "eligibility": "Distinct action labels AND correct no-memory AND correct undefended clean-memory; identical denominator for every defence",
+  "holm_family": "All pairs, both memory conditions and both action endpoints within each reported scope",
+  "limitations": [
+    "TrustRAG comparator is its document filter only, followed by the common native memory compiler",
+    "One reader, one external interface; no claim of all-interface robustness or full TrustRAG equivalence"
+  ]
+}

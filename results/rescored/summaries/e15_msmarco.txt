@@ -1,0 +1,12 @@
+results/rescored/e15_cross_dataset_msmarco_k10.jsonl  [CONFIRMATORY]  n=50
+  arm                       endorsed [95% CI]       correct [95% CI]        
+  clean                     0.00 [0.00, 0.00]       0.74 [0.62, 0.86]       
+  attack                    0.80 [0.68, 0.90]       0.06 [0.00, 0.14]       
+  block_OR                  0.28 [0.16, 0.40]       0.40 [0.26, 0.54]       
+  delete_OR_backfill        0.14 [0.06, 0.24]       0.64 [0.50, 0.76]       
+  McNemar attack vs block_OR endorsed: p=8.7e-07
+  McNemar attack vs block_OR correct: p=1.5e-05
+  McNemar attack vs delete_OR_backfill endorsed: p=2.1e-09
+  McNemar attack vs delete_OR_backfill correct: p=3.7e-09
+  McNemar block_OR vs delete_OR_backfill endorsed: p=0.016
+  McNemar block_OR vs delete_OR_backfill correct: p=0.00049

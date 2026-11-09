@@ -1,0 +1,1087 @@
+
+=== phase composite started 2026-10-29T10:31:44.339564+00:00 ===
+W1029 18:31:47.315000 35639 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 11407.23it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 53891.17it/s]
+E37 1/80 test87 singleton 1 scored
+E37 1/80 test87 singleton 2 scored
+E37 1/80 test87 singleton 3 scored
+E37 1/80 test87 singleton 4 scored
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9569.22it/s]
+E37 1/80 test87 clean saved
+E37 1/80 test87 attack saved
+E37 1/80 test87 delete_OR_backfill saved
+E37 1/80 test87 delete_entail_backfill saved
+E37 1/80 test87 coordguard_af_refill saved
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 64358.59it/s]
+E37 1/80 test87 trustrag saved
+E37 1/80 test87 defclean_OR saved
+E37 1/80 test87 defclean_coordguard saved
+E37 target complete 1/80 test87
+E37 2/80 test88 singleton 1 scored
+E37 2/80 test88 singleton 2 scored
+E37 2/80 test88 singleton 3 scored
+E37 2/80 test88 singleton 4 scored
+E37 2/80 test88 clean saved
+E37 2/80 test88 attack saved
+E37 2/80 test88 delete_OR_backfill saved
+E37 2/80 test88 delete_entail_backfill saved
+E37 2/80 test88 coordguard_af_refill saved
+E37 2/80 test88 trustrag saved
+E37 2/80 test88 defclean_OR saved
+E37 2/80 test88 defclean_coordguard saved
+E37 target complete 2/80 test88
+E37 3/80 test90 singleton 1 scored
+E37 3/80 test90 singleton 2 scored
+E37 3/80 test90 singleton 3 scored
+E37 3/80 test90 singleton 4 scored
+E37 3/80 test90 clean saved
+E37 3/80 test90 attack saved
+E37 3/80 test90 delete_OR_backfill saved
+E37 3/80 test90 delete_entail_backfill saved
+E37 3/80 test90 coordguard_af_refill saved
+E37 3/80 test90 trustrag saved
+E37 3/80 test90 defclean_OR saved
+E37 3/80 test90 defclean_coordguard saved
+E37 target complete 3/80 test90
+E37 4/80 test94 singleton 1 scored
+E37 4/80 test94 singleton 2 scored
+E37 4/80 test94 singleton 3 scored
+E37 4/80 test94 singleton 4 scored
+E37 4/80 test94 clean saved
+E37 4/80 test94 attack saved
+E37 4/80 test94 delete_OR_backfill saved
+E37 4/80 test94 delete_entail_backfill saved
+E37 4/80 test94 coordguard_af_refill saved
+E37 4/80 test94 trustrag saved
+E37 4/80 test94 defclean_OR saved
+E37 4/80 test94 defclean_coordguard saved
+E37 target complete 4/80 test94
+E37 5/80 test106 singleton 1 scored
+E37 5/80 test106 singleton 2 scored
+E37 5/80 test106 singleton 3 scored
+E37 5/80 test106 singleton 4 scored
+E37 5/80 test106 clean saved
+E37 5/80 test106 attack saved
+E37 5/80 test106 delete_OR_backfill saved
+E37 5/80 test106 delete_entail_backfill saved
+E37 5/80 test106 coordguard_af_refill saved
+E37 5/80 test106 trustrag saved
+E37 5/80 test106 defclean_OR saved
+E37 5/80 test106 defclean_coordguard saved
+E37 target complete 5/80 test106
+E37 6/80 test107 singleton 1 scored
+E37 6/80 test107 singleton 2 scored
+E37 6/80 test107 singleton 3 scored
+E37 6/80 test107 singleton 4 scored
+E37 6/80 test107 clean saved
+E37 6/80 test107 attack saved
+E37 6/80 test107 delete_OR_backfill saved
+E37 6/80 test107 delete_entail_backfill saved
+E37 6/80 test107 coordguard_af_refill saved
+E37 6/80 test107 trustrag saved
+E37 6/80 test107 defclean_OR saved
+E37 6/80 test107 defclean_coordguard saved
+E37 target complete 6/80 test107
+E37 7/80 test110 singleton 1 scored
+E37 7/80 test110 singleton 2 scored
+E37 7/80 test110 singleton 3 scored
+E37 7/80 test110 singleton 4 scored
+E37 7/80 test110 clean saved
+E37 7/80 test110 attack saved
+E37 7/80 test110 delete_OR_backfill saved
+E37 7/80 test110 delete_entail_backfill saved
+E37 7/80 test110 coordguard_af_refill saved
+E37 7/80 test110 trustrag saved
+E37 7/80 test110 defclean_OR saved
+E37 7/80 test110 defclean_coordguard saved
+E37 target complete 7/80 test110
+E37 8/80 test113 singleton 1 scored
+E37 8/80 test113 singleton 2 scored
+E37 8/80 test113 singleton 3 scored
+E37 8/80 test113 singleton 4 scored
+E37 8/80 test113 clean saved
+E37 8/80 test113 attack saved
+E37 8/80 test113 delete_OR_backfill saved
+E37 8/80 test113 delete_entail_backfill saved
+E37 8/80 test113 coordguard_af_refill saved
+E37 8/80 test113 trustrag saved
+E37 8/80 test113 defclean_OR saved
+E37 8/80 test113 defclean_coordguard saved
+E37 target complete 8/80 test113
+E37 9/80 test120 singleton 1 scored
+E37 9/80 test120 singleton 2 scored
+E37 9/80 test120 singleton 3 scored
+E37 9/80 test120 singleton 4 scored
+E37 9/80 test120 clean saved
+E37 9/80 test120 attack saved
+E37 9/80 test120 delete_OR_backfill saved
+E37 9/80 test120 delete_entail_backfill saved
+E37 9/80 test120 coordguard_af_refill saved
+E37 9/80 test120 trustrag saved
+E37 9/80 test120 defclean_OR saved
+E37 9/80 test120 defclean_coordguard saved
+E37 target complete 9/80 test120
+E37 10/80 test127 singleton 1 scored
+E37 10/80 test127 singleton 2 scored
+E37 10/80 test127 singleton 3 scored
+E37 10/80 test127 singleton 4 scored
+E37 10/80 test127 clean saved
+E37 10/80 test127 attack saved
+E37 10/80 test127 delete_OR_backfill saved
+E37 10/80 test127 delete_entail_backfill saved
+E37 10/80 test127 coordguard_af_refill saved
+E37 10/80 test127 trustrag saved
+E37 10/80 test127 defclean_OR saved
+E37 10/80 test127 defclean_coordguard saved
+E37 target complete 10/80 test127
+E37 11/80 test130 singleton 1 scored
+E37 11/80 test130 singleton 2 scored
+E37 11/80 test130 singleton 3 scored
+E37 11/80 test130 singleton 4 scored
+E37 11/80 test130 clean saved
+E37 11/80 test130 attack saved
+E37 11/80 test130 delete_OR_backfill saved
+E37 11/80 test130 delete_entail_backfill saved
+E37 11/80 test130 coordguard_af_refill saved
+E37 11/80 test130 trustrag saved
+E37 11/80 test130 defclean_OR saved
+E37 11/80 test130 defclean_coordguard saved
+E37 target complete 11/80 test130
+E37 12/80 test138 singleton 1 scored
+E37 12/80 test138 singleton 2 scored
+E37 12/80 test138 singleton 3 scored
+E37 12/80 test138 singleton 4 scored
+E37 12/80 test138 clean saved
+E37 12/80 test138 attack saved
+E37 12/80 test138 delete_OR_backfill saved
+E37 12/80 test138 delete_entail_backfill saved
+E37 12/80 test138 coordguard_af_refill saved
+E37 12/80 test138 trustrag saved
+E37 12/80 test138 defclean_OR saved
+E37 12/80 test138 defclean_coordguard saved
+E37 target complete 12/80 test138
+E37 13/80 test145 singleton 1 scored
+E37 13/80 test145 singleton 2 scored
+E37 13/80 test145 singleton 3 scored
+E37 13/80 test145 singleton 4 scored
+E37 13/80 test145 clean saved
+E37 13/80 test145 attack saved
+E37 13/80 test145 delete_OR_backfill saved
+E37 13/80 test145 delete_entail_backfill saved
+E37 13/80 test145 coordguard_af_refill saved
+E37 13/80 test145 trustrag saved
+E37 13/80 test145 defclean_OR saved
+E37 13/80 test145 defclean_coordguard saved
+E37 target complete 13/80 test145
+E37 14/80 test152 singleton 1 scored
+E37 14/80 test152 singleton 2 scored
+E37 14/80 test152 singleton 3 scored
+E37 14/80 test152 singleton 4 scored
+E37 14/80 test152 clean saved
+E37 14/80 test152 attack saved
+E37 14/80 test152 delete_OR_backfill saved
+E37 14/80 test152 delete_entail_backfill saved
+E37 14/80 test152 coordguard_af_refill saved
+E37 14/80 test152 trustrag saved
+E37 14/80 test152 defclean_OR saved
+E37 14/80 test152 defclean_coordguard saved
+E37 target complete 14/80 test152
+E37 15/80 test156 singleton 1 scored
+E37 15/80 test156 singleton 2 scored
+E37 15/80 test156 singleton 3 scored
+E37 15/80 test156 singleton 4 scored
+E37 15/80 test156 clean saved
+E37 15/80 test156 attack saved
+E37 15/80 test156 delete_OR_backfill saved
+E37 15/80 test156 delete_entail_backfill saved
+E37 15/80 test156 coordguard_af_refill saved
+E37 15/80 test156 trustrag saved
+E37 15/80 test156 defclean_OR saved
+E37 15/80 test156 defclean_coordguard saved
+E37 target complete 15/80 test156
+E37 16/80 test157 singleton 1 scored
+E37 16/80 test157 singleton 2 scored
+E37 16/80 test157 singleton 3 scored
+E37 16/80 test157 singleton 4 scored
+E37 16/80 test157 clean saved
+E37 16/80 test157 attack saved
+E37 16/80 test157 delete_OR_backfill saved
+E37 16/80 test157 delete_entail_backfill saved
+E37 16/80 test157 coordguard_af_refill saved
+E37 16/80 test157 trustrag saved
+E37 16/80 test157 defclean_OR saved
+E37 16/80 test157 defclean_coordguard saved
+E37 target complete 16/80 test157
+E37 17/80 test159 singleton 1 scored
+E37 17/80 test159 singleton 2 scored
+E37 17/80 test159 singleton 3 scored
+E37 17/80 test159 singleton 4 scored
+E37 17/80 test159 clean saved
+E37 17/80 test159 attack saved
+E37 17/80 test159 delete_OR_backfill saved
+E37 17/80 test159 delete_entail_backfill saved
+E37 17/80 test159 coordguard_af_refill saved
+E37 17/80 test159 trustrag saved
+E37 17/80 test159 defclean_OR saved
+E37 17/80 test159 defclean_coordguard saved
+E37 target complete 17/80 test159
+E37 18/80 test161 singleton 1 scored
+E37 18/80 test161 singleton 2 scored
+E37 18/80 test161 singleton 3 scored
+E37 18/80 test161 singleton 4 scored
+E37 18/80 test161 clean saved
+E37 18/80 test161 attack saved
+E37 18/80 test161 delete_OR_backfill saved
+E37 18/80 test161 delete_entail_backfill saved
+E37 18/80 test161 coordguard_af_refill saved
+E37 18/80 test161 trustrag saved
+E37 18/80 test161 defclean_OR saved
+E37 18/80 test161 defclean_coordguard saved
+E37 target complete 18/80 test161
+E37 19/80 test164 singleton 1 scored
+E37 19/80 test164 singleton 2 scored
+E37 19/80 test164 singleton 3 scored
+E37 19/80 test164 singleton 4 scored
+E37 19/80 test164 clean saved
+E37 19/80 test164 attack saved
+E37 19/80 test164 delete_OR_backfill saved
+E37 19/80 test164 delete_entail_backfill saved
+E37 19/80 test164 coordguard_af_refill saved
+E37 19/80 test164 trustrag saved
+E37 19/80 test164 defclean_OR saved
+E37 19/80 test164 defclean_coordguard saved
+E37 target complete 19/80 test164
+E37 20/80 test165 singleton 1 scored
+E37 20/80 test165 singleton 2 scored
+E37 20/80 test165 singleton 3 scored
+E37 20/80 test165 singleton 4 scored
+E37 20/80 test165 clean saved
+E37 20/80 test165 attack saved
+E37 20/80 test165 delete_OR_backfill saved
+E37 20/80 test165 delete_entail_backfill saved
+E37 20/80 test165 coordguard_af_refill saved
+E37 20/80 test165 trustrag saved
+E37 20/80 test165 defclean_OR saved
+E37 20/80 test165 defclean_coordguard saved
+E37 target complete 20/80 test165
+E37 21/80 test166 singleton 1 scored
+E37 21/80 test166 singleton 2 scored
+E37 21/80 test166 singleton 3 scored
+E37 21/80 test166 singleton 4 scored
+E37 21/80 test166 clean saved
+E37 21/80 test166 attack saved
+E37 21/80 test166 delete_OR_backfill saved
+E37 21/80 test166 delete_entail_backfill saved
+E37 21/80 test166 coordguard_af_refill saved
+E37 21/80 test166 trustrag saved
+E37 21/80 test166 defclean_OR saved
+E37 21/80 test166 defclean_coordguard saved
+E37 target complete 21/80 test166
+E37 22/80 test177 singleton 1 scored
+E37 22/80 test177 singleton 2 scored
+E37 22/80 test177 singleton 3 scored
+E37 22/80 test177 singleton 4 scored
+E37 22/80 test177 clean saved
+E37 22/80 test177 attack saved
+E37 22/80 test177 delete_OR_backfill saved
+E37 22/80 test177 delete_entail_backfill saved
+E37 22/80 test177 coordguard_af_refill saved
+E37 22/80 test177 trustrag saved
+E37 22/80 test177 defclean_OR saved
+E37 22/80 test177 defclean_coordguard saved
+E37 target complete 22/80 test177
+E37 23/80 test185 singleton 1 scored
+E37 23/80 test185 singleton 2 scored
+E37 23/80 test185 singleton 3 scored
+E37 23/80 test185 singleton 4 scored
+E37 23/80 test185 clean saved
+E37 23/80 test185 attack saved
+E37 23/80 test185 delete_OR_backfill saved
+E37 23/80 test185 delete_entail_backfill saved
+E37 23/80 test185 coordguard_af_refill saved
+E37 23/80 test185 trustrag saved
+E37 23/80 test185 defclean_OR saved
+E37 23/80 test185 defclean_coordguard saved
+E37 target complete 23/80 test185
+E37 24/80 test188 singleton 1 scored
+E37 24/80 test188 singleton 2 scored
+E37 24/80 test188 singleton 3 scored
+E37 24/80 test188 singleton 4 scored
+E37 24/80 test188 clean saved
+E37 24/80 test188 attack saved
+E37 24/80 test188 delete_OR_backfill saved
+E37 24/80 test188 delete_entail_backfill saved
+E37 24/80 test188 coordguard_af_refill saved
+E37 24/80 test188 trustrag saved
+E37 24/80 test188 defclean_OR saved
+E37 24/80 test188 defclean_coordguard saved
+E37 target complete 24/80 test188
+E37 25/80 test191 singleton 1 scored
+E37 25/80 test191 singleton 2 scored
+E37 25/80 test191 singleton 3 scored
+E37 25/80 test191 singleton 4 scored
+E37 25/80 test191 clean saved
+E37 25/80 test191 attack saved
+E37 25/80 test191 delete_OR_backfill saved
+E37 25/80 test191 delete_entail_backfill saved
+E37 25/80 test191 coordguard_af_refill saved
+E37 25/80 test191 trustrag saved
+E37 25/80 test191 defclean_OR saved
+E37 25/80 test191 defclean_coordguard saved
+E37 target complete 25/80 test191
+E37 26/80 test192 singleton 1 scored
+E37 26/80 test192 singleton 2 scored
+E37 26/80 test192 singleton 3 scored
+E37 26/80 test192 singleton 4 scored
+E37 26/80 test192 clean saved
+E37 26/80 test192 attack saved
+E37 26/80 test192 delete_OR_backfill saved
+E37 26/80 test192 delete_entail_backfill saved
+E37 26/80 test192 coordguard_af_refill saved
+E37 26/80 test192 trustrag saved
+E37 26/80 test192 defclean_OR saved
+E37 26/80 test192 defclean_coordguard saved
+E37 target complete 26/80 test192
+E37 27/80 test208 singleton 1 scored
+E37 27/80 test208 singleton 2 scored
+E37 27/80 test208 singleton 3 scored
+E37 27/80 test208 singleton 4 scored
+E37 27/80 test208 clean saved
+E37 27/80 test208 attack saved
+E37 27/80 test208 delete_OR_backfill saved
+E37 27/80 test208 delete_entail_backfill saved
+E37 27/80 test208 coordguard_af_refill saved
+E37 27/80 test208 trustrag saved
+E37 27/80 test208 defclean_OR saved
+E37 27/80 test208 defclean_coordguard saved
+E37 target complete 27/80 test208
+E37 28/80 test213 singleton 1 scored
+E37 28/80 test213 singleton 2 scored
+E37 28/80 test213 singleton 3 scored
+E37 28/80 test213 singleton 4 scored
+E37 28/80 test213 clean saved
+E37 28/80 test213 attack saved
+E37 28/80 test213 delete_OR_backfill saved
+E37 28/80 test213 delete_entail_backfill saved
+E37 28/80 test213 coordguard_af_refill saved
+E37 28/80 test213 trustrag saved
+E37 28/80 test213 defclean_OR saved
+E37 28/80 test213 defclean_coordguard saved
+E37 target complete 28/80 test213
+E37 29/80 test216 singleton 1 scored
+E37 29/80 test216 singleton 2 scored
+E37 29/80 test216 singleton 3 scored
+E37 29/80 test216 singleton 4 scored
+E37 29/80 test216 clean saved
+E37 29/80 test216 attack saved
+E37 29/80 test216 delete_OR_backfill saved
+E37 29/80 test216 delete_entail_backfill saved
+E37 29/80 test216 coordguard_af_refill saved
+E37 29/80 test216 trustrag saved
+E37 29/80 test216 defclean_OR saved
+E37 29/80 test216 defclean_coordguard saved
+E37 target complete 29/80 test216
+E37 30/80 test226 singleton 1 scored
+E37 30/80 test226 singleton 2 scored
+E37 30/80 test226 singleton 3 scored
+E37 30/80 test226 singleton 4 scored
+E37 30/80 test226 clean saved
+E37 30/80 test226 attack saved
+E37 30/80 test226 delete_OR_backfill saved
+E37 30/80 test226 delete_entail_backfill saved
+E37 30/80 test226 coordguard_af_refill saved
+E37 30/80 test226 trustrag saved
+E37 30/80 test226 defclean_OR saved
+E37 30/80 test226 defclean_coordguard saved
+E37 target complete 30/80 test226
+E37 31/80 test228 singleton 1 scored
+E37 31/80 test228 singleton 2 scored
+E37 31/80 test228 singleton 3 scored
+E37 31/80 test228 singleton 4 scored
+E37 31/80 test228 clean saved
+E37 31/80 test228 attack saved
+E37 31/80 test228 delete_OR_backfill saved
+E37 31/80 test228 delete_entail_backfill saved
+E37 31/80 test228 coordguard_af_refill saved
+E37 31/80 test228 trustrag saved
+E37 31/80 test228 defclean_OR saved
+E37 31/80 test228 defclean_coordguard saved
+E37 target complete 31/80 test228
+E37 32/80 test229 singleton 1 scored
+E37 32/80 test229 singleton 2 scored
+E37 32/80 test229 singleton 3 scored
+E37 32/80 test229 singleton 4 scored
+E37 32/80 test229 clean saved
+E37 32/80 test229 attack saved
+E37 32/80 test229 delete_OR_backfill saved
+E37 32/80 test229 delete_entail_backfill saved
+E37 32/80 test229 coordguard_af_refill saved
+E37 32/80 test229 trustrag saved
+E37 32/80 test229 defclean_OR saved
+E37 32/80 test229 defclean_coordguard saved
+E37 target complete 32/80 test229
+E37 33/80 test231 singleton 1 scored
+E37 33/80 test231 singleton 2 scored
+E37 33/80 test231 singleton 3 scored
+E37 33/80 test231 singleton 4 scored
+E37 33/80 test231 clean saved
+E37 33/80 test231 attack saved
+E37 33/80 test231 delete_OR_backfill saved
+E37 33/80 test231 delete_entail_backfill saved
+E37 33/80 test231 coordguard_af_refill saved
+E37 33/80 test231 trustrag saved
+E37 33/80 test231 defclean_OR saved
+E37 33/80 test231 defclean_coordguard saved
+E37 target complete 33/80 test231
+E37 34/80 test243 singleton 1 scored
+E37 34/80 test243 singleton 2 scored
+E37 34/80 test243 singleton 3 scored
+E37 34/80 test243 singleton 4 scored
+E37 34/80 test243 clean saved
+E37 34/80 test243 attack saved
+E37 34/80 test243 delete_OR_backfill saved
+E37 34/80 test243 delete_entail_backfill saved
+E37 34/80 test243 coordguard_af_refill saved
+E37 34/80 test243 trustrag saved
+E37 34/80 test243 defclean_OR saved
+E37 34/80 test243 defclean_coordguard saved
+E37 target complete 34/80 test243
+E37 35/80 test254 singleton 1 scored
+E37 35/80 test254 singleton 2 scored
+E37 35/80 test254 singleton 3 scored
+E37 35/80 test254 singleton 4 scored
+E37 35/80 test254 clean saved
+E37 35/80 test254 attack saved
+E37 35/80 test254 delete_OR_backfill saved
+E37 35/80 test254 delete_entail_backfill saved
+E37 35/80 test254 coordguard_af_refill saved
+E37 35/80 test254 trustrag saved
+E37 35/80 test254 defclean_OR saved
+E37 35/80 test254 defclean_coordguard saved
+E37 target complete 35/80 test254
+E37 36/80 test256 singleton 1 scored
+E37 36/80 test256 singleton 2 scored
+E37 36/80 test256 singleton 3 scored
+E37 36/80 test256 singleton 4 scored
+E37 36/80 test256 clean saved
+E37 36/80 test256 attack saved
+E37 36/80 test256 delete_OR_backfill saved
+E37 36/80 test256 delete_entail_backfill saved
+E37 36/80 test256 coordguard_af_refill saved
+E37 36/80 test256 trustrag saved
+E37 36/80 test256 defclean_OR saved
+E37 36/80 test256 defclean_coordguard saved
+E37 target complete 36/80 test256
+E37 37/80 test273 singleton 1 scored
+E37 37/80 test273 singleton 2 scored
+E37 37/80 test273 singleton 3 scored
+E37 37/80 test273 singleton 4 scored
+E37 37/80 test273 clean saved
+E37 37/80 test273 attack saved
+E37 37/80 test273 delete_OR_backfill saved
+E37 37/80 test273 delete_entail_backfill saved
+E37 37/80 test273 coordguard_af_refill saved
+E37 37/80 test273 trustrag saved
+E37 37/80 test273 defclean_OR saved
+E37 37/80 test273 defclean_coordguard saved
+E37 target complete 37/80 test273
+E37 38/80 test282 singleton 1 scored
+E37 38/80 test282 singleton 2 scored
+E37 38/80 test282 singleton 3 scored
+E37 38/80 test282 singleton 4 scored
+E37 38/80 test282 clean saved
+E37 38/80 test282 attack saved
+E37 38/80 test282 delete_OR_backfill saved
+E37 38/80 test282 delete_entail_backfill saved
+E37 38/80 test282 coordguard_af_refill saved
+E37 38/80 test282 trustrag saved
+E37 38/80 test282 defclean_OR saved
+E37 38/80 test282 defclean_coordguard saved
+E37 target complete 38/80 test282
+E37 39/80 test291 singleton 1 scored
+E37 39/80 test291 singleton 2 scored
+E37 39/80 test291 singleton 3 scored
+E37 39/80 test291 singleton 4 scored
+E37 39/80 test291 clean saved
+E37 39/80 test291 attack saved
+E37 39/80 test291 delete_OR_backfill saved
+E37 39/80 test291 delete_entail_backfill saved
+E37 39/80 test291 coordguard_af_refill saved
+E37 39/80 test291 trustrag saved
+E37 39/80 test291 defclean_OR saved
+E37 39/80 test291 defclean_coordguard saved
+E37 target complete 39/80 test291
+E37 40/80 test294 singleton 1 scored
+E37 40/80 test294 singleton 2 scored
+E37 40/80 test294 singleton 3 scored
+E37 40/80 test294 singleton 4 scored
+E37 40/80 test294 clean saved
+E37 40/80 test294 attack saved
+E37 40/80 test294 delete_OR_backfill saved
+E37 40/80 test294 delete_entail_backfill saved
+E37 40/80 test294 coordguard_af_refill saved
+E37 40/80 test294 trustrag saved
+E37 40/80 test294 defclean_OR saved
+E37 40/80 test294 defclean_coordguard saved
+E37 target complete 40/80 test294
+E37 41/80 test308 singleton 1 scored
+E37 41/80 test308 singleton 2 scored
+E37 41/80 test308 singleton 3 scored
+E37 41/80 test308 singleton 4 scored
+E37 41/80 test308 clean saved
+E37 41/80 test308 attack saved
+E37 41/80 test308 delete_OR_backfill saved
+E37 41/80 test308 delete_entail_backfill saved
+E37 41/80 test308 coordguard_af_refill saved
+E37 41/80 test308 trustrag saved
+E37 41/80 test308 defclean_OR saved
+E37 41/80 test308 defclean_coordguard saved
+E37 target complete 41/80 test308
+E37 42/80 test311 singleton 1 scored
+E37 42/80 test311 singleton 2 scored
+E37 42/80 test311 singleton 3 scored
+E37 42/80 test311 singleton 4 scored
+E37 42/80 test311 clean saved
+E37 42/80 test311 attack saved
+E37 42/80 test311 delete_OR_backfill saved
+E37 42/80 test311 delete_entail_backfill saved
+E37 42/80 test311 coordguard_af_refill saved
+E37 42/80 test311 trustrag saved
+E37 42/80 test311 defclean_OR saved
+E37 42/80 test311 defclean_coordguard saved
+E37 target complete 42/80 test311
+E37 43/80 test312 singleton 1 scored
+E37 43/80 test312 singleton 2 scored
+E37 43/80 test312 singleton 3 scored
+E37 43/80 test312 singleton 4 scored
+E37 43/80 test312 clean saved
+E37 43/80 test312 attack saved
+E37 43/80 test312 delete_OR_backfill saved
+E37 43/80 test312 delete_entail_backfill saved
+E37 43/80 test312 coordguard_af_refill saved
+E37 43/80 test312 trustrag saved
+E37 43/80 test312 defclean_OR saved
+E37 43/80 test312 defclean_coordguard saved
+E37 target complete 43/80 test312
+E37 44/80 test315 singleton 1 scored
+E37 44/80 test315 singleton 2 scored
+E37 44/80 test315 singleton 3 scored
+E37 44/80 test315 singleton 4 scored
+E37 44/80 test315 clean saved
+E37 44/80 test315 attack saved
+E37 44/80 test315 delete_OR_backfill saved
+E37 44/80 test315 delete_entail_backfill saved
+E37 44/80 test315 coordguard_af_refill saved
+E37 44/80 test315 trustrag saved
+E37 44/80 test315 defclean_OR saved
+E37 44/80 test315 defclean_coordguard saved
+E37 target complete 44/80 test315
+E37 45/80 test317 singleton 1 scored
+E37 45/80 test317 singleton 2 scored
+E37 45/80 test317 singleton 3 scored
+E37 45/80 test317 singleton 4 scored
+E37 45/80 test317 clean saved
+E37 45/80 test317 attack saved
+E37 45/80 test317 delete_OR_backfill saved
+E37 45/80 test317 delete_entail_backfill saved
+E37 45/80 test317 coordguard_af_refill saved
+E37 45/80 test317 trustrag saved
+E37 45/80 test317 defclean_OR saved
+E37 45/80 test317 defclean_coordguard saved
+E37 target complete 45/80 test317
+E37 46/80 test318 singleton 1 scored
+E37 46/80 test318 singleton 2 scored
+E37 46/80 test318 singleton 3 scored
+E37 46/80 test318 singleton 4 scored
+E37 46/80 test318 clean saved
+E37 46/80 test318 attack saved
+E37 46/80 test318 delete_OR_backfill saved
+E37 46/80 test318 delete_entail_backfill saved
+E37 46/80 test318 coordguard_af_refill saved
+E37 46/80 test318 trustrag saved
+E37 46/80 test318 defclean_OR saved
+E37 46/80 test318 defclean_coordguard saved
+E37 target complete 46/80 test318
+E37 47/80 test327 singleton 1 scored
+E37 47/80 test327 singleton 2 scored
+E37 47/80 test327 singleton 3 scored
+E37 47/80 test327 singleton 4 scored
+E37 47/80 test327 clean saved
+E37 47/80 test327 attack saved
+E37 47/80 test327 delete_OR_backfill saved
+E37 47/80 test327 delete_entail_backfill saved
+E37 47/80 test327 coordguard_af_refill saved
+E37 47/80 test327 trustrag saved
+E37 47/80 test327 defclean_OR saved
+E37 47/80 test327 defclean_coordguard saved
+E37 target complete 47/80 test327
+E37 48/80 test332 singleton 1 scored
+E37 48/80 test332 singleton 2 scored
+E37 48/80 test332 singleton 3 scored
+E37 48/80 test332 singleton 4 scored
+E37 48/80 test332 clean saved
+E37 48/80 test332 attack saved
+E37 48/80 test332 delete_OR_backfill saved
+E37 48/80 test332 delete_entail_backfill saved
+E37 48/80 test332 coordguard_af_refill saved
+E37 48/80 test332 trustrag saved
+E37 48/80 test332 defclean_OR saved
+E37 48/80 test332 defclean_coordguard saved
+E37 target complete 48/80 test332
+E37 49/80 test337 singleton 1 scored
+E37 49/80 test337 singleton 2 scored
+E37 49/80 test337 singleton 3 scored
+E37 49/80 test337 singleton 4 scored
+E37 49/80 test337 clean saved
+E37 49/80 test337 attack saved
+E37 49/80 test337 delete_OR_backfill saved
+E37 49/80 test337 delete_entail_backfill saved
+E37 49/80 test337 coordguard_af_refill saved
+E37 49/80 test337 trustrag saved
+E37 49/80 test337 defclean_OR saved
+E37 49/80 test337 defclean_coordguard saved
+E37 target complete 49/80 test337
+E37 50/80 test347 singleton 1 scored
+E37 50/80 test347 singleton 2 scored
+E37 50/80 test347 singleton 3 scored
+E37 50/80 test347 singleton 4 scored
+E37 50/80 test347 clean saved
+E37 50/80 test347 attack saved
+E37 50/80 test347 delete_OR_backfill saved
+E37 50/80 test347 delete_entail_backfill saved
+E37 50/80 test347 coordguard_af_refill saved
+E37 50/80 test347 trustrag saved
+E37 50/80 test347 defclean_OR saved
+E37 50/80 test347 defclean_coordguard saved
+E37 target complete 50/80 test347
+E37 51/80 test348 singleton 1 scored
+E37 51/80 test348 singleton 2 scored
+E37 51/80 test348 singleton 3 scored
+E37 51/80 test348 singleton 4 scored
+E37 51/80 test348 clean saved
+E37 51/80 test348 attack saved
+E37 51/80 test348 delete_OR_backfill saved
+E37 51/80 test348 delete_entail_backfill saved
+E37 51/80 test348 coordguard_af_refill saved
+E37 51/80 test348 trustrag saved
+E37 51/80 test348 defclean_OR saved
+E37 51/80 test348 defclean_coordguard saved
+E37 target complete 51/80 test348
+E37 52/80 test363 singleton 1 scored
+E37 52/80 test363 singleton 2 scored
+E37 52/80 test363 singleton 3 scored
+E37 52/80 test363 singleton 4 scored
+E37 52/80 test363 clean saved
+E37 52/80 test363 attack saved
+E37 52/80 test363 delete_OR_backfill saved
+E37 52/80 test363 delete_entail_backfill saved
+E37 52/80 test363 coordguard_af_refill saved
+E37 52/80 test363 trustrag saved
+E37 52/80 test363 defclean_OR saved
+E37 52/80 test363 defclean_coordguard saved
+E37 target complete 52/80 test363
+E37 53/80 test369 singleton 1 scored
+E37 53/80 test369 singleton 2 scored
+E37 53/80 test369 singleton 3 scored
+E37 53/80 test369 singleton 4 scored
+E37 53/80 test369 clean saved
+E37 53/80 test369 attack saved
+E37 53/80 test369 delete_OR_backfill saved
+E37 53/80 test369 delete_entail_backfill saved
+E37 53/80 test369 coordguard_af_refill saved
+E37 53/80 test369 trustrag saved
+E37 53/80 test369 defclean_OR saved
+E37 53/80 test369 defclean_coordguard saved
+E37 target complete 53/80 test369
+E37 54/80 test371 singleton 1 scored
+E37 54/80 test371 singleton 2 scored
+E37 54/80 test371 singleton 3 scored
+E37 54/80 test371 singleton 4 scored
+E37 54/80 test371 clean saved
+E37 54/80 test371 attack saved
+E37 54/80 test371 delete_OR_backfill saved
+E37 54/80 test371 delete_entail_backfill saved
+E37 54/80 test371 coordguard_af_refill saved
+E37 54/80 test371 trustrag saved
+E37 54/80 test371 defclean_OR saved
+E37 54/80 test371 defclean_coordguard saved
+E37 target complete 54/80 test371
+E37 55/80 test375 singleton 1 scored
+E37 55/80 test375 singleton 2 scored
+E37 55/80 test375 singleton 3 scored
+E37 55/80 test375 singleton 4 scored
+E37 55/80 test375 clean saved
+E37 55/80 test375 attack saved
+E37 55/80 test375 delete_OR_backfill saved
+E37 55/80 test375 delete_entail_backfill saved
+E37 55/80 test375 coordguard_af_refill saved
+E37 55/80 test375 trustrag saved
+E37 55/80 test375 defclean_OR saved
+E37 55/80 test375 defclean_coordguard saved
+E37 target complete 55/80 test375
+E37 56/80 test379 singleton 1 scored
+E37 56/80 test379 singleton 2 scored
+E37 56/80 test379 singleton 3 scored
+E37 56/80 test379 singleton 4 scored
+E37 56/80 test379 clean saved
+E37 56/80 test379 attack saved
+E37 56/80 test379 delete_OR_backfill saved
+E37 56/80 test379 delete_entail_backfill saved
+E37 56/80 test379 coordguard_af_refill saved
+E37 56/80 test379 trustrag saved
+E37 56/80 test379 defclean_OR saved
+E37 56/80 test379 defclean_coordguard saved
+E37 target complete 56/80 test379
+E37 57/80 test383 singleton 1 scored
+E37 57/80 test383 singleton 2 scored
+E37 57/80 test383 singleton 3 scored
+E37 57/80 test383 singleton 4 scored
+E37 57/80 test383 clean saved
+E37 57/80 test383 attack saved
+E37 57/80 test383 delete_OR_backfill saved
+E37 57/80 test383 delete_entail_backfill saved
+E37 57/80 test383 coordguard_af_refill saved
+E37 57/80 test383 trustrag saved
+E37 57/80 test383 defclean_OR saved
+E37 57/80 test383 defclean_coordguard saved
+E37 target complete 57/80 test383
+E37 58/80 test387 singleton 1 scored
+E37 58/80 test387 singleton 2 scored
+E37 58/80 test387 singleton 3 scored
+E37 58/80 test387 singleton 4 scored
+E37 58/80 test387 clean saved
+E37 58/80 test387 attack saved
+E37 58/80 test387 delete_OR_backfill saved
+E37 58/80 test387 delete_entail_backfill saved
+E37 58/80 test387 coordguard_af_refill saved
+E37 58/80 test387 trustrag saved
+E37 58/80 test387 defclean_OR saved
+E37 58/80 test387 defclean_coordguard saved
+E37 target complete 58/80 test387
+E37 59/80 test395 singleton 1 scored
+E37 59/80 test395 singleton 2 scored
+E37 59/80 test395 singleton 3 scored
+E37 59/80 test395 singleton 4 scored
+E37 59/80 test395 clean saved
+E37 59/80 test395 attack saved
+E37 59/80 test395 delete_OR_backfill saved
+E37 59/80 test395 delete_entail_backfill saved
+E37 59/80 test395 coordguard_af_refill saved
+E37 59/80 test395 trustrag saved
+E37 59/80 test395 defclean_OR saved
+E37 59/80 test395 defclean_coordguard saved
+E37 target complete 59/80 test395
+E37 60/80 test397 singleton 1 scored
+E37 60/80 test397 singleton 2 scored
+E37 60/80 test397 singleton 3 scored
+E37 60/80 test397 singleton 4 scored
+E37 60/80 test397 clean saved
+E37 60/80 test397 attack saved
+E37 60/80 test397 delete_OR_backfill saved
+E37 60/80 test397 delete_entail_backfill saved
+E37 60/80 test397 coordguard_af_refill saved
+E37 60/80 test397 trustrag saved
+E37 60/80 test397 defclean_OR saved
+E37 60/80 test397 defclean_coordguard saved
+E37 target complete 60/80 test397
+E37 61/80 test400 singleton 1 scored
+E37 61/80 test400 singleton 2 scored
+E37 61/80 test400 singleton 3 scored
+E37 61/80 test400 singleton 4 scored
+E37 61/80 test400 clean saved
+E37 61/80 test400 attack saved
+E37 61/80 test400 delete_OR_backfill saved
+E37 61/80 test400 delete_entail_backfill saved
+E37 61/80 test400 coordguard_af_refill saved
+E37 61/80 test400 trustrag saved
+E37 61/80 test400 defclean_OR saved
+E37 61/80 test400 defclean_coordguard saved
+E37 target complete 61/80 test400
+E37 62/80 test404 singleton 1 scored
+E37 62/80 test404 singleton 2 scored
+E37 62/80 test404 singleton 3 scored
+E37 62/80 test404 singleton 4 scored
+E37 62/80 test404 clean saved
+E37 62/80 test404 attack saved
+E37 62/80 test404 delete_OR_backfill saved
+E37 62/80 test404 delete_entail_backfill saved
+E37 62/80 test404 coordguard_af_refill saved
+E37 62/80 test404 trustrag saved
+E37 62/80 test404 defclean_OR saved
+E37 62/80 test404 defclean_coordguard saved
+E37 target complete 62/80 test404
+E37 63/80 test407 singleton 1 scored
+E37 63/80 test407 singleton 2 scored
+E37 63/80 test407 singleton 3 scored
+E37 63/80 test407 singleton 4 scored
+E37 63/80 test407 clean saved
+E37 63/80 test407 attack saved
+E37 63/80 test407 delete_OR_backfill saved
+E37 63/80 test407 delete_entail_backfill saved
+E37 63/80 test407 coordguard_af_refill saved
+E37 63/80 test407 trustrag saved
+E37 63/80 test407 defclean_OR saved
+E37 63/80 test407 defclean_coordguard saved
+E37 target complete 63/80 test407
+E37 64/80 test408 singleton 1 scored
+E37 64/80 test408 singleton 2 scored
+E37 64/80 test408 singleton 3 scored
+E37 64/80 test408 singleton 4 scored
+E37 64/80 test408 clean saved
+E37 64/80 test408 attack saved
+E37 64/80 test408 delete_OR_backfill saved
+E37 64/80 test408 delete_entail_backfill saved
+E37 64/80 test408 coordguard_af_refill saved
+E37 64/80 test408 trustrag saved
+E37 64/80 test408 defclean_OR saved
+E37 64/80 test408 defclean_coordguard saved
+E37 target complete 64/80 test408
+E37 65/80 test410 singleton 1 scored
+E37 65/80 test410 singleton 2 scored
+E37 65/80 test410 singleton 3 scored
+E37 65/80 test410 singleton 4 scored
+E37 65/80 test410 clean saved
+E37 65/80 test410 attack saved
+E37 65/80 test410 delete_OR_backfill saved
+E37 65/80 test410 delete_entail_backfill saved
+E37 65/80 test410 coordguard_af_refill saved
+E37 65/80 test410 trustrag saved
+E37 65/80 test410 defclean_OR saved
+E37 65/80 test410 defclean_coordguard saved
+E37 target complete 65/80 test410
+E37 66/80 test412 singleton 1 scored
+E37 66/80 test412 singleton 2 scored
+E37 66/80 test412 singleton 3 scored
+E37 66/80 test412 singleton 4 scored
+E37 66/80 test412 clean saved
+E37 66/80 test412 attack saved
+E37 66/80 test412 delete_OR_backfill saved
+E37 66/80 test412 delete_entail_backfill saved
+E37 66/80 test412 coordguard_af_refill saved
+E37 66/80 test412 trustrag saved
+E37 66/80 test412 defclean_OR saved
+E37 66/80 test412 defclean_coordguard saved
+E37 target complete 66/80 test412
+E37 67/80 test413 singleton 1 scored
+E37 67/80 test413 singleton 2 scored
+E37 67/80 test413 singleton 3 scored
+E37 67/80 test413 singleton 4 scored
+E37 67/80 test413 clean saved
+E37 67/80 test413 attack saved
+E37 67/80 test413 delete_OR_backfill saved
+E37 67/80 test413 delete_entail_backfill saved
+E37 67/80 test413 coordguard_af_refill saved
+E37 67/80 test413 trustrag saved
+E37 67/80 test413 defclean_OR saved
+E37 67/80 test413 defclean_coordguard saved
+E37 target complete 67/80 test413
+E37 68/80 test417 singleton 1 scored
+E37 68/80 test417 singleton 2 scored
+E37 68/80 test417 singleton 3 scored
+E37 68/80 test417 singleton 4 scored
+E37 68/80 test417 clean saved
+E37 68/80 test417 attack saved
+E37 68/80 test417 delete_OR_backfill saved
+E37 68/80 test417 delete_entail_backfill saved
+E37 68/80 test417 coordguard_af_refill saved
+E37 68/80 test417 trustrag saved
+E37 68/80 test417 defclean_OR saved
+E37 68/80 test417 defclean_coordguard saved
+E37 target complete 68/80 test417
+E37 69/80 test418 singleton 1 scored
+E37 69/80 test418 singleton 2 scored
+E37 69/80 test418 singleton 3 scored
+E37 69/80 test418 singleton 4 scored
+E37 69/80 test418 clean saved
+E37 69/80 test418 attack saved
+E37 69/80 test418 delete_OR_backfill saved
+E37 69/80 test418 delete_entail_backfill saved
+E37 69/80 test418 coordguard_af_refill saved
+E37 69/80 test418 trustrag saved
+E37 69/80 test418 defclean_OR saved
+E37 69/80 test418 defclean_coordguard saved
+E37 target complete 69/80 test418
+E37 70/80 test419 singleton 1 scored
+E37 70/80 test419 singleton 2 scored
+E37 70/80 test419 singleton 3 scored
+E37 70/80 test419 singleton 4 scored
+E37 70/80 test419 clean saved
+E37 70/80 test419 attack saved
+E37 70/80 test419 delete_OR_backfill saved
+E37 70/80 test419 delete_entail_backfill saved
+E37 70/80 test419 coordguard_af_refill saved
+E37 70/80 test419 trustrag saved
+E37 70/80 test419 defclean_OR saved
+E37 70/80 test419 defclean_coordguard saved
+E37 target complete 70/80 test419
+Traceback (most recent call last):
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/e37_composite.py", line 143, in <module>
+    main()
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/experiments/e37_composite.py", line 58, in main
+    analysis = imm.analyse(sample)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/src/antivenom/antibody.py", line 70, in analyse
+    d = _json(self._ask(ANALYSE_PROMPT.format(sample=sample)))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/src/antivenom/antibody.py", line 58, in _json
+    return json.loads(m.group(0)) if m else {}
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/.local/share/uv/python/cpython-3.12.15-macos-aarch64-none/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/.local/share/uv/python/cpython-3.12.15-macos-aarch64-none/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielfoojunwei/.local/share/uv/python/cpython-3.12.15-macos-aarch64-none/lib/python3.12/json/decoder.py", line 354, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 56 (char 55)
+
+=== phase composite started 2026-10-29T19:14:24.123820+00:00 ===
+R2 extraction guard: experiments/e37_composite.py []
+W1030 03:14:34.832000 75453 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 3022.45it/s]
+R2 invalid extraction recorded: 2b3b0032cae5223035bea33f3075932f4ca80cb3122f0347ac68e84bd6575084 Expecting ',' delimiter: line 1 column 56 (char 55)
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19832.40it/s]
+E37 71/80 test423 singleton 1 scored
+E37 71/80 test423 singleton 2 scored
+E37 71/80 test423 singleton 3 scored
+E37 71/80 test423 singleton 4 scored
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 5038.46it/s]
+E37 71/80 test423 clean saved
+E37 71/80 test423 attack saved
+E37 71/80 test423 delete_OR_backfill saved
+E37 71/80 test423 delete_entail_backfill saved
+E37 71/80 test423 coordguard_af_refill saved
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14472.65it/s]
+E37 71/80 test423 trustrag saved
+E37 71/80 test423 defclean_OR saved
+E37 71/80 test423 defclean_coordguard saved
+E37 target complete 71/80 test423
+E37 72/80 test424 singleton 1 scored
+E37 72/80 test424 singleton 2 scored
+E37 72/80 test424 singleton 3 scored
+E37 72/80 test424 singleton 4 scored
+E37 72/80 test424 clean saved
+E37 72/80 test424 attack saved
+E37 72/80 test424 delete_OR_backfill saved
+E37 72/80 test424 delete_entail_backfill saved
+E37 72/80 test424 coordguard_af_refill saved
+E37 72/80 test424 trustrag saved
+E37 72/80 test424 defclean_OR saved
+E37 72/80 test424 defclean_coordguard saved
+E37 target complete 72/80 test424
+E37 73/80 test426 singleton 1 scored
+E37 73/80 test426 singleton 2 scored
+E37 73/80 test426 singleton 3 scored
+E37 73/80 test426 singleton 4 scored
+E37 73/80 test426 clean saved
+E37 73/80 test426 attack saved
+E37 73/80 test426 delete_OR_backfill saved
+E37 73/80 test426 delete_entail_backfill saved
+E37 73/80 test426 coordguard_af_refill saved
+E37 73/80 test426 trustrag saved
+E37 73/80 test426 defclean_OR saved
+E37 73/80 test426 defclean_coordguard saved
+E37 target complete 73/80 test426
+E37 74/80 test430 singleton 1 scored
+E37 74/80 test430 singleton 2 scored
+E37 74/80 test430 singleton 3 scored
+E37 74/80 test430 singleton 4 scored
+E37 74/80 test430 clean saved
+E37 74/80 test430 attack saved
+E37 74/80 test430 delete_OR_backfill saved
+E37 74/80 test430 delete_entail_backfill saved
+E37 74/80 test430 coordguard_af_refill saved
+E37 74/80 test430 trustrag saved
+E37 74/80 test430 defclean_OR saved
+E37 74/80 test430 defclean_coordguard saved
+E37 target complete 74/80 test430
+E37 75/80 test442 singleton 1 scored
+E37 75/80 test442 singleton 2 scored
+E37 75/80 test442 singleton 3 scored
+E37 75/80 test442 singleton 4 scored
+E37 75/80 test442 clean saved
+E37 75/80 test442 attack saved
+E37 75/80 test442 delete_OR_backfill saved
+E37 75/80 test442 delete_entail_backfill saved
+E37 75/80 test442 coordguard_af_refill saved
+E37 75/80 test442 trustrag saved
+E37 75/80 test442 defclean_OR saved
+E37 75/80 test442 defclean_coordguard saved
+E37 target complete 75/80 test442
+E37 76/80 test452 singleton 1 scored
+E37 76/80 test452 singleton 2 scored
+E37 76/80 test452 singleton 3 scored
+E37 76/80 test452 singleton 4 scored
+E37 76/80 test452 clean saved
+E37 76/80 test452 attack saved
+E37 76/80 test452 delete_OR_backfill saved
+E37 76/80 test452 delete_entail_backfill saved
+E37 76/80 test452 coordguard_af_refill saved
+E37 76/80 test452 trustrag saved
+E37 76/80 test452 defclean_OR saved
+E37 76/80 test452 defclean_coordguard saved
+E37 target complete 76/80 test452
+E37 77/80 test454 singleton 1 scored
+E37 77/80 test454 singleton 2 scored
+E37 77/80 test454 singleton 3 scored
+E37 77/80 test454 singleton 4 scored
+E37 77/80 test454 clean saved
+E37 77/80 test454 attack saved
+E37 77/80 test454 delete_OR_backfill saved
+E37 77/80 test454 delete_entail_backfill saved
+E37 77/80 test454 coordguard_af_refill saved
+E37 77/80 test454 trustrag saved
+E37 77/80 test454 defclean_OR saved
+E37 77/80 test454 defclean_coordguard saved
+E37 target complete 77/80 test454
+E37 78/80 test462 singleton 1 scored
+E37 78/80 test462 singleton 2 scored
+E37 78/80 test462 singleton 3 scored
+E37 78/80 test462 singleton 4 scored
+E37 78/80 test462 clean saved
+E37 78/80 test462 attack saved
+E37 78/80 test462 delete_OR_backfill saved
+E37 78/80 test462 delete_entail_backfill saved
+E37 78/80 test462 coordguard_af_refill saved
+E37 78/80 test462 trustrag saved
+E37 78/80 test462 defclean_OR saved
+E37 78/80 test462 defclean_coordguard saved
+E37 target complete 78/80 test462
+E37 79/80 test464 singleton 1 scored
+E37 79/80 test464 singleton 2 scored
+E37 79/80 test464 singleton 3 scored
+E37 79/80 test464 singleton 4 scored
+E37 79/80 test464 clean saved
+E37 79/80 test464 attack saved
+E37 79/80 test464 delete_OR_backfill saved
+E37 79/80 test464 delete_entail_backfill saved
+E37 79/80 test464 coordguard_af_refill saved
+E37 79/80 test464 trustrag saved
+E37 79/80 test464 defclean_OR saved
+E37 79/80 test464 defclean_coordguard saved
+E37 target complete 79/80 test464
+E37 80/80 test466 singleton 1 scored
+E37 80/80 test466 singleton 2 scored
+E37 80/80 test466 singleton 3 scored
+E37 80/80 test466 singleton 4 scored
+E37 80/80 test466 clean saved
+E37 80/80 test466 attack saved
+E37 80/80 test466 delete_OR_backfill saved
+E37 80/80 test466 delete_entail_backfill saved
+E37 80/80 test466 coordguard_af_refill saved
+E37 80/80 test466 trustrag saved
+E37 80/80 test466 defclean_OR saved
+E37 80/80 test466 defclean_coordguard saved
+E37 target complete 80/80 test466
+E37 all 80 targets complete

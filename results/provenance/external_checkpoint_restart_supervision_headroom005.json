@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-01T03:57:19.177451+00:00",
+  "helper_pid": 24259,
+  "source": "experiments/recover_supervision_after_external_restart.py",
+  "source_sha256": "b68c72178d0e3e62c0fae119fdfd00b9570784a39cc30faae2c49e25779276ce",
+  "prior_source_archive": "results/provenance/recover_supervision_after_external_restart_2d514294d9e7.py",
+  "change": "Operational helper accepts explicit restart journal argument; frozen scientific launchers unchanged",
+  "external_restart_journal": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/headroom005_antivenom_restart_state.json",
+  "external_restart_snapshot_files_verified": 423,
+  "frozen_manifests_match": 22,
+  "e37_original_first70_preserved": true,
+  "e5_cases": 41,
+  "e5_saved_arms": 921,
+  "scope": "Restore inhibitor and frozen supplemental supervisor after existing external restarter starts verified original root; never launches an incident job",
+  "authorization_basis": "Existing actual human Restart from checkpoints approval previously verified via read_thread; external restarter already owns recovery. No new human approval inferred from flag alone."
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "antivenom.paper-evidence-export.v1",
+  "classification": "formatting of completed existing evidence; no new inference or statistical family",
+  "sources": {
+    "results/memform_drop_all_summary_v1.json": {
+      "sha256": "3f2aebc75256401dd2ed8cb3ee3f8d6298f729c5fb2cabd4feb49b7903c07912",
+      "bytes": 39712
+    },
+    "results/memform_drop_all_completion_audit_v1.json": {
+      "sha256": "ed3200ea91093f7c348bb79764f0208696bb51d4d1f2f607c4bdf96d8235429b",
+      "bytes": 2002
+    },
+    "results/incident_memform_summary.json": {
+      "sha256": "3e2bde2e87a52417f79ea8afa80a1b7d4a257da43aa97dd5199c8b40ed38cb6c",
+      "bytes": 77902
+    },
+    "results/swarm_track4_summary.json": {
+      "sha256": "c529c9e7ed73bfd55bc27643fc5e6aedd109d67ff6294a82d779ffa160f8b334",
+      "bytes": 32123
+    },
+    "results/incident_memform_integrity.json": {
+      "sha256": "7679a58c27ca1b8bd018ee2ee8ff08ef1f160b2f7e3430471585db22ee271fa6",
+      "bytes": 95
+    },
+    "results/incident_integrity.json": {
+      "sha256": "b2f8b7174097f1d20ec69a6653aa5087cb9e8086fb77b7be6f3d53cef69bfc28",
+      "bytes": 237
+    },
+    "results/swarm_clean_reference_integrity.json": {
+      "sha256": "81182eaf63c38726390802061f604aa6962bba28379629bd1c89c2f61cbe995a",
+      "bytes": 357
+    },
+    "results/component_utility_audit_v1.json": {
+      "sha256": "bd7fb77c5cf8dad436a5632df77778c42af0d553d2e32e26a14d511dfc70be3a",
+      "bytes": 25839
+    },
+    "results/human_validation_status.json": {
+      "sha256": "5985a564180978c51754556047cf41c019d7de6857296635ae84ee2d9263b62b",
+      "bytes": 167
+    },
+    "results/performance_choice_frozen.json": {
+      "sha256": "eb33dad8b2643265076f8058d4cae33f1dc7b420dcbc1b4f8ba213c04a5eb5ed",
+      "bytes": 313
+    }
+  },
+  "table_source_pointers": {
+    "table1_memform_rates": [
+      "results/incident_memform_summary.json#/all_tasks/rates",
+      "results/memform_drop_all_summary_v1.json#/all_target/rates"
+    ],
+    "table2_exact_control_effects": [
+      "results/memform_drop_all_summary_v1.json#/all_target/comparisons"
+    ],
+    "table3_swarm_primary": [
+      "results/swarm_track4_summary.json#/primary/comparisons"
+    ],
+    "table4_swarm_rates": [
+      "results/swarm_track4_summary.json#/primary/rates"
+    ],
+    "figures/exact_control.svg": [
+      "results/memform_drop_all_summary_v1.json#/all_target/rates"
+    ]
+  },
+  "units": {
+    "MemForm": "212 declared families",
+    "swarm": "80 incidents; average 3 receivers within incident"
+  },
+  "limits": [
+    "descriptive bootstrap intervals are not simultaneous",
+    "no fresh confirmation or native MemMorph",
+    "human review pending",
+    "zero discordance is not equivalence"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "inputs": {
+    "results/incident_memform_calibration.json": "f9ae5faf9535de41d413480187fcd5f86a5c0a1c89a81f53e16084e9a396693d",
+    "results/incident_memform_calibration_rows.jsonl": "8621b0f165b594456ceb68d5cc5cec6322b810674a9f18c15261d59ec63148fa"
+  },
+  "settings": {
+    "calibration_families": [
+      "F0030_customer_support_resolved_ticket_rep_d00b5c",
+      "F0128_software_configuration_checksum_mism_4e7e0e",
+      "F0119_research_workflow_abstract_trial_scr_49ca1d",
+      "F0076_information_retrieval_ambiguous_prod_18af56",
+      "F0232_remote_push_timeout_reconciliation_619952",
+      "F0112_cloud_instance_termination_notice_ha_0a8ca4",
+      "F0150_software_ops_healthy_deployment_prom_78ff93",
+      "F0209_customer_support_duplicate_charge_re_c68897",
+      "F0064_knowledge_article_duplicate_upload_e19cd0",
+      "F0072_file_processing_timeout_destination_7b04fe",
+      "F0043_completed_experiment_metric_reconcil_2fddb8",
+      "F0160_file_processing_replacement_request_70d5a1",
+      "F0063_collaboration_agenda_sync_conflict_0d1895",
+      "F0033_search_result_source_validation_7c51ed",
+      "F0131_resource_scheduling_provisional_room_233d4f",
+      "F0135_build_test_retry_pass_release_gate_be3050",
+      "F0109_catalog_search_no_exact_match_expans_3337f0",
+      "F0206_duplicate_key_batch_resolution_7e4d1f",
+      "F0089_software_operations_offline_agent_re_7223c1",
+      "F0225_duplicate_filename_manifest_reconcil_338d87"
+    ]
+  }
+}

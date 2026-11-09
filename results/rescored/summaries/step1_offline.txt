@@ -1,0 +1,38 @@
+== 1. Construction profile (attacked top-10)
+  nq        question contained: poison 1.00 clean 0.00 | words: poison median 36, clean median 89
+  hotpotqa  question contained: poison 1.00 clean 0.00 | words: poison median 42, clean median 82
+  msmarco   question contained: poison 1.00 clean 0.00 | words: poison median 32, clean median 50
+
+== 2. M1 avidity (fit NQ 1-20, report NQ 21-100 development)
+  coefficients (entail logit, attn z) = [0.926 2.507]
+  dev AUC: avidity 0.991 | entailment alone 0.971 | attention alone 0.981
+  naive sum ablation AUC 0.996; within-class corr(poison) -0.03, (clean) 0.05
+  at OR's FPR 0.065: OR recall 0.978 vs avidity recall 0.987
+  at AND's FPR 0.000: AND recall 0.707 vs avidity recall 0.757
+  clean-removal budget for 95% poison recall: avidity 0.030
+
+== 3. M5 kinetic proofreading (attention persistence across layers)
+  layer 21 z>=0        recall 0.814 FPR 0.030
+  all of 15-24 z>=0    recall 0.666 FPR 0.017
+  3 of 4 z>=0          recall 0.795 FPR 0.032
+  mean z>=0            recall 0.871 FPR 0.050
+
+== 4. M2 isotype-switching gate (development targets)
+  medium band = clean 90th pct to poison median of avidity; targets with a gold-bearing medium-band clean passage: 12/80 -> do NOT run M2 (write null)
+
+== 5. M10 H1a backfire count (E17)
+  bound_flag: attack not endorsed but bound endorsed in 1/75 targets
+  bound_best: attack not endorsed but bound endorsed in 1/75 targets
+
+== 6. CoordGuard gate sweep, attacked side (NQ development, identical contexts)
+  gate at attacked-score quantile 0.00: coordguard_af          fires 1.00 endorsed 0.03 correct 0.39
+  gate at attacked-score quantile 0.00: coordguard_af_refill   fires 1.00 endorsed 0.05 correct 0.53
+  gate at attacked-score quantile 0.25: coordguard_af          fires 0.75 endorsed 0.25 correct 0.35
+  gate at attacked-score quantile 0.25: coordguard_af_refill   fires 0.75 endorsed 0.28 correct 0.49
+  gate at attacked-score quantile 0.50: coordguard_af          fires 0.51 endorsed 0.45 correct 0.28
+  gate at attacked-score quantile 0.50: coordguard_af_refill   fires 0.51 endorsed 0.47 correct 0.43
+  gate at attacked-score quantile 0.75: coordguard_af          fires 0.25 endorsed 0.65 correct 0.23
+  gate at attacked-score quantile 0.75: coordguard_af_refill   fires 0.25 endorsed 0.67 correct 0.32
+  gate at attacked-score quantile 0.90: coordguard_af          fires 0.11 endorsed 0.79 correct 0.24
+  gate at attacked-score quantile 0.90: coordguard_af_refill   fires 0.11 endorsed 0.79 correct 0.31
+  (clean-side gate calibration needs e5 on clean contexts: CPU, separate step)

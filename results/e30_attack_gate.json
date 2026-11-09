@@ -1,0 +1,18 @@
+{
+ "g": 0.9749041199999999,
+ "NQ dev": {
+  "attacked": 0.9625,
+  "attacked_excl": 0.8875,
+  "clean": 0.0375
+ },
+ "hotpotqa tier 1": {
+  "attacked": 0.88,
+  "attacked_excl": 0.66,
+  "clean": 0.04
+ },
+ "msmarco tier 1": {
+  "attacked": 0.98,
+  "attacked_excl": 0.9,
+  "clean": 0.04
+ }
+}

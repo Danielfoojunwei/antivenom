@@ -1,0 +1,37 @@
+{
+  "classification": "posthoc descriptive completed-record audit; not fresh confirmation",
+  "comparison": "OR minus entailment at their original frozen operating points",
+  "frozen_utc": "2026-11-03T15:06:53.572699+00:00",
+  "no_inference": true,
+  "replayed_original_rules": {
+    "attention_z_threshold": 0.0,
+    "entailment_threshold": 0.01
+  },
+  "schema": "antivenom.component_utility_audit.v1",
+  "scopes": [
+    "MemForm212 families",
+    "swarm80 incidents separately by layout"
+  ],
+  "source_and_inputs": {
+    "analysis/component_utility_audit.py": "a5b4694588da74d33b9c209aef859175f35711403bc1fde29fab80f07707ad1a",
+    "data/external/memform/reference/memform/eval/core.py": "586ed27553ce8d89620dc55d7273703f394755e16a75d8364bc88fc074804683",
+    "experiments/incident_memform.py": "55ef248c375c5c431629265f895214c7373f0330d62f82660e8cde3b298f9f4d",
+    "results/incident_memform.jsonl": "17c0f4ef2b0bbb9e789cafd30030e17ca94cc4333c20f8c88119cb7cfc08eb18",
+    "results/incident_memform_capture_audit.json": "cecb027db277cee0f3e66317e5692f5b0ae328eb61618907e8ebc18dae9616da",
+    "results/incident_memform_integrity.json": "7679a58c27ca1b8bd018ee2ee8ff08ef1f160b2f7e3430471585db22ee271fa6",
+    "results/incident_memform_manifest.json": "23b9b02195f28fb5ec2d26864e10279accb835c5e3bf294c30d7307bc75ccee5",
+    "results/incident_queue_status.json": "327c728b9a6f20fb5621bae172132160112071a2778664afcb4ca3bf9b21b119",
+    "results/incident_swarm.jsonl": "5243c3e286b27e0172909af12aae96177c5334c9fd840f1006ead17cac1e4878",
+    "results/swarm_clean_reference.jsonl": "dc6293f2c8a1b65d6cc658671ee938e31022a78ea1b26ff9233bd083cb6652e4",
+    "results/swarm_clean_reference_integrity.json": "81182eaf63c38726390802061f604aa6962bba28379629bd1c89c2f61cbe995a",
+    "results/swarm_track4_evaluation_manifest.json": "e8a460eb02aea0629ea1213b2581703e0cc290c7fabcb4c6a6d6ac5a232d9745",
+    "results/swarm_track4_status.json": "951e15a0fd9c249c18aac9ba4eefa257865099996156990999f666916359fe3d",
+    "src/antivenom/incident.py": "e98149f3a6a625eb5f8612a4f2914d906f94f80a692d270bed89100f54135840"
+  },
+  "specification_note": "Frozen after exploratory inspection; this is not a prospective preregistration.",
+  "statistics": "descriptive counts and incident/family-averaged point effects only; no new significance or tuned threshold",
+  "subsets": [
+    "all targets",
+    "identically paired nonblank selected capture"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "incidents": 80,
+  "actual_reference_answers": 480,
+  "reader_weights_unchanged": true,
+  "configuration": "original_default",
+  "cache_limit_bytes": 16320875724,
+  "reader_load_seconds": 3.15188516699709,
+  "timing_note": "Later supplementary run; not a randomized E42 latency comparator",
+  "human_scoring": "deferred, not passed"
+}

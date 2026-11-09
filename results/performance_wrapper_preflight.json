@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "GPU child routing preserves original scientific argv and environment",
+    "CPU analysis/compile/test invocations unchanged",
+    "Queue status annotated without mutating science outputs",
+    "Original frozen manifests match"
+  ],
+  "model_validation": "not yet run; waits for original model lock"
+}

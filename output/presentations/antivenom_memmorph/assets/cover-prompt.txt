@@ -1,0 +1,10 @@
+Generated using built-in image_gen. Decorative editorial concept, not scientific evidence.
+Use case: stylized-concept
+Asset type: decorative editorial presentation cover background, not a scientific diagram or empirical evidence.
+Primary request: Create a sophisticated sparse physical 3D still life suggesting agent memory integrity.
+Scene/backdrop: perfectly uniform matte midnight navy background, hex #101B22, with seamless negative space.
+Subject: a small precise sculptural stack of luminous pale-green translucent glass memory sheets, slightly offset and tilted; one very fine amber-to-red contamination thread passes through the layers. A few restrained green edge highlights give depth. The glass looks tangible, with soft realistic reflections, no glowing circuitry.
+Composition/framing: wide landscape 16:9. ALL subject matter confined to the rightmost 45% of the image, between x=60% and x=94%, with ample top and bottom margins. The leftmost 55% must be completely empty uniform #101B22 for editable slide title text. No subject or glows may intrude into that left empty area. Quiet high-end research editorial aesthetic, highly controlled composition, calm rather than threatening.
+Lighting/mood: soft studio lighting, subtle shadows, low-key, elegant, precise.
+Color palette: midnight #101B22; pale celadon green #C5EFAC and frosted glass; one fine muted amber/red accent only.
+Constraints: absolutely no text, letters, labels, logos, watermark, icons, shields, snakes, humans, dashboards, charts, arrows, networks, or interface panels. Do not depict an actual experiment. Render artwork only.

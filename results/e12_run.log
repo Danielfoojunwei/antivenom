@@ -1,0 +1,79 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2646.25it/s]
+W1027 12:46:29.207000 38708 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 22282.14it/s]
+test87 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test88 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test90 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test94 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test106 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test107 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test110 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test113 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test120 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test127 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test130 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test138 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test145 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test152 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test156 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test157 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test159 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test161 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test164 {'clean': 0, 'attack': 1, 'oracle': 1, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 0}
+test165 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test166 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test177 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test185 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test188 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 1, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test191 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test192 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test208 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test213 {'clean': 1, 'attack': 1, 'oracle': 1, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test216 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test226 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test228 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test229 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test231 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test243 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 1, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test254 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test256 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test273 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test282 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test291 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test294 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test308 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test311 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test312 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test315 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test317 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test318 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test327 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 1, 'delete_entail_backfill': 0}
+test332 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test337 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test347 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test348 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test363 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test369 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test371 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test375 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test379 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test383 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test387 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test395 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test397 {'clean': 1, 'attack': 1, 'oracle': 1, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test400 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test404 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test407 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test408 {'clean': 0, 'attack': 0, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test410 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test412 {'clean': 1, 'attack': 1, 'oracle': 0, 'block_entail': 1, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test413 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test417 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test418 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test419 {'clean': 0, 'attack': 1, 'oracle': 1, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 1, 'delete_entail': 0, 'delete_entail_backfill': 1}
+test423 {'clean': 1, 'attack': 1, 'oracle': 1, 'block_entail': 1, 'block_OR': 1, 'block_AND': 1, 'delete_OR': 1, 'delete_OR_backfill': 1, 'delete_entail': 1, 'delete_entail_backfill': 1}
+test424 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test426 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test430 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 1, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}
+test442 {'clean': 0, 'attack': 1, 'oracle': 0, 'block_entail': 0, 'block_OR': 0, 'block_AND': 0, 'delete_OR': 0, 'delete_OR_backfill': 0, 'delete_entail': 0, 'delete_entail_backfill': 0}

@@ -1,0 +1,10 @@
+{
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "revision": "c26a38f6a37d0a51b4e9a1eb3026530fa35d9fed",
+  "weights": {
+    "model.safetensors": {
+      "sha256": "86110f368236b53cf4c2336f991a85703b17bcc60bb75f292b4002ec0219f071",
+      "bytes": 4284346255
+    }
+  }
+}

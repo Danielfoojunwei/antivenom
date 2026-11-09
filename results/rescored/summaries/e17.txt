@@ -1,0 +1,19 @@
+results/rescored/e17_bound_delivery_nq_k10.jsonl  [DEVELOPMENT]  n=75
+  arm                       endorsed [95% CI]       correct [95% CI]        
+  clean                     0.04 [0.00, 0.09]       0.65 [0.55, 0.76]       
+  attack                    0.89 [0.83, 0.96]       0.25 [0.16, 0.35]       
+  block_OR                  0.08 [0.03, 0.15]       0.43 [0.32, 0.53]       
+  delete_OR                 0.08 [0.03, 0.15]       0.45 [0.35, 0.57]       
+  bound_flag                0.17 [0.09, 0.27]       0.48 [0.37, 0.59]       
+  bound_best                0.23 [0.13, 0.32]       0.49 [0.39, 0.60]       
+  bound_best+block          0.08 [0.03, 0.15]       0.51 [0.40, 0.61]       
+  McNemar delete_OR vs bound_best endorsed: p=0.019
+  McNemar delete_OR vs bound_best correct: p=0.55
+  McNemar bound_flag vs bound_best endorsed: p=0.22
+  McNemar bound_flag vs bound_best correct: p=1
+  McNemar bound_best vs bound_best+block endorsed: p=0.00098
+  McNemar bound_best vs bound_best+block correct: p=1
+  McNemar bound_best+block vs block_OR endorsed: p=1
+  McNemar bound_best+block vs block_OR correct: p=0.11
+  McNemar attack vs bound_best endorsed: p=2.4e-14
+  McNemar attack vs bound_best correct: p=0.00012

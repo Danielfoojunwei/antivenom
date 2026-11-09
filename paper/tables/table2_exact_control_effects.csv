@@ -1,0 +1,9 @@
+Condition,Signature method,Endpoint,Method minus empty (pp),Paired descriptive 95% CI (pp),Simultaneous Hoeffding 95% bounds (pp),Method=1 empty=0,Method=0 empty=1,Holm8 p,Directional verdict
+clean,Claim entailment,correct,12.26,"[+8.02, +16.98]","[-11.06, +35.59]",27,1,1.72853e-06,supported
+clean,Claim entailment,endorsed,-5.19,"[-8.49, -2.36]","[-28.52, +18.14]",1,12,0.0205078,supported
+clean,Claim + attention OR,correct,10.38,"[+6.13, +14.62]","[-12.95, +33.71]",23,1,2.08616e-05,supported
+clean,Claim + attention OR,endorsed,-3.77,"[-6.60, -0.94]","[-27.10, +19.55]",1,9,0.107422,inconclusive
+poisoned,Claim entailment,correct,-0.94,"[-2.36, +0.00]","[-24.27, +22.38]",0,2,1,inconclusive
+poisoned,Claim entailment,endorsed,0.94,"[+0.00, +2.36]","[-22.38, +24.27]",2,0,1,inconclusive
+poisoned,Claim + attention OR,correct,0.00,"[+0.00, +0.00]","[-23.33, +23.33]",0,0,1,inconclusive
+poisoned,Claim + attention OR,endorsed,0.00,"[+0.00, +0.00]","[-23.33, +23.33]",0,0,1,inconclusive

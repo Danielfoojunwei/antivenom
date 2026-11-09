@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-31T07:44:21.777202+00:00",
+  "reason": "External checkpoint restarter restarted original root; restore inhibitor and existing frozen supplemental supervisor",
+  "external_restart_journal": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/qwen35_novel_001_antivenom_restart_execution.json",
+  "external_restarted_utc": "2026-10-31T07:39:54.145787+00:00",
+  "incident_queue_pid": 52292,
+  "incident_child_pid": 52441,
+  "incident_inhibitor_pid": 52648,
+  "swarm_supervisor_pid": 52650,
+  "saved_e5_cases": 6,
+  "saved_e5_arms": 132,
+  "saved_e5_checkpoint_hashes_unchanged": true,
+  "frozen_manifest_mismatches": [],
+  "previous_swarm_status": {
+    "queue_pid": 49493,
+    "status": "failed",
+    "child_pid": null,
+    "runtime_launcher": "experiments/run_swarm_track4.py",
+    "runtime_arguments": [],
+    "protocol": "docs/SWARM_TRACK4_PROTOCOL.md",
+    "completed_phases": [],
+    "idle_sleep_inhibitor_pid": 49494,
+    "updated_utc": "2026-10-31T07:39:51.153428+00:00",
+    "error": "RuntimeError('Original incident supervisor stopped; preserve and recover it first')"
+  }
+}

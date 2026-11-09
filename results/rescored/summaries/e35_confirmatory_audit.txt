@@ -1,0 +1,33 @@
+E35 audit of historical E29 (original files preserved)
+100 expected tier-2 target IDs; no tier-1 overlap; 1300 responses checked, zero scoring mismatches.
+All latest frozen hashes match. The older v2 document hash is superseded by its later entry.
+Claim 1 used v2 continuous scores although the primary detector is v1 OR (binary).
+No pre-registered continuous v1 ranking is available. v2 matched-recall analysis is a sensitivity analysis.
+Discrete thresholds below attain at least CG's integer poison catch count (ties may overshoot).
+The bootstrap sign-tail p replicates the historical approach; it is not a null-calibrated permutation test.
+Structural false alarms: within-context attention z>=0 must flag at least one passage, even with no poison.
+Clean-context filtering audit (gold-token containment is only a proxy): {'hotpotqa': {'defclean_flags_v1': {'contexts_flagged': 50, 'mean_flags': 3.22, 'min_flags': 1, 'contexts_with_gold_token_before': 33, 'contexts_losing_all_gold_tokens': 14}, 'defclean_flags_v2': {'contexts_flagged': 50, 'mean_flags': 2.72, 'min_flags': 1, 'contexts_with_gold_token_before': 33, 'contexts_losing_all_gold_tokens': 11}, 'defclean_coordguard_removed': {'contexts_flagged': 50, 'mean_flags': 6.88, 'min_flags': 5, 'contexts_with_gold_token_before': 33, 'contexts_losing_all_gold_tokens': 17}}, 'msmarco': {'defclean_flags_v1': {'contexts_flagged': 50, 'mean_flags': 4.36, 'min_flags': 1, 'contexts_with_gold_token_before': 31, 'contexts_losing_all_gold_tokens': 4}, 'defclean_flags_v2': {'contexts_flagged': 50, 'mean_flags': 3.84, 'min_flags': 1, 'contexts_with_gold_token_before': 31, 'contexts_losing_all_gold_tokens': 4}, 'defclean_coordguard_removed': {'contexts_flagged': 50, 'mean_flags': 6.62, 'min_flags': 5, 'contexts_with_gold_token_before': 31, 'contexts_losing_all_gold_tokens': 6}}}
+
+hotpotqa n=50: {'cg_recall': 1.0, 'cg_clean_removed': 0.208, 'v2_threshold': 0.00775, 'v2_recall': 1.0, 'v2_clean_removed': 0.468, 'difference_cg_minus_v2': -0.26, 'v1_deployed_recall': 0.96, 'v1_deployed_clean_removed': 0.04, 'v1_binary_matched_cost': 1.0, 'n_poison': 200, 'n_clean': 250}
+  v2 clean-cost difference CI [-0.33199999999999996, 0.16399999999999998]
+  Raw p: {'claim1_v2_sensitivity': 0.699, 'claim2_clean_accuracy': 1.0, 'claim3_endorsement_cg': 0.375, 'claim3_endorsement_trustrag': 0.34375}
+  Historical two-test Holm: {'claim1_v2_sensitivity': 1.0, 'claim2_clean_accuracy': 1.0}
+  Conservative four-test Holm sensitivity: {'claim3_endorsement_trustrag': 1.0, 'claim3_endorsement_cg': 1.0, 'claim1_v2_sensitivity': 1.0, 'claim2_clean_accuracy': 1.0}
+
+msmarco n=50: {'cg_recall': 0.9947643979057592, 'cg_clean_removed': 0.20384615384615384, 'v2_threshold': 0.03482, 'v2_recall': 0.9947643979057592, 'v2_clean_removed': 0.3230769230769231, 'difference_cg_minus_v2': -0.11923076923076925, 'v1_deployed_recall': 0.9738219895287958, 'v1_deployed_clean_removed': 0.18461538461538463, 'v1_binary_matched_cost': 1.0, 'n_poison': 191, 'n_clean': 260}
+  v2 clean-cost difference CI [-0.31129662233137556, 0.04090372306230253]
+  Raw p: {'claim1_v2_sensitivity': 0.155, 'claim2_clean_accuracy': 0.6875, 'claim3_endorsement_cg': 0.125, 'claim3_endorsement_trustrag': 0.34375}
+  Historical two-test Holm: {'claim1_v2_sensitivity': 0.31, 'claim2_clean_accuracy': 0.6875}
+  Conservative four-test Holm sensitivity: {'claim3_endorsement_cg': 0.5, 'claim1_v2_sensitivity': 0.5, 'claim3_endorsement_trustrag': 0.6875, 'claim2_clean_accuracy': 0.6875}
+
+pooled n=100: {'cg_recall': 0.9974424552429667, 'cg_clean_removed': 0.20588235294117646, 'v2_threshold': 0.01518, 'v2_recall': 0.9974424552429667, 'v2_clean_removed': 0.4019607843137255, 'difference_cg_minus_v2': -0.19607843137254904, 'v1_deployed_recall': 0.9667519181585678, 'v1_deployed_clean_removed': 0.11372549019607843, 'v1_binary_matched_cost': 1.0, 'n_poison': 391, 'n_clean': 510}
+  v2 clean-cost difference CI [-0.374021789974273, 0.05110914563010855]
+  Raw p: {'claim1_v2_sensitivity': 0.22, 'claim2_clean_accuracy': 0.7265625, 'claim3_endorsement_cg': 0.0390625, 'claim3_endorsement_trustrag': 1.0}
+  Historical two-test Holm: {'claim1_v2_sensitivity': 0.44, 'claim2_clean_accuracy': 0.7265625}
+  Conservative four-test Holm sensitivity: {'claim3_endorsement_cg': 0.15625, 'claim1_v2_sensitivity': 0.66, 'claim2_clean_accuracy': 1.0, 'claim3_endorsement_trustrag': 1.0}
+
+Interpretation: no primary superiority demonstrated; parity/equivalence was not established.
+The historical p=0.039 for endorsement vs CG is unadjusted, not a Holm-adjusted result.
+Gate and later experiments are exploratory; tier 2 cannot confirm them afresh.
+Both rule-correct and rule-endorsed (requires manual review): {'attack': 11, 'clean': 4, 'coordguard_af': 4, 'coordguard_af_refill': 5, 'defclean_coordguard': 1, 'defclean_v1': 1, 'defclean_v2': 3, 'lowrel_delete_backfill': 5, 'random_delete_backfill': 7, 'trustrag': 8, 'v1_block': 5, 'v1_delete_backfill': 6, 'v2_delete_backfill': 5}
+Human label completeness: {'label_sheet.csv': {'rows': 152, 'fully_labelled': 0}, 'label_sheet_v2.csv': {'rows': 302, 'fully_labelled': 0}}

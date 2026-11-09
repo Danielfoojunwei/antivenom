@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-31T06:46:07.513148+00:00",
+  "helper_pid": 35250,
+  "source": "experiments/recover_supervision_after_external_restart.py",
+  "source_sha256": "2d514294d9e75f973f16608bbf80ae100fc5967e79b484c085bba5d540f312bc",
+  "purpose": "Restore incident sleep inhibitor and frozen supplemental supervisor only after external authorized checkpoint restarter has launched verified incident root; never launches incident worker",
+  "human_authorization": {
+    "thread_id": "01a18dcf-c56b-7a70-a307-f459edcdca44",
+    "user_message_id": "01a190ab-b6ac-7662-a5f1-939bbe433359",
+    "question": "May I stop its worker and queue, then automatically restart them from saved checkpoints after these neuron tests?",
+    "answer": "Restart from checkpoints (Recommended)",
+    "verified_by": "read_thread actual user reply, 2026-10-31T06:44 UTC"
+  },
+  "external_restart_journal": "/Users/danielfoojunwei/Desktop/liquid probe/work/honest_trait_search_v3/resource_sessions/factorial_native_screen_002_checkpoint_restart_execution.json",
+  "all_385_external_snapshot_files_match": true,
+  "frozen_manifest_count": 22,
+  "scientific_sources_unchanged": true,
+  "e5_complete_cases": 4,
+  "e5_saved_arms": 88
+}

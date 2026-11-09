@@ -1,0 +1,25 @@
+{
+  "estimated_utc": "2026-10-30T04:03:53.334467+00:00",
+  "completed_batch": "E36-E38 automated analysis/integrity complete",
+  "active_phase": "base",
+  "complete_cases": 59,
+  "planned_cases": 80,
+  "active_phase_remaining_hours_planning": [
+    2,
+    4
+  ],
+  "all_remaining_hours_planning": [
+    30,
+    75
+  ],
+  "assumption": "Current Mac stays awake; original allocator selected; no paid/remote compute",
+  "method": "Active-phase checkpoint wall intervals plus engineering ranges for unmeasured future phases. Not a statistical confidence interval or deadline.",
+  "uncertainty": [
+    "Recent checkpoint intervals include an approximately 32-minute outlier, potentially host sleep/load",
+    "Native MemForm timings are still unmeasured",
+    "Update phase estimates as complete-case timing accumulates"
+  ],
+  "measured_recent10_minutes_per_completed_case": 7.40378896911939,
+  "measured_active_phase_hours_at_recent10_rate": 2.591326139191786,
+  "interpretation": "Current ablation remains incomplete; no partial performance conclusions. Later-phase ranges remain engineering estimates, not measured runtimes or confidence intervals."
+}

@@ -1,0 +1,303 @@
+{
+  "split": "NQ development",
+  "n_targets": 80,
+  "scope": "Stored full-context detection only; no recontextualized detection or reader ASR",
+  "avidity_calibration": {
+    "coef": [
+      0.92642984055823,
+      2.507011776115381
+    ],
+    "intercept": 5.168330569436242,
+    "threshold": 0.10752762426147941
+  },
+  "detectors": {
+    "entailment": {
+      "original_recall": 0.871875,
+      "clean_removed": 0.034999999999999996,
+      "selection": {
+        "1": {
+          "n_targets": 80,
+          "recall": 0.7625,
+          "recall_ci": [
+            0.6625,
+            0.85
+          ],
+          "targets_with_miss": 19
+        },
+        "2": {
+          "n_targets": 80,
+          "recall": 0.81875,
+          "recall_ci": [
+            0.74375,
+            0.89375
+          ],
+          "targets_with_miss": 19
+        },
+        "3": {
+          "n_targets": 80,
+          "recall": 0.85,
+          "recall_ci": [
+            0.7791666666666667,
+            0.9166666666666666
+          ],
+          "targets_with_miss": 19
+        },
+        "4": {
+          "n_targets": 77,
+          "recall": 0.8668831168831169,
+          "recall_ci": [
+            0.7987012987012987,
+            0.9253246753246753
+          ],
+          "targets_with_miss": 19
+        }
+      }
+    },
+    "attention": {
+      "original_recall": 0.815625,
+      "clean_removed": 0.029166666666666667,
+      "selection": {
+        "1": {
+          "n_targets": 80,
+          "recall": 0.3625,
+          "recall_ci": [
+            0.25,
+            0.4625
+          ],
+          "targets_with_miss": 51
+        },
+        "2": {
+          "n_targets": 80,
+          "recall": 0.63125,
+          "recall_ci": [
+            0.55625,
+            0.69375
+          ],
+          "targets_with_miss": 51
+        },
+        "3": {
+          "n_targets": 80,
+          "recall": 0.7541666666666667,
+          "recall_ci": [
+            0.7041666666666668,
+            0.7958333333333334
+          ],
+          "targets_with_miss": 51
+        },
+        "4": {
+          "n_targets": 77,
+          "recall": 0.8084415584415584,
+          "recall_ci": [
+            0.7727272727272727,
+            0.8441558441558441
+          ],
+          "targets_with_miss": 51
+        }
+      }
+    },
+    "OR": {
+      "original_recall": 0.978125,
+      "clean_removed": 0.06416666666666666,
+      "selection": {
+        "1": {
+          "n_targets": 80,
+          "recall": 0.9125,
+          "recall_ci": [
+            0.85,
+            0.975
+          ],
+          "targets_with_miss": 7
+        },
+        "2": {
+          "n_targets": 80,
+          "recall": 0.95625,
+          "recall_ci": [
+            0.925,
+            0.9875
+          ],
+          "targets_with_miss": 7
+        },
+        "3": {
+          "n_targets": 80,
+          "recall": 0.9708333333333334,
+          "recall_ci": [
+            0.95,
+            0.9916666666666666
+          ],
+          "targets_with_miss": 7
+        },
+        "4": {
+          "n_targets": 77,
+          "recall": 0.9772727272727273,
+          "recall_ci": [
+            0.9577922077922078,
+            0.9902597402597403
+          ],
+          "targets_with_miss": 7
+        }
+      }
+    },
+    "avidity": {
+      "original_recall": 0.990625,
+      "clean_removed": 0.07708333333333332,
+      "selection": {
+        "1": {
+          "n_targets": 80,
+          "recall": 0.9625,
+          "recall_ci": [
+            0.9125,
+            1.0
+          ],
+          "targets_with_miss": 3
+        },
+        "2": {
+          "n_targets": 80,
+          "recall": 0.98125,
+          "recall_ci": [
+            0.95625,
+            1.0
+          ],
+          "targets_with_miss": 3
+        },
+        "3": {
+          "n_targets": 80,
+          "recall": 0.9875,
+          "recall_ci": [
+            0.9708333333333332,
+            1.0
+          ],
+          "targets_with_miss": 3
+        },
+        "4": {
+          "n_targets": 77,
+          "recall": 0.9902597402597403,
+          "recall_ci": [
+            0.9772727272727273,
+            1.0
+          ],
+          "targets_with_miss": 3
+        }
+      }
+    },
+    "coordguard": {
+      "original_recall": 0.996875,
+      "clean_removed": 0.22541666666666665,
+      "selection": {
+        "1": {
+          "n_targets": 80,
+          "recall": 0.9875,
+          "recall_ci": [
+            0.9625,
+            1.0
+          ],
+          "targets_with_miss": 1
+        },
+        "2": {
+          "n_targets": 80,
+          "recall": 0.99375,
+          "recall_ci": [
+            0.98125,
+            1.0
+          ],
+          "targets_with_miss": 1
+        },
+        "3": {
+          "n_targets": 80,
+          "recall": 0.9958333333333332,
+          "recall_ci": [
+            0.9875,
+            1.0
+          ],
+          "targets_with_miss": 1
+        },
+        "4": {
+          "n_targets": 77,
+          "recall": 0.9967532467532467,
+          "recall_ci": [
+            0.9902597402597403,
+            1.0
+          ],
+          "targets_with_miss": 1
+        }
+      }
+    }
+  },
+  "worst_capture": {
+    "entailment": {
+      "1": {
+        "n_targets": 80,
+        "recall": 0.475,
+        "recall_ci": [
+          0.3625,
+          0.5875
+        ],
+        "targets_with_miss": 42
+      },
+      "2": {
+        "n_targets": 80,
+        "recall": 0.55,
+        "recall_ci": [
+          0.44375,
+          0.65625
+        ],
+        "targets_with_miss": 42
+      },
+      "3": {
+        "n_targets": 80,
+        "recall": 0.6041666666666666,
+        "recall_ci": [
+          0.5083333333333333,
+          0.7
+        ],
+        "targets_with_miss": 42
+      },
+      "4": {
+        "n_targets": 80,
+        "recall": 0.66875,
+        "recall_ci": [
+          0.58125,
+          0.75625
+        ],
+        "targets_with_miss": 40
+      }
+    },
+    "OR": {
+      "1": {
+        "n_targets": 80,
+        "recall": 0.825,
+        "recall_ci": [
+          0.7375,
+          0.9
+        ],
+        "targets_with_miss": 14
+      },
+      "2": {
+        "n_targets": 80,
+        "recall": 0.90625,
+        "recall_ci": [
+          0.85625,
+          0.95
+        ],
+        "targets_with_miss": 14
+      },
+      "3": {
+        "n_targets": 80,
+        "recall": 0.9375,
+        "recall_ci": [
+          0.9041666666666668,
+          0.9666666666666666
+        ],
+        "targets_with_miss": 14
+      },
+      "4": {
+        "n_targets": 80,
+        "recall": 0.953125,
+        "recall_ci": [
+          0.928125,
+          0.975
+        ],
+        "targets_with_miss": 14
+      }
+    }
+  }
+}

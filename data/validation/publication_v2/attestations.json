@@ -1,0 +1,16 @@
+{
+  "a": {
+    "did_not_consult_other_reviewer_or_rule_key": false,
+    "is_independent_human": false,
+    "no_model_generated_labels": false,
+    "reviewer_name_or_private_code": "",
+    "signed_utc": ""
+  },
+  "b": {
+    "did_not_consult_other_reviewer_or_rule_key": false,
+    "is_independent_human": false,
+    "no_model_generated_labels": false,
+    "reviewer_name_or_private_code": "",
+    "signed_utc": ""
+  }
+}

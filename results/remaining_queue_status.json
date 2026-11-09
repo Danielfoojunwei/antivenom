@@ -1,0 +1,24 @@
+{
+  "queue_pid": 75348,
+  "status": "automated_runs_complete_external_validation_pending",
+  "completed_phases": [
+    "prepare",
+    "llama",
+    "mistral",
+    "composite",
+    "gate_cache",
+    "analysis",
+    "integrity",
+    "human_status"
+  ],
+  "protocol": "docs/REMAINING_RUNS_PROTOCOL.md",
+  "phase": "human_status",
+  "child_pid": null,
+  "updated_utc": "2026-10-29T20:19:48.837769+00:00",
+  "runtime_launcher": "experiments/run_resilient_queue.py",
+  "runtime_arguments": [
+    "remaining"
+  ],
+  "extraction_amendment": "docs/EXTRACTION_RESILIENCE_AMENDMENT.md",
+  "extraction_runtime_manifest": "results/extraction_resilience_manifest.json"
+}

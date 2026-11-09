@@ -1,0 +1,7 @@
+{
+  "targets": 100,
+  "arms_per_target": 13,
+  "answer_score_checks": 1300,
+  "all_passed": true,
+  "human_validation": "deferred; these checks reproduce automated rules only"
+}

@@ -1,0 +1,9 @@
+{
+  "inputs": {
+    "results/incident_swarm.jsonl": "5243c3e286b27e0172909af12aae96177c5334c9fd840f1006ead17cac1e4878",
+    "results/swarm_clean_reference.jsonl": "dc6293f2c8a1b65d6cc658671ee938e31022a78ea1b26ff9233bd083cb6652e4",
+    "results/swarm_clean_reference_integrity.json": "81182eaf63c38726390802061f604aa6962bba28379629bd1c89c2f61cbe995a",
+    "results/swarm_track4_manifest.json": "58ae0d22f9de30ebaa855440b9774ecb362dd64a454c75b2f9ffc0b6431e2af2"
+  },
+  "settings": {}
+}

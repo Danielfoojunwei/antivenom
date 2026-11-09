@@ -1,0 +1,19 @@
+{
+  "schema": "antivenom.memmorph.extensions-software.v1",
+  "scope": "New engineering checks only; no native scientific execution freeze",
+  "inputs": {
+    "src/antivenom/memmorph_matched_sources.py": "088b4e3ee8763629b8ce3233e23f1d6c36fab615c7d2a1c81dd01fc07c336200",
+    "src/antivenom/memmorph_run_record.py": "94633a02e14aca7692a913b834f1488982b5c103d65f859afad99113cb647169",
+    "src/antivenom/signature_lifecycle.py": "bdde570593ca79ceb9ced79e8b41476487d9372da0a1856e31014745ddb50b57",
+    "experiments/verify_memmorph_extensions.py": "cde05230fa00c5392135962c24789e08c1219fb915c3874cf27079d92e2d87c2",
+    "experiments/memform_drop_all_control.py": "a8254c54d8a50856b22c8b070d269c90f0fc0de8112b53fd682130df28f50f0e",
+    "docs/MEMMORPH_EXTENSION_PROTOCOL.md": "95caee843b4850635a537a7deb0548850f485d2b4beecc34f0e786b154b5b5b5",
+    "docs/MEMFORM_DROP_ALL_CONTROL.md": "c34b4e41fb662073432a177a040187811bdf938ce1d026a05288a8fba33c6606",
+    "tests/test_memmorph_matched_sources.py": "b8ca3f7bbe418bb67c4c19e8d522c3f9af56a5e996d8e2944c10e126423d2269",
+    "tests/test_memmorph_run_record.py": "4cd6925f17e4755f6ab377b34c41b63dea41b7a25762abd6d3c49de3c8c2c13a",
+    "tests/test_signature_lifecycle.py": "0aa95bcae1c25efa941e046797e84f90d427fffc9bf3bf102659a2fa0b31bee1",
+    "tests/test_memmorph_extension_integration.py": "d676d1b46829017308091a6a365cfd0b2665968a3a5540b75eb280ee84990fe8",
+    "tests/test_memform_drop_all_control.py": "c60312974df7a8c4f513be561c2fdecc67766f4243135d21544da47ee6ae119f"
+  },
+  "v1_preparation_manifest_sha256": "2c939207282da1702c85375e69c95cb6a89d0405bd1ba979ad3c2caf2a1d4be0"
+}

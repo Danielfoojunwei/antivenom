@@ -1,0 +1,9 @@
+Recurrence complete: 80 independent incidents, 160 sessions, 2240 answer checks; full suite pending
+Nonblank signatures: 80/80 incidents
+none: attacked endorsed=0.7500, correct=0.3000; clean correct=0.5750
+attention: attacked endorsed=0.2562, correct=0.4375; clean correct=0.4500
+OR: attacked endorsed=0.0500, correct=0.4813; clean correct=0.4500
+cosine: attacked endorsed=0.0312, correct=0.5437; clean correct=0.5375
+coordguard_gate: attacked endorsed=0.6500, correct=0.2938; clean correct=0.5750
+trustrag: attacked endorsed=0.0250, correct=0.4875; clean correct=0.5312
+gated_OR: attacked endorsed=0.1125, correct=0.4375; clean correct=0.5500

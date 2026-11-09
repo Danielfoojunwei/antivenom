@@ -1,0 +1,108 @@
+
+=== phase gate_cache started 2026-10-29T20:09:25.309580+00:00 ===
+W1030 04:09:32.282000 82380 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/nli-deberta-v3-base: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/nli-deberta-v3-base'.
+/Users/danielfoojunwei/Swarm Alignment Hackathon/antivenom/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 6679.20it/s]
+E38 hotpotqa 1 /50 5a8d5fc6554299585d9e37c6
+E38 hotpotqa 2 /50 5abd01205542992ac4f3819b
+E38 hotpotqa 3 /50 5ab69c25554299110f219a39
+E38 hotpotqa 4 /50 5ae0006755429925eb1afbd3
+E38 hotpotqa 5 /50 5a8574945542997b5ce3fffb
+E38 hotpotqa 6 /50 5a87d8215542994775f60800
+E38 hotpotqa 7 /50 5ac2ffbd554299677310267b
+E38 hotpotqa 8 /50 5a7c960655429935c91b5244
+E38 hotpotqa 9 /50 5ac2d1d755429921a00ab053
+E38 hotpotqa 10 /50 5ac298f9554299657fa28fc9
+E38 hotpotqa 11 /50 5a738d27554299623ed4abf3
+E38 hotpotqa 12 /50 5ab5ed505542997d4ad1f255
+E38 hotpotqa 13 /50 5a88d745554299206df2b378
+E38 hotpotqa 14 /50 5ae748d1554299572ea547b0
+E38 hotpotqa 15 /50 5a7a8a9c554299042af8f666
+E38 hotpotqa 16 /50 5ab642845542995eadeeff8e
+E38 hotpotqa 17 /50 5a7633ad5542992db9473741
+E38 hotpotqa 18 /50 5a713a5a5542994082a3e6a9
+E38 hotpotqa 19 /50 5ab9374b554299131ca422c6
+E38 hotpotqa 20 /50 5a76e88555429972597f13f4
+E38 hotpotqa 21 /50 5a7ddc5a5542995f4f4022da
+E38 hotpotqa 22 /50 5a7a1cd85542990783324e65
+E38 hotpotqa 23 /50 5ae0a59a55429945ae9593e2
+E38 hotpotqa 24 /50 5a8739a05542994775f607ab
+E38 hotpotqa 25 /50 5ae2dfd155429928c423951b
+E38 hotpotqa 26 /50 5ab6ba245542995eadef007f
+E38 hotpotqa 27 /50 5a88dcf9554299206df2b383
+E38 hotpotqa 28 /50 5ac0d83a554299294b219038
+E38 hotpotqa 29 /50 5a790d8f554299029c4b5eec
+E38 hotpotqa 30 /50 5ab2c5e255429916697740ba
+E38 hotpotqa 31 /50 5ab271fe554299449642c8a6
+E38 hotpotqa 32 /50 5add673e5542992ae4cec54d
+E38 hotpotqa 33 /50 5ae819ac55429952e35eaa16
+E38 hotpotqa 34 /50 5adf65555542992d7e9f9334
+E38 hotpotqa 35 /50 5adef80b5542993a75d263c4
+E38 hotpotqa 36 /50 5ac3e0f7554299194317388b
+E38 hotpotqa 37 /50 5ac02e31554299294b218f3f
+E38 hotpotqa 38 /50 5ab7e4dc5542995dae37e9df
+E38 hotpotqa 39 /50 5ab41d855542996a3a969f4b
+E38 hotpotqa 40 /50 5a7b7ff75542995eb53be93d
+E38 hotpotqa 41 /50 5a7d19d85542995ed0d165e8
+E38 hotpotqa 42 /50 5abd2eab5542992ac4f38210
+E38 hotpotqa 43 /50 5adc65e85542996e68525350
+E38 hotpotqa 44 /50 5ac2bbd0554299218029db09
+E38 hotpotqa 45 /50 5adf3e355542993a75d26440
+E38 hotpotqa 46 /50 5ac289ff5542996366519a02
+E38 hotpotqa 47 /50 5ab9b29c554299743d22ebae
+E38 hotpotqa 48 /50 5ae4f2c75542993aec5ec0fb
+E38 hotpotqa 49 /50 5ab1d7ac554299449642c7e6
+E38 hotpotqa 50 /50 5ac2659b55429963665199a1
+E38 msmarco 1 /50 431733
+E38 msmarco 2 /50 603045
+E38 msmarco 3 /50 1163600
+E38 msmarco 4 /50 1163993
+E38 msmarco 5 /50 611862
+E38 msmarco 6 /50 500489
+E38 msmarco 7 /50 333411
+E38 msmarco 8 /50 1164733
+E38 msmarco 9 /50 230427
+E38 msmarco 10 /50 28407
+E38 msmarco 11 /50 1163803
+E38 msmarco 12 /50 289486
+E38 msmarco 13 /50 10997
+E38 msmarco 14 /50 1163402
+E38 msmarco 15 /50 551079
+E38 msmarco 16 /50 415330
+E38 msmarco 17 /50 612163
+E38 msmarco 18 /50 599225
+E38 msmarco 19 /50 1183713
+E38 msmarco 20 /50 1164102
+E38 msmarco 21 /50 1164039
+E38 msmarco 22 /50 408930
+E38 msmarco 23 /50 1163536
+E38 msmarco 24 /50 598745
+E38 msmarco 25 /50 167649
+E38 msmarco 26 /50 406634
+E38 msmarco 27 /50 416509
+E38 msmarco 28 /50 1163611
+E38 msmarco 29 /50 65656
+E38 msmarco 30 /50 437838
+E38 msmarco 31 /50 664584
+E38 msmarco 32 /50 1163425
+E38 msmarco 33 /50 156641
+E38 msmarco 34 /50 1164172
+E38 msmarco 35 /50 592724
+E38 msmarco 36 /50 412992
+E38 msmarco 37 /50 406880
+E38 msmarco 38 /50 540774
+E38 msmarco 39 /50 578174
+E38 msmarco 40 /50 420791
+E38 msmarco 41 /50 417354
+E38 msmarco 42 /50 1164402
+E38 msmarco 43 /50 1163411
+E38 msmarco 44 /50 1164451
+E38 msmarco 45 /50 1164558
+E38 msmarco 46 /50 413229
+E38 msmarco 47 /50 416394
+E38 msmarco 48 /50 1163705
+E38 msmarco 49 /50 283876
+E38 msmarco 50 /50 423744
+E38 per-target cache complete

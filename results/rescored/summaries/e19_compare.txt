@@ -1,0 +1,23 @@
+E19 vs ours, NQ DEVELOPMENT set, identical contexts, n=75
+  arm                   endorsed [95% CI]       correct [95% CI]        
+  clean                 0.04 [0.00, 0.09]       0.65 [0.55, 0.76]       
+  attack                0.89 [0.83, 0.96]       0.25 [0.16, 0.35]       
+  block_OR              0.08 [0.03, 0.15]       0.43 [0.32, 0.53]       
+  delete_OR             0.08 [0.03, 0.15]       0.45 [0.35, 0.57]       
+  delete_OR_backfill    0.11 [0.04, 0.19]       0.60 [0.49, 0.71]       
+  trustrag              0.05 [0.01, 0.11]       0.52 [0.41, 0.64]       
+  robustrag_keyword     0.52 [0.41, 0.63]       0.33 [0.23, 0.44]       
+  coordguard_af         0.03 [0.00, 0.07]       0.39 [0.28, 0.49]       
+  coordguard_af_refill  0.05 [0.01, 0.11]       0.53 [0.43, 0.64]       
+  McNemar delete_OR_backfill vs trustrag: endorsed p=0.22  correct p=0.31
+  McNemar delete_OR_backfill vs robustrag_keyword: endorsed p=1.2e-07  correct p=0.00018
+  McNemar delete_OR_backfill vs coordguard_af: endorsed p=0.07  correct p=0.0025
+  McNemar delete_OR_backfill vs coordguard_af_refill: endorsed p=0.34  correct p=0.33
+  McNemar block_OR vs trustrag: endorsed p=0.69  correct p=0.19
+  McNemar block_OR vs robustrag_keyword: endorsed p=2.1e-09  correct p=0.12
+  McNemar block_OR vs coordguard_af: endorsed p=0.12  correct p=0.65
+  McNemar block_OR vs coordguard_af_refill: endorsed p=0.69  correct p=0.15
+
+Detection on the same contexts (all poisons incl. captured; n_poison=372, n_clean=378):
+  CoordGuard AF removed: poison recall=0.997 clean removed=0.222
+  ours (OR flags)      : poison recall=0.981 clean removed=0.069

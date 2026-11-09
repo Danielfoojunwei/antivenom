@@ -1,0 +1,16 @@
+{
+  "scope": "new retrospective review package, no human labels completed",
+  "tests_passed": 8,
+  "frozen_source_and_input_hashes_verified": true,
+  "counts_per_reviewer": {
+    "extraction": 212,
+    "memory": 1484,
+    "outcome": 733,
+    "policy": 212
+  },
+  "total_rows_per_reviewer": 2641,
+  "all_human_fields_initially_blank": true,
+  "original_human_validation_gate": "untouched; separate pending 302-row review",
+  "human_validation_passed": false,
+  "manifest_sha256": "ccd605e9350f6dbba60f0a45734eb2aea3c04f90962fe88df1d6d297c45879ff"
+}

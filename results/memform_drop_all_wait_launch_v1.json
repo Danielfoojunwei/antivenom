@@ -1,0 +1,74 @@
+{
+  "supervisor_pid": 80323,
+  "launcher": "experiments/run_memform_drop_all_wait.py",
+  "arguments": [
+    "--supervise"
+  ],
+  "runtime_manifest": "results/memform_drop_all_wait_runtime_manifest_v1.json",
+  "runtime_manifest_sha256": "3a466949781359a3b80fe0ef7409577c73ee7728ede5820ed43fbcd53fc22ce3",
+  "prelaunch_guard": {
+    "clear": false,
+    "blockers": [
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 73003,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 16,
+          "cpu_time": "0:01.08",
+          "start": "Sun Nov 1 18:00:14 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/TGOnDeviceInferenceProviderService.appex/Contents/MacOS/TGOnDeviceInferenceProviderService -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUudGdvbmRldmljZWluZmVyZW5jZXByb3ZpZGVyc2VydmljZSJ9"
+        }
+      },
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 86259,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 1568,
+          "cpu_time": "0:04.95",
+          "start": "Sun Nov 1 07:24:59 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/TGOnDeviceInferenceProviderService.appex/Contents/MacOS/TGOnDeviceInferenceProviderService -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUudGdvbmRldmljZWluZmVyZW5jZXByb3ZpZGVyc2VydmljZSJ9"
+        }
+      },
+      {
+        "reason": "unclassified_python_or_model_process",
+        "identity": {
+          "pid": 86414,
+          "ppid": 1,
+          "state": "Ss",
+          "rss_kib": 1232,
+          "cpu_time": "0:00.92",
+          "start": "Sun Nov 1 07:30:58 2026",
+          "command": "/System/Library/ExtensionKit/Extensions/GenerativeExperiencesSafetyInferenceProvider.appex/Contents/MacOS/GenerativeExperiencesSafetyInferenceProvider -LaunchArguments eyJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6OCwic2VydmljZU5hbWUiOiJjb20uYXBwbGUuR2VuZXJhdGl2ZUZ1bmN0aW9ucy5HZW5lcmF0aXZlRXhwZXJpZW5jZXNTYWZldHlJbmZlcmVuY2VQcm92aWRlciJ9"
+        }
+      }
+    ],
+    "exempted": [
+      {
+        "pid": 15599,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 15600,
+        "classification": "stdlib_http_server"
+      },
+      {
+        "pid": 65701,
+        "classification": "stdlib_resource_tracker"
+      },
+      {
+        "pid": 65702,
+        "classification": "dormant_cpu_spawn"
+      },
+      {
+        "pid": 65703,
+        "classification": "dormant_cpu_spawn"
+      }
+    ]
+  },
+  "user_authorization": "Current user request to run424-call control after other experiment finishes without interference",
+  "created_utc": "2026-11-03T19:49:29.442358+00:00"
+}

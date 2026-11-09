@@ -1,0 +1,180 @@
+{
+  "schema": "antivenom.memmorph.extensions-verification.v1",
+  "checked_utc": "2026-11-03T15:33:09.195622+00:00",
+  "passed": true,
+  "original_tests": {
+    "tests_run": 31,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_tests": {
+    "tests_run": 63,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "total_software_tests": 94,
+  "frozen_integrity": {
+    "manifests": {
+      "results/e36_capture_sensitivity_manifest.json": {
+        "inputs_checked": 9,
+        "manifest_sha256": "062f5eefe9f61decf6237a85e8e0b353f75b45655830dc81beaa9703ccee729f"
+      },
+      "results/extraction_resilience_manifest.json": {
+        "inputs_checked": 8,
+        "manifest_sha256": "f2d596fea12eb9b8d2c687f3a41d612200c7d2f18e12002dcf6fce7a5fec0e39"
+      },
+      "results/incident_base_contriever_evaluation_manifest.json": {
+        "inputs_checked": 3,
+        "manifest_sha256": "f7a83b3fda5878df3818dfbbf2088d1ee2c206bcec08fcd7f187e6fab8756545"
+      },
+      "results/incident_base_contriever_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "369d66c4efc535a0e62767590a31605b05c5af726efdd776b75c64a5292207ce"
+      },
+      "results/incident_base_interim_manifest.json": {
+        "inputs_checked": 89,
+        "manifest_sha256": "4b3698a251c155f1ec81d27e134e39d7b70f25adaff1e32966b208879f44963d"
+      },
+      "results/incident_calibrate_contriever_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "0859dcc26a6884e814e9c3dfc279e7b2c8657606627a9fc1ee4da516d8bc2169"
+      },
+      "results/incident_calibrate_e5_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "92b5abd2a0944aefde434a01636a19fc39514c14cc6ce8722bf5d69f0040ded0"
+      },
+      "results/incident_calibration_contriever_frozen.json": {
+        "inputs_checked": 3,
+        "manifest_sha256": "e53ff88a65747f7a0116541da8519934282efd5525b298fc7f97f216a7d478ec"
+      },
+      "results/incident_calibration_e5_frozen.json": {
+        "inputs_checked": 3,
+        "manifest_sha256": "30cec1f960d47dd71203fe157293945a2ff1b674f781f4e7e808a8351f65eef5"
+      },
+      "results/incident_e5_e5_evaluation_manifest.json": {
+        "inputs_checked": 3,
+        "manifest_sha256": "1d7e51edc1f62ce2a406b237c4b8f5e4c40209deefb2f61ac847e2836eea3bd3"
+      },
+      "results/incident_e5_e5_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "4e7f739527f7830d989e07e25207f6d50b83438a1f2a521f2f8e14510fabe1dd"
+      },
+      "results/incident_e5_interim_manifest.json": {
+        "inputs_checked": 88,
+        "manifest_sha256": "2d2653ce9b47308ab4007ce6dec328f6c4aed517561af212e4f7850561693acb"
+      },
+      "results/incident_memform_calibration_frozen.json": {
+        "inputs_checked": 2,
+        "manifest_sha256": "b21cddfcacb9e435459165de1480eb619fc7f18fa14d47d5514e02e7464d8477"
+      },
+      "results/incident_memform_manifest.json": {
+        "inputs_checked": 13,
+        "manifest_sha256": "23b9b02195f28fb5ec2d26864e10279accb835c5e3bf294c30d7307bc75ccee5"
+      },
+      "results/incident_prefixfree_contriever_evaluation_manifest.json": {
+        "inputs_checked": 3,
+        "manifest_sha256": "5d8071d33214ec5690cff31333d0d86cf0ec4eeff015359be20dd72a8ecda4b3"
+      },
+      "results/incident_prefixfree_contriever_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "d5e5abc766150c78e0e38a15105fb587aa1842f3d56d3b7df06553c625cf00e6"
+      },
+      "results/incident_prefixfree_interim_manifest.json": {
+        "inputs_checked": 88,
+        "manifest_sha256": "8600f582730e26b190283fe2716bdff1b2e3f7e757ea8ecb68c5ea7fde8ec5d8"
+      },
+      "results/incident_queue_manifest.json": {
+        "inputs_checked": 19,
+        "manifest_sha256": "ccd213612e6d816e18b82f8760f0edc06fad4c1183cf58d11385394e9e5e6bc7"
+      },
+      "results/incident_recurrence_contriever_evaluation_manifest.json": {
+        "inputs_checked": 3,
+        "manifest_sha256": "c06e452a05d9f204399616e2195af94adebec10263d885956f79e3801c7f56e2"
+      },
+      "results/incident_recurrence_contriever_manifest.json": {
+        "inputs_checked": 19,
+        "manifest_sha256": "1834486ee150848ebda9f4221fe17c5861868d35122c7e9a9b71f8986e022f1e"
+      },
+      "results/incident_recurrence_interim_manifest.json": {
+        "inputs_checked": 169,
+        "manifest_sha256": "26240d688301dee13ab06ca45b6d45530d14eb2dbb1efbc98d0de9025777c43a"
+      },
+      "results/incident_swarm_interim_manifest.json": {
+        "inputs_checked": 89,
+        "manifest_sha256": "1bceec7a8852f658fab17ee272d93d2625367b9b58b678d2f6acb7eb5bf58f87"
+      },
+      "results/incident_swarm_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "5cd0809266f4d08f82c6871fcf4c09fcf3a7693cf5fa08a89a8f71e08044e0f6"
+      },
+      "results/performance_choice_frozen.json": {
+        "inputs_checked": 2,
+        "manifest_sha256": "eb33dad8b2643265076f8058d4cae33f1dc7b420dcbc1b4f8ba213c04a5eb5ed"
+      },
+      "results/performance_runtime_manifest.json": {
+        "inputs_checked": 5,
+        "manifest_sha256": "e6a1022bda7442ee65242e4387448cd2110885094c2cd3b679856af564d26c0a"
+      },
+      "results/performance_validation_manifest.json": {
+        "inputs_checked": 17,
+        "manifest_sha256": "647004b0f8376b535b345f1016b554e8c4fd74b7c3653382c7dbd35d4efccc3c"
+      },
+      "results/remaining_queue_manifest_v2.json": {
+        "inputs_checked": 13,
+        "manifest_sha256": "cbf51681b086789764bcab05fa78abc3f360999ee12e854dd6d541af69f9d9c1"
+      },
+      "results/swarm_clean_reference_manifest.json": {
+        "inputs_checked": 84,
+        "manifest_sha256": "958b55a75e9ba17695bc3ff6f501eaca766942a0ed25ad2956fb29fc66d15121"
+      },
+      "results/swarm_track4_evaluation_manifest.json": {
+        "inputs_checked": 4,
+        "manifest_sha256": "e8a460eb02aea0629ea1213b2581703e0cc290c7fabcb4c6a6d6ac5a232d9745"
+      },
+      "results/swarm_track4_manifest.json": {
+        "inputs_checked": 25,
+        "manifest_sha256": "58ae0d22f9de30ebaa855440b9774ecb362dd64a454c75b2f9ffc0b6431e2af2"
+      },
+      "results/memmorph_alignment_software_manifest.json": {
+        "inputs_checked": 9,
+        "manifest_sha256": "2c939207282da1702c85375e69c95cb6a89d0405bd1ba979ad3c2caf2a1d4be0"
+      }
+    },
+    "unique_input_files_checked": 597,
+    "original_scientific_manifest_count": 30,
+    "v1_preparation_unchanged": true,
+    "e37_first70_preserved": true
+  },
+  "extension_manifest_sha256": "dafcea9717713df8a576087dbf6b72880b95b2f8374b560897099b0c805280c6",
+  "new_sources_pinned": 12,
+  "model_calls": 0,
+  "native_cases_run": 0,
+  "native_empirical_validation": false,
+  "human_review_passed": false,
+  "native_readiness": {
+    "status": "blocked_native_artifacts_missing",
+    "native_empirical_validation": false,
+    "model_calls": 0,
+    "native_harness_executed": false,
+    "missing": [
+      "native_bundle.json",
+      "native_harness_manifest.json",
+      "reference_baseline.json",
+      "provenance_review.json"
+    ],
+    "errors": [],
+    "verified_files": {},
+    "provenance_note": "Review declarations need independent human verification; flags alone do not authenticate an author release."
+  },
+  "evidence_scope": "software contracts plus separate completed-record posthoc audit",
+  "limits": [
+    "Synthetic scores and toy selectors do not establish semantic or native efficacy",
+    "Hashes do not authenticate publishers, native provenance or real execution",
+    "Local revocation does not undo prior actions or demonstrate network recovery",
+    "Exact drop-all control is prepared separately; no new model answers in these checks"
+  ]
+}

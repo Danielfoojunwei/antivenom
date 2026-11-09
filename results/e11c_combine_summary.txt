@@ -1,0 +1,8 @@
+attention signal chosen on targets 1-20: layer=21 norm=per_token z>=0.00  (cal P=0.969 R=0.775 FPR=0.020)
+
+HELD-OUT targets 21-100 (n=80)
+  entailment  precision=0.952 recall=0.871 clean-FPR=0.0347  FP=14 FN=41
+  attention   precision=0.956 recall=0.814 clean-FPR=0.0298  FP=12 FN=59
+  OR          precision=0.923 recall=0.978 clean-FPR=0.0645  FP=26 FN=7
+  AND         precision=1.000 recall=0.707 clean-FPR=0.0000  FP=0 FN=93
+saved results/e11c_combined_flags.json
